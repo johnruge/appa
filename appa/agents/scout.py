@@ -227,7 +227,10 @@ def _missing_env(feed: feeds.ListFeed) -> list[str]:
 def _read_lists(ctx: RunContext, names: list[str], cfg, opts: feeds.FeedOptions) -> None:
     """Read each named list source into the inbox; a failing source is logged and recorded, not fatal."""
     registry = feeds.lists_registry()
-    for name in sorted(n for n, f in registry.items() if f.default) if "all" in names else names:
+    chosen = [n for n in names if n != "all"]  # "all" = every default source, plus any others you name
+    if "all" in names:
+        chosen = sorted({n for n, f in registry.items() if f.default} | set(chosen))
+    for name in chosen:
         feed = registry[name]
         if missing := _missing_env(feed):
             ctx.log(f"{name}: skipped (set {', '.join(missing)} to use it)")

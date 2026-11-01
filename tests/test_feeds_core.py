@@ -347,3 +347,18 @@ def test_refilter_applies_new_rules_to_waiting_listings(factory):
         stricter.rules.title_excludes.append("payments")
         assert store.refilter(s, stricter, today=TODAY) == 1
         assert sorted(r.status for r in s.scalars(db.select(db.FeedListing))) == ["filtered", "new"]
+
+
+def test_all_plus_named_sources_reads_both(factory, sweep_env, monkeypatch):
+    called = []
+    monkeypatch.setattr(
+        feeds,
+        "LISTS",
+        {
+            "on": ListFeed(name="on", description="t", fetch=lambda o: called.append("on") or []),
+            "off": ListFeed(name="off", description="t", default=False, fetch=lambda o: called.append("off") or []),
+        },
+    )
+    with factory() as s:
+        run = runs.create(s, "scout", input={"lists": ["all", "off"]}, enqueue=False)
+    assert runs.execute(factory, run.id).status == "succeeded" and sorted(called) == ["off", "on"]
