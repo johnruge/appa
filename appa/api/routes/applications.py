@@ -150,7 +150,31 @@ def get_one(app_id: int, s: SessionDep, _p: Annotated[Principal, Depends(require
     a = s.get(db.Application, app_id)
     if not a:
         raise HTTPException(404, "not found")
-    return a.to_dict()
+    out = a.to_dict()
+    seen = s.scalars(select(db.SeenJob).where(db.SeenJob.application_id == a.id)).first()
+    ex = (seen.extraction or {}) if seen else {}
+    out["screening"] = (
+        {
+            "verdict": seen.verdict,
+            "reasons": seen.reasons or [],
+            "source": seen.source,
+            "sponsorship": ex.get("sponsorship"),
+            "sponsorship_quote": ex.get("sponsorship_quote"),
+            "min_years_experience": ex.get("min_years_experience"),
+            "experience_quote": ex.get("experience_quote"),
+            "is_entry_level": ex.get("is_entry_level"),
+            "seniority": ex.get("seniority"),
+            "citizenship_required": ex.get("citizenship_required"),
+            "clearance_required": ex.get("clearance_required"),
+        }
+        if seen
+        else None
+    )
+    attempt = s.scalars(
+        select(db.ApplyAttempt).where(db.ApplyAttempt.application_id == a.id).order_by(db.ApplyAttempt.id.desc())
+    ).first()
+    out["prefill"] = {"id": attempt.id, "status": attempt.status, "error": attempt.error} if attempt else None
+    return out
 
 
 @router.get("")
@@ -158,7 +182,7 @@ def list_(
     s: SessionDep,
     _p: Annotated[Principal, Depends(require("applications:read"))],
     company: str | None = Query(None, max_length=200),
-    status_: Status | None = Query(None, alias="status"),
+    status_: list[Status] | None = Query(None, alias="status", description="one or more statuses"),
     q: str | None = Query(None, max_length=200, description="search company, role, notes"),
     limit: int = Query(100, ge=1, le=500),
     offset: int = Query(0, ge=0),
@@ -168,11 +192,16 @@ def list_(
     if company:
         stmt = stmt.where(db.Application.company_norm == db.normalize.company(company))
     if status_:
-        stmt = stmt.where(db.Application.status == status_)
+        stmt = stmt.where(db.Application.status.in_(status_))
     if q:
-        like = f"%{q}%"  # bound parameter, not string-built SQL
+        term = q.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_")
+        like = f"%{term}%"  # bound parameter; your wildcards are escaped
         stmt = stmt.where(
-            or_(db.Application.company.ilike(like), db.Application.role.ilike(like), db.Application.notes.ilike(like))
+            or_(
+                db.Application.company.ilike(like, escape="\\"),
+                db.Application.role.ilike(like, escape="\\"),
+                db.Application.notes.ilike(like, escape="\\"),
+            )
         )
     rows = s.scalars(stmt.order_by(db.Application.id.desc()).limit(limit).offset(offset))
     return {"applications": [a.to_dict() for a in rows]}

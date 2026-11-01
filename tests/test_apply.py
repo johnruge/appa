@@ -625,3 +625,37 @@ def test_listings_inbox_track_skip_restore(env, factory):
         assert app.status == "To Apply" and app.job_key == "greenhouse:5"
     feeds_info = c.get("/api/v1/feeds").json()
     assert "simplify_newgrad" in {f["name"] for f in feeds_info["lists"]} and feeds_info["inbox"]["screened"] == 1
+
+
+# ---- what the web app's home screen reads ------------------------------------------------------
+
+
+def test_overview_and_application_detail(env, factory):
+    c, user, runner, _, app_id = env
+    with factory() as s:
+        s.add(db.Application(company="Globex", role="Data Engineer", status="Needs Review", link="https://g.example/1"))
+        s.add(db.Application(company="Initech", role="SWE", status="Skipped", link="https://i.example/2"))
+        s.add(
+            db.SeenJob(
+                key="greenhouse:4242",
+                company="Hooli",
+                title="SWE",
+                url="https://x",
+                source="t",
+                verdict="candidate",
+                reasons=["passes all filters"],
+                application_id=app_id,
+                extraction={"sponsorship": "not_mentioned", "is_entry_level": True},
+            )
+        )
+        s.commit()
+    ov = c.get("/api/v1/system/overview").json()
+    assert ov["matches"] == {"To Apply": 1, "Needs Review": 1, "Apply Myself": 0} and ov["new_matches_24h"] == 2
+    many = c.get("/api/v1/applications?status=To%20Apply&status=Needs%20Review").json()["applications"]
+    assert {a["company"] for a in many} == {"Hooli", "Globex"}
+    detail = c.get(f"/api/v1/applications/{app_id}").json()
+    assert detail["screening"]["reasons"] == ["passes all filters"] and detail["screening"]["is_entry_level"]
+    assert detail["prefill"] is None
+    _to_ready(c, user, runner, app_id)
+    assert c.get(f"/api/v1/applications/{app_id}").json()["prefill"]["status"] == "ready"
+    assert c.get("/api/v1/applications?q=100%25").json()["applications"] == []  # wildcards are literal

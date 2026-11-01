@@ -9,6 +9,7 @@ from appa import db
 from appa.api.deps import SessionDep, UserDep
 
 router = APIRouter(prefix="/system", tags=["system"])
+MATCH_STATUSES = ("To Apply", "Needs Review", "Apply Myself")
 
 
 @router.get("")
@@ -44,3 +45,60 @@ def resume(s: SessionDep, _p: UserDep):
 
     set_paused(s, False)
     return {"paused": False}
+
+
+@router.get("/overview")
+def overview(s: SessionDep, _p: UserDep):
+    """Everything the home screen shows in one call: matches waiting, what you applied to, the inbox, the last
+    and next sweep, and spend."""
+    from datetime import UTC, datetime, timedelta
+
+    from appa.runtime.context import spent_today
+
+    now = datetime.now(UTC)
+    by_status = dict(s.execute(select(db.Application.status, func.count()).group_by(db.Application.status)).all())
+    new_24h = s.scalar(
+        select(func.count())
+        .select_from(db.Application)
+        .where(db.Application.created_at >= now - timedelta(hours=24), db.Application.status.in_(MATCH_STATUSES))
+    )
+    applied_7d = s.scalar(
+        select(func.count())
+        .select_from(db.Application)
+        .where(db.Application.status == "Applied", db.Application.date_applied >= (now - timedelta(days=7)).date())
+    )
+    inbox = dict(s.execute(select(db.FeedListing.status, func.count()).group_by(db.FeedListing.status)).all())
+    boards = s.scalar(select(func.count()).select_from(db.Board).where(db.Board.enabled.is_(True)))
+    last = s.scalars(select(db.Run).where(db.Run.role == "scout").order_by(db.Run.id.desc()).limit(1)).first()
+    nxt = s.scalars(
+        select(db.Schedule).where(db.Schedule.enabled.is_(True)).order_by(db.Schedule.next_run_at).limit(1)
+    ).first()
+    questions = dict(
+        s.execute(
+            select(db.Question.kind, func.count()).where(db.Question.status == "open").group_by(db.Question.kind)
+        ).all()
+    )
+    return {
+        "matches": {status: by_status.get(status, 0) for status in MATCH_STATUSES},
+        "new_matches_24h": new_24h,
+        "applied_total": sum(by_status.get(x, 0) for x in db.APPLIED_STATUSES),
+        "applied_7d": applied_7d,
+        "by_status": by_status,
+        "inbox": inbox,
+        "boards": boards,
+        "last_sweep": (
+            {
+                "id": last.id,
+                "status": last.status,
+                "started_at": last.created_at.isoformat(),
+                "finished_at": last.finished_at.isoformat() if last.finished_at else None,
+                "cost_usd": round(last.cost_usd or 0, 4),
+                "result": last.result,
+            }
+            if last
+            else None
+        ),
+        "next_sweep_at": nxt.next_run_at.isoformat() if nxt else None,
+        "questions": questions,
+        "spent_24h_usd": round(spent_today(s), 4),
+    }
