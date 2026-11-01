@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# Personal data and secrets: never commit
+.env
+config/profile.yaml
+data/
+evals/local/
+evals/results/
+config/profile.md
+config/answers.yaml
+
+# Local tooling
+.claude/
