@@ -363,9 +363,13 @@ def cmd_schedule(args) -> None:
 
     with db.sessions()() as s:
         if args.action == "add":
-            data = {}
+            import json
+
+            data = json.loads(args.input) if args.input else {}
             if args.board:
                 data["boards"] = args.board
+            if args.sweep:
+                data["sweep"] = True
             try:
                 sch = scheduler.add(s, args.role, args.cron, model=args.model, input=data, budget=_budget(args))
             except ValueError as e:
@@ -848,6 +852,10 @@ def main(argv: list[str] | None = None) -> None:
     sca.add_argument("role", choices=["scout", "screener", "concierge"])
     sca.add_argument("cron", help="5-field cron in UTC, e.g. '0 */4 * * *'")
     sca.add_argument("--board", action="append")
+    sca.add_argument(
+        "--sweep", action="store_true", help="scout only: every source, boards, then screen (see appa sweep)"
+    )
+    sca.add_argument("--input", help='JSON input for the role, e.g. \'{"sweep": true, "screen_inbox": 600}\'')
     run_opts(sca, queue_flag=False)
     scs.add_parser("list")
     for name in ("rm", "on", "off"):
