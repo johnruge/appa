@@ -4,7 +4,7 @@ Read this with the code open. It explains what every group of files is for, how 
 and how a job moves through the system. [ARCHITECTURE.md](ARCHITECTURE.md) is the reference,
 [SECURITY.md](SECURITY.md) the threat model, and [DESIGN-v1.md](DESIGN-v1.md) the plan.
 
-Size, for orientation: about 4,700 lines of Python in `appa/`, 1,000 of TypeScript in `web/`,
+Size, for orientation: about 4,700 lines of Python in `appa/`, 1,900 of TypeScript in `web/`,
 and 1,800 of tests. No single file is over about 600 lines.
 
 ---
@@ -12,12 +12,13 @@ and 1,800 of tests. No single file is over about 600 lines.
 ## 1. The 30-second version
 
 appa is **one server** (API + workers + scheduler, sharing one Postgres) plus **one runner on your
-Mac** that drives a dedicated Chrome. You talk to it through a terminal-style web page or the CLI.
+Mac** that can prefill forms in a dedicated Chrome. appa finds, screens and surfaces matches for you to
+review; you apply. You use it through the web app or the CLI.
 
 ```mermaid
 flowchart LR
-    you([You]) -- browser --> ui[web UI<br/>web/]
-    you -- terminal --> cli[CLI<br/>appa/cli.py]
+    you([You]) -- browser --> ui[web app<br/>web/]
+    you -- shell --> cli[CLI<br/>appa/cli.py]
     ui -- "/api/v1 (session + CSRF)" --> api[API<br/>appa/api/]
     agents([Your other agents]) -- "Bearer key" --> api
     cli --> core
@@ -35,7 +36,7 @@ Three ideas run through everything:
 
 1. **The model reads and code decides.** Models only extract facts or pick among your existing answers. Every accept/reject/apply decision is plain code you can read and test.
 2. **The job ID is identity.** Only a matching job ID blocks a job. A duplicate application beats a missed one.
-3. **Nothing irreversible happens without you.** Submitting needs your recorded approval. Essays, "are you human" checks, CAPTCHAs, verification codes and ambiguous questions come to you.
+3. **appa never applies for you.** It can prefill a form in your browser, but there is no code that submits one. You check the form, submit it yourself, and mark it applied. Essays, "are you human" checks, CAPTCHAs and ambiguous questions come to you.
 
 ---
 
@@ -50,8 +51,8 @@ appa/                  the Python package (server, CLI, runner)
   pipeline.py          one posting -> one verdict (dedupe, filter, extract, rules, route, record)
   agents/              roles you can run: scout, screener, concierge (+ applier, internal)
   runtime/             runs, events, budgets, the Postgres job queue, worker, scheduler
-  apply/               applying, server side: planner (what goes in each field) + service (lifecycle)
-  runner/              applying, your Mac: browser, form reader/filler, HTTP client, loop
+  apply/               prefill, server side: planner (what goes in each field) + service (lifecycle)
+  runner/              prefill, your Mac: browser, form reader/filler, HTTP client, loop
   api/                 FastAPI: auth (sessions, keys), routes for everything above
   db.py                every table (SQLAlchemy models) + the dedupe query
   profile_store.py     your profile.md + policy, versioned in the DB
@@ -59,8 +60,8 @@ appa/                  the Python package (server, CLI, runner)
   backfill.py          one-time import of your old spreadsheet
   evals.py             score models on labeled postings
   config.py, migrate.py, cli.py
-web/                   the terminal-style UI (React + TypeScript)
-migrations/            Alembic schema migrations (0001 … 0004)
+web/                   the web app (React + TypeScript)
+migrations/            Alembic schema migrations (0001 … 0008)
 config/                example configs (committed) + your real ones (gitignored)
 deploy/postgres/       least-privilege database roles
 scripts/dev-db.sh      local Postgres in data/pg
@@ -182,7 +183,7 @@ flowchart LR
 ### 4.5 `runtime/`: runs, budgets, the queue
 
 Everything appa does is a **run**: one role, one model, one budget, and an append-only log of
-events (`run_events`). The terminal and the UI both just display that log.
+events (`run_events`). The CLI and the web app's Activity page both just display that log.
 
 | File | What's in it |
 |---|---|
@@ -191,22 +192,23 @@ events (`run_events`). The terminal and the UI both just display that log.
 | `queue.py` | The job queue, in Postgres: `claim()` uses `FOR UPDATE SKIP LOCKED` (each job goes to exactly one worker), leases expire if a worker dies, failed jobs back off and retry |
 | `worker.py` | Claims `run` jobs and executes them; heartbeats its lease; `LISTEN`s for instant wake-ups |
 | `scheduler.py` | Cron (UTC) → queued runs. Skips missed slots instead of piling up |
-| `render.py` | Events → terminal lines (`web/src/render.ts` mirrors it) |
+| `render.py` | Events → readable lines for the CLI |
 
-### 4.6 `apply/` + `runner/`: applying
+### 4.6 `apply/` + `runner/`: prefill (never submit)
 
-Split by design: **the server decides, the runner only does.**
+Split by design: **the server decides, the runner only does.** And neither one submits: the runner
+fills the form, leaves the tab open for you, and stops. You press submit yourself.
 
 | Server side | |
 |---|---|
 | `apply/planner.py` | `build_plan(questions, answers)`: for each form question, uses your saved answer to that exact question, then the must-ask rules, then your standard answer, then (with a key) a model that may only *choose* one of your existing answers. What's left and required becomes a question for you |
-| `apply/service.py` | The attempt lifecycle: `start` → `claim` → `receive_form` (plan, or stop and ask) → `receive_preview` → `approve` (**the only place a submit job is created**; daily cap) → `receive_result` (**"Applied" only with a confirmation page**). Also `redo`, `cancel`, `answer_field` |
+| `apply/service.py` | The attempt lifecycle: `start` → `claim` → `receive_form` (plan, or stop and ask: `needs_you`) → `receive_preview` (`ready`, plus an `apply_ready` card: "check it, submit it yourself, mark it applied") → `mark_applied` (**the only way anything becomes Applied**: you say so). Also `redo`, `cancel`, `blocked`, `takeover`, `answer_field`. Statuses: preparing → needs_you → ready → applied, or failed / cancelled |
 
 | Runner side (your Mac) | |
 |---|---|
-| `runner/main.py` | The loop: poll `/runner/next`, run **prepare** (read, fill, screenshot) or **submit** (refill, verify, submit, confirm), heartbeat, retry if the server is down. Waits for you on CAPTCHAs and emailed verification codes |
-| `runner/dom.py` | `find_form()` gets to the form on any site (follows "Apply", opens embedded forms) or raises `Blocked` (login wall, wizard, bot protection, off-site). `EXTRACT_JS` reads fields (tuned for Greenhouse/Lever/Ashby, plus common form layouts). `fill()`, `submit()`, `confirmation()`, CAPTCHA and verification-code detection |
-| `runner/browser.py` | Dedicated Chrome profile. **Refuses private or local addresses.** Navigation pinned to the application's own site (domain + subdomains) and hosted ATS domains; pop-ups closed; downloads refused |
+| `runner/main.py` | The loop: poll `/runner/next`, run **prepare** (read, fill, screenshot, hand the tab to you), heartbeat, retry if the server is down. There is no other phase |
+| `runner/dom.py` | `find_form()` gets to the form on any site (follows "Apply", opens embedded forms) or raises `Blocked` (login wall, wizard, bot protection, off-site). `EXTRACT_JS` reads fields (tuned for Greenhouse/Lever/Ashby, plus common form layouts). `fill()` fills them and reports what didn't fill. Nothing here clicks submit |
+| `runner/browser.py` | Dedicated Chrome profile. **Refuses private or local addresses.** Navigation pinned to the application's own site (domain + subdomains) and hosted ATS domains; pop-ups closed; downloads refused. `hand_over()` gives a filled tab to you: the guard and pop-up blocking are lifted for that tab and appa never closes it |
 | `runner/client.py` | HTTPS only (HTTP only to localhost), runner-scoped key |
 
 ### 4.7 `db.py` + `migrations/` + stores: data
@@ -225,11 +227,11 @@ erDiagram
     runs ||--o| apply_attempts : "records"
     schedules ||--o{ runs : "fires"
     users ||--o{ web_sessions : "logged in as"
-    uploads ||--o| apply_attempts : "preview / confirmation"
+    uploads ||--o| apply_attempts : "preview"
     apply_attempts ||--o{ observations : "missed or failed"
     listings }o--o| applications : "screened into"
     applications { string company string role string status string job_key UK }
-    apply_attempts { string status jsonb form jsonb plan string approved_by }
+    apply_attempts { string status jsonb form jsonb plan jsonb fill_report }
     answers { string key PK string value }
     profile_versions { string kind jsonb content }
     api_keys { string name string token_hash jsonb scopes }
@@ -239,7 +241,7 @@ erDiagram
 | File | What's in it |
 |---|---|
 | `db.py` | Tables, engine (pool limits, timeouts, UTC sessions), `find_match()` |
-| `migrations/versions/0001…0007` | Initial schema → runtime → people (users, sessions, uploads, profile history) → apply → job IDs → observations → feeds (listings inbox, boards) |
+| `migrations/versions/0001…0008` | Initial schema → runtime → people (users, sessions, uploads, profile history) → apply → job IDs → observations → feeds (listings inbox, boards) → prefill only (0008 moved old submit-era attempts to the new statuses) |
 | `feeds/` | Every job source: `lists/` (many companies per call), `boards/` (one company's ATS), `store.py` (the listings inbox and board rotation), `filter.py` (free filters). See docs/JOB-SOURCES.md |
 | `observe.py` | Records misses and failures (`observations`); `appa insights` ranks them so you know what to fix next |
 | `profile_store.py` | Your `profile.md` and policy, versioned. The newest saved version wins; the files are the fallback |
@@ -254,11 +256,17 @@ erDiagram
 | `api/deps.py` | **Who's calling:** a browser session (CSRF required on writes) or a Bearer key with scopes. `UserDep` (humans only), `RunnerDep` (runner key only), `require(scope)` |
 | `api/users.py` | argon2id passwords, optional TOTP, lockout, session tokens (only hashes stored) |
 | `api/auth.py` | API keys (only hashes stored), the rate limiter |
-| `api/routes/*` | `auth`, `applications`, `runs` (+ SSE stream), `questions`, `schedules`, `profile`, `uploads`, `apply`, `runner`, `system`, `meta` |
-| `web/src/api.ts` | The only code in the UI that talks to the server: relative `/api` URLs, CSRF header |
-| `web/src/commands.ts` | Command-line parser (unit-tested) |
-| `web/src/Console.tsx` | The terminal, live run streaming (Server-Sent Events), uploads, the profile editor |
-| `web/src/Panel.tsx` | Status, your question queue (including the form-question and approval cards), runs, schedules |
+| `api/routes/*` | `auth`, `applications` (several `status` filters; detail includes `screening` and `prefill`), `runs` (+ SSE stream), `questions`, `schedules`, `profile`, `uploads`, `apply` (prefill, `applied`, takeover), `runner`, `system` (incl. `GET /system/overview` for the home screen), `meta` |
+| `web/src/App.tsx` | The shell: sidebar, hash routing, login gate |
+| `web/src/pages/Matches.tsx` | Home: the review queue (tabs *Good matches*, *Check first*, *Apply directly*), the **Needs you** cards, a detail drawer with checks and quotes, and the actions Open posting / I applied / Prefill in my browser / Not for me (with undo). Keys `j`/`k`/`enter`/`o`/`a`/`x` |
+| `web/src/pages/Applied.tsx` | The tracker: everything you've applied to, status changed in place |
+| `web/src/pages/Discover.tsx` | The listings inbox: waiting, screened, set aside by a filter (with the reason) |
+| `web/src/pages/Sources.tsx` | Sources, company boards, the schedule, **Search now** |
+| `web/src/pages/Activity.tsx` | Runs and their logs |
+| `web/src/pages/Settings.tsx` | Filters, preferences in plain words, saved answers |
+| `web/src/ui.tsx`, `hooks.ts`, `format.ts` | Shared components; `useData` and `useToast`; formatting helpers (unit-tested in `format.test.ts`) |
+| `web/src/api.ts`, `types.ts` | The only code in the UI that talks to the server: relative `/api` URLs, CSRF header. `types.ts` mirrors the API's shapes |
+| `web/src/Login.tsx`, `styles.css` | Sign-in; the light/dark design system |
 
 ---
 
@@ -290,35 +298,37 @@ sequenceDiagram
     RT->>DB: run result + every event
 ```
 
-### 5.2 An application gets submitted
+### 5.2 An application gets prefilled (and you submit it)
 
 ```mermaid
 sequenceDiagram
     actor You
-    participant UI as web UI
+    participant UI as web app
     participant API as API + apply/service
     participant R as runner (your Mac)
     participant ATS as Greenhouse
-    You->>UI: apply 116
+    You->>UI: Prefill in my browser (#116)
     UI->>API: POST /applications/116/apply
     API->>API: attempt (preparing) + queue job "prepare"
     R->>API: GET /runner/next
     R->>ATS: open form (pinned)
     R->>API: POST form (12 questions)
-    API->>API: planner: 5 from your bank, 4 missing
-    API-->>UI: 4 questions
+    API->>API: planner: 8 from your saved answers, 4 missing → needs_you
+    API-->>UI: 4 Needs-you cards
     You->>UI: answer (saved for next time)
-    API->>API: re-queue prepare
+    API->>API: preparing again, re-queue prepare
     R->>API: next → form → plan (all known)
     R->>ATS: fill (résumé only, cover letter empty)
-    R->>API: screenshot + fill report → awaiting_approval
-    You->>UI: submit application (approval recorded)
-    API->>API: queue job "submit" with the exact plan
-    R->>ATS: refill, verify, submit
-    ATS-->>R: emailed code? → waits for you
-    ATS-->>R: /confirmation "Thank you for applying"
-    R->>API: result confirmed → application Applied (date, email)
+    R->>R: hand_over: guard and pop-up blocking lifted for this tab, tab left open
+    R->>API: screenshot + fill report → ready + "I submitted it" card (apply_ready)
+    You->>ATS: check the form, press submit yourself
+    You->>UI: I submitted it (or POST /applications/116/applied, or appa applied 116)
+    API->>API: attempt applied → application Applied (today, your email)
 ```
+
+appa stops at "filled". If you don't go ahead, **Skip** on the card cancels the attempt; the tab is
+yours either way. A site that needs a login, a wizard or a bot check is handed back before anything is
+filled.
 
 ### 5.3 A request gets authenticated
 
@@ -347,13 +357,13 @@ flowchart TB
 | Budgets, daily cap, cancel, kill switch | `runtime/context.py`, `runtime/runs.py` |
 | Only a job-ID match blocks | `db.find_match()` |
 | "Who applies" can't see posting text | `agents/screener.make_router()` |
-| No submit without your approval | `apply/service.approve()` (only creator of submit jobs) + `receive_result()` check |
+| appa never submits; there is no submit code | `runner/main.py` (prepare is the only phase), `runner/dom.py` (no submit), guarded by `tests/test_apply.py::test_appa_never_submits` |
 | Values only from your bank; never guess an option | `apply/planner.py`, `core/apply_fields.match_option()` |
 | Essays, bot checks, compound auth questions → you | `core/apply_fields.must_ask()` / `standard_key()` |
 | Résumé only in résumé fields | `core/apply_fields.standard_key()` (file branch) |
-| Never "Applied" without confirmation | `apply/service.receive_result()` |
-| Browser pinned; pop-ups closed | `runner/browser.py` |
-| CAPTCHA / emailed codes wait for you | `runner/main.py` |
+| "Applied" only when you say so | `apply/service.mark_applied()` (via `POST /applications/{id}/applied`, `appa applied`, or the card) |
+| Browser pinned; pop-ups closed; filled tab handed to you | `runner/browser.py` (`hand_over()`) |
+| Login walls, wizards, bot protection handed back | `runner/dom.find_form()` → `Blocked` |
 | Sessions, CSRF, lockout, TOTP | `api/users.py`, `api/deps.py` |
 | Keys scoped; runner key can't read your bank | `api/deps.py` (`RunnerDep`, `UserDep`) |
 | App DB role can't alter schema | `deploy/postgres/roles.sql` |
@@ -373,7 +383,7 @@ flowchart TB
 | Add a job board source | `sources/ats.py` (+ `core/ats_urls.py` for its links) |
 | Add an agent role | new file in `agents/` with a `RoleSpec`, register in `agents/__init__.py` |
 | Add an API route | `api/routes/<area>.py`, register in `api/app.py`, pick `UserDep` / `require(scope)` / `RunnerDep` |
-| Add a UI command | `web/src/commands.ts` (+ test) → handle it in `Console.tsx` |
+| Change a page in the web app | `web/src/pages/<Page>.tsx` (+ `api.ts` / `types.ts` for new calls, shared pieces in `ui.tsx`) |
 | Change the schema | edit `db.py` → `alembic revision --autogenerate` → **read the file** → `appa migrate` |
 
 ---
@@ -387,9 +397,9 @@ flowchart TB
 | `test_llm.py` | Model layer + eval against a fake OpenRouter | — |
 | `test_runtime.py` | Queue, budgets, cancel, kill switch, worker, scheduler, roles end to end | Postgres |
 | `test_api.py` | Login, CSRF, TOTP, lockout, uploads (hostile files), runs/SSE, questions, profile | Postgres |
-| `test_apply.py` | Field matching (labels from real forms), planner, the full approve-before-submit flow | Postgres |
-| `test_runner_dom.py` | Reading/filling/submitting local copies of each ATS's markup; CAPTCHA, codes, pinning | headless Chrome |
-| `web/src/commands.test.ts` | UI command parser | Node |
+| `test_apply.py` | Field matching (labels from real forms), planner, the full prefill flow (needs you → ready → you mark it applied), and `test_appa_never_submits` (no submit phase, endpoint or code) | Postgres |
+| `test_runner_dom.py` | Reading and filling local copies of each ATS's markup; any-site form finding and hand-backs; pinning, pop-ups, a handed-over tab is yours | headless Chrome |
+| `web/src/format.test.ts` | UI formatting helpers | Node |
 
 `pytest` runs everything (the database tests use `appa_test` and refuse any other database).
 `npm --prefix web test` runs the UI tests.
@@ -401,9 +411,9 @@ flowchart TB
 - **`cli.py` is about 600 lines.** It's one function per command; worth splitting into `cli/` modules eventually.
 - **`db.py` is about 400 lines.** All the tables live there; splitting by area would be cleaner.
 - **The rate limiter is in-memory,** so it's per process and resets on restart. Fine for one server; use Redis if you run several.
-- **The UI's live stream polls the database** every half second. `LISTEN/NOTIFY` is already wired in the worker and could replace it.
+- **The run stream (`/runs/{id}/stream`) polls the database** every half second. `LISTEN/NOTIFY` is already wired in the worker and could replace it.
 - **The Google Sheet isn't synced.** appa's database is the source of truth; your Sheet only gets updates if you export or a sync is built.
 - **No lockfile yet** for Python dependencies; `web/` has `package-lock.json`.
-- **Filling works on any login-free site, but multi-page wizards and sites needing accounts are handed back.** Unusual custom widgets on unfamiliar sites may not fill; the fill report and approval screenshot show it, and you decide.
+- **Filling works on any login-free site, but multi-page wizards and sites needing accounts are handed back.** Unusual custom widgets on unfamiliar sites may not fill; the fill report and the "ready" card say which, and you finish them in the open tab.
 - **Bot protection** (e.g. SmartRecruiters' DataDome) can block the runner. It's handed back, never evaded.
 - **The model paths** (screening, routing, screenshots, fallback matching) **are tested only with a fake provider** until a key is added.

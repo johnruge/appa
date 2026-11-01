@@ -30,15 +30,17 @@ Goal: someone can clone it, run it for themselves, and trust it.
 - **Scheduler:** `poll` every few hours (launchd on your Mac, or a small VPS)
 - **Email intake:** a dedicated Gmail for alerts (Gmail API, read-only scope); parse alert emails into links, then into the pipeline
 - **Notifications and question queue:** Telegram bot. You get a daily digest of review items, it asks the questions it needs answered, and your answers are saved
-- **Confirmation tracking:** "thanks for applying" emails mark rows Applied and fill `date_applied`
+- **Confirmation tracking:** "thanks for applying" emails become a card asking whether to mark the row Applied (you confirm)
 
-## Stage 3: auto-apply for straightforward applications (built in v1 M6: approval-gated)
+## Stage 3: prefill, never submit (built)
 
-- Playwright fillers for Greenhouse, Lever and Ashby (deterministic field mapping, not a free-roaming agent)
-- **Dry run first:** fill, screenshot and wait for approval. A per-ATS switch to submit automatically once it has a track record
-- Every answer comes from your approved profile or saved answers. Anything unknown goes to the question queue and is never invented
-- Hard stops: essays, "are you human" or AI-detection questions, anything on your apply-myself list
-- Workday later (per-company accounts, very varied forms)
+appa finds, screens and surfaces matches for you to review; you apply. It doesn't apply for you,
+because automated applications can feel bad to the recruiters reading them.
+
+- [x] Prefill on Greenhouse, Lever, Ashby and other login-free forms (deterministic field mapping, not a free-roaming agent)
+- [x] The filled form is left open in your dedicated Chrome window. You check it, submit it yourself, and mark it applied. There is no submit code, and a test guards that
+- [x] Every answer comes from your profile or saved answers. Anything unknown goes to the **Needs you** queue and is never invented
+- [x] Hard stops: essays, "are you human" or AI-detection questions, anything on your apply-myself list; sites that need an account, wizards and bot protection are handed back
 
 ## Stage 4: product (open core plus a hosted tier)
 
@@ -48,11 +50,11 @@ Goal: someone can clone it, run it for themselves, and trust it.
 | Your own API keys (Anthropic) | ✅ | included |
 | Web interface (review queue, tracker, answers) | basic / none | ✅ |
 | Always-on scheduling, email intake | DIY | ✅ |
-| Auto-apply workers | run them yourself | ✅ managed, sandboxed |
+| Prefill runner | run it yourself | ✅ managed, sandboxed |
 | Support, multi-device | — | ✅ |
 
 What the hosted tier requires is in [SECURITY.md](SECURITY.md#hosted-tier-requirements).
-The architecture change: tenants, a job queue with workers (fetch / extract / apply),
+The architecture change: tenants, a job queue with workers (fetch / extract / prefill),
 Postgres with row-level security, and a web app talking to the same API.
 
 ### License: AGPL-3.0-or-later (decided)

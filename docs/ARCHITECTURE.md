@@ -3,8 +3,9 @@
 New here? Start with the guided [TOUR.md](TOUR.md); this page is the reference.
 
 appa is a single-user job-search pipeline with an application database and an
-authenticated API. This document describes **what exists today**. Plans are in
-[ROADMAP.md](ROADMAP.md); threats and controls are in [SECURITY.md](SECURITY.md).
+authenticated API. It finds, screens and surfaces matches for you to review; you apply. It can
+prefill a form in your browser, but it never submits one. This document describes **what exists
+today**. Plans are in [ROADMAP.md](ROADMAP.md); threats and controls are in [SECURITY.md](SECURITY.md).
 
 About 1,900 lines of Python, in one package, run from one machine.
 
@@ -66,7 +67,7 @@ Two ideas shape everything:
 | `runtime/queue.py` | Postgres job queue: `FOR UPDATE SKIP LOCKED` claims, leases, backoff retries, `NOTIFY` wake-ups | db |
 | `runtime/worker.py` | Claims and executes runs; lease heartbeat; never crashes on a role error | runtime |
 | `runtime/scheduler.py` | Cron schedules (UTC) → queued runs | runtime |
-| `runtime/render.py` | Run events → terminal lines | — |
+| `runtime/render.py` | Run events → readable lines for the CLI | — |
 | `extract.py` | Prompts: posting → `Extraction`; screenshot → job cards. Structured output only | llm |
 | `llm/` | Model layer: allowlist + per-role defaults (`config/models.yaml`), OpenRouter adapter, strict JSON schema, validation + one corrective retry, cost and token accounting | OpenRouter |
 | `evals.py` | Screening eval: labeled cases → per-field and verdict accuracy, false rejects, cost | extract, rules |
@@ -81,13 +82,13 @@ Two ideas shape everything:
 | `api/deps.py` | Who's calling: browser session (+CSRF on writes) or scoped API key; rate limits | users, auth |
 | `api/users.py` | Human login: argon2id, optional TOTP, lockout, session tokens (hashed), CSRF tokens | db |
 | `api/auth.py` | API key creation/verification (hashed), rate limiter | db |
-| `api/routes/` | `auth`, `applications`, `runs` (incl. SSE stream), `questions`, `schedules`, `profile` (profile.md + policy), `uploads`, `meta` | runtime, db |
+| `api/routes/` | `auth`, `applications` (list takes several `status` params; detail includes `screening` and `prefill`), `runs` (incl. SSE stream), `questions`, `schedules`, `profile` (profile.md + policy), `uploads`, `system` (incl. `GET /system/overview`), `meta` | runtime, db |
 | `core/apply_fields.py` | Form questions: standard answer keys, must-ask rules (bot/AI checks, essays), option matching that never guesses | — |
 | `apply/planner.py` | Form questions + answers bank → fill plan, or the questions only you can answer. Values come only from your bank | core |
-| `apply/service.py` | Apply attempts end to end: start, claim, plan, preview, approval, submit result; daily cap; never "Applied" without confirmation | db, queue |
-| `api/routes/runner.py` | Runner-only endpoints (`runner` scope): next job, form, screenshot, preview, result | apply |
-| `api/routes/apply.py` | Start applications, attempts, approve/cancel, answers bank, screenshot viewing | apply |
-| `runner/` | On your Mac: `client.py` (HTTPS to the server), `browser.py` (dedicated Chrome profile, navigation pinned, pop-ups closed), `dom.py` (read forms, fill, submit, detect confirmation/CAPTCHA), `main.py` (loop) | Playwright |
+| `apply/service.py` | Prefill attempts end to end: start, claim, plan (or ask you), preview → `ready`, `mark_applied` when you say you submitted it. Statuses: preparing → needs_you → ready → applied (or failed / cancelled). No submit step exists | db, queue |
+| `api/routes/runner.py` | Runner-only endpoints (`runner` scope): next job, heartbeat, done/fail, events, form, screenshot, preview, blocked | apply |
+| `api/routes/apply.py` | Start a prefill, mark applied (`POST /applications/{id}/applied`), take over, attempts (redo/cancel), answers bank, screenshot viewing | apply |
+| `runner/` | On your Mac: `client.py` (HTTPS to the server), `browser.py` (dedicated Chrome profile, navigation pinned, pop-ups closed, `hand_over()` gives the filled tab to you), `dom.py` (find the form, read it, fill it; never submits), `main.py` (loop; prepare is the only phase) | Playwright |
 | `uploads.py` | Screenshot validation from content, re-encode to PNG, private storage | Pillow, db |
 | `profile_store.py` | Versioned `profile.md` and policy in the DB, falling back to the config files | db |
 | `backfill.py` | Idempotent CSV import from your old spreadsheet | db |
@@ -98,10 +99,15 @@ Two ideas shape everything:
 | `sources/text.py` | HTML → text; pulls hidden text out and labels it | — |
 | `config.py` | Loads `config/profile.yaml` (your rules, gitignored) | — |
 
-**Web UI (`web/`):** a React + TypeScript single-page app. `commands.ts` parses the command line
-(unit-tested), `api.ts` is the only code that calls the server (relative `/api/v1` URLs, CSRF header on
-writes), `Console.tsx` is the terminal and live run streaming (Server-Sent Events), `Panel.tsx` shows
-status, questions, runs and schedules, and `render.ts` mirrors `runtime/render.py`.
+**Web app (`web/`):** a React + TypeScript single-page app. `App.tsx` is the shell (sidebar, hash
+routing, login gate). Pages: `Matches.tsx` (home: the review queue with tabs *Good matches*, *Check
+first* and *Apply directly*, the **Needs you** cards, a detail drawer with checks and quotes, and the
+actions Open posting / I applied / Prefill in my browser / Not for me), `Applied.tsx` (tracker),
+`Discover.tsx` (listings inbox), `Sources.tsx` (sources, schedule, Search now), `Activity.tsx` (runs
+and logs) and `Settings.tsx` (filters, preferences, saved answers). `ui.tsx` holds shared components,
+`hooks.ts` `useData` and `useToast`, `format.ts` formatting helpers (unit-tested). `api.ts` is the only
+code that calls the server (relative `/api/v1` URLs, CSRF header on writes); `types.ts` mirrors its
+shapes. `styles.css` is the light/dark design system.
 
 Dependencies point one way: `cli → runtime → agents → pipeline → (extract, llm, db, sources) → core`.
 `core/` is pure logic and imports nothing that does I/O. Nothing in `sources/` knows about the database.
@@ -188,6 +194,18 @@ paid step, the model call.
 2. The agent applies.
 3. `POST /v1/applications`: 201, or 409 with the existing row if the job ID is already tracked.
 4. Later: `PATCH /v1/applications/{id}` for status or stage changes.
+
+### A form gets prefilled (you submit it)
+
+1. You press **Prefill in my browser** (`POST /api/v1/applications/{id}/apply`, or `appa apply <id>`). An attempt starts as `preparing` and a `prepare` job is queued.
+2. The runner on your Mac claims it, opens the form in the dedicated Chrome window and sends the questions it found.
+3. The planner fills what your saved answers cover. Anything else becomes a **Needs you** card and the attempt waits as `needs_you`; your answer is saved and the attempt goes back to `preparing`.
+4. The runner fills the form, sends a screenshot and fill report, and hands the tab over (`browser.hand_over`: the navigation guard and pop-up blocking are lifted for that tab, and appa never closes it). The attempt is `ready` and an `apply_ready` card says so.
+5. You check the form and press submit yourself. Then you mark it applied: the card's **I submitted it** (`applied`), `POST /api/v1/applications/{id}/applied`, or `appa applied <id>`. Only then is the application `Applied`. **Skip** cancels the attempt.
+
+There is no submit phase, submit endpoint or submit code; `tests/test_apply.py::test_appa_never_submits`
+fails if one appears. Login walls, wizards and bot-protection pages are handed back before anything is
+filled.
 
 ## Runtime and deployment (today)
 

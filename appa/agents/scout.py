@@ -299,8 +299,9 @@ def _source_failed(ctx: RunContext, name: str, e: Exception) -> None:
 # ---- inbox -> screened --------------------------------------------------------------------------
 
 
-def _describer(sources: list[str]):
-    """The source's own full-text hook for a listing, if one of its sources has one."""
+def _describer(sources: list[str], url: str = ""):
+    """A full-text hook for a listing: one of its sources' own, else the hook of the ATS board its link is on
+    (one request for that posting, instead of searching the company's whole board)."""
     for src in sources:
         if src.startswith("board:"):
             hook = getattr(feeds.boards_registry().get(src[6:]), "describe", None)
@@ -308,6 +309,8 @@ def _describer(sources: list[str]):
             hook = getattr(feeds.lists_registry().get(src), "describe", None)
         if hook:
             return hook
+    if url and (found := feeds.board_of(url)):
+        return getattr(feeds.boards_registry().get(found[0]), "describe", None)
     return None
 
 
@@ -317,10 +320,15 @@ def _job(ctx: RunContext, x: feeds.Listing, sources: list[str]):
     job = x.to_job(sources[0] if sources else "feed")
     if job.description:
         return job
-    hook = _describer(sources)
+    hook = _describer(sources, x.url)
+    if hook:
+        try:
+            job.description = ctx.tool("describe", hook, x, summarize=lambda d: f"{len(d)} chars") or ""
+        except StopRun:
+            raise
+        except Exception:
+            job.description = ""  # fall back to fetching the posting below
     try:
-        if hook:
-            job.description = ctx.tool("describe", hook, x, summarize=lambda d: f"{len(d)} chars")
         if not job.description:
             page = ctx.tool("fetch_posting", fetch_posting, x.url, summarize=lambda j: f"{j.company} / {j.title}")
             if page.ats != "unknown":

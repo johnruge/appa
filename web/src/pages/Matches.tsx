@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { api } from '../api'
-import { host, plural, reasons, sourceName, splitQuote, timeAgo } from '../format'
+import { host, plural, reasons, safeHref, sourceName, splitQuote, timeAgo } from '../format'
 import type { Application, Overview, Question } from '../types'
 import { Avatar, Drawer, Empty, ExternalLink, Icon, Kbd, Spinner, StatusBadge } from '../ui'
 import { useData, useToast } from '../hooks'
@@ -98,7 +98,7 @@ export default function Matches({ onError, refresh, overview }: Props) {
       if (e.key === 'j' || e.key === 'ArrowDown') setSelected(rows[Math.min(idx + 1, rows.length - 1)]?.id ?? null)
       else if (e.key === 'k' || e.key === 'ArrowUp') setSelected(rows[Math.max(idx - 1, 0)]?.id ?? null)
       else if (e.key === 'Enter' && cur) setOpen(cur.id)
-      else if (e.key === 'o' && cur?.link) window.open(cur.link, '_blank', 'noopener,noreferrer')
+      else if (e.key === 'o' && safeHref(cur?.link)) window.open(safeHref(cur?.link)!, '_blank', 'noopener,noreferrer')
       else if (e.key === 'a' && cur) applied(cur)
       else if (e.key === 'x' && cur) setStatus(cur, 'Skipped', `Hid ${cur.company}`)
       else return
@@ -310,7 +310,7 @@ function MatchDrawer({ id, onClose, onChanged, onError }: { id: number; onClose:
         )}
         <section>
           <dl className="kv">
-            {a.link && <><dt>Posting</dt><dd className="ellipsis"><a href={a.link} target="_blank" rel="noopener noreferrer">{host(a.link)}</a></dd></>}
+            {safeHref(a.link) && <><dt>Posting</dt><dd className="ellipsis"><a href={safeHref(a.link)!} target="_blank" rel="noopener noreferrer">{host(a.link)}</a></dd></>}
             <dt>Found</dt><dd>{timeAgo(a.created_at)}</dd>
             {a.job_id && <><dt>Job ID</dt><dd className="mono">{a.job_id}</dd></>}
             {a.prefill && <><dt>Prefill</dt><dd>{PREFILL[a.prefill.status] ?? a.prefill.status}{a.prefill.error ? ` (${a.prefill.error})` : ''}</dd></>}

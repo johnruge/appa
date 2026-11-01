@@ -1,5 +1,15 @@
 # appa v1 design
 
+> **What changed since this proposal.** Kept as a historical record; [README](../README.md) and
+> [ARCHITECTURE.md](ARCHITECTURE.md) describe what exists.
+> - **Prefill only.** appa never submits. The runner fills the form in your Chrome window and leaves
+>   the tab open; you submit it yourself and mark it applied. The approval and submit steps, the
+>   confirmation check and the daily submit cap described below were removed.
+> - **A web app, not a terminal.** The web UI is a normal app (Matches, Applied, Discover, Sources,
+>   Activity, Settings) instead of a terminal-style page.
+> - **Discovery from feeds, listings and boards.** Job lists and company boards feed a listings inbox
+>   that free filters and screening work through (see [JOB-SOURCES.md](JOB-SOURCES.md)).
+
 **Status:** proposal for review. Nothing in here is built yet.
 Today's system is described in [ARCHITECTURE.md](ARCHITECTURE.md). This document is what it becomes.
 

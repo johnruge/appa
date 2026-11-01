@@ -13,6 +13,7 @@ const VIEWS = [
   { status: 'new', label: 'Waiting', hint: 'Found and passed the free filters; screened on the next search.' },
   { status: 'screened', label: 'Screened', hint: 'Checked against your rules. Matches are on the Matches page.' },
   { status: 'filtered', label: 'Set aside', hint: "Didn't pass a free filter (title, level, age, location). Restore anything that was wrong." },
+  { status: 'error', label: "Couldn't open", hint: "appa couldn't read these postings (some sites block automated reading). Open them yourself, or add them to your matches." },
   { status: 'skipped', label: 'Skipped', hint: 'You chose to skip these.' },
 ]
 
@@ -83,9 +84,9 @@ export default function Discover({ onError, refresh, overview }: Props) {
                 <span className="side-time nowrap">{timeAgo(l.posted_at ?? l.first_seen_at)}</span>
                 <div className="actions">
                   <ExternalLink href={l.url} className="btn sm">Open <Icon name="external" size={12} /></ExternalLink>
-                  {(view === 'new' || view === 'filtered') && <button className="btn sm" onClick={() => act(l, 'track')}>Add to matches</button>}
+                  {(view === 'new' || view === 'filtered' || view === 'error') && <button className="btn sm" onClick={() => act(l, 'track')}>Add to matches</button>}
                   {view === 'new' && <button className="btn sm ghost" onClick={() => act(l, 'skip')} title="Skip"><Icon name="x" size={13} /></button>}
-                  {(view === 'filtered' || view === 'skipped') && <button className="btn sm ghost" onClick={() => act(l, 'restore')}>Restore</button>}
+                  {(view === 'filtered' || view === 'skipped' || view === 'error') && <button className="btn sm ghost" onClick={() => act(l, 'restore')}>{view === 'error' ? 'Try again' : 'Restore'}</button>}
                 </div>
               </div>
             </div>

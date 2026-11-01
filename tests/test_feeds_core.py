@@ -362,3 +362,51 @@ def test_all_plus_named_sources_reads_both(factory, sweep_env, monkeypatch):
     with factory() as s:
         run = runs.create(s, "scout", input={"lists": ["all", "off"]}, enqueue=False)
     assert runs.execute(factory, run.id).status == "succeeded" and sorted(called) == ["off", "on"]
+
+
+def test_screening_uses_the_links_board_describe_before_a_full_lookup(factory, sweep_env, monkeypatch):
+    """A listing from a list source, linking to an ATS board: its text comes from that board's describe()
+    (one request), and a describe() failure falls back to fetching the posting."""
+    looked_up = []
+    monkeypatch.setattr(
+        scout,
+        "fetch_posting",
+        lambda url: looked_up.append(url) or Job(company="X", title="Y", url=url, description=GOOD),
+    )
+    monkeypatch.setattr(
+        feeds,
+        "LISTS",
+        {
+            "fakelist": ListFeed(
+                name="fakelist",
+                description="t",
+                fetch=lambda o: [L(company="Hooli", url="https://fakeats.example/hooli/jobs/9")],
+            )
+        },
+    )
+    with factory() as s:
+        run = runs.create(s, "scout", input={"lists": ["fakelist"], "screen_inbox": 5}, enqueue=False)
+    assert runs.execute(factory, run.id).status == "succeeded"
+    assert sweep_env["describe"] == 1 and looked_up == []
+
+    def broken(x):
+        raise ValueError("adapter changed")
+
+    feeds.BOARDS["fakeats"] = BoardFeed(
+        ats="fakeats", fetch=lambda s, o=None: [], board_of=feeds.BOARDS["fakeats"].board_of, describe=broken
+    )
+    monkeypatch.setattr(
+        feeds,
+        "LISTS",
+        {
+            "fakelist": ListFeed(
+                name="fakelist",
+                description="t",
+                fetch=lambda o: [L(company="Hooli", url="https://fakeats.example/hooli/jobs/10")],
+            )
+        },
+    )
+    with factory() as s:
+        run = runs.create(s, "scout", input={"lists": ["fakelist"], "screen_inbox": 5}, enqueue=False)
+    assert runs.execute(factory, run.id).status == "succeeded"
+    assert looked_up == ["https://fakeats.example/hooli/jobs/10"]

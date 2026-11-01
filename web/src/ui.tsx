@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react'
 import { ToastCtx, type Toast } from './hooks'
-import { hue, initials } from './format'
+import { hue, initials, safeHref } from './format'
 
 // ---- icons (inline SVG, 16px, stroke) ----------------------------------------------------------
 
@@ -95,8 +95,10 @@ export function Kbd({ children }: { children: ReactNode }) {
 }
 
 export function ExternalLink({ href, children, className = 'btn' }: { href: string; children: ReactNode; className?: string }) {
+  const safe = safeHref(href)
+  if (!safe) return null // only http(s) links are ever rendered
   return (
-    <a className={className} href={href} target="_blank" rel="noopener noreferrer">
+    <a className={className} href={safe} target="_blank" rel="noopener noreferrer">
       {children}
     </a>
   )

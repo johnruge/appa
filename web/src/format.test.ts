@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { host, initials, plural, reasons, sourceName, splitQuote, timeAgo, timeUntil, toList, usd } from './format'
+import { host, initials, plural, reasons, safeHref, sourceName, splitQuote, timeAgo, timeUntil, toList, usd } from './format'
 
 const NOW = Date.parse('2026-10-31T12:00:00Z')
 
@@ -45,5 +45,15 @@ describe('labels', () => {
     expect(plural(1, 'match', 'matches')).toBe('1 match')
     expect(plural(3, 'match', 'matches')).toBe('3 matches')
     expect(toList(' senior, staff ,, intern ')).toEqual(['senior', 'staff', 'intern'])
+  })
+})
+
+describe('links', () => {
+  it('only renders http(s) links', () => {
+    expect(safeHref('https://jobs.example.com/1')).toBe('https://jobs.example.com/1')
+    expect(safeHref('javascript:alert(1)')).toBeNull()
+    expect(safeHref('data:text/html,hi')).toBeNull()
+    expect(safeHref('not a url')).toBeNull()
+    expect(safeHref(null)).toBeNull()
   })
 })

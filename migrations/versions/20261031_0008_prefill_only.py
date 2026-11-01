@@ -24,8 +24,10 @@ def upgrade() -> None:
         "UPDATE apply_attempts SET status = 'cancelled', error = 'appa no longer submits; prefill it again' "
         "WHERE status = 'submitting'"
     )
-    op.execute("UPDATE queue_jobs SET status = 'done' WHERE kind = 'apply' AND status = 'queued' "
-               "AND payload->>'phase' = 'submit'")
+    op.execute(
+        "UPDATE queue_jobs SET status = 'done' WHERE kind = 'apply' AND status = 'queued' "
+        "AND payload->>'phase' = 'submit'"
+    )
     op.execute("UPDATE questions SET kind = 'apply_ready' WHERE kind = 'apply_approval'")
 
 

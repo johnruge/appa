@@ -90,3 +90,14 @@ export function toList(text: string): string[] {
     .map((s) => s.trim())
     .filter(Boolean)
 }
+
+/** The link if it's http(s), else null: never render javascript:, data: or other schemes as a link. */
+export function safeHref(url: string | null | undefined): string | null {
+  if (!url) return null
+  try {
+    const u = new URL(url)
+    return u.protocol === 'https:' || u.protocol === 'http:' ? u.href : null
+  } catch {
+    return null
+  }
+}
