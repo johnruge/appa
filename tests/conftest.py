@@ -42,3 +42,23 @@ def factory(pg_owner):
         for table in reversed(db.Base.metadata.sorted_tables):
             conn.execute(table.delete())
     return db.sessions(TEST_URL)
+
+
+@pytest.fixture(autouse=True)
+def _no_real_api_keys(monkeypatch):
+    """Tests never use your real keys from .env: no paid model calls, no live API sources.
+    (load_env only fills unset variables, so an empty value here wins.)"""
+    for var in (
+        "OPENROUTER_API_KEY",
+        "THEIRSTACK_API_KEY",
+        "ADZUNA_APP_KEY",
+        "ADZUNA_APP_ID",
+        "SERPAPI_API_KEY",
+        "RAPIDAPI_KEY",
+        "JOOBLE_API_KEY",
+        "FINDWORK_API_KEY",
+        "USAJOBS_API_KEY",
+        "THEMUSE_API_KEY",
+        "JOBDATAAPI_KEY",
+    ):
+        monkeypatch.setenv(var, "")

@@ -102,7 +102,8 @@ class Pipeline:
 
     def process(self, job: Job, force: bool = False) -> Result:
         """Dedupe, filter and screen one job, record it (and an application if it qualifies), and commit."""
-        self._identify(job)
+        if not self.keyless:  # keyword screening makes no model calls at all
+            self._identify(job)
         if not force and self.seen(job.key):
             return Result(
                 job, Decision(verdict=Verdict.DUPLICATE, reasons=["evaluated on an earlier run"]), skipped=True
