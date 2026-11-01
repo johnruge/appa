@@ -1,0 +1,175 @@
+{
+ "filterGroups": {
+  "departments": [
+   {
+    "serverId": "263046054",
+    "value": "Commercial"
+   },
+   {
+    "serverId": "267315355",
+    "value": "Delivery"
+   },
+   {
+    "serverId": "263046056",
+    "value": "Engineering, Tech"
+   }
+  ],
+  "sites": [
+   {
+    "serverId": "2543653",
+    "value": "Florida"
+   },
+   {
+    "serverId": "2543651",
+    "value": "Manchester"
+   },
+   {
+    "serverId": "2549143",
+    "value": "Atlanta"
+   }
+  ],
+  "jobTypes": [
+   {
+    "serverId": "Permanent",
+    "value": "Permanent"
+   }
+  ],
+  "workspaceTypes": [
+   {
+    "serverId": "remote",
+    "value": "Remote"
+   },
+   {
+    "serverId": "hybrid",
+    "value": "Hybrid"
+   }
+  ]
+ },
+ "jobAdDetails": [
+  {
+   "id": "c44be32c-686d-4792-a134-b800858c30d2",
+   "title": "Commercial Sales Manager USA",
+   "departmentId": "263046054",
+   "department": "Commercial",
+   "employmentTypeId": "Permanent",
+   "employmentType": "Permanent",
+   "siteId": 2543653,
+   "site": "Florida",
+   "country": "United States",
+   "language": "en",
+   "description": "<div style=\"font-weight: 400;text-align: start;\"><p style=\"font-weight: normal;text-align: justify;\"><span style=\"font-weight: bold;\">Job Description – Commercial Sales Manager (US)</span>&nbsp;</p><p style=\"font-weight: normal;text-align: justify;\">&nbsp;</p><p style=\"font-weight: normal;text-align: justify;\">Hi! We’re AeroCloud, a venture backed aviation technology company transforming how airports work. We develop mission critical SAAS technology that enhances day-to-day operations, improving experiences for passengers, airport operators, and IT teams alike.&nbsp;</p><p style=\"font-weight: normal;text-align: justify;\">&nbsp;</p><p style=\"font-weight: normal;text-align: justify;\">At AeroCloud, you’ll be part of a dynamic and growing team, able to make an immediate impact and work alongside some of the most talented people in aviation technology.&nbsp;</p><p style=\"font-weight: normal;text-align: justify;\">&nbsp;</p><p style=\"font-weight: normal;text-align: justify;\">We are looking for a <span style=\"font-weight: bold;\">Commercial Sales Manager&nbsp;</span>to join our North American Commercial Team to drive our revenue growth. You’ll play a key role in expanding our network of airports and partners, bringing AeroCloud’s innovative solutions to market and scaling our presence in North America.&nbsp;</p><p style=\"font-weight: normal;text-align: justify;\">&nbsp;</p><p style=\"font-weight: normal;text-align: justify;\">In 2025 we created new relationships with airports in a number",
+   "requirements": "<div style=\"font-weight: 400;text-align: start;\"><p style=\"font-weight: normal;text-align: justify;\"><span style=\"font-weight: bold;\">About you</span>&nbsp;</p><p style=\"font-weight: normal;text-align: justify;\">&nbsp;</p><p style=\"font-weight: normal;text-align: justify;\">We are seeking a <span style=\"font-weight: bold;\">Commercial Sales Manager&nbsp;</span>to join our team. As the Commercial Sales Manager (U.S.), you will collaborate closely with the global commercial team and the marketing function to drive customer acquisition within the North American market. Your role is crucial to expanding our footprint and supporting our growth in this region.&nbsp;</p><p style=\"font-weight: normal;text-align: justify;\">&nbsp;</p><p style=\"font-weight: normal;text-align: justify;\"><span style=\"font-weight: bold;\">Ownership and Impact</span>&nbsp;</p><p style=\"font-weight: normal;text-align: justify;\">&nbsp;</p><ul><li><span data-contrast=\"auto\" lang=\"EN-GB\">Manage end-to-end Sales Cycle including prospecting, qualification, deal strategy, and cross-functional execution.</span></li><li><span data-contrast=\"auto\" lang=\"EN-GB\">Own a defined list of target accounts, managing the process from discovery through to purchase order completion.</span></li></ul></div><div style=\"font-weight: 400;text-align: start;\"><ul><li><span data-contrast=\"auto\" lang=\"EN-GB\">Cultivate relationships within the industry, attending key events and conferences both domestically and internationally.</span></li><l",
+   "responsibilities": "<div style=\"font-weight: 400;text-align: start;\"><p style=\"font-weight: normal;text-align: justify;\"><span style=\"font-weight: bold;\">What are we looking for?</span>&nbsp;</p><ul><li><span data-contrast=\"auto\" lang=\"EN-GB\">An experienced SaaS professional with a proven track record of 3+ years as an individual contributor or sales leader, with experience using the MEDDIC framework.</span></li><li><span data-contrast=\"auto\" lang=\"EN-GB\">Experience working with State and Federal Agencies is a plus</span></li><li><span data-contrast=\"auto\" lang=\"EN-GB\">Strong active listening skills with the ability to ask insightful questions and uncover business value.</span></li><li><span data-contrast=\"auto\" lang=\"EN-GB\">Familiarity with HubSpot CRM is a plus.</span></li><li><span data-contrast=\"auto\" lang=\"EN-GB\">Experience with Purchasing Cooperatives including Carahsoft, SHI, CDW and more is a plus.</span></li><li><span data-contrast=\"auto\" lang=\"EN-GB\">Excellent time management skills and the ability to manage and prioritize multiple tasks.</span></li><li><span data-contrast=\"auto\" lang=\"EN-GB\">Proven success in managing complex sales cycles with multiple buyer personas.</span></li></ul></div><div style=\"font-weight: 400;text-align: start;\"><ul><li>Ability to implement land-and-expand strategies and act as a trusted advisor in a platform environment.</li></ul><p style=\"font-weight: normal;text-align: justify;\">&nbsp;</p></div>",
+   "benefits": "<div data-ui=\"careers-page-content\" style=\" font-weight: 400; text-align: start;\"><div style=\" font-weight: inherit;\"><p style=\" font-weight: inherit;\"><strong style=\" font-weight: 600;\">What's in it for you</strong></p><ul style=\" font-weight: inherit;\"><li>Competitive salary</li><li>Best in class Share / Equity Scheme</li><li>20 days annual leave + statutory holidays</li><li>Take your birthday off work on us as well</li><li>Extensive upskilling and training</li><li>401k scheme (employee only contributions)</li><li>Company funded health insurance</li><li>Company funded dental and vision insurance</li></ul><p style=\" font-weight: inherit;\"><br></p><p style=\" font-weight: inherit;\"><strong style=\" font-weight: 600;\">Our ethos&nbsp;</strong></p><br><p style=\" font-weight: inherit;\">AeroCloud recognises Diversity, Equality, and Inclusion at the heart of our business. They represent the mutual trust, respect and understanding we strive for. They are integral to our brand, reputation, success, business sustainability and employee relations impact. Our vision is to have a diverse, equal and inclusive organisational culture. We want everyone who comes into contact with us, both face to face and virtually, to feel valued and respected. We want our workplace both in the office and at home to foster belonging to all colleagues to feel seen, connected, supported and proud. We will draw on the rich diversity of our workforce and harness the diverse contributions and considerable talents ",
+   "sectionLabels": null,
+   "publishedAt": "2025-11-06T16:18:45.949587692Z",
+   "workspaceTypeId": "remote",
+   "workspaceType": "Remote",
+   "payTransparencyMinSalary": null,
+   "payTransparencyMaxSalary": null,
+   "payTransparencySalaryCurrency": null,
+   "payTransparencySalaryPayPeriod": null,
+   "payTransparencySalaryAdditionalInfo": null
+  },
+  {
+   "id": "acdeaea9-0a52-45ac-af86-5415930ceb98",
+   "title": "Commercial Sales Manager (EMEA)",
+   "departmentId": "263046054",
+   "department": "Commercial",
+   "employmentTypeId": "Permanent",
+   "employmentType": "Permanent",
+   "siteId": 2543651,
+   "site": "Manchester",
+   "country": "United Kingdom",
+   "language": "en",
+   "description": "<strong>AeroCloud: Revolutionizing Airport Operations</strong><br><br id=\"isPasted\">AeroCloud is the new-age operating system for airports aiming to grow. Our suite includes Airport Operating Systems (AOS), PPS, and Passenger Flow Management solutions, empowering airports to gain deep insights into the movement of passengers and aircraft around the world.<br><br>We achieve this by becoming the airport’s first call for technology. Whether in times of need or growth, we stand alongside our clients, offering support through innovative software that drives their success.<br>&nbsp;<br><strong>Our Commitment to Excellence</strong><br><br>At AeroCloud, being the airport’s first call means exceeding expectations at every customer interaction. This is not just a goal; it’s our standard. We prioritize detail, diligence, and a proactive approach in everything we do. If there’s a task to be completed, we see it through. If a customer needs an answer we don’t yet have, we respond promptly to let them know we’re on it. We believe in keeping our team informed, being transparent, and maintaining accountability at every step.<br>&nbsp;<br><strong>About The Role</strong><br><br>We are looking for a commercially driven Commercial Sales Manager to own revenue growth across our EMEA markets, managing the full sales cycle from prospecting through to purchase order completion.<br><br>You will own a defined list of target accounts, using frameworks like MEDDIC to qualify opportunities and navigate c",
+   "requirements": null,
+   "responsibilities": null,
+   "benefits": null,
+   "sectionLabels": {},
+   "publishedAt": "2026-04-10T16:07:19.097566771Z",
+   "workspaceTypeId": "hybrid",
+   "workspaceType": "Hybrid",
+   "payTransparencyMinSalary": null,
+   "payTransparencyMaxSalary": null,
+   "payTransparencySalaryCurrency": null,
+   "payTransparencySalaryPayPeriod": null,
+   "payTransparencySalaryAdditionalInfo": null
+  },
+  {
+   "id": "9533fabd-f0a3-4f4f-8d30-1d5f9d295aab",
+   "title": "Implementation Engineer - US",
+   "departmentId": "267315355",
+   "department": "Delivery",
+   "employmentTypeId": "Permanent",
+   "employmentType": "Permanent",
+   "siteId": 2549143,
+   "site": "Atlanta",
+   "country": "United States",
+   "language": "en",
+   "description": "<strong>AeroCloud: Revolutionizing Airport Operations</strong><br><br>AeroCloud is the new-age operating system for airports aiming to grow. Our suite includes Airport Operating Systems (AOS), PPS, and Passenger Flow Management solutions, empowering airports to gain deep insights into the movement of passengers and aircraft around the world.<br><br>We achieve this by becoming the airport’s first call for technology. Whether in times of need or growth, we stand alongside our clients, offering support through innovative software that drives their success.<br>&nbsp;<br><strong>Our Commitment to Excellence</strong><br><br>At AeroCloud, being the airport’s first call means exceeding expectations at every customer interaction. This is not just a goal; it’s our standard. We prioritize detail, diligence, and a proactive approach in everything we do. If there’s a task to be completed, we see it through. If a customer needs an answer we don’t yet have, we respond promptly to let them know we’re on it. We believe in keeping our team informed, being transparent, and maintaining accountability at every step.<br>&nbsp;<br><strong>About the Role</strong><br><br>At AeroCloud we provide software solutions that help airports, airlines, ground handlers and other companies operating in airports to improve operations and flights and passenger processing.<br>&nbsp;<br>As an Implementation Engineer you will be responsible for installing, configuring and commissioning AeroCloud products in airport e",
+   "requirements": null,
+   "responsibilities": null,
+   "benefits": null,
+   "sectionLabels": {},
+   "publishedAt": "2026-09-22T15:25:24.114077945Z",
+   "workspaceTypeId": "remote",
+   "workspaceType": "Remote",
+   "payTransparencyMinSalary": null,
+   "payTransparencyMaxSalary": null,
+   "payTransparencySalaryCurrency": null,
+   "payTransparencySalaryPayPeriod": null,
+   "payTransparencySalaryAdditionalInfo": null
+  },
+  {
+   "id": "d96716f0-bd53-4252-8865-55aba94d13b0",
+   "title": "Full Stack Developer",
+   "departmentId": "263046056",
+   "department": "Engineering, Tech",
+   "employmentTypeId": "Permanent",
+   "employmentType": "Permanent",
+   "siteId": 2543651,
+   "site": "Manchester",
+   "country": "United Kingdom",
+   "language": "en",
+   "description": "<strong>AeroCloud: Revolutionizing Airport Operations</strong><br><br id=\"isPasted\">AeroCloud is the new-age operating system for airports aiming to grow. Our suite includes Airport Operating Systems (AOS), PPS, and Passenger Flow Management solutions, empowering airports to gain deep insights into the movement of passengers and aircraft around the world.<br><br>We achieve this by becoming the airport’s first call for technology. Whether in times of need or growth, we stand alongside our clients, offering support through innovative software that drives their success.<br>&nbsp;<br><strong>Our Commitment to Excellence</strong><br><br>At AeroCloud, being the airport’s first call means exceeding expectations at every customer interaction. This is not just a goal; it’s our standard. We prioritize detail, diligence, and a proactive approach in everything we do. If there’s a task to be completed, we see it through. If a customer needs an answer we don’t yet have, we respond promptly to let them know we’re on it. We believe in keeping our team informed, being transparent, and maintaining accountability at every step.<br>&nbsp;<br><strong>About The Role</strong><br><br>AeroCloud builds the operating systems airports run on. Our products cover Optic (computer vision for passenger flow), AOS (airport operations and flight management), and PPS (passenger processing and boarding).<br><br>We're hiring a full stack developer into one of our product teams. If you're a junior developer who's ",
+   "requirements": null,
+   "responsibilities": null,
+   "benefits": null,
+   "sectionLabels": {},
+   "publishedAt": "2026-09-15T13:38:11.141465148Z",
+   "workspaceTypeId": "hybrid",
+   "workspaceType": "Hybrid",
+   "payTransparencyMinSalary": null,
+   "payTransparencyMaxSalary": null,
+   "payTransparencySalaryCurrency": null,
+   "payTransparencySalaryPayPeriod": null,
+   "payTransparencySalaryAdditionalInfo": null
+  },
+  {
+   "id": "dbcc39e7-b838-43f1-b4eb-22ed55e3591d",
+   "title": "DevOps Engineer",
+   "departmentId": "263046056",
+   "department": "Engineering, Tech",
+   "employmentTypeId": "Permanent",
+   "employmentType": "Permanent",
+   "siteId": 2543651,
+   "site": "Manchester",
+   "country": "United Kingdom",
+   "language": "en",
+   "description": "<strong>AeroCloud: Revolutionizing Airport Operations</strong><br><br id=\"isPasted\">AeroCloud is the new-age operating system for airports aiming to grow. Our suite includes Airport Operating Systems (AOS), PPS, and Passenger Flow Management solutions, empowering airports to gain deep insights into the movement of passengers and aircraft around the world.<br><br>We achieve this by becoming the airport’s first call for technology. Whether in times of need or growth, we stand alongside our clients, offering support through innovative software that drives their success.<br>&nbsp;<br><strong>Our Commitment to Excellence</strong><br><br>At AeroCloud, being the airport’s first call means exceeding expectations at every customer interaction. This is not just a goal; it’s our standard. We prioritize detail, diligence, and a proactive approach in everything we do. If there’s a task to be completed, we see it through. If a customer needs an answer we don’t yet have, we respond promptly to let them know we’re on it. We believe in keeping our team informed, being transparent, and maintaining accountability at every step.<br>&nbsp;<br><strong>About The Role</strong><br><br>AeroCloud runs airport operations on an AWS-native platform, built in TypeScript across frontend and backend. Infrastructure is managed as code, delivery is continuous, and we expect the platform to keep proving itself in live airport environments, not just in a demo.<br><br>We're adding a DevOps Engineer to the team to",
+   "requirements": null,
+   "responsibilities": null,
+   "benefits": null,
+   "sectionLabels": {},
+   "publishedAt": "2026-09-15T13:12:04.900324368Z",
+   "workspaceTypeId": "hybrid",
+   "workspaceType": "Hybrid",
+   "payTransparencyMinSalary": null,
+   "payTransparencyMaxSalary": null,
+   "payTransparencySalaryCurrency": null,
+   "payTransparencySalaryPayPeriod": null,
+   "payTransparencySalaryAdditionalInfo": null
+  }
+ ]
+}

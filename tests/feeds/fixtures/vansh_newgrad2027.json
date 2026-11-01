@@ -1,0 +1,99 @@
+[
+ {
+  "date_updated": 1793383821,
+  "url": "https://go.vansh.nyc/10O",
+  "locations": [
+   "Ottawa, Canada"
+  ],
+  "sponsorship": "Other",
+  "active": true,
+  "company_name": "Ciena",
+  "title": "New Grad: Photonic Card Software Developer",
+  "source": "vanshb03",
+  "id": "ba3da99f-2320-4ea3-9b19-e7f69a47fb85",
+  "date_posted": 1793297300,
+  "company_url": "",
+  "is_visible": true
+ },
+ {
+  "date_updated": 1751750962,
+  "url": "https://go.vansh.nyc/lD",
+  "locations": [
+   "New York, NY"
+  ],
+  "sponsorship": "U.S. Citizenship is Required",
+  "active": true,
+  "company_name": "Palantir",
+  "title": "New Grad: Software Engineer",
+  "source": "vanshb03",
+  "id": "12d830a3-13bb-4133-9fae-f0447f0a41e1",
+  "date_posted": 1751750962,
+  "company_url": "",
+  "is_visible": true
+ },
+ {
+  "date_updated": 1749296143,
+  "url": "https://go.vansh.nyc/kC",
+  "company_name": "Lumafield",
+  "title": "Backend Engineer",
+  "locations": [
+   "San Francisco, CA"
+  ],
+  "sponsorship": "Does Not Offer Sponsorship",
+  "active": true,
+  "source": "nclliu",
+  "id": "73eeab36-9415-43e5-a4ef-a7bb1566305e",
+  "date_posted": 1749296143,
+  "company_url": "",
+  "is_visible": true
+ },
+ {
+  "date_updated": 1744461114,
+  "url": "https://go.vansh.nyc/ir",
+  "company_name": "Tesla",
+  "title": "Software Engineer, Drivers & Control Plane, Dojo",
+  "locations": [
+   "Palo Alto, CA"
+  ],
+  "sponsorship": "Offers Sponsorship",
+  "active": true,
+  "source": "vanshb03",
+  "id": "f0c2be17-3aca-4d9f-b2b0-deabfbda7824",
+  "date_posted": 1744461114,
+  "company_url": "",
+  "is_visible": true
+ },
+ {
+  "date_updated": 1744462260,
+  "url": "https://go.vansh.nyc/iG",
+  "company_name": "Softheon",
+  "title": "Software Engineer I - Membership",
+  "locations": [
+   "Remote",
+   "United States"
+  ],
+  "sponsorship": "Other",
+  "active": true,
+  "source": "vanshb03",
+  "id": "5c957a94-8716-4ec1-9761-94b06cfda64b",
+  "date_posted": 1744462260,
+  "company_url": "",
+  "is_visible": true
+ },
+ {
+  "date_updated": 1748649274,
+  "url": "https://go.vansh.nyc/i3",
+  "company_name": "Red Hat",
+  "title": "Software Quality Engineer",
+  "locations": [
+   "Raleigh, NC"
+  ],
+  "sponsorship": "Offers Sponsorship",
+  "active": false,
+  "source": "cvrve-bot",
+  "id": "9bd7188b-7f56-4003-8263-af808ccbfe0d",
+  "date_posted": 1743415983,
+  "company_url": "",
+  "is_visible": true
+ }
+]

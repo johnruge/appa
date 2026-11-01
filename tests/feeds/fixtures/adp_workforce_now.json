@@ -1,0 +1,745 @@
+{
+ "jobRequisitions": [
+  {
+   "itemID": "9201260753108_1",
+   "postingInstructions": [],
+   "links": [],
+   "clientRequisitionID": "5158",
+   "customFieldGroup": {
+    "codeFields": [
+     {
+      "codeValue": "HR",
+      "nameCode": {
+       "codeValue": "SalaryType"
+      },
+      "shortName": "Hourly"
+     },
+     {
+      "codeValue": "RANGE",
+      "nameCode": {
+       "codeValue": "SalaryRangeType"
+      },
+      "shortName": "RANGE"
+     }
+    ],
+    "dateFields": [
+     {
+      "dateValue": "2026-10-30T14:32Z",
+      "nameCode": {
+       "codeValue": "PostingDate"
+      }
+     },
+     {
+      "dateValue": "2026-10-31T15:49Z",
+      "nameCode": {
+       "codeValue": "CurrentServerDateTime"
+      }
+     }
+    ],
+    "indicatorFields": [
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "PriortyStatusFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "InternalPostingFlag"
+      }
+     },
+     {
+      "indicatorValue": true,
+      "nameCode": {
+       "codeValue": "MinValue"
+      }
+     },
+     {
+      "indicatorValue": true,
+      "nameCode": {
+       "codeValue": "IsVsidApplicable"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsSassDlReqForExtPostFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsSassDlReqForIntPostFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsMonetaryFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsNonMonetaryFlag"
+      }
+     }
+    ],
+    "numberFields": [
+     {
+      "categoryCode": {
+       "codeValue": "ApplicantCount"
+      },
+      "numberValue": 0.0
+     },
+     {
+      "categoryCode": {
+       "codeValue": "AwardAmount"
+      }
+     }
+    ],
+    "stringFields": [
+     {
+      "nameCode": {
+       "codeValue": "ExternalJobID"
+      },
+      "stringValue": "605280"
+     },
+     {
+      "nameCode": {
+       "codeValue": "CareerCenterRefId"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "GuidelineOid"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "CurrencySymbolOrCode"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "HomeDepartment"
+      },
+      "stringValue": ""
+     },
+     {
+      "nameCode": {
+       "codeValue": "JobClass"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "SalaryRange"
+      },
+      "stringValue": "25 to 30 (USD) Hourly"
+     }
+    ]
+   },
+   "organizationalUnits": [],
+   "payGradeRange": {
+    "minimumRate": {
+     "amountValue": 25.0,
+     "currencyCode": "USD"
+    },
+    "maximumRate": {
+     "amountValue": 30.0,
+     "currencyCode": "USD"
+    }
+   },
+   "postDate": "2026-10-31T00:02:00",
+   "requisitionLocations": [
+    {
+     "address": {
+      "cityName": "New York",
+      "countrySubdivisionLevel1": {
+       "codeValue": "NY"
+      },
+      "postalCode": "10110"
+     },
+     "aliasNames": [],
+     "nameCode": {
+      "shortName": " New York, NY, US"
+     }
+    }
+   ],
+   "requisitionTitle": "Temporary, PR Sample Coordinator",
+   "screeningRequirements": [],
+   "sponsoredVisaTypeCodes": [],
+   "workLevelCode": {
+    "shortName": "Temporary/seasonal"
+   }
+  },
+  {
+   "itemID": "9201257125456_1",
+   "postingInstructions": [],
+   "links": [],
+   "clientRequisitionID": "5150",
+   "customFieldGroup": {
+    "codeFields": [
+     {
+      "codeValue": "HR",
+      "nameCode": {
+       "codeValue": "SalaryType"
+      },
+      "shortName": "Hourly"
+     },
+     {
+      "codeValue": "RANGE",
+      "nameCode": {
+       "codeValue": "SalaryRangeType"
+      },
+      "shortName": "RANGE"
+     }
+    ],
+    "dateFields": [
+     {
+      "dateValue": "2026-10-29T17:11Z",
+      "nameCode": {
+       "codeValue": "PostingDate"
+      }
+     },
+     {
+      "dateValue": "2026-10-31T15:49Z",
+      "nameCode": {
+       "codeValue": "CurrentServerDateTime"
+      }
+     }
+    ],
+    "indicatorFields": [
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "PriortyStatusFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "InternalPostingFlag"
+      }
+     },
+     {
+      "indicatorValue": true,
+      "nameCode": {
+       "codeValue": "MinValue"
+      }
+     },
+     {
+      "indicatorValue": true,
+      "nameCode": {
+       "codeValue": "IsVsidApplicable"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsSassDlReqForExtPostFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsSassDlReqForIntPostFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsMonetaryFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsNonMonetaryFlag"
+      }
+     }
+    ],
+    "numberFields": [
+     {
+      "categoryCode": {
+       "codeValue": "ApplicantCount"
+      },
+      "numberValue": 0.0
+     },
+     {
+      "categoryCode": {
+       "codeValue": "AwardAmount"
+      }
+     }
+    ],
+    "stringFields": [
+     {
+      "nameCode": {
+       "codeValue": "ExternalJobID"
+      },
+      "stringValue": "604928"
+     },
+     {
+      "nameCode": {
+       "codeValue": "CareerCenterRefId"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "GuidelineOid"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "CurrencySymbolOrCode"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "HomeDepartment"
+      },
+      "stringValue": ""
+     },
+     {
+      "nameCode": {
+       "codeValue": "JobClass"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "SalaryRange"
+      },
+      "stringValue": "19 to 21 (USD) Hourly"
+     }
+    ]
+   },
+   "organizationalUnits": [],
+   "payGradeRange": {
+    "minimumRate": {
+     "amountValue": 19.0,
+     "currencyCode": "USD"
+    },
+    "maximumRate": {
+     "amountValue": 21.0,
+     "currencyCode": "USD"
+    }
+   },
+   "postDate": "2026-10-30T02:41:00",
+   "requisitionLocations": [
+    {
+     "address": {
+      "cityName": "New York",
+      "countrySubdivisionLevel1": {
+       "codeValue": "NY"
+      },
+      "postalCode": "10075"
+     },
+     "aliasNames": [],
+     "nameCode": {
+      "shortName": "Madison Avenue NY 901, New York, NY, US"
+     }
+    }
+   ],
+   "requisitionTitle": "Stock Associate",
+   "screeningRequirements": [],
+   "sponsoredVisaTypeCodes": [],
+   "workLevelCode": {
+    "shortName": "Part Time"
+   }
+  },
+  {
+   "itemID": "9201260019690_32",
+   "postingInstructions": [],
+   "links": [],
+   "clientRequisitionID": "5157",
+   "customFieldGroup": {
+    "codeFields": [
+     {
+      "codeValue": "AN",
+      "nameCode": {
+       "codeValue": "SalaryType"
+      },
+      "shortName": "Annually"
+     },
+     {
+      "codeValue": "RANGE",
+      "nameCode": {
+       "codeValue": "SalaryRangeType"
+      },
+      "shortName": "RANGE"
+     }
+    ],
+    "dateFields": [
+     {
+      "dateValue": "2026-10-29T14:53Z",
+      "nameCode": {
+       "codeValue": "PostingDate"
+      }
+     },
+     {
+      "dateValue": "2026-10-31T15:49Z",
+      "nameCode": {
+       "codeValue": "CurrentServerDateTime"
+      }
+     }
+    ],
+    "indicatorFields": [
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "PriortyStatusFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "InternalPostingFlag"
+      }
+     },
+     {
+      "indicatorValue": true,
+      "nameCode": {
+       "codeValue": "MinValue"
+      }
+     },
+     {
+      "indicatorValue": true,
+      "nameCode": {
+       "codeValue": "IsVsidApplicable"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsSassDlReqForExtPostFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsSassDlReqForIntPostFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsMonetaryFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsNonMonetaryFlag"
+      }
+     }
+    ],
+    "numberFields": [
+     {
+      "categoryCode": {
+       "codeValue": "ApplicantCount"
+      },
+      "numberValue": 0.0
+     },
+     {
+      "categoryCode": {
+       "codeValue": "AwardAmount"
+      }
+     }
+    ],
+    "stringFields": [
+     {
+      "nameCode": {
+       "codeValue": "ExternalJobID"
+      },
+      "stringValue": "605207"
+     },
+     {
+      "nameCode": {
+       "codeValue": "CareerCenterRefId"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "GuidelineOid"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "CurrencySymbolOrCode"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "HomeDepartment"
+      },
+      "stringValue": ""
+     },
+     {
+      "nameCode": {
+       "codeValue": "JobClass"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "SalaryRange"
+      },
+      "stringValue": "80000.00 to 90000.00 (USD) Annually"
+     }
+    ]
+   },
+   "organizationalUnits": [],
+   "payGradeRange": {
+    "minimumRate": {
+     "amountValue": 80000.0,
+     "currencyCode": "USD"
+    },
+    "maximumRate": {
+     "amountValue": 90000.0,
+     "currencyCode": "USD"
+    }
+   },
+   "postDate": "2026-10-30T00:23:00",
+   "requisitionLocations": [
+    {
+     "address": {
+      "cityName": "Los Angeles",
+      "countrySubdivisionLevel1": {
+       "codeValue": "CA"
+      },
+      "postalCode": "90038"
+     },
+     "aliasNames": [],
+     "nameCode": {
+      "shortName": " Los Angeles, CA, US"
+     }
+    }
+   ],
+   "requisitionTitle": "Associate Designer, Women's Hard Wovens",
+   "screeningRequirements": [],
+   "sponsoredVisaTypeCodes": [],
+   "workLevelCode": {
+    "shortName": "Full Time"
+   }
+  },
+  {
+   "itemID": "9201256259438_1",
+   "postingInstructions": [],
+   "links": [],
+   "clientRequisitionID": "5142",
+   "customFieldGroup": {
+    "codeFields": [
+     {
+      "codeValue": "AN",
+      "nameCode": {
+       "codeValue": "SalaryType"
+      },
+      "shortName": "Annually"
+     },
+     {
+      "codeValue": "RANGE",
+      "nameCode": {
+       "codeValue": "SalaryRangeType"
+      },
+      "shortName": "RANGE"
+     }
+    ],
+    "dateFields": [
+     {
+      "dateValue": "2026-10-22T17:10Z",
+      "nameCode": {
+       "codeValue": "PostingDate"
+      }
+     },
+     {
+      "dateValue": "2026-10-31T15:49Z",
+      "nameCode": {
+       "codeValue": "CurrentServerDateTime"
+      }
+     }
+    ],
+    "indicatorFields": [
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "PriortyStatusFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "InternalPostingFlag"
+      }
+     },
+     {
+      "indicatorValue": true,
+      "nameCode": {
+       "codeValue": "MinValue"
+      }
+     },
+     {
+      "indicatorValue": true,
+      "nameCode": {
+       "codeValue": "IsVsidApplicable"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsSassDlReqForExtPostFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsSassDlReqForIntPostFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsMonetaryFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsNonMonetaryFlag"
+      }
+     }
+    ],
+    "numberFields": [
+     {
+      "categoryCode": {
+       "codeValue": "ApplicantCount"
+      },
+      "numberValue": 0.0
+     },
+     {
+      "categoryCode": {
+       "codeValue": "AwardAmount"
+      }
+     }
+    ],
+    "stringFields": [
+     {
+      "nameCode": {
+       "codeValue": "ExternalJobID"
+      },
+      "stringValue": "604851"
+     },
+     {
+      "nameCode": {
+       "codeValue": "CareerCenterRefId"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "GuidelineOid"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "CurrencySymbolOrCode"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "HomeDepartment"
+      },
+      "stringValue": ""
+     },
+     {
+      "nameCode": {
+       "codeValue": "JobClass"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "SalaryRange"
+      },
+      "stringValue": "65000.00 to 70000.00 (USD) Annually"
+     }
+    ]
+   },
+   "organizationalUnits": [],
+   "payGradeRange": {
+    "minimumRate": {
+     "amountValue": 65000.0,
+     "currencyCode": "USD"
+    },
+    "maximumRate": {
+     "amountValue": 70000.0,
+     "currencyCode": "USD"
+    }
+   },
+   "postDate": "2026-10-23T02:40:00",
+   "requisitionLocations": [
+    {
+     "address": {
+      "cityName": "New York",
+      "countrySubdivisionLevel1": {
+       "codeValue": "NY"
+      },
+      "postalCode": "10110"
+     },
+     "aliasNames": [],
+     "nameCode": {
+      "shortName": " New York, NY, US"
+     }
+    }
+   ],
+   "requisitionTitle": "Jr. Account Executive",
+   "screeningRequirements": [],
+   "sponsoredVisaTypeCodes": [],
+   "workLevelCode": {
+    "shortName": "Full Time"
+   }
+  }
+ ],
+ "meta": {
+  "startSequence": 0,
+  "totalNumber": 4,
+  "links": [
+   {
+    "schema": "LOCATION",
+    "payLoadArguments": [
+     {
+      "argumentPath": "2648290372_1",
+      "argumentValue": "Atlanta GA 842, Atlanta, GA, US"
+     },
+     {
+      "argumentPath": "2648290743_1",
+      "argumentValue": "Aurora IL 932, Aurora, IL, US"
+     }
+    ]
+   },
+   {
+    "schema": "WORKER CATEGORY",
+    "payLoadArguments": [
+     {
+      "argumentPath": "72674:0005",
+      "argumentValue": "Expatriate"
+     },
+     {
+      "argumentPath": "1:135",
+      "argumentValue": "Full Time"
+     }
+    ]
+   },
+   {
+    "schema": "JOB CLASS",
+    "payLoadArguments": [
+     {
+      "argumentPath": "1:150",
+      "argumentValue": "Clerical"
+     },
+     {
+      "argumentPath": "1:151",
+      "argumentValue": "Management"
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "jobstories": [
+  50300643,
+  50280824,
+  50126774,
+  50078686,
+  49563415,
+  49524704
+ ],
+ "items": [
+  {
+   "by": "syrusakbary",
+   "id": 50300643,
+   "score": 1,
+   "time": 1793343635,
+   "title": "Wasmer (YC S19) Is Hiring OS/Hypervisor Experts in Europe",
+   "type": "job",
+   "url": "https://www.workatastartup.com/jobs/98722"
+  },
+  {
+   "by": "bastienbeurier",
+   "id": 50280824,
+   "score": 1,
+   "time": 1793221206,
+   "title": "Nango (YC W23) Is Hiring Across Eng, FDE, Marketing, DevRel",
+   "type": "job",
+   "url": "https://nango.dev/careers"
+  },
+  {
+   "by": "thedogeye",
+   "id": 50126774,
+   "score": 1,
+   "time": 1792198911,
+   "title": "Flexport Is Hiring a Biz Ops Leader in Office of CEO",
+   "type": "job",
+   "url": "https://www.flexport.com/company/careers/"
+  },
+  {
+   "by": "morraa",
+   "id": 50078686,
+   "score": 1,
+   "time": 1791925272,
+   "title": "PostEra (YC W20) Is Hiring AI Researchers for Drug Discovery",
+   "type": "job",
+   "url": "https://jobs.lever.co/postera/c7d50a36-db0a-4574-bfe4-8700b74a22c0"
+  },
+  {
+   "by": "alexchantavy",
+   "id": 49563415,
+   "score": 1,
+   "time": 1788523267,
+   "title": "SubImage (YC W25) Is Hiring a Founding Engineer in SF",
+   "type": "job",
+   "url": "https://www.ycombinator.com/companies/subimage/jobs/NCTFgKK-founding-engineer"
+  },
+  {
+   "by": "R_R",
+   "id": 49524704,
+   "score": 1,
+   "text": "Quill | Fullstack SWE | Full-time | Remote, PT&#x2F;ET hours preferred | $150 - 210K USD + equity | <a href=\"https:&#x2F;&#x2F;quill.co&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;quill.co&#x2F;</a><p>I\u2019m a co-founder of Quill, a fullstack SDK for adding customer-facing analytics &amp; data features to your app. Backed by YCombinator &amp; top-tier SV-based investors (fundraising not publicly disclosed; happy to share any details when we chat).<p>Some examples of how customers get value from Quill:\n\u2022 pre-IPO fintech adds custom reporting &amp; data export features to their money movement product.\n\u2022 Series B healthtech is now able to deliver completely custom in-product reports &amp; dashboards to every enterprise customer they onboard.\n\u2022 Series A govtech adds analytics and reporting capabilities within their existing agent&#x2F;chat product.<p>Reasons you\u2019d love working with us:\n\u2022 Work with a small, focused, talented team on a highly technical product (by developers for developers).\n\u2022 Funded company in a big market, but still prelaunch with a team size &lt;5\n\u2022 High level of product ownership with tight feedback loops: the products you build are shipped quickly and get used by real customers immediately. Our latest hire built our entire CLI product from 0 -&gt; 1, and it was used in production by customers the day it shipped.<p>We are growing the team to keep up with demand for new features that our customers are asking us for, while also preparing for launch. We&#x27;re looking f",
+   "time": 1788282014,
+   "title": "Quill (YC W20) Is Hiring a Fullstack SWE",
+   "type": "job"
+  }
+ ]
+}

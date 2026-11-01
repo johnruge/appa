@@ -1,0 +1,680 @@
+{
+ "offers": [
+  {
+   "education_code": "professional",
+   "position": 1651,
+   "postal_code": null,
+   "country_code": "NL",
+   "sharing_description": "At bunq, we’re on a mission to Make Life Easy for our users by creating the most user-centric banking experience out there. Our paid marketing campaigns run on predictions about which new users will t",
+   "careers_url": "https://careers.bunq.com/o/data-scientist-marketing-3",
+   "cover_image": null,
+   "requirements": "<ul><li><p>You’ve built predictive models with traditional machine learning, such as XGBoost.</p></li><li><p>You’ve written Python and built the data pipelines a model needs, including when none existed.</p></li><li><p>You’ve shipped ML models to production and kept them running.</p></li><li><p>You’ve done deep dives into data and model health to find what needs intervention.</p></li><li><p>You use AI tools like Claude Code in your daily work and know where they stop.</p></li><li><p>You are fluent in English.</p></li></ul><p style=\"text-align:start;min-height: 1.7em;\"></p><p style=\"text-align:start;\"><em>Curious to see how we make life easy? - try the <a rel=\"noopener\" target=\"_blank\" href=\"https://app.adjust.com/1tyd4x67?fallback=https%3A%2F%2Fwww.bunq.com%2F&redirect_macos=https%3A%2F%2Fwww.bunq.com%2F\">bunq app</a>, it only takes 5 minutes to sign up.</em></p><p style=\"text-align:start;min-height: 1.7em;\"></p><p style=\"text-align:start;\"><strong>Your space to perform</strong></p><p style=\"text-align:start;\">We give you the space and the tools you need to succeed 💪</p><p style=\"text-align:start;\">🤟 Great, international colleagues who share your mindset</p><p style=\"text-align:start;\">👩‍💻 Hybrid setup: after 3 months in-office, work 2 days remote, 3 days in-office weekly.</p><p style=\"text-align:start;\">🧳 Digital Nomad Program: After your first year, enjoy up to 20 days per year to work while traveling, combining flexibility with strong team collaboration</p><p style=\"text-a",
+   "sharing_image": null,
+   "location_question_visible": false,
+   "city": "Amsterdam",
+   "open_questions": [],
+   "locations_question": "What is your preferred work location?",
+   "employment_type_code": "fulltime_permanent",
+   "updated_at": "2026-10-29 15:24:28 UTC",
+   "max_hours_per_week": "40",
+   "state_code": "NH",
+   "close_at": null,
+   "company_name": "bunq",
+   "locations": [
+    {
+     "id": 39979,
+     "name": "Amsterdam",
+     "state": "Noord-Holland",
+     "country": "Netherlands",
+     "city": "Amsterdam",
+     "translations": {
+      "en": {
+       "name": "Amsterdam",
+       "city": "Amsterdam",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "NL",
+     "state_code": "NH",
+     "postal_code": null,
+     "street": null,
+     "note": null
+    }
+   ],
+   "max_hours": 40,
+   "highlight": null,
+   "category_code": "banking",
+   "hybrid": true,
+   "options_cv": "off",
+   "options_phone": "required",
+   "department": "Growth",
+   "tags": [
+    "Acquisition",
+    "E2",
+    "Enablers"
+   ],
+   "published_at": "2026-10-28 13:21:58 UTC",
+   "experience_code": "experienced",
+   "options_photo": "off",
+   "country": "Netherlands",
+   "careers_apply_url": "https://careers.bunq.com/o/data-scientist-marketing-3/c/new",
+   "guid": "7bo8p",
+   "title": "Data Scientist Marketing",
+   "dynamic_fields": [],
+   "created_at": "2026-10-28 12:08:13 UTC",
+   "description": "<p style=\"text-align:start;\">At bunq, we’re on a mission to Make Life Easy for our users by creating the most user-centric banking experience out there. Our paid marketing campaigns run on predictions about which new users will turn out to be valuable. This role makes sure those predictions are right.</p><p style=\"text-align:start;\">That’s where you come in. As our&nbsp;<strong>Data Scientist, Marketing</strong>, you’ll own the machine learning models that predict the value of every newly verified user and feed that value into Google Ads, so our campaigns find more users like them. If the models are off, the spend is off. AI can help you write and debug code, but it can’t build the model or judge whether the output can be trusted. That judgment is yours.</p><p style=\"min-height: 1.7em;\"></p><p style=\"text-align:start;\"><strong>Take Ownership 🚀</strong></p><p style=\"text-align:start;\">You’ll own the predictive models that steer our marketing spend. Here’s how you’ll do it:</p><ul><li><p>Build, maintain and expand the predictive models for marketing, from first idea to production, starting with the models that predict each new user’s value in their first 90 days.</p></li><li><p>Hit the model quality targets within 9 months: a Spearman rank correlation of 0.50 or higher and a binary model AUC of 0.75 or higher.</p></li><li><p>Keep the models running in production and monitor data and model health to find where to intervene, using Claude Code to move faster and validating everyth",
+   "mailbox_email": "jobs@example.com",
+   "on_site": false,
+   "min_hours_per_week": "40",
+   "remote": false,
+   "salary": {
+    "max": null,
+    "min": null,
+    "period": null,
+    "currency": null
+   },
+   "sharing_title": "Data Scientist Marketing",
+   "slug": "data-scientist-marketing-3",
+   "min_hours": 40,
+   "id": 2800490,
+   "options_title": "off",
+   "state_name": "Noord-Holland",
+   "locations_question_type": "single_choice",
+   "options_salutation": "off",
+   "locations_question_required": true,
+   "options_cover_letter": "off",
+   "status": "published",
+   "location": "Amsterdam, Noord-Holland, Netherlands"
+  },
+  {
+   "created_at": "2026-07-30 07:49:07 UTC",
+   "salary": {
+    "max": "250000",
+    "min": "200000",
+    "period": "year",
+    "currency": "USD"
+   },
+   "position": 12,
+   "options_phone": "required",
+   "locations": [
+    {
+     "id": 64457,
+     "name": "New York City",
+     "state": "New York",
+     "country": "United States",
+     "city": "New York City",
+     "translations": {
+      "en": {
+       "name": "New York City",
+       "city": "New York City",
+       "postal_code": "10168",
+       "street": "122 East 42nd Street, Suite 1708",
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": "10168",
+     "state_code": "NY",
+     "street": "122 East 42nd Street, Suite 1708",
+     "note": null
+    }
+   ],
+   "updated_at": "2026-10-01 09:44:35 UTC",
+   "careers_apply_url": "https://jobs.channable.com/o/account-executive-north-america-1/c/new",
+   "mailbox_email": "jobs@example.com",
+   "category_code": "sales",
+   "company_name": "Channable",
+   "max_hours_per_week": "40",
+   "postal_code": "10168",
+   "highlight": null,
+   "requirements": "<p style=\"min-height: 1.7em;\"></p><h4><strong><span style=\"color:#000000\">Who you are</span></strong></h4><ul><li><p><span style=\"color:#000000\">3+ years closing new business in B2B SaaS, ideally in eCommerce technology, feed management, product data, or martech.</span></p></li><li><p><span style=\"color:#000000\">You understand the eCommerce tech stack, including platforms, ERPs, PIMs, marketplaces, advertising channels, and can hold a real conversation about how products get from a back-end system to a customer.</span></p></li><li><p><span style=\"color:#000000\">You've sold to </span><strong><span style=\"color:#000000\">operations-minded buyers</span></strong><span style=\"color:#000000\"> (eCommerce Ops, Digital Merchandising, Catalog teams), not just marketing personas.</span></p></li><li><p><span style=\"color:#000000\">You're energized by early-stage markets where your work directly shapes the company's trajectory.</span></p></li><li><p><span style=\"color:#000000\">You qualify out as confidently as you qualify in.</span></p></li></ul><p style=\"min-height: 1.7em;\"></p><p><strong><span style=\"color:#000000\">Bonus points</span></strong></p><ul><li><p><span style=\"color:#000000\">Existing network in the eCommerce agency ecosystem.</span></p></li><li><p><span style=\"color:#000000\">Experience migrating customers off competitor platforms.</span></p></li><li><p><span style=\"color:#000000\">Familiarity with Google Shopping, Meta product feeds, TikTok Shop, or marketplace listing workflows.",
+   "published_at": "2026-08-06 16:09:53 UTC",
+   "careers_url": "https://jobs.channable.com/o/account-executive-north-america-1",
+   "cover_image": null,
+   "locations_question": "What is your preferred work location?",
+   "locations_question_required": true,
+   "tags": [],
+   "min_hours_per_week": "40",
+   "slug": "account-executive-north-america-1",
+   "city": "New York City",
+   "country": "United States",
+   "sharing_title": "Account Executive - North America",
+   "dynamic_fields": [],
+   "close_at": null,
+   "max_hours": 40,
+   "title": "Account Executive - North America",
+   "description": "<p><span style=\"color:#000000\">Channable powers product feeds and digital advertising for 14,000+ brands and agencies across 3,500+ channels. We're a market leader entering our next phase of North American growth.&nbsp; We need an AE who knows eCommerce technology, builds real relationships, and wants to own a market, not just a quota.</span></p><p style=\"min-height: 1.7em;\"></p><h4><strong><span style=\"color:#000000\">The opportunity</span></strong></h4><p><span style=\"color:#000000\">Our North American business is growing fast. The team is small, the market is massive, and the company has the product maturity and global footprint to back serious ambition. You'll have direct influence on how we go to market, who we target, and how we win.</span></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#000000\">We sell to eCommerce operators and the agencies that serve them. Our buyers care about product data, feed quality, and operational efficiency. If you've sold into the infrastructure layer of eCommerce (the systems that make products show up correctly, everywhere, at scale), you'll feel at home here.</span></p><p style=\"min-height: 1.7em;\"></p><h4><strong><span style=\"color:#000000\">Your role</span></strong></h4><p><span style=\"color:#000000\">Full-cycle Account Executive. You build a pipeline, run your own process with help from solutions engineering and Technical Account Management, and close.&nbsp;</span><br></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:",
+   "min_hours": 40,
+   "state_code": "NY",
+   "location_question_visible": false,
+   "remote": true,
+   "on_site": false,
+   "education_code": "bachelor_degree",
+   "sharing_description": "Channable powers product feeds and digital advertising for 14,000+ brands and agencies across 3,500+ channels. We're a market leader entering our next phase of North American growth.  We need an AE wh",
+   "employment_type_code": "fulltime_permanent",
+   "country_code": "US",
+   "id": 2694685,
+   "options_cover_letter": "off",
+   "options_salutation": "off",
+   "location": "Remote job",
+   "hybrid": false,
+   "options_cv": "required",
+   "options_photo": "off",
+   "options_title": "off",
+   "department": "US",
+   "locations_question_type": "multiple_choice",
+   "guid": "89sad",
+   "status": "published",
+   "open_questions": [],
+   "state_name": "New York",
+   "experience_code": "experienced",
+   "sharing_image": null
+  },
+  {
+   "created_at": "2026-09-16 09:27:19 UTC",
+   "salary": {
+    "max": "5000",
+    "min": "3600",
+    "period": "month",
+    "currency": "EUR"
+   },
+   "position": 612,
+   "options_phone": "required",
+   "locations": [
+    {
+     "id": 64463,
+     "name": "Utrecht",
+     "state": "Utrecht",
+     "country": "Netherlands",
+     "city": "Utrecht",
+     "translations": {
+      "en": {
+       "name": "Utrecht",
+       "city": "Utrecht",
+       "postal_code": "3512 HL",
+       "street": "Kromme Nieuwegracht 66",
+       "note": null
+      }
+     },
+     "country_code": "NL",
+     "postal_code": "3512 HL",
+     "state_code": "UT",
+     "street": "Kromme Nieuwegracht 66",
+     "note": null
+    }
+   ],
+   "updated_at": "2026-10-27 11:32:54 UTC",
+   "careers_apply_url": "https://jobs.channable.com/o/python-software-engineer-product-team-2/c/new",
+   "mailbox_email": "jobs@example.com",
+   "category_code": "engineering",
+   "company_name": "Channable",
+   "max_hours_per_week": "40",
+   "postal_code": "3512 HL",
+   "highlight": "<p style=\"min-height: 1.7em;\"></p><p style=\"min-height: 1.7em;\"></p><p style=\"min-height: 1.7em;\"></p>",
+   "requirements": "<h4><span style=\"color:#121317\">The team:</span></h4><p><span style=\"color:#121317\">Google team focuses on Google marketing integrations, including Google Merchant Center (GMC), Comparison Shopping Services (CSS), and large-scale advertising tools. The team builds and optimizes features to help customers maximize performance.</span></p><p><span style=\"color:#121317\">The Group comprises specialized sub-teams of back-end and front-end, collaborating directly with QA engineers, Product Managers, and UI/UX designers to deliver value to our customers.</span></p><p><span style=\"color:#000000\">If this makes you enthusiastic, you can also take a look at some of our open-source work at</span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://github.com/channable\"><span style=\"color:#1155CC\"> </span></a></u><a rel=\"noopener\" target=\"_blank\" href=\"https://github.com/channable\">https://github.com/channable</a><span style=\"color:#000000\"> to get a feeling of how we work together and what our code looks like.</span></p><h4><span style=\"color:#121317\">Who are we?</span></h4><p><span style=\"color:#000000\">Channable was founded in 2014 in the heart of Utrecht and is a fast-growing B2B SaaS platform that offers a fully integrated way to market your products online. We empower marketers and online businesses to manage, scale, and optimize their marketing. We are now a strong team of 320+ diverse individuals from more than 40+ nationalities.</span></p><p><span style=\"color:#000000\">Joining Chann",
+   "published_at": "2026-10-05 14:10:58 UTC",
+   "careers_url": "https://jobs.channable.com/o/python-software-engineer-product-team-2",
+   "cover_image": null,
+   "locations_question": "What is your preferred work location?",
+   "locations_question_required": true,
+   "tags": [],
+   "min_hours_per_week": "32",
+   "slug": "python-software-engineer-product-team-2",
+   "city": "Utrecht",
+   "country": "Netherlands",
+   "sharing_title": "Python Software Engineer - Product team",
+   "dynamic_fields": [],
+   "close_at": null,
+   "max_hours": 40,
+   "title": "Python Software Engineer - Product team",
+   "description": "<h4><span style=\"color:#121317\">What’s in it for you (to start with):</span></h4><ul><li><p><span style=\"color:#000000\">Gross monthly salary ranging from € 3.600 to € 5.000 based on a 40-hour work week. This salary range reflects our career framework. Your final role level will be determined throughout the recruitment process, based on alignment with this framework.</span></p></li><li><p><span style=\"color:#000000\">8% holiday allowance - 8% of your yearly salary, which is paid together with your May salary.</span></p></li><li><p><span style=\"color:#000000\">Saving for old age - we have a savings scheme for old age, which can accrue up to 5% of your monthly salary, or you can get an additional +2.5% to your monthly base salary.</span></p></li></ul><p><span style=\"color:#000000\">And many more benefits that you can read about at the bottom of the job description!</span></p><h4><span style=\"color:#121317\">Your challenges:</span></h4><p><span style=\"color:#000000\">In this position, you will be part of our diverse product team that works on our main application. Your day-to-day challenges will include:</span></p><ul><li><p><span style=\"color:#000000\">Research external eCommerce APIs, understand their value for our customers and build Python integrations with them&nbsp;&nbsp;</span></p></li><li><p><span style=\"color:#000000\">Work together with Product Managers and own feature or project implementation from initial design to production delivery</span></p></li><li><p><span style=\"color",
+   "min_hours": 32,
+   "state_code": "UT",
+   "location_question_visible": false,
+   "remote": false,
+   "on_site": false,
+   "education_code": "bachelor_degree",
+   "sharing_description": "What’s in it for you (to start with): Gross monthly salary ranging from € 3.600 to € 5.000 based on a 40-hour work week. This salary range reflects our career framework. Your final role level will be ",
+   "employment_type_code": "fulltime_permanent",
+   "country_code": "NL",
+   "id": 2747829,
+   "options_cover_letter": "off",
+   "options_salutation": "off",
+   "location": "Utrecht, Utrecht, Netherlands",
+   "hybrid": true,
+   "options_cv": "required",
+   "options_photo": "off",
+   "options_title": "off",
+   "department": "Engineering",
+   "locations_question_type": "multiple_choice",
+   "guid": "bmbah",
+   "status": "published",
+   "open_questions": [],
+   "state_name": "Utrecht",
+   "experience_code": "mid_level",
+   "sharing_image": null
+  },
+  {
+   "created_at": "2026-10-30 12:00:43 UTC",
+   "salary": {
+    "max": null,
+    "min": null,
+    "period": null,
+    "currency": null
+   },
+   "position": 330,
+   "options_phone": "required",
+   "locations": [
+    {
+     "id": 253790,
+     "name": "Austin - US",
+     "state": "Texas",
+     "country": "United States",
+     "city": "Austin",
+     "translations": {
+      "en": {
+       "name": "Austin - US",
+       "city": "Austin",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "TX",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 263619,
+     "name": "Birmingham - US",
+     "state": "Alabama",
+     "country": "United States",
+     "city": "Birmingham",
+     "translations": {
+      "en": {
+       "name": "Birmingham - US",
+       "city": "Birmingham",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "AL",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 253791,
+     "name": "Boston - US",
+     "state": "Massachusetts",
+     "country": "United States",
+     "city": "Boston",
+     "translations": {
+      "en": {
+       "name": "Boston - US",
+       "city": "Boston",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "MA",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 263620,
+     "name": "Charleston - US",
+     "state": "South Carolina",
+     "country": "United States",
+     "city": "Charleston",
+     "translations": {
+      "en": {
+       "name": "Charleston - US",
+       "city": "Charleston",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "SC",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 263613,
+     "name": "Charlotte - US",
+     "state": "North Carolina",
+     "country": "United States",
+     "city": "Charlotte",
+     "translations": {
+      "en": {
+       "name": "Charlotte - US",
+       "city": "Charlotte",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "NC",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 253792,
+     "name": "Chicago - US",
+     "state": "Illinois",
+     "country": "United States",
+     "city": "Chicago",
+     "translations": {
+      "en": {
+       "name": "Chicago - US",
+       "city": "Chicago",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "IL",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 263616,
+     "name": "Dallas - US",
+     "state": "Texas",
+     "country": "United States",
+     "city": "Dallas",
+     "translations": {
+      "en": {
+       "name": "Dallas - US",
+       "city": "Dallas",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "TX",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 263617,
+     "name": "Houston - US",
+     "state": "Texas",
+     "country": "United States",
+     "city": "Houston",
+     "translations": {
+      "en": {
+       "name": "Houston - US",
+       "city": "Houston",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "TX",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 263614,
+     "name": "Kansas City - US",
+     "state": "Missouri",
+     "country": "United States",
+     "city": "Kansas City",
+     "translations": {
+      "en": {
+       "name": "Kansas City - US",
+       "city": "Kansas City",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "MO",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 263621,
+     "name": "Miami - US",
+     "state": "Florida",
+     "country": "United States",
+     "city": "Miami",
+     "translations": {
+      "en": {
+       "name": "Miami - US",
+       "city": "Miami",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "FL",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 263615,
+     "name": "Minneapolis - US",
+     "state": "Minnesota",
+     "country": "United States",
+     "city": "Minneapolis",
+     "translations": {
+      "en": {
+       "name": "Minneapolis - US",
+       "city": "Minneapolis",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "MN",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 263618,
+     "name": "Nashville - US",
+     "state": "Tennessee",
+     "country": "United States",
+     "city": "Nashville",
+     "translations": {
+      "en": {
+       "name": "Nashville - US",
+       "city": "Nashville",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "TN",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 253793,
+     "name": "Phoenix - US",
+     "state": "Arizona",
+     "country": "United States",
+     "city": "Phoenix",
+     "translations": {
+      "en": {
+       "name": "Phoenix - US",
+       "city": "Phoenix",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "AZ",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 263622,
+     "name": "Tampa Bay - US",
+     "state": "Florida",
+     "country": "United States",
+     "city": "Tampa Bay",
+     "translations": {
+      "en": {
+       "name": "Tampa Bay - US",
+       "city": "Tampa Bay",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "FL",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 295826,
+     "name": "Atlanta",
+     "state": "Georgia",
+     "country": "United States",
+     "city": "Atlanta",
+     "translations": {
+      "en": {
+       "name": "Atlanta",
+       "city": "Atlanta",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "GA",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 295509,
+     "name": "Indiana - US",
+     "state": "Indiana",
+     "country": "United States",
+     "city": "Indiana",
+     "translations": {
+      "en": {
+       "name": "Indiana - US",
+       "city": "Indiana",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "IN",
+     "street": null,
+     "note": null
+    },
+    {
+     "id": 300776,
+     "name": "New Jersey",
+     "state": "New Jersey",
+     "country": "United States",
+     "city": "Lyndhurst",
+     "translations": {
+      "en": {
+       "name": "New Jersey",
+       "city": "Lyndhurst",
+       "postal_code": null,
+       "street": null,
+       "note": null
+      }
+     },
+     "country_code": "US",
+     "postal_code": null,
+     "state_code": "NJ",
+     "street": null,
+     "note": null
+    }
+   ],
+   "updated_at": "2026-10-30 12:13:35 UTC",
+   "careers_apply_url": "https://careers.hostaway.com/o/outbound-sales-development-representative-100-remote-us/c/new",
+   "mailbox_email": "jobs@example.com",
+   "category_code": "sales",
+   "company_name": "Hostaway",
+   "max_hours_per_week": null,
+   "postal_code": null,
+   "highlight": null,
+   "requirements": "<ul><li><p><span style=\"color:#000000\">Previous </span><strong><span style=\"color:#000000\">outbound</span></strong><span style=\"color:#000000\"> sales experience in a </span><strong><span style=\"color:#000000\">B2B SaaS environment.</span></strong></p></li><li><p><span style=\"color:#000000\">Proven track record of exceeding targets and delivering results in a fast-paced, target-driven sales environment.</span></p></li><li><p><span style=\"color:#000000\">Strong prospecting and cold calling skills, with the ability to effectively engage and build rapport with prospects over the phone and via email.</span></p></li><li><p><span style=\"color:#000000\">Highly motivated self-starter with a proactive and entrepreneurial mindset.</span></p></li><li><p><span style=\"color:#000000\">Excellent organizational skills and attention to detail, with the ability to manage multiple tasks and priorities simultaneously.</span></p></li><li><p><span style=\"color:#000000\">Team player with strong interpersonal skills and the ability to collaborate effectively across departments.</span></p></li></ul><p style=\"min-height: 1.7em;\"></p><h3><strong><span style=\"color:#121317\">What we offer</span></strong></h3><p style=\"min-height: 1.7em;\"></p><ul><li><p><strong><span style=\"color:#121317\">Competitive Compensation:</span></strong><span style=\"color:#121317\"> We offer competitive pay based on market rates in the country of the applicant.</span></p></li><li><p><strong><span style=\"color:#121317\">100% Remote:</span>",
+   "published_at": "2026-10-30 12:12:58 UTC",
+   "careers_url": "https://careers.hostaway.com/o/outbound-sales-development-representative-100-remote-us",
+   "cover_image": null,
+   "locations_question": "What is your preferred work location?",
+   "locations_question_required": true,
+   "tags": [],
+   "min_hours_per_week": null,
+   "slug": "outbound-sales-development-representative-100-remote-us",
+   "city": "Austin",
+   "country": "United States",
+   "sharing_title": "Outbound Sales Development Representative  - 100% Remote - US",
+   "dynamic_fields": [],
+   "close_at": null,
+   "max_hours": null,
+   "title": "Outbound Sales Development Representative  - 100% Remote - US",
+   "description": "<p><strong><span style=\"color:#000000\">NOTE: This is a FULLY remote role, but the candidate must be within US, EST or CST to collaborate with their team, peers, and internal customers. </span><u><span style=\"color:#000000\">P</span><span style=\"color:#121317\">lease only apply if you are physically based within Location/Timezone.</span></u></strong></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#000000\">Trusted by 20,000+ property managers worldwide, Hostaway is an industry leading, AI-powered vacation rental management platform designed for professional short-term rental operators. Hostaway brings everything together for greater efficiency and faster growth.</span></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#121317\">Profitable, high-growth, and the first short-term rental PMS unicorn 🦄. Join us at our most exciting stage yet! Learn more about our recent valuation and story </span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.hostaway.com/blog/short-term-rental-software-unicorn/?placement=&keyword=hostaway&utm_campaign=gg_emea_dg_search_brand_exact&utm_source=google&utm_medium=paid_search&utm_content=brand_exact&utm_term=hostaway&hsa_acc=1558130764&hsa_cam=20285764070&hsa_grp=149795465945&hsa_ad=703390329010&hsa_src=g&hsa_tgt=kwd-323175560058&hsa_kw=hostaway&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAiA9bq6BhAKEiwAH6bqoFzIiBxWyYjgj1eHkWBbx21yE_0H832dTtEPhfNCYj-TMlL-GnknahoCGzkQAvD_BwE\"><span style=\"color:#7148BD\">here</span",
+   "min_hours": null,
+   "state_code": "TX",
+   "location_question_visible": true,
+   "remote": true,
+   "on_site": false,
+   "education_code": "high_school",
+   "sharing_description": "NOTE: This is a FULLY remote role, but the candidate must be within US, EST or CST to collaborate with their team, peers, and internal customers. Please only apply if you are physically based within L",
+   "employment_type_code": "fulltime_permanent",
+   "country_code": "US",
+   "id": 2803963,
+   "options_cover_letter": "optional",
+   "options_salutation": "off",
+   "location": "Remote job",
+   "hybrid": false,
+   "options_cv": "required",
+   "options_photo": "off",
+   "options_title": "off",
+   "department": "Sales",
+   "locations_question_type": "multiple_choice",
+   "guid": "kbol7",
+   "status": "published",
+   "open_questions": [],
+   "state_name": "Texas",
+   "experience_code": "entry_level",
+   "sharing_image": null
+  }
+ ]
+}

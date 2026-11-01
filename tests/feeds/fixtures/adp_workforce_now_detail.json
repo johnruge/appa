@@ -1,0 +1,181 @@
+{
+ "itemID": "9201260019690_32",
+ "postingInstructions": [],
+ "links": [],
+ "clientRequisitionID": "5157",
+ "customFieldGroup": {
+  "codeFields": [
+   {
+    "codeValue": "AN",
+    "nameCode": {
+     "codeValue": "SalaryType"
+    },
+    "shortName": "Annually"
+   },
+   {
+    "codeValue": "RANGE",
+    "nameCode": {
+     "codeValue": "SalaryRangeType"
+    },
+    "shortName": "RANGE"
+   }
+  ],
+  "dateFields": [
+   {
+    "dateValue": "2026-10-29T14:53Z",
+    "nameCode": {
+     "codeValue": "PostingDate"
+    }
+   },
+   {
+    "dateValue": "2026-10-31T15:51Z",
+    "nameCode": {
+     "codeValue": "CurrentServerDateTime"
+    }
+   }
+  ],
+  "indicatorFields": [
+   {
+    "indicatorValue": false,
+    "nameCode": {
+     "codeValue": "PriortyStatusFlag"
+    }
+   },
+   {
+    "indicatorValue": false,
+    "nameCode": {
+     "codeValue": "InternalPostingFlag"
+    }
+   },
+   {
+    "indicatorValue": true,
+    "nameCode": {
+     "codeValue": "MinValue"
+    }
+   },
+   {
+    "indicatorValue": true,
+    "nameCode": {
+     "codeValue": "IsVsidApplicable"
+    }
+   },
+   {
+    "indicatorValue": false,
+    "nameCode": {
+     "codeValue": "IsSassDlReqForExtPostFlag"
+    }
+   },
+   {
+    "indicatorValue": false,
+    "nameCode": {
+     "codeValue": "IsSassDlReqForIntPostFlag"
+    }
+   },
+   {
+    "indicatorValue": false,
+    "nameCode": {
+     "codeValue": "IsMonetaryFlag"
+    }
+   },
+   {
+    "indicatorValue": false,
+    "nameCode": {
+     "codeValue": "IsNonMonetaryFlag"
+    }
+   }
+  ],
+  "numberFields": [
+   {
+    "categoryCode": {
+     "codeValue": "ApplicantCount"
+    },
+    "numberValue": 11.0
+   },
+   {
+    "categoryCode": {
+     "codeValue": "AwardAmount"
+    }
+   }
+  ],
+  "stringFields": [
+   {
+    "nameCode": {
+     "codeValue": "ExternalJobID"
+    },
+    "stringValue": "605207"
+   },
+   {
+    "nameCode": {
+     "codeValue": "CareerCenterRefId"
+    }
+   },
+   {
+    "nameCode": {
+     "codeValue": "GuidelineOid"
+    }
+   },
+   {
+    "nameCode": {
+     "codeValue": "CurrencySymbolOrCode"
+    }
+   },
+   {
+    "nameCode": {
+     "codeValue": "SassStatus"
+    },
+    "stringValue": "null"
+   },
+   {
+    "nameCode": {
+     "codeValue": "HomeDepartment"
+    },
+    "stringValue": "Creative Design - Women's"
+   },
+   {
+    "nameCode": {
+     "codeValue": "JobClass"
+    }
+   },
+   {
+    "nameCode": {
+     "codeValue": "SalaryRange"
+    },
+    "stringValue": "80000.00 to 90000.00 (USD) Annually"
+   }
+  ]
+ },
+ "organizationalUnits": [],
+ "payGradeRange": {
+  "minimumRate": {
+   "amountValue": 80000.0,
+   "currencyCode": "USD"
+  },
+  "maximumRate": {
+   "amountValue": 90000.0,
+   "currencyCode": "USD"
+  }
+ },
+ "postDate": "2026-10-30T00:23:00",
+ "requisitionDescription": "<div><div><div><div><div></div><div><strong><span>Title: </span></strong><span>Associate Designer, Women&rsquo;s Hard Wovens<br></span><br><span><strong>Salary Range:&nbsp;</strong>$80k-$90k</span></div><p><br><span><strong>What You&rsquo;ll Be Responsible For:</strong></span></p><div><ul><li>Research inspirational imagery in line with design direction and hand sketch styles and create presentation boards</li><li>Conceptualize and create compelling, brand right product for all Seasonal Deliveries</li><li>Engage in all aspects of design such as sketching, swatch and quality development, and fitting from Development through to Production&nbsp;</li><li>Attend fittings and support Design Director with preparation and maintaining all fit changes&nbsp;</li><li>Attend weekly Work In Progress (WIPs) meetings &ndash; accountable for maintaining records of all design changes&nbsp;</li><li>Set up and maintain updated Bill of Materials (BOMs) to support design development, update BOMs through design process to support production readiness</li><li>Present CAD layout options including colorways to the team</li><li>Collaborate with head designer to own styles within each collection to design, develop and fit&nbsp;</li><li>Maintain seasonal swatch library and inspiration closet</li><li>Supports and manages the trim development process, as directed by Director in partnership with Product Development</li><li>Communicates all design development changes to cross functional partners</li><li>Review development lab dips with R&amp;D and Design Director before proceeding to sampling &ndash; must have strong sense of color and color theory knowledge</li><li>Coordinate and partner with PD on Design Pass-off to ensure all design details, trims, and colors are approved before handing over to Production teams to execute</li><li>Execute original design ideas and specific design development projects as assigned by the Design Director through sewing, draping, and mocking up, bringing key ideas to life</li><li>Works closely with Tech Design, Patternmakers and Sample Room to coordinate in-house design development&nbsp;</li><li>Partner with PD on the status of styles in development daily to ensure product execution meets design specifications and are on track in style development process</li><li>Communicate with vendor and factories on design development</li><li>Work closely with manager and cross-functional teams to build brand right product that supports Vince&rsquo;s financial and merchandising strategies&nbsp;</li><li>Identify key seasonal trends and drive all corresponding development with oversees vendors&nbsp;</li><li>Schedule and coordinate meetings with cross functional partners as needed</li><li>Engages with Tech Design and Production on fit intent and executes fit consistency</li><li>Shop the market to perform competitive analysis and translate market trends</li><li>Line sheet development</li><li>Follow up and coordinate all ongoing projects to meet stated deadlines</li><li>Performs additional duties and assignments, as requested</li></ul></div><p><span><strong>Qualifications/Experience We&rsquo;re Looking For:</strong></span></p></div></div></div></div>",
+ "requisitionLocations": [
+  {
+   "address": {
+    "cityName": "Los Angeles",
+    "countrySubdivisionLevel1": {
+     "codeValue": "CA"
+    },
+    "postalCode": "90038"
+   },
+   "aliasNames": [],
+   "nameCode": {
+    "shortName": " Los Angeles, CA, US"
+   }
+  }
+ ],
+ "requisitionTitle": "Associate Designer, Women's Hard Wovens",
+ "screeningRequirements": [],
+ "sponsoredVisaTypeCodes": [],
+ "workLevelCode": {
+  "shortName": "Full Time"
+ }
+}

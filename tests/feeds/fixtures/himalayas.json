@@ -1,0 +1,248 @@
+{
+ "comments": "Search results come 20 to a page. Pass ?page=2, ?page=3 and so on for more; there is no cursor on search. Cursor pagination (nextCursor) is only on /jobs/api, the browse feed. 13/03/2026: The API has been updated to include the companySlug field in the response.",
+ "updatedAt": 1793383973,
+ "offset": 0,
+ "limit": 20,
+ "totalCount": 5000,
+ "jobs": [
+  {
+   "title": "Software Engineer, AI Coding Tasks (Contract)",
+   "excerpt": "We're looking for experienced software engineers to build AI coding tasks from a codebase they know well.",
+   "companyName": "Askable",
+   "companySlug": "askable",
+   "companyLogo": "https://cdn-images.himalayas.app/y4eojs8toyo9ocht137iss4uee48",
+   "employmentType": "Contractor",
+   "minSalary": 100,
+   "maxSalary": 100,
+   "salaryPeriod": "hourly",
+   "seniority": [
+    "Mid-level"
+   ],
+   "currency": "USD",
+   "locationRestrictions": [],
+   "timezoneRestrictions": [
+    -11,
+    -10,
+    -9.5,
+    -9,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3.5,
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    3.5,
+    4,
+    4.5,
+    5,
+    5.5,
+    5.75,
+    6,
+    6.5,
+    7,
+    8,
+    8.75,
+    9,
+    9.5,
+    10,
+    10.5,
+    11,
+    12,
+    12.75,
+    13,
+    14
+   ],
+   "categories": [
+    "Freelance-AI-Software-Engineer",
+    "Contract-Software-Engineer",
+    "AI-ML-Software-Engineer",
+    "Contract-Software-Engineering-Jobs",
+    "AI-Coding-Specialist",
+    "Software-Engineer",
+    "Developer"
+   ],
+   "parentCategories": [
+    "Developer"
+   ],
+   "description": "<p>We're looking for experienced software engineers to build AI coding tasks from a codebase they know well. US$1,000 per task, and you can do as many tasks as you want.</p><p>You turn a real change from a repository you know into a task that today's best AI coding models struggle with: hard for the models, but fair for a skilled engineer. Your tasks are used to measure and train AI coding models.</p><p>Remote, any location. US$1,000 per task that passes review. Minimum of one task a week, about 10 hours a week.</p><p>Originally posted on <a href=\"https://himalayas.app\">Himalayas</a></p>",
+   "pubDate": 1792198336,
+   "expiryDate": 1794790336,
+   "applicationLink": "https://himalayas.app/companies/askable/jobs/software-engineer-ai-coding-tasks-contract?utm_source=api",
+   "guid": "https://himalayas.app/companies/askable/jobs/software-engineer-ai-coding-tasks-contract"
+  },
+  {
+   "title": "Senior Software Engineer",
+   "excerpt": "We Put the World on VacationTravel + Leisure Co.  is the world\u2019s leading vacation ownership and travel membership company, with a dynamic and growing portfolio of resort, travel club, and lifestyle travel brands.",
+   "companyName": "Travel + Leisure Co.",
+   "companySlug": "travel-leisure-co",
+   "companyLogo": "https://cdn-images.himalayas.app/j0rgxbt0r2i5fig46pk40vxmz6w3",
+   "employmentType": "Full Time",
+   "minSalary": null,
+   "maxSalary": null,
+   "salaryPeriod": "annual",
+   "seniority": [
+    "Senior"
+   ],
+   "currency": null,
+   "locationRestrictions": [
+    "United States"
+   ],
+   "timezoneRestrictions": [
+    -10,
+    -9,
+    -8,
+    -7,
+    -6,
+    -5,
+    14
+   ],
+   "categories": [
+    "Software-Engineer",
+    "API-Engineer",
+    "Integration-Engineer",
+    "Cloud-Software-Engineer",
+    "Middleware-Engineer"
+   ],
+   "parentCategories": [
+    "Developer"
+   ],
+   "description": "<h3>We Put the World on Vacation</h3><a href=\"https://himalayas.app/companies/travel-leisure-co\">Travel + Leisure Co.</a> is the world\u2019s leading vacation ownership and travel membership company, with a dynamic and growing portfolio of resort, travel club, and lifestyle travel brands. Our dedicated associates help the company achieve its mission to put the world on vacation. Innovation and growth keep our work interesting and fun. Every day is a chance to learn something new and turn vacation inspiration into exceptional experiences for millions of travelers worldwide.<p>The <b>Senior Software Engineer</b> is responsible for the analysis, design, development, testing and implementation of API proxies and integration services on the <b>Google Apigee </b>platform within the enterprise portfolio. The Engineer will provide the technical expertise on the design and construction of new and existing modules as well as the use ofappropriate development tools and data flows across the API and Middleware Integrations stack. Will provide direction to lower-level developers and interact with technical leads, business analysts, solution architects and other development teams. Provide SME knowledge, technical planning expertise in the areas of application design, software development, performance, testing, implementation, and infrastructure. The senior developer is also responsible for the quality of the application code and adheres to the relevant coding standards and established patterns.",
+   "pubDate": 1793383973,
+   "expiryDate": 1798567971,
+   "applicationLink": "https://himalayas.app/companies/travel-leisure-co/jobs/senior-software-engineer-8977568674?utm_source=api",
+   "guid": "https://himalayas.app/companies/travel-leisure-co/jobs/senior-software-engineer-8977568674"
+  },
+  {
+   "title": "AI Platorm Software Engineer",
+   "excerpt": "Ascensus is the leading independent technology and service platform powering savings plans across America, providing products and expertise that help nearly 16 million people save for a better today and tomorrow.",
+   "companyName": "Ascensus",
+   "companySlug": "ascensus",
+   "companyLogo": "https://cdn-images.himalayas.app/sqeg5c3dq4w1abpc9pvppon48c0k",
+   "employmentType": "Full Time",
+   "minSalary": 65000,
+   "maxSalary": 150000,
+   "salaryPeriod": "annual",
+   "seniority": [
+    "Entry-level"
+   ],
+   "currency": "USD",
+   "locationRestrictions": [
+    "United States"
+   ],
+   "timezoneRestrictions": [
+    -10,
+    -9,
+    -8,
+    -7,
+    -6,
+    -5,
+    14
+   ],
+   "categories": [
+    "Software-Engineer",
+    "AI-Platform-Engineer",
+    "AI-ML-Engineer",
+    "Software-Engineer-in-Test",
+    "Technical-Support-Engineer"
+   ],
+   "parentCategories": [
+    "Developer"
+   ],
+   "description": "<p><a href=\"https://himalayas.app/companies/ascensus\">Ascensus</a> is the leading independent technology and service platform powering savings plans across America, providing products and expertise that help nearly 16 million people save for a better today and tomorrow.</p><div><div>\n<b><a href=\"https://himalayas.app/companies/ascensus\">Ascensus</a> does not provide visa sponsorship now or in the future and does not hire candidates working under OPT</b>.</div></div><h3>Section 1: Position Summary</h3><p><b>We are hiring for multiple positions on our AI Technology team:</b></p><ul>\n<li><b>Associate Level (0-2 years experience /New Grads)</b></li>\n<li><b>Mid Level (3-5 years experience)</b></li>\n<li><b>Senior Level (5-15 years experience)</b></li>\n<li><b>SDET (3+ years experience)</b></li>\n</ul><div>\n<p><b>Work at the cutting edge of enterprise AI, solving complex challenges and improving how intelligent systems perform at scale. In this role, you\u2019ll troubleshoot AI behavior, partner with other engineers to fix root causes, and continuously enhance platform performance across LLMs, agent workflows, and backend systems.</b></p>\n<p><b>This isn\u2019t traditional support\u2014you\u2019ll play a hands-on role in shaping how AI is built, used, and experienced across the organization. </b></p>\n</div><h3>Video Interview Process:</h3><p>As part of our Software Engineer hiring efforts, we're using a video screening process and coding assessment. To learn more and to help prepare for this click here!</",
+   "pubDate": 1793382452,
+   "expiryDate": 1798566450,
+   "applicationLink": "https://himalayas.app/companies/ascensus/jobs/ai-platorm-software-engineer?utm_source=api",
+   "guid": "https://himalayas.app/companies/ascensus/jobs/ai-platorm-software-engineer"
+  },
+  {
+   "title": "Software Engineer",
+   "excerpt": "Software EngineerMonday-Friday 8:00-5:00RemoteCSC Corptax is the platform behind corporate tax for many of the largest enterprises in the world, handling provision, compliance, planning, and strategy all in the same solution.",
+   "companyName": "CSC",
+   "companySlug": "csc",
+   "companyLogo": "https://cdn-images.himalayas.app/83hdtfvqz16q0fr3fbqesbhr1xk2",
+   "employmentType": "Full Time",
+   "minSalary": null,
+   "maxSalary": null,
+   "salaryPeriod": "annual",
+   "seniority": [
+    "Entry-level"
+   ],
+   "currency": null,
+   "locationRestrictions": [
+    "United States"
+   ],
+   "timezoneRestrictions": [
+    -10,
+    -9,
+    -8,
+    -7,
+    -6,
+    -5,
+    14
+   ],
+   "categories": [
+    "Software-Engineer",
+    "Backend-Engineer",
+    "Frontend-Engineer",
+    "Full-Stack-Engineer",
+    "Cloud-Engineer"
+   ],
+   "parentCategories": [
+    "Developer"
+   ],
+   "description": "<h3>Software Engineer</h3><h3>Monday-Friday 8:00-5:00</h3><h3>Remote</h3><p><a href=\"https://himalayas.app/companies/csc\">CSC</a> Corptax is the platform behind corporate tax for many of the largest enterprises in the world, handling provision, compliance, planning, and strategy all in the same solution. In addition to tax, we pioneer new solutions in the corporate software space.</p><p>We are looking for a software engineer to help us build the next generation of revolutionary tax preparation products.</p><h3>The Team</h3><p>We're a driven team that works test first, so quality belongs to everyone rather than to a separate function. Development is agent-led, using tools like Claude Code. However, we stand behind every line of code we ship.</p><h3>Tech Stack</h3><p>We choose tools to fit the problem, so the stack is flexible. Today it centers on Python, Node.js/TypeScript, C#/.Net, and React, running on cloud infrastructure with modern CI/CD. Experience with these specifically is a plus, but strong engineers who pick up new tools quickly are what matter most.</p><h3>Some of the things that you will be doing: </h3><ul>\n<li>Design, build, and maintain core product systems across data ingestion, computation, user interfaces, and regulatory output.</li>\n<li>Own features end-to-end, from shaping requirements with the team through design, build, release, and iteration based on client feedback.</li>\n<li>Write clean, maintainable, well-tested code, and own the tests and tooling the t",
+   "pubDate": 1793379386,
+   "expiryDate": 1798563385,
+   "applicationLink": "https://himalayas.app/companies/csc/jobs/software-engineer?utm_source=api",
+   "guid": "https://himalayas.app/companies/csc/jobs/software-engineer"
+  },
+  {
+   "title": "Senior Software Engineer",
+   "excerpt": "About AnacondaBe at the center of AIAnaconda is built to advance AI with open source at scale, giving builders and organizations the confidence to increase productivity, and save time, spend and risk associated with open source.",
+   "companyName": "Anaconda",
+   "companySlug": "anaconda",
+   "companyLogo": "https://cdn-images.himalayas.app/0vl3npo1n2wv0inmgfungcp2fsyl",
+   "employmentType": "Full Time",
+   "minSalary": 150000,
+   "maxSalary": 184500,
+   "salaryPeriod": "annual",
+   "seniority": [
+    "Senior"
+   ],
+   "currency": "USD",
+   "locationRestrictions": [
+    "United States"
+   ],
+   "timezoneRestrictions": [
+    -10,
+    -9,
+    -8,
+    -7,
+    -6,
+    -5,
+    14
+   ],
+   "categories": [
+    "Software-Engineer",
+    "Platform-Engineer",
+    "Site-Reliability-Engineer",
+    "DevOps-Engineer"
+   ],
+   "parentCategories": [
+    "Developer"
+   ],
+   "description": "<div>\n<h3><b><strong>About <a href=\"https://himalayas.app/companies/anaconda\">Anaconda</a></strong></b></h3>\n<h3><b><strong>Be at the center of AI</strong></b></h3>\n<p><a href=\"https://himalayas.app/companies/anaconda\">Anaconda</a> is built to advance AI with open source at scale, giving builders and organizations the confidence to increase productivity, and save time, spend and risk associated with open source. 95% of the Fortune 500 including Panasonic, AmTrust, Booz Allen Hamilton and over 50 million users rely on the value The <a href=\"https://himalayas.app/companies/anaconda\">Anaconda</a> AI Platform delivers through a centralized approach to sourcing, securing, building, and deploying AI. With 21 billion downloads and growing, <a href=\"https://himalayas.app/companies/anaconda\">Anaconda</a> has established itself as the gold standard for Python, data science, and AI and the enterprise-ready solution of choice for AI innovation. <a href=\"https://himalayas.app/companies/anaconda\">Anaconda</a> is backed by world-class investors including Insight Partners. Learn more at .</p>\n</div><div>\n<h5><b><strong>Summary:</strong></b></h5>\n<p>Our Artifact Creation &amp; Release Engineering team builds, secures, and operates the platform that produces and releases <a href=\"https://himalayas.app/companies/anaconda\">Anaconda</a>'s packages\u2014the foundation of trust and compliance for millions of users and thousands of enterprise customers. As platforms increasingly serve automation and AI a",
+   "pubDate": 1793380342,
+   "expiryDate": 1798564341,
+   "applicationLink": "https://himalayas.app/companies/anaconda/jobs/senior-software-engineer?utm_source=api",
+   "guid": "https://himalayas.app/companies/anaconda/jobs/senior-software-engineer"
+  }
+ ]
+}

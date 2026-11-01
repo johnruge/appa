@@ -1,0 +1,205 @@
+{
+ "refineSearch": {
+  "status": 200,
+  "hits": 5,
+  "totalHits": 129,
+  "data": {
+   "jobs": [
+    {
+     "type": "Full time",
+     "descriptionTeaser": "We are looking for a specialist sales leader to drive growth for Mastercard's Test & Learn Solution platform. Lead the development and execution of sales strategies, build client pipelines, and present solutions to senior executives. Ideal for candidates with strong sales acumen, analytics expertise, and experience in software or data-driven solution selling.",
+     "state": "Virginia",
+     "siteType": "external",
+     "multi_category": [
+      "Sales"
+     ],
+     "reqId": "R-282820",
+     "city": "Arlington",
+     "multi_location": [
+      "Arlington, United States of America, 22203",
+      "Boston, United States of America, 02210",
+      "Atlanta, United States of America, 30308",
+      "Chicago, United States of America, 60602",
+      "Purchase, United States of America, 10577-2405",
+      "O Fallon, United States of America, 63368-7263"
+     ],
+     "applyUrl": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Arlington-Virginia/Specialist-Sales-Manager--Test---Learn-Solution_R-282820/apply",
+     "externalApply": false,
+     "cityState": "Arlington, Virginia",
+     "country": "United States of America",
+     "visibilityType": "External",
+     "jobId": "R-282820",
+     "locale": "en_US",
+     "title": "Specialist Sales Manager, Test & Learn Solution",
+     "jobSeqNo": "MASRUSR282820EXTERNALENUS",
+     "postedDate": "2026-10-27T00:00:00.000+0000",
+     "dateCreated": "2026-08-07T20:50:48.145+0000",
+     "cityStateCountry": "Arlington, Virginia, United States of America",
+     "jobVisibility": [
+      "external"
+     ],
+     "location": "Arlington, United States of America, 22203",
+     "category": "Sales",
+     "isMultiLocation": true,
+     "isMultiCategory": false,
+     "badge": ""
+    },
+    {
+     "type": "Full time",
+     "descriptionTeaser": "We are expanding our team: As an Associate Managing Consultant in Technical Program Management, you will lead technology programs and strategic initiatives, collaborating with cross-functional teams to deliver impactful digital transformation solutions. Ideal candidates bring experience in technical program management and strong business analysis skills.",
+     "state": "New York",
+     "siteType": "external",
+     "multi_category": [
+      "Consulting"
+     ],
+     "reqId": "R-294091",
+     "city": "Purchase",
+     "multi_location": [
+      "Purchase, United States of America, 10577-2509",
+      "Arlington, United States of America, 22203",
+      "O Fallon, United States of America, 63368-7263",
+      "Chicago, United States of America, 60603"
+     ],
+     "applyUrl": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Purchase-New-York/Associate-Managing-Consultant--Technical-Program-Management_R-294091-1/apply",
+     "externalApply": false,
+     "cityState": "Purchase, New York",
+     "country": "United States of America",
+     "visibilityType": "External",
+     "jobId": "R-294091",
+     "locale": "en_US",
+     "title": "Associate Managing Consultant, Technical Program Management",
+     "jobSeqNo": "MASRUSR294091EXTERNALENUS",
+     "postedDate": "2026-10-27T00:00:00.000+0000",
+     "dateCreated": "2026-10-19T20:28:18.609+0000",
+     "cityStateCountry": "Purchase, New York, United States of America",
+     "jobVisibility": [
+      "external"
+     ],
+     "location": "Purchase, United States of America, 10577-2509",
+     "category": "Consulting",
+     "isMultiLocation": true,
+     "isMultiCategory": false,
+     "badge": ""
+    },
+    {
+     "type": "Full time",
+     "descriptionTeaser": "Become part of our team as a Managing Consultant, Services Business Development for US Financial Institutions. Lead strategic sales engagements, expand Mastercard Services within existing accounts, and deliver tailored solutions. Ideal for candidates with a strong payments background and proven consultative sales experience.",
+     "state": "New York",
+     "siteType": "external",
+     "multi_category": [
+      "Sales"
+     ],
+     "reqId": "R-294526",
+     "city": "Purchase",
+     "multi_location": [
+      "Purchase, United States of America, 10577-2509",
+      "Boston, United States of America, 02210",
+      "Atlanta, United States of America, 30308",
+      "Miami, United States of America, 33131-4945",
+      "Chicago, United States of America, 60603",
+      "Arlington, United States of America, 22203"
+     ],
+     "applyUrl": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Purchase-New-York/Managing-Consultant--Services-Business-Development---US-Financial-Institutions_R-294526/apply",
+     "externalApply": false,
+     "cityState": "Purchase, New York",
+     "country": "United States of America",
+     "visibilityType": "External",
+     "jobId": "R-294526",
+     "locale": "en_US",
+     "title": "Managing Consultant, Services Business Development - US Financial Institutions",
+     "jobSeqNo": "MASRUSR294526EXTERNALENUS",
+     "postedDate": "2026-10-27T00:00:00.000+0000",
+     "dateCreated": "2026-10-21T21:52:59.837+0000",
+     "cityStateCountry": "Purchase, New York, United States of America",
+     "jobVisibility": [
+      "external"
+     ],
+     "location": "Purchase, United States of America, 10577-2509",
+     "category": "Sales",
+     "isMultiLocation": true,
+     "isMultiCategory": false,
+     "badge": ""
+    },
+    {
+     "type": "Full time",
+     "descriptionTeaser": "We are expanding our team: As a Lead Software Engineer, you will design and validate mission-critical systems for secure financial transactions at global scale. You will develop and maintain software and automation solutions, collaborating with cross-functional teams. Ideal candidates have strong experience in enterprise software engineering and distributed systems.",
+     "state": "Missouri",
+     "siteType": "external",
+     "multi_category": [
+      "Engineering"
+     ],
+     "reqId": "R-294206",
+     "city": "O Fallon",
+     "multi_location": [
+      "O Fallon, United States of America, 63368-7263"
+     ],
+     "applyUrl": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/OFallon-Missouri/Lead-Software-Engineer_R-294206/apply",
+     "externalApply": false,
+     "cityState": "O Fallon, Missouri",
+     "country": "United States of America",
+     "visibilityType": "External",
+     "jobId": "R-294206",
+     "locale": "en_US",
+     "title": "Lead Software Engineer",
+     "jobSeqNo": "MASRUSR294206EXTERNALENUS",
+     "postedDate": "2026-10-27T00:00:00.000+0000",
+     "dateCreated": "2026-10-23T04:30:38.788+0000",
+     "cityStateCountry": "O Fallon, Missouri, United States of America",
+     "jobVisibility": [
+      "external"
+     ],
+     "location": "O Fallon, United States of America, 63368-7263",
+     "category": "Engineering",
+     "isMultiLocation": true,
+     "isMultiCategory": false,
+     "badge": ""
+    },
+    {
+     "type": "Full time",
+     "descriptionTeaser": "Join our team as a Senior Software Engineer, leading the development of next-generation payment applications and real-time payment technology. Drive software delivery, code quality, and integration of services. Ideal for experienced engineers with strong programming skills and expertise in distributed systems and automation.",
+     "state": "Missouri",
+     "siteType": "external",
+     "multi_category": [
+      "Engineering"
+     ],
+     "reqId": "R-274004",
+     "city": "O Fallon",
+     "multi_location": [
+      "O Fallon, United States of America, 63368-7263"
+     ],
+     "applyUrl": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/OFallon-Missouri/Senior-Software-Engineer_R-274004/apply",
+     "externalApply": false,
+     "cityState": "O Fallon, Missouri",
+     "country": "United States of America",
+     "visibilityType": "External",
+     "jobId": "R-274004",
+     "locale": "en_US",
+     "title": "Senior Software Engineer",
+     "jobSeqNo": "MASRUSR274004EXTERNALENUS",
+     "postedDate": "2026-10-27T00:00:00.000+0000",
+     "dateCreated": "2026-04-11T00:29:52.982+0000",
+     "cityStateCountry": "O Fallon, Missouri, United States of America",
+     "jobVisibility": [
+      "external"
+     ],
+     "location": "O Fallon, United States of America, 63368-7263",
+     "category": "Engineering",
+     "isMultiLocation": true,
+     "isMultiCategory": false,
+     "badge": ""
+    }
+   ],
+   "aggregations": []
+  },
+  "eid": {
+   "trialIndex": -1,
+   "eid": "6ae647f093b5e42e6c8af26f",
+   "searchType": "keyword",
+   "isMultiLingualVectorApplied": false,
+   "query": "software engineer",
+   "variant": 6,
+   "banditId": "TEST_53444756-a3cd-11ee-9564-4a86a0d0c4a3",
+   "keywordLanguage": "en"
+  }
+ }
+}

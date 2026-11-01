@@ -1,0 +1,39 @@
+{
+ "jobPostingInfo": {
+  "id": "b4cf6cb8c83e10008769ac25d9a80000",
+  "title": "Senior Software Engineer",
+  "jobDescription": "<p><b>Your work days are brighter here.</b></p><p></p><p>We’re obsessed with making hard work pay off, for our people, our customers, and the world around us. As a Fortune 500 company and a leading AI platform for managing people, money, and agents, we’re shaping the future of work so teams can reach their potential and focus on what matters most. The minute you join, you’ll feel it. Not just in the products we build, but in how we show up for each other. Our culture is rooted in integrity, empathy, and shared enthusiasm. We’re in this together, tackling big challenges with bold ideas and genuine care. We look for curious minds and courageous collaborators who bring sun-drenched optimism and drive. Whether you&#39;re building smarter solutions, supporting customers, or creating a space where everyone belongs, you’ll do meaningful work with Workmates who’ve got your back. In return, we’ll give you the trust to take risks, the tools to grow, the skills to develop and the support of a company invested in you for the long haul. So, if you want to inspire a brighter work day for everyone, including yourself, you’ve found a match in Workday, and we hope to be a match for you too.</p><p></p><p></p><p></p><p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><b>About the Team</b></p>Workday, founded in 2005, stands as a groundbreaking force in the human capital and financial management industry, with a global presence and a diverse array of customers. Across our offices worldw",
+  "location": "USA, CA, Pleasanton",
+  "postedOn": "Posted 23 Days Ago",
+  "startDate": "2026-10-07",
+  "timeType": "Full Time",
+  "jobReqId": "JR-0107919",
+  "jobPostingId": "Senior-Software-Engineer_JR-0107919",
+  "jobPostingSiteId": "Workday",
+  "country": {
+   "descriptor": "United States of America",
+   "id": "bc33aa3152ec42d4995f4791a106ed09"
+  },
+  "canApply": true,
+  "posted": true,
+  "includeResumeParsing": true,
+  "jobRequisitionLocation": {
+   "descriptor": "USA, CA, Pleasanton",
+   "country": {
+    "descriptor": "United States of America",
+    "id": "bc33aa3152ec42d4995f4791a106ed09",
+    "alpha2Code": "US"
+   }
+  },
+  "remoteType": "Flex",
+  "externalUrl": "https://workday.wd5.myworkdayjobs.com/Workday/job/USA-CA-Pleasanton/Senior-Software-Engineer_JR-0107919",
+  "questionnaireId": "ec1d4a8375ea10003bbcdcbfb5da0000",
+  "secondaryQuestionnaireId": "0de44b7f52b0102375b02d4b22600000"
+ },
+ "hiringOrganization": {
+  "name": "Workday, Inc.",
+  "url": ""
+ },
+ "similarJobs": [],
+ "userAuthenticated": false
+}

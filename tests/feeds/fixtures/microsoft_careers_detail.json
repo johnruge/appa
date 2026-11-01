@@ -1,0 +1,55 @@
+{
+ "status": 200,
+ "error": {
+  "message": "",
+  "body": ""
+ },
+ "data": {
+  "id": 1970393557043756,
+  "displayJobId": "200062677",
+  "name": "Senior Software Engineer",
+  "locations": [
+   "United States, Washington, Redmond"
+  ],
+  "standardizedLocations": [
+   "Redmond, WA, US"
+  ],
+  "postedTs": 1793391974,
+  "stars": 0,
+  "department": "Software Engineering",
+  "creationTs": 1792445772,
+  "jobDescription": "<b>Overview</b><br><div dir=\"ltr\"><p>At Microsoft, passionate innovators come together to envision what\u2019s next and take their careers further in a world of more possibilities. Innovation, openness, and collaboration drive our success in a cloud-enabled world.</p><p>The Business &amp; Industry Copilots group is responsible for Copilot Studio, Microsoft Dynamics 365, Power Apps, Power Automate, Dataverse, AI Builder, and Microsoft Industry Solutions.</p><p>The <strong>Managed Apps team</strong> is building the next generation of AI-powered application development experiences that enable customers, makers, and professional developers to build, deploy, govern, and operate applications at enterprise scale. We are seeking a <strong>Senior Software Engineer</strong> to join the team and help design, build, and operate core platform capabilities that power Power Apps Code Apps and future AI-driven application experiences.</p><p>As a Senior Software Engineer, you will contribute to the development of platform services including runtime components, SDKs, CLI tooling, governance systems, security capabilities, lifecycle management features, and AI-enabled development experiences. You will work closely with engineers, product managers, and partner teams across Power Apps, Copilot Studio, and Dataverse to deliver secure, reliable, and scalable platform capabilities used by customers worldwide.</p><p>Microsoft\u2019s mission is to empower every person and every organization on the planet to ach",
+  "location": "United States, Washington, Redmond",
+  "isHot": 0,
+  "workLocationOption": "onsite",
+  "locationFlexibility": null,
+  "atsJobId": "200062677",
+  "positionUrl": "/careers/job/1970393557043756",
+  "publicUrl": "https://apply.careers.microsoft.com/careers/job/1970393557043756",
+  "efcustomTextWorkSite": [
+   "3 days / week in-office"
+  ],
+  "efcustomTextRequiredTravel": [
+   "Less than 25%"
+  ],
+  "efcustomTextCurrentProfession": [
+   "Software Engineering"
+  ],
+  "efcustomTextTaDisciplineName": [
+   "Software Engineering"
+  ],
+  "efcustomTextRoletype": [
+   "Individual Contributor"
+  ],
+  "efcustomTextEmploymentType": [
+   "Full-Time"
+  ],
+  "positionUserActions": {
+   "isSaved": false,
+   "applyAction": {
+    "status": "log_in"
+   }
+  }
+ },
+ "metadata": null
+}

@@ -1,0 +1,80 @@
+{
+ "slug": "new-grad-software-engineer-jobs",
+ "title": "New Grad Software Engineer Jobs",
+ "description": "Open software engineering jobs whose title asks for a new graduate, entry-level or junior engineer.",
+ "url": "https://hirly.me/api/job-lists/new-grad-software-engineer-jobs.json",
+ "repository": "https://github.com/Hirly-Me/New-Grad-Software-Engineer-Jobs",
+ "generated_at": "2026-10-30T22:16:37.015Z",
+ "total": 969,
+ "count": 250,
+ "source": "Open postings from company career pages hirly reads directly. No job-board or aggregator listings.",
+ "more_url": "https://hirly.me/jobs?utm_source=github&utm_medium=joblist&utm_campaign=new-grad-software-engineer-jobs",
+ "jobs": [
+  {
+   "title": "Associate Software Engineer",
+   "company": "Saabusa",
+   "location": "East Syracuse, NY (Collamer)",
+   "more_locations": 0,
+   "country": "US",
+   "work_mode": null,
+   "posted_on": "2026-10-30",
+   "posted_on_source": "employer",
+   "url": "https://hirly.me/jobs/associate-software-engineer-at-saabusa-fb23b6f3-155c-4a5e-992a-af1a4faa1f5b?utm_source=github&utm_medium=joblist&utm_campaign=new-grad-software-engineer-jobs"
+  },
+  {
+   "title": "Software Engineer I",
+   "company": "Quickenloans",
+   "location": "Detroit, MI",
+   "more_locations": 1,
+   "country": "US",
+   "work_mode": null,
+   "posted_on": "2026-10-29",
+   "posted_on_source": "employer",
+   "url": "https://hirly.me/jobs/software-engineer-i-at-quickenloans-43286619-ac8c-479e-adcb-55a9a7e5a60d?utm_source=github&utm_medium=joblist&utm_campaign=new-grad-software-engineer-jobs"
+  },
+  {
+   "title": "Software Engineer I",
+   "company": "StarTree",
+   "location": "US (Remote)",
+   "more_locations": 0,
+   "country": "US",
+   "work_mode": "remote",
+   "posted_on": "2026-10-28",
+   "posted_on_source": "employer",
+   "url": "https://hirly.me/jobs/software-engineer-i-at-startree-4a0726a3-cd0e-4d74-ba32-08a30e31bd62?utm_source=github&utm_medium=joblist&utm_campaign=new-grad-software-engineer-jobs"
+  },
+  {
+   "title": "Quality Assurance Engineer- Software (Junior/Graduate)",
+   "company": "Windracers",
+   "location": "Fareham, Hampshire",
+   "more_locations": 0,
+   "country": "GB",
+   "work_mode": null,
+   "posted_on": "2026-10-30",
+   "posted_on_source": "first_seen",
+   "url": "https://hirly.me/jobs/quality-assurance-engineer-software-junior-graduate-at-windracers-b44858b7-b375-4625-8660-b2b4ef280031?utm_source=github&utm_medium=joblist&utm_campaign=new-grad-software-engineer-jobs"
+  },
+  {
+   "title": "1182 - Junior Frontend Developer (Part-Time)",
+   "company": "GoFasti",
+   "location": "Remote",
+   "more_locations": 0,
+   "country": null,
+   "work_mode": "remote",
+   "posted_on": "2026-10-23",
+   "posted_on_source": "employer",
+   "url": "https://hirly.me/jobs/1182-junior-frontend-developer-part-time-at-gofasti-d258ad47-bbb9-4828-bc84-1b27c5d36e01?utm_source=github&utm_medium=joblist&utm_campaign=new-grad-software-engineer-jobs"
+  },
+  {
+   "title": "Application Developer - Recent Graduate - Hybrid - Norcross, GA",
+   "company": "USAN",
+   "location": "Norcross, Georgia",
+   "more_locations": 0,
+   "country": "US",
+   "work_mode": null,
+   "posted_on": "2026-10-23",
+   "posted_on_source": "first_seen",
+   "url": "https://hirly.me/jobs/application-developer-recent-graduate-hybrid-norcross-ga-at-usan-19e26918-48a4-4a16-b01e-72f78727dd08?utm_source=github&utm_medium=joblist&utm_campaign=new-grad-software-engineer-jobs"
+  }
+ ]
+}

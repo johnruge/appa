@@ -1,0 +1,10 @@
+{
+  "totalCount": 5,
+  "jobs": [
+    {"title": "Software Engineer, New Grad", "location": "New York, NY", "snippet": "&nbsp;...join our <b>software</b> team building payments infrastructure...", "salary": "$120k - $150k", "source": "greenhouse.io", "type": "Full-time", "link": "https://jooble.org/desc/-4630811526433051234?ckey=software+engineer&rgn=-1&pos=1&elckey=1&p=1&sid=1&jobAge=50&relb=100&brelb=100&bscr=1000&scr=1000&iid=1", "company": "Acme Payments", "updated": "2026-10-28T09:14:02.1530000", "id": -4630811526433051234},
+    {"title": "Entry Level Software Developer", "location": "Remote", "snippet": "...entry level <b>software</b> developer, 0-2 years...", "salary": "", "source": "lever.co", "type": "Full-time", "link": "https://jooble.org/desc/7012345678901234567?ckey=software+engineer&pos=2", "company": "Northwind Labs", "updated": "2026-10-20T00:00:00.0000000", "id": 7012345678901234567},
+    {"title": "Junior Backend Engineer (Contract)", "location": "Austin, TX", "snippet": "...Python, Go, Postgres...", "salary": "$45 - $60 per hour", "source": "dice.com", "type": "Contract", "link": "https://jooble.org/desc/1203948576102938475?ckey=software+engineer&pos=3", "company": "Contoso", "updated": "2026-09-02T15:30:00.0000000", "id": 1203948576102938475},
+    {"title": "Software Engineer I", "location": "Chicago, IL", "snippet": "...new grads welcome...", "salary": "", "source": "workday", "type": "", "link": "https://jooble.org/desc/998877665544332211?ckey=software+engineer&pos=4", "company": "Fabrikam", "updated": "not a date", "id": 998877665544332211},
+    {"title": "Software Engineer", "location": "Boston, MA", "snippet": "...", "salary": "", "source": "x", "type": "Full-time", "link": "", "company": "No Link Inc", "updated": "2026-10-01T00:00:00", "id": 111}
+  ]
+}

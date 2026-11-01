@@ -1,0 +1,170 @@
+{
+ "requisitionList": [
+  {
+   "hotJob": false,
+   "addedToJobCart": false,
+   "draft": false,
+   "alreadyAppliedOn": false,
+   "toReApply": false,
+   "jobId": "792722",
+   "contestNo": "197089",
+   "column": [
+    "Electrical Engineer - Battery Energy Storage System (BESS)",
+    "[\"Multiple Locations\"]",
+    "Oct 15, 2026"
+   ],
+   "linkedColumn": 0,
+   "locationsColumns": [
+    1
+   ]
+  },
+  {
+   "hotJob": false,
+   "addedToJobCart": false,
+   "draft": false,
+   "alreadyAppliedOn": false,
+   "toReApply": false,
+   "jobId": "792527",
+   "contestNo": "196958",
+   "column": [
+    "Digital Delivery Lead",
+    "[\"Multiple Locations\"]",
+    "Oct 14, 2026"
+   ],
+   "linkedColumn": 0,
+   "locationsColumns": [
+    1
+   ]
+  },
+  {
+   "hotJob": false,
+   "addedToJobCart": false,
+   "draft": false,
+   "alreadyAppliedOn": false,
+   "toReApply": false,
+   "jobId": "792622",
+   "contestNo": "197009",
+   "column": [
+    "Control Systems Engineer ",
+    "[\"Multiple Locations\"]",
+    "Oct 13, 2026"
+   ],
+   "linkedColumn": 0,
+   "locationsColumns": [
+    1
+   ]
+  },
+  {
+   "hotJob": false,
+   "addedToJobCart": false,
+   "draft": false,
+   "alreadyAppliedOn": false,
+   "toReApply": false,
+   "jobId": "791518",
+   "contestNo": "196398",
+   "column": [
+    "Project Field Engineer",
+    "[\"United States-California-Los Angeles\"]",
+    "Oct 13, 2026"
+   ],
+   "linkedColumn": 0,
+   "locationsColumns": [
+    1
+   ]
+  },
+  {
+   "hotJob": false,
+   "addedToJobCart": false,
+   "draft": false,
+   "alreadyAppliedOn": false,
+   "toReApply": false,
+   "jobId": "778598",
+   "contestNo": "191799",
+   "column": [
+    "Bridge EIT/Designer",
+    "[\"Multiple Locations\"]",
+    "Oct 13, 2026"
+   ],
+   "linkedColumn": 0,
+   "locationsColumns": [
+    1
+   ]
+  }
+ ],
+ "facetResults": [
+  {
+   "id": "LOCATION",
+   "facetValueResults": [
+    {
+     "id": "1460483283",
+     "text": "United States",
+     "quantity": "706",
+     "level": 1
+    },
+    {
+     "id": "8460483283",
+     "text": "Texas",
+     "quantity": "92",
+     "level": 2
+    },
+    {
+     "id": "4860483283",
+     "text": "California",
+     "quantity": "76",
+     "level": 2
+    }
+   ],
+   "levelList": [
+    {
+     "level": 1,
+     "name": "Country"
+    },
+    {
+     "level": 2,
+     "name": "State/Province"
+    },
+    {
+     "level": 3,
+     "name": "Region"
+    },
+    {
+     "level": 4,
+     "name": "City"
+    }
+   ]
+  },
+  {
+   "id": "POSTING_DATE",
+   "facetValueResults": [
+    {
+     "id": "1",
+     "text": "Today",
+     "quantity": ""
+    },
+    {
+     "id": "2",
+     "text": "Yesterday",
+     "quantity": ""
+    },
+    {
+     "id": "3",
+     "text": "Last 7 Days",
+     "quantity": ""
+    }
+   ]
+  }
+ ],
+ "pagingData": {
+  "currentPageNo": 1,
+  "pageSize": 25,
+  "totalCount": 706
+ },
+ "queryString": "f=LOCATION(1460483283)&KEYWORD=software+engineer&s=3|D&a=null&page=2&multiline=false",
+ "careerSectionUnAvailable": false,
+ "supportedLanguages": [
+  {
+   "displayName": "German",
+   "code": "de"
+  }
+ ]
+}

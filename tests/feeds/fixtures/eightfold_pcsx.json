@@ -1,0 +1,97 @@
+{
+ "status": 200,
+ "error": {
+  "message": "",
+  "body": ""
+ },
+ "data": {
+  "count": 608,
+  "sortBy": "timestamp",
+  "positions": [
+   {
+    "id": 446704948277,
+    "displayJobId": "3074176",
+    "name": "Sr. Engineer, CPU Software Test Engineer (Server)",
+    "locations": [
+     "Santa Clara, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "Santa Clara, CA, US"
+    ],
+    "postedTs": 1793318400,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Software Engineering",
+    "creationTs": 1744070400,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": "flexible_within_country",
+    "atsJobId": "3074176",
+    "positionUrl": "/careers/job/446704948277"
+   },
+   {
+    "id": 446719823376,
+    "displayJobId": "3094104",
+    "name": "Staff Linux Software Engineer (Multiple Locations)",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1793318400,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Software Engineering",
+    "creationTs": 1784246400,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3094104",
+    "positionUrl": "/careers/job/446719823376"
+   },
+   {
+    "id": 446720210759,
+    "displayJobId": "3094709",
+    "name": "XR Software Engineer, Staff - Customer Engineering",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1793318400,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Software Applications Engineering",
+    "creationTs": 1785369600,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": "flexible_within_country",
+    "atsJobId": "3094709",
+    "positionUrl": "/careers/job/446720210759"
+   },
+   {
+    "id": 446721232945,
+    "displayJobId": "3097028",
+    "name": "DFT Engineering Director",
+    "locations": [
+     "San Diego, California, United States of America"
+    ],
+    "standardizedLocations": [
+     "San Diego, CA, US"
+    ],
+    "postedTs": 1793318400,
+    "solrScore": null,
+    "stars": 0,
+    "department": "ASICS Engineering",
+    "creationTs": 1790035200,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "3097028",
+    "positionUrl": "/careers/job/446721232945"
+   }
+  ]
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "count": 4,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": 24632,
+   "role": "CloudOps Engineer (Network Engineer)",
+   "company_name": "Wrike",
+   "company_num_employees": null,
+   "employment_type": "full time",
+   "location": "",
+   "remote": true,
+   "logo": null,
+   "url": "https://findwork.dev/nY777GM/cloudops-engineer-network-engineer-at-wrike",
+   "text": "<p><div class=\"content-intro\"><div>Wrike is the most powerful work management platform. Built for teams and organizations looking to collaborate, create, and exceed every day, Wrike brings everyone and all work into a single place to remove complexity, increase productivity, and free people up to focus on their most purposeful work.</div><div>&nbsp;</div><div>Wrike is our people, not a place. As a distributed team, we own our growth, stay globally connected, and rely on the product we build to deliver impactful work alongside brilliant minds. You'll have real ownership over meaningful work, a global team that has your back, and the flexibility to do your best work your way. If that sounds like you, we'd love to hear from you.</div><div>&nbsp;</div><div><strong>Our vision:&nbsp; </strong>A world where everyone is free to focus on their most purposeful work, together.&nbsp;</div><div>&nbsp;</div></div><h3><strong>About the Role:</strong></h3><p>As a CloudOps Engineer at Wrike, you have advanced skills in supporting cloud and on-prem data center infrastructure with security in mind. You know how to work with containers, networking, monitoring, automation, and debugging a reasonably complex infrastructure. You feel comfortable defining your own work based on the team OKRs. You can also help others do so when necessary. You are used to proposing meaningful improvements to the existing infrastructure in alignment with architects and tech leads, and you can drive the execution</p><p",
+   "date_posted": "2026-10-30T11:31:17Z",
+   "keywords": [
+    "ansible",
+    "gcp",
+    "nginx",
+    "gitlab",
+    "python",
+    "jenkins",
+    "terraform",
+    "containers"
+   ],
+   "source": "WeWorkRemotely"
+  },
+  {
+   "id": 46557,
+   "role": "Autonomous Systems Security Engineer",
+   "company_name": "Anthropic",
+   "company_num_employees": null,
+   "employment_type": "full time",
+   "location": "",
+   "remote": true,
+   "logo": null,
+   "url": "https://findwork.dev/Q6YYYOn/autonomous-systems-security-engineer-at-anthropic",
+   "text": "<p><div class=\"content-intro\"><h2><strong>About Anthropic</strong></h2><p>Anthropic\u2019s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2><strong>About the role</strong></h2><p>Claude is trained and served on hardware in data centers Anthropic operates and in sites partners build and run for us. DCSE secures that footprint: the sites, the hardware moving through them, and the people and vendors who touch it. You'll be the engineer who owns autonomous systems across that footprint as one security domain, from both sides: drones, ground robots and automated vehicles for patrol, inspection and moving hardware, including the security of that automation inside secure areas, and the detection systems that tell us what is flying over or operating near a site uninvited.</p><p>You set the approach, select and integrate the platforms and sensors, write the requirements vendors build to, and run what you ship, from the operating model where operators assign missions and machines carry them out to the playbook that turns a detection into an identified track and a well-evidenced handoff to whoever holds authority over the airspace. Interdiction is not part of this role. The goal is security that runs itself: coverage, flee",
+   "date_posted": "2026-10-30T11:31:14Z",
+   "keywords": [
+    "embedded",
+    "gpt",
+    "coverage",
+    "claude",
+    "ai",
+    "anthropic",
+    "agents"
+   ],
+   "source": "WeWorkRemotely"
+  },
+  {
+   "id": 8766,
+   "role": "DevOps Engineer, Edge and Developer Experience (Remote Eligible in Bulgaria)",
+   "company_name": "Smartsheet",
+   "company_num_employees": null,
+   "employment_type": "full time",
+   "location": "",
+   "remote": true,
+   "logo": null,
+   "url": "https://findwork.dev/M1GGGjn/devops-engineer-edge-and-developer-experience-remote-eligible-in-bulgaria-at-smartsheet",
+   "text": "<p><div class=\"content-intro\"><p>For over 20 years, Smartsheet has empowered teams to manage work seamlessly and scale solutions smarter. Now, in our most ambitious chapter yet, we are uniting human teams with AI agents. By orchestrating the work agents do best, automating manual tasks and uncovering insights at scale, we create the space for people to focus on what truly matters: judgment, creativity, and big thinking. That is magic at work, and it\u2019s what we show up for every day.</p></div><p>We are seeking a DevOps Engineer II to join the Edge and Developer Experience team. Our team collaboratively operates Smartsheet's high-performance edge proxy platform and drives the adoption of internal engineering tooling. The edge proxy serves as the entry point for all traffic across Smartsheet's commercial and FedRAMP-authorized US Government environments. The team supports the lifecycle of this platform: from maintaining proxy configurations, to provisioning the multi-region AWS EKS infrastructure it runs on, to assisting with observability. Beyond the edge layer, the team also drives the integration of internal developer tooling \u2014 from \u0430 developer portal (IDP) to standardized CI/CD pipelines \u2014 that improves the engineering experience and velocity across the company.</p><p>You will work remotely from Bulgaria and report to one of our engineering leaders in Bulgaria.</p><h2><strong>You will:</strong></h2><ul><li>Contribute to the edge proxy platform: Assist in maintaining, upgradin",
+   "date_posted": "2026-10-30T11:31:10Z",
+   "keywords": [
+    "datadog",
+    "nginx",
+    "eks",
+    "ai",
+    "gitlab",
+    "python",
+    "terraform",
+    "vpc"
+   ],
+   "source": "WeWorkRemotely"
+  },
+  {
+   "id": 15443,
+   "role": "Sr. Manager, Data Engineering",
+   "company_name": "Carrot",
+   "company_num_employees": null,
+   "employment_type": "full time",
+   "location": "",
+   "remote": true,
+   "logo": null,
+   "url": "https://findwork.dev/XWzzzEM/sr-manager-data-engineering-at-carrot",
+   "text": "<p><div class=\"content-intro\"><p><strong>About Carrot: </strong></p><p><a href=\"https://c212.net/c/link/?t=0&amp;l=en&amp;o=4420559-1&amp;h=3535232987&amp;u=https%3A%2F%2Fwww.carrotfertility.com%2F&amp;a=Carrot+Fertility\">Carrot</a> is the leading global fertility and family care platform, built on intelligent care orchestration: the right clinical guidance, at the right moment, in the context of each member\u2019s life. More than a thousand multinational employers, health plans, and health systems trust Carrot to support millions of members across 195 countries \u2013 from pre-pregnancy through menopause and major life moments in between. Carrot's comprehensive clinical program delivers industry-leading cost savings for plan sponsors and award-winning experiences and improved outcomes for millions of people worldwide.<br><br>Carrot is widely regarded as a defining force in healthcare innovation as a recipient of several top-tier awards, including Fast Company's 'Most Innovative Companies' and CNBC's '100 Barrier Breaking Startups'. The company is regularly cited by leading global outlets \u2014 including The Economist, Bloomberg, The Wall Street Journal, NPR, ABC News, and Harvard Business Review \u2014 as a leading voice on digital health, the future of work, and family health. Learn more at <a href=\"http://get-carrot.com\">get-carrot.com</a>.</p></div><p><strong>The Opportunity </strong><strong></strong></p><p>Carrot is seeking a Sr. Manager, Data Engineering to lead our Business Intelligence ",
+   "date_posted": "2026-10-30T11:31:10Z",
+   "keywords": [
+    "net",
+    "ai",
+    "sql",
+    "snowflake",
+    "python",
+    "dbt",
+    "etl",
+    "aws"
+   ],
+   "source": "WeWorkRemotely"
+  }
+ ]
+}

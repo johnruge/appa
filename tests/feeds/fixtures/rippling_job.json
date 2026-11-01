@@ -1,0 +1,46 @@
+{
+ "uuid": "84d388b6-7656-434c-8862-0312eb6b97ac",
+ "name": "Business Operations Manager",
+ "description": {
+  "company": "<div><body><h2 style='font-family:\"Basel Grotesk\",Arial,sans-serif;line-height:1.6;font-size:15pt;font-weight:600;letter-spacing:0.5px;margin-top:18px;margin-bottom:4px;padding-left:0px;'><b><strong style=\"white-space:pre-wrap;\">About Rippling</strong></b></h2><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><span style=\"font-size:11pt;white-space:pre-wrap;\">Rippling gives businesses one place to run HR, IT, and Finance. It brings together all of the workforce systems that are normally scattered across a company, like payroll, expenses, benefits, and computers. For the first time ever, you can manage and automate every part of the employee lifecycle in a single system.</span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><span style=\"font-size:11pt;white-space:pre-wrap;\">Take onboarding, for example. With Rippling, you can hire a new employee anywhere in the world and set up their payroll, corporate card, computer, benefits, and even third-party apps like Slack and Microsoft 365\u2014all within 90 seconds.</span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><span style=\"font-size:11pt;white-space:pre-wrap;\">Based in San Francisco, CA, </span><a href=\"https://www",
+  "role": "<div><body><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><br></p><h2 style='font-family:\"Basel Grotesk\",Arial,sans-serif;line-height:1.6;font-size:29pt;font-weight:600;letter-spacing:0.5px;margin-top:18px;margin-bottom:4px;padding-left:0px;'><span style=\"font-size:15pt;white-space:pre-wrap;\">About the Role</span></h2><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><span style=\"white-space:pre-wrap;\">Business Operations is Rippling\u2019s strike team for high-stakes, mission-critical challenges. We are the architects behind product development, go-to-market strategies, and scale operations across the entire company. Operating as the connective tissue for our compound startup, this small, elite unit brings structure to massive ambiguity and executes with relentless precision.</span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><span style=\"white-space:pre-wrap;\">We need BizOps Managers who are world-class problem solvers, first-principles thinkers, and fearless operators. You won't just advise, you will buil"
+ },
+ "workLocations": [
+  "San Francisco, CA",
+  "New York, NY"
+ ],
+ "department": {
+  "name": "Bizops",
+  "base_department": "Bizops",
+  "department_tree": [
+   "Bizops"
+  ]
+ },
+ "employmentType": {
+  "label": "SALARIED_FT",
+  "id": "Salaried, full-time"
+ },
+ "createdOn": "2026-03-31T17:37:26.093000-07:00",
+ "eeocQuestionnaireEnabled": true,
+ "eeocQuestionnaireEnabledForJobPost": true,
+ "url": "https://ats.rippling.com/rippling/jobs/84d388b6-7656-434c-8862-0312eb6b97ac",
+ "board": {
+  "boardType": "CUSTOM",
+  "slug": "rippling",
+  "title": "Current Openings",
+  "boardURL": "http://www.rippling.com/careers/open-roles"
+ },
+ "payRangeDetails": [
+  {
+   "location": "US",
+   "currency": "USD",
+   "frequency": "YEAR",
+   "rangeStart": 185000.0,
+   "rangeEnd": 240000.0,
+   "isRemote": false
+  }
+ ],
+ "hasAIEvaluationsEnabled": true,
+ "companyName": "Rippling",
+ "unlistedFromSearch": false
+}

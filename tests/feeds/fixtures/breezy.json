@@ -1,0 +1,326 @@
+[
+ {
+  "id": "47d01a4dad9d",
+  "friendly_id": "47d01a4dad9d-accounting-summer-intern",
+  "name": "Accounting Summer Intern",
+  "url": "https://ninjaholdings.breezy.hr/p/47d01a4dad9d-accounting-summer-intern",
+  "published_date": "2026-09-09T21:23:24.553Z",
+  "type": {
+   "id": "fullTime",
+   "name": "Full-Time"
+  },
+  "location": {
+   "country": {
+    "name": "United States",
+    "id": "US"
+   },
+   "state": {
+    "id": "IL",
+    "name": "Illinois"
+   },
+   "city": "Chicago",
+   "primary": true,
+   "streetAddress": {
+    "location": "222 S Riverside Plaza, Chicago, IL 60606, USA"
+   },
+   "is_remote": true,
+   "remote_details": {
+    "value": "hybrid",
+    "label": "Hybrid (Some remote, some in person)"
+   },
+   "name": "Chicago, IL",
+   "id": "df7842788cd7"
+  },
+  "department": null,
+  "salary": "$20 – $25 / hour",
+  "company": {
+   "name": "NinjaHoldings",
+   "logo_url": null,
+   "friendly_id": "ninjaholdings",
+   "isMultipleLocationsEnabled": true
+  },
+  "locations": [
+   {
+    "country": {
+     "name": "United States",
+     "id": "US"
+    },
+    "state": {
+     "id": "IL",
+     "name": "Illinois"
+    },
+    "city": "Chicago",
+    "primary": true,
+    "streetAddress": {
+     "location": "222 S Riverside Plaza, Chicago, IL 60606, USA"
+    },
+    "is_remote": true,
+    "remote_details": {
+     "value": "hybrid",
+     "label": "Hybrid (Some remote, some in person)"
+    },
+    "name": "Chicago, IL",
+    "id": "df7842788cd7"
+   }
+  ]
+ },
+ {
+  "id": "5c3bc4e2cf1f",
+  "friendly_id": "5c3bc4e2cf1f-data-scientist",
+  "name": "Data Scientist",
+  "url": "https://ninjaholdings.breezy.hr/p/5c3bc4e2cf1f-data-scientist",
+  "published_date": "2026-08-27T15:48:24.593Z",
+  "type": {
+   "id": "fullTime",
+   "name": "Full-Time"
+  },
+  "location": {
+   "country": {
+    "name": "United States",
+    "id": "US"
+   },
+   "state": {
+    "id": "IL",
+    "name": "Illinois"
+   },
+   "city": "Chicago",
+   "primary": true,
+   "streetAddress": {
+    "location": "222 S Riverside Plaza, Chicago, IL 60606, USA"
+   },
+   "is_remote": true,
+   "remote_details": {
+    "value": "remote",
+    "label": "Fully remote, no location restrictions"
+   },
+   "name": "Chicago, IL",
+   "id": "4460c40a2944"
+  },
+  "department": null,
+  "salary": "$90,000 – $130,000 / year",
+  "company": {
+   "name": "NinjaHoldings",
+   "logo_url": null,
+   "friendly_id": "ninjaholdings",
+   "isMultipleLocationsEnabled": true
+  },
+  "locations": [
+   {
+    "country": {
+     "name": "United States",
+     "id": "US"
+    },
+    "state": {
+     "id": "IL",
+     "name": "Illinois"
+    },
+    "city": "Chicago",
+    "primary": true,
+    "streetAddress": {
+     "location": "222 S Riverside Plaza, Chicago, IL 60606, USA"
+    },
+    "is_remote": true,
+    "remote_details": {
+     "value": "remote",
+     "label": "Fully remote, no location restrictions"
+    },
+    "name": "Chicago, IL",
+    "id": "4460c40a2944"
+   }
+  ]
+ },
+ {
+  "id": "9152ebd05b8d",
+  "friendly_id": "9152ebd05b8d-general-manager-line-of-credit",
+  "name": "General Manager, Line of Credit",
+  "url": "https://ninjaholdings.breezy.hr/p/9152ebd05b8d-general-manager-line-of-credit",
+  "published_date": "2026-10-27T17:50:44.022Z",
+  "type": {
+   "id": "fullTime",
+   "name": "Full-Time"
+  },
+  "location": {
+   "id": "84ddf5240016",
+   "country": {
+    "id": "US",
+    "name": "United States"
+   },
+   "state": {
+    "id": "IL",
+    "name": "Illinois"
+   },
+   "city": "Chicago",
+   "primary": true,
+   "is_remote": true,
+   "remote_details": {
+    "value": "remote",
+    "label": "Fully remote, no location restrictions"
+   },
+   "streetAddress": {
+    "location": "222 S Riverside Plaza, Chicago, IL 60606, USA"
+   },
+   "name": "Chicago, IL"
+  },
+  "department": "",
+  "salary": "$250,000 – $325,000 / year",
+  "company": {
+   "name": "NinjaHoldings",
+   "logo_url": null,
+   "friendly_id": "ninjaholdings",
+   "isMultipleLocationsEnabled": true
+  },
+  "locations": [
+   {
+    "id": "84ddf5240016",
+    "country": {
+     "id": "US",
+     "name": "United States"
+    },
+    "state": {
+     "id": "IL",
+     "name": "Illinois"
+    },
+    "city": "Chicago",
+    "primary": true,
+    "is_remote": true,
+    "remote_details": {
+     "value": "remote",
+     "label": "Fully remote, no location restrictions"
+    },
+    "streetAddress": {
+     "location": "222 S Riverside Plaza, Chicago, IL 60606, USA"
+    },
+    "name": "Chicago, IL"
+   }
+  ]
+ },
+ {
+  "id": "6eb4151310bf",
+  "friendly_id": "6eb4151310bf-software-engineer",
+  "name": "Software Engineer",
+  "url": "https://ninjaholdings.breezy.hr/p/6eb4151310bf-software-engineer",
+  "published_date": "2026-09-08T21:01:20.260Z",
+  "type": {
+   "id": "fullTime",
+   "name": "Full-Time"
+  },
+  "location": {
+   "country": {
+    "name": "United States",
+    "id": "US"
+   },
+   "state": {
+    "id": "IL",
+    "name": "Illinois"
+   },
+   "city": "Chicago",
+   "primary": true,
+   "streetAddress": {
+    "location": "222 S Riverside Plaza, Chicago, IL 60606, USA"
+   },
+   "is_remote": true,
+   "remote_details": {
+    "value": "remote",
+    "label": "Fully remote, no location restrictions"
+   },
+   "name": "Chicago, IL"
+  },
+  "department": null,
+  "salary": "$100,000 – $150,000 / year",
+  "company": {
+   "name": "NinjaHoldings",
+   "logo_url": null,
+   "friendly_id": "ninjaholdings",
+   "isMultipleLocationsEnabled": true
+  },
+  "locations": [
+   {
+    "country": {
+     "name": "United States",
+     "id": "US"
+    },
+    "state": {
+     "id": "IL",
+     "name": "Illinois"
+    },
+    "city": "Chicago",
+    "primary": true,
+    "streetAddress": {
+     "location": "222 S Riverside Plaza, Chicago, IL 60606, USA"
+    },
+    "is_remote": true,
+    "remote_details": {
+     "value": "remote",
+     "label": "Fully remote, no location restrictions"
+    },
+    "name": "Chicago, IL",
+    "id": "62b33f7a4e30"
+   }
+  ]
+ },
+ {
+  "id": "23a015fea536",
+  "friendly_id": "23a015fea536-software-engineer-intern",
+  "name": "Software Engineer Intern",
+  "url": "https://ninjaholdings.breezy.hr/p/23a015fea536-software-engineer-intern",
+  "published_date": "2026-09-09T21:24:01.322Z",
+  "type": {
+   "id": "temporary",
+   "name": "Temporary"
+  },
+  "location": {
+   "country": {
+    "name": "United States",
+    "id": "US"
+   },
+   "state": {
+    "id": "IL",
+    "name": "Illinois"
+   },
+   "city": "Chicago",
+   "primary": true,
+   "streetAddress": {
+    "location": "222 S Riverside Plaza, Chicago, IL 60606, USA"
+   },
+   "is_remote": true,
+   "remote_details": {
+    "value": "hybrid",
+    "label": "Hybrid (Some remote, some in person)"
+   },
+   "name": "Chicago, IL",
+   "id": "face6c62122d"
+  },
+  "department": null,
+  "salary": "$20 – $25 / hour",
+  "company": {
+   "name": "NinjaHoldings",
+   "logo_url": null,
+   "friendly_id": "ninjaholdings",
+   "isMultipleLocationsEnabled": true
+  },
+  "locations": [
+   {
+    "country": {
+     "name": "United States",
+     "id": "US"
+    },
+    "state": {
+     "id": "IL",
+     "name": "Illinois"
+    },
+    "city": "Chicago",
+    "primary": true,
+    "streetAddress": {
+     "location": "222 S Riverside Plaza, Chicago, IL 60606, USA"
+    },
+    "is_remote": true,
+    "remote_details": {
+     "value": "hybrid",
+     "label": "Hybrid (Some remote, some in person)"
+    },
+    "name": "Chicago, IL",
+    "id": "face6c62122d"
+   }
+  ]
+ }
+]

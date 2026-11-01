@@ -1,0 +1,100 @@
+{
+ "total": 102,
+ "jobPostings": [
+  {
+   "title": "Senior Software Engineer",
+   "externalPath": "/job/USA-CA-Pleasanton/Senior-Software-Engineer_JR-0107919",
+   "locationsText": "USA, CA, Pleasanton",
+   "postedOn": "Posted 23 Days Ago",
+   "remoteType": "Flex",
+   "bulletFields": [
+    "JR-0107919"
+   ]
+  },
+  {
+   "title": "Software Engineer/Senior Software Engineer - AI Platform (Agent Cell)",
+   "externalPath": "/job/USA-CO-Boulder/Software-Engineer-Senior-Software-Engineer---AI-Platform--Agent-Runtime-_JR-0109507",
+   "locationsText": "3 Locations",
+   "postedOn": "Posted 7 Days Ago",
+   "remoteType": "Flex",
+   "bulletFields": [
+    "JR-0109507"
+   ]
+  },
+  {
+   "title": "Principal Software Engineer, Operations Engineering",
+   "externalPath": "/job/USA-OR-Beaverton/Principal-Software-Engineer--Operations-Engineering_JR-0111127",
+   "locationsText": "USA, OR, Beaverton",
+   "postedOn": "Posted Yesterday",
+   "remoteType": "Flex",
+   "bulletFields": [
+    "JR-0111127"
+   ]
+  },
+  {
+   "title": "Senior Software Engineer(Distributed Systems)",
+   "externalPath": "/job/USA-CA-Pleasanton/Senior-Software-Engineer-Distributed-Systems-_JR-0109643",
+   "locationsText": "USA, CA, Pleasanton",
+   "postedOn": "Posted 30+ Days Ago",
+   "remoteType": "Flex",
+   "bulletFields": [
+    "JR-0109643"
+   ]
+  },
+  {
+   "title": "Analytics Sr Software Engineer (US Federal)",
+   "externalPath": "/job/USAVAReston/Analytics-Sr-Software-Engineer--US-Federal-_JR-0105493",
+   "locationsText": "USA.VA.Reston",
+   "postedOn": "Posted 30+ Days Ago",
+   "remoteType": "Flex",
+   "bulletFields": [
+    "JR-0105493"
+   ]
+  }
+ ],
+ "facets": [
+  {
+   "facetParameter": "remoteType",
+   "descriptor": "Remote Type",
+   "values": [
+    {
+     "descriptor": "Flex",
+     "id": "bf0480ca9d751000ea15bc9c334b0001",
+     "count": 345
+    },
+    {
+     "descriptor": "Remote",
+     "id": "bf0480ca9d751000ea15bc9c334b0000",
+     "count": 19
+    },
+    {
+     "descriptor": "Onsite",
+     "id": "bf0480ca9d751000ea15bc0178070000",
+     "count": 18
+    }
+   ]
+  },
+  {
+   "facetParameter": "Location_Country",
+   "descriptor": "Country / Territory",
+   "values": [
+    {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09",
+     "count": 190
+    },
+    {
+     "descriptor": "Canada",
+     "id": "a30a87ed25634629aa6c3958aa2b91ea",
+     "count": 33
+    },
+    {
+     "descriptor": "Ireland",
+     "id": "04a05835925f45b3a59406a2a6b72c8a",
+     "count": 24
+    }
+   ]
+  }
+ ],
+ "userAuthenticated": false
+}

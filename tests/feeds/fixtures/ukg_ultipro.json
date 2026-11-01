@@ -1,0 +1,288 @@
+{
+ "opportunities": [
+  {
+   "Id": "680d9400-737d-48bb-b2bc-b0d0f2019d6b",
+   "Featured": false,
+   "Title": "Associate Artificial Intelligence Engineer",
+   "RequisitionNumber": "ASSOC006328",
+   "FullTime": true,
+   "JobCategoryName": "IT/IS",
+   "Locations": [
+    {
+     "Id": "30125202-b508-4288-9d43-dd324bcf427c",
+     "LocalizedName": "Cleveland Headquarters Office",
+     "LocalizedLocationId": null,
+     "LocalizedDescription": null,
+     "Address": {
+      "Line1": "747 Alpha Dr",
+      "Line2": null,
+      "City": "Highland Heights",
+      "PostalCode": "44143",
+      "State": {
+       "Code": "OH",
+       "Name": "Ohio"
+      },
+      "Country": {
+       "Code": "USA",
+       "Name": "United States"
+      }
+     },
+     "DisplayName": true,
+     "DisplayLocationId": false,
+     "DisplayAddress": true,
+     "DisplayStreetAddress": false,
+     "DisplayDescription": false,
+     "SourceOfTruth": 0,
+     "Coordinates": {
+      "Latitude": 41.542777983259,
+      "Longitude": -81.452207016504
+     }
+    }
+   ],
+   "PostedDate": "2026-10-28T19:12:24.041Z",
+   "BriefDescription": "Associate Artificial Intelligence Engineer\nThe Associate Artificial Intelligence Engineer is responsible for developing, implementing, and managing AI solutions and machine learning models that provide innovative, data-driven solutions to complex business challenges. This role will involve collaboration within and across multiple departments to build cutting-edge solutions that enhance decision-making capabilities and optimize business performance.\n\u00a0\nResponsibilities:\n\nUnderstand business requirements, design, develop, and deploy scalable AI applications that aligned with business objectives.\nDevelop high-performing, reusable, and reliable code following industry standards and bes",
+   "MatchScore": 1.0,
+   "MatchedLocations": [],
+   "Distance": null,
+   "JobLocationType": 0,
+   "OpportunityType": 0
+  },
+  {
+   "Id": "c2fb0ec0-bc5b-49bf-a6f4-e9e2a53f0f42",
+   "Featured": false,
+   "Title": "Field Service Engineer",
+   "RequisitionNumber": "FIELD006599",
+   "FullTime": true,
+   "JobCategoryName": "Operations",
+   "Locations": [
+    {
+     "Id": "955cf053-f370-4922-bee1-32221b707980",
+     "LocalizedName": "Nashville, TN",
+     "LocalizedLocationId": null,
+     "LocalizedDescription": null,
+     "Address": {
+      "Line1": null,
+      "Line2": null,
+      "City": "Nashville",
+      "PostalCode": "37201",
+      "State": {
+       "Code": "TN",
+       "Name": "Tennessee"
+      },
+      "Country": {
+       "Code": "USA",
+       "Name": "United States"
+      }
+     },
+     "DisplayName": true,
+     "DisplayLocationId": false,
+     "DisplayAddress": false,
+     "DisplayStreetAddress": false,
+     "DisplayDescription": false,
+     "SourceOfTruth": 0,
+     "Coordinates": {
+      "Latitude": 36.1651497,
+      "Longitude": -86.7772001
+     }
+    }
+   ],
+   "PostedDate": "2026-10-28T16:10:22.297Z",
+   "BriefDescription": "Field Service Engineer\n\nAre you someone who thrives on helping others? Enjoys solving challenging technical problems? Is passionate about working hands-on with computer or data center hardware? Then you may be interested in the Field Service Engineer (FSE) position that we have available. \n\nIt's an opportunity to join a team that meets the 24/7 data center maintenance needs of local customers with a focus on delivering exceptional service with each interaction. You will provide onsite system diagnostic and analytical support to customers within a geographical territory, or assigned to a specific account, supporting the customer per the terms of the Service Level Agreement (SLA) with Park Place Technologies.",
+   "MatchScore": 1.0,
+   "MatchedLocations": [],
+   "Distance": null,
+   "JobLocationType": 2,
+   "OpportunityType": 0
+  },
+  {
+   "Id": "799b59d2-1002-481b-916c-5a40a91d59d6",
+   "Featured": false,
+   "Title": "Sales Development Associate - June 2027",
+   "RequisitionNumber": "SALES006439",
+   "FullTime": true,
+   "JobCategoryName": "Sales",
+   "Locations": [
+    {
+     "Id": "30125202-b508-4288-9d43-dd324bcf427c",
+     "LocalizedName": "Cleveland Headquarters Office",
+     "LocalizedLocationId": null,
+     "LocalizedDescription": null,
+     "Address": {
+      "Line1": "747 Alpha Dr",
+      "Line2": null,
+      "City": "Highland Heights",
+      "PostalCode": "44143",
+      "State": {
+       "Code": "OH",
+       "Name": "Ohio"
+      },
+      "Country": {
+       "Code": "USA",
+       "Name": "United States"
+      }
+     },
+     "DisplayName": true,
+     "DisplayLocationId": false,
+     "DisplayAddress": true,
+     "DisplayStreetAddress": false,
+     "DisplayDescription": false,
+     "SourceOfTruth": 0,
+     "Coordinates": {
+      "Latitude": 41.542777983259,
+      "Longitude": -81.452207016504
+     }
+    }
+   ],
+   "PostedDate": "2026-10-27T15:03:12.095Z",
+   "BriefDescription": "Sales Development Associate\nAs a Sales Development Associate (SDA), you should be enthusiastic about learning the fundamentals of sales and generating qualified leads for our sales teams. This role is a precursor to being promoted to a Business Development Representative where you will receive continuing sales education, learn how to prospect for the different selling departments at Park Place Technologies, and gain more insight into all of the products and services we offer our prospective and existing customers. The Business Development Representative role is the step before an account manager role. Time in the Sales Development Associate role is generally 3 to 4 months.\n\u00a0\nWhat you\u2019ll be doing:",
+   "MatchScore": 1.0,
+   "MatchedLocations": [],
+   "Distance": null,
+   "JobLocationType": 0,
+   "OpportunityType": 0
+  },
+  {
+   "Id": "1f500b28-076a-44e0-acb0-9650b6fb3b50",
+   "Featured": false,
+   "Title": "Software Developer",
+   "RequisitionNumber": "SOFTW006594",
+   "FullTime": true,
+   "JobCategoryName": "IT/IS",
+   "Locations": [
+    {
+     "Id": "30125202-b508-4288-9d43-dd324bcf427c",
+     "LocalizedName": "Cleveland Headquarters Office",
+     "LocalizedLocationId": null,
+     "LocalizedDescription": null,
+     "Address": {
+      "Line1": "747 Alpha Dr",
+      "Line2": null,
+      "City": "Highland Heights",
+      "PostalCode": "44143",
+      "State": {
+       "Code": "OH",
+       "Name": "Ohio"
+      },
+      "Country": {
+       "Code": "USA",
+       "Name": "United States"
+      }
+     },
+     "DisplayName": true,
+     "DisplayLocationId": false,
+     "DisplayAddress": true,
+     "DisplayStreetAddress": false,
+     "DisplayDescription": false,
+     "SourceOfTruth": 0,
+     "Coordinates": {
+      "Latitude": 41.542777983259,
+      "Longitude": -81.452207016504
+     }
+    }
+   ],
+   "PostedDate": "2026-10-16T12:01:55.14Z",
+   "BriefDescription": "Software Developer\nThe Software Developer is responsible for the analysis, design, implementation, testing and maintenance of professionally engineered Network Analytics software systems and supporting internal tools, as required, to fulfil the needs of the business, and which meet or exceed PPT\u2019s quality standards.",
+   "MatchScore": 1.0,
+   "MatchedLocations": [],
+   "Distance": null,
+   "JobLocationType": 0,
+   "OpportunityType": 0
+  },
+  {
+   "Id": "2a720e7e-300f-4111-baff-b6bb51c010d0",
+   "Featured": false,
+   "Title": "Pre-Sales Engineer II",
+   "RequisitionNumber": "PRESA006198",
+   "FullTime": true,
+   "JobCategoryName": "Sales",
+   "Locations": [
+    {
+     "Id": "a6c52315-86c5-4072-b741-3c9ee1cabd08",
+     "LocalizedName": "Hong Kong Regent Office",
+     "LocalizedLocationId": null,
+     "LocalizedDescription": null,
+     "Address": {
+      "Line1": "Suite 1305, 13/F",
+      "Line2": "AXA Tower, Landmark East, 100 How Ming Street",
+      "City": "Kwun Tong",
+      "PostalCode": null,
+      "State": {
+       "Code": "HK",
+       "Name": "Kwun Tong, Kowloon"
+      },
+      "Country": {
+       "Code": "HKG",
+       "Name": "Hong Kong Special Administrative Region"
+      }
+     },
+     "DisplayName": true,
+     "DisplayLocationId": false,
+     "DisplayAddress": true,
+     "DisplayStreetAddress": false,
+     "DisplayDescription": false,
+     "SourceOfTruth": 0,
+     "Coordinates": {
+      "Latitude": 22.312221197557,
+      "Longitude": 114.223169476829
+     }
+    }
+   ],
+   "PostedDate": "2026-10-09T05:00:21.938Z",
+   "BriefDescription": "Pre-Sales Engineer II\nThe Pre-Sales Engineer II partners with the sales team to consult with prospects and customers regarding after warranty data center maintenance & network optimization. The Pre-Sales Engineer II designs & architects\u2019 technical solutions to meet evolving customer needs. Assists the sales team as a subject matter expert on storage, server, networking, as w",
+   "MatchScore": 1.0,
+   "MatchedLocations": [],
+   "Distance": null,
+   "JobLocationType": 1,
+   "OpportunityType": 0
+  },
+  {
+   "Id": "bade43a3-270f-49fa-b9c5-e2dd8d17c8d7",
+   "Featured": false,
+   "Title": "Software Development Intern",
+   "RequisitionNumber": "SOFTW005917",
+   "FullTime": true,
+   "JobCategoryName": "IT/IS",
+   "Locations": [
+    {
+     "Id": "0341efb8-34f3-47d6-8487-ed31cfbeb0fa",
+     "LocalizedName": "Hyderabad Office",
+     "LocalizedLocationId": null,
+     "LocalizedDescription": null,
+     "Address": {
+      "Line1": "13th Floor Commerzone Hetero Tower (B)",
+      "Line2": "Serilingampally (Mandal), Ranga Reddy District",
+      "City": "Hyderabad",
+      "PostalCode": "500081",
+      "State": {
+       "Code": "TEL",
+       "Name": "Telangana"
+      },
+      "Country": {
+       "Code": "IND",
+       "Name": "India"
+      }
+     },
+     "DisplayName": true,
+     "DisplayLocationId": false,
+     "DisplayAddress": true,
+     "DisplayStreetAddress": false,
+     "DisplayDescription": false,
+     "SourceOfTruth": 0,
+     "Coordinates": {
+      "Latitude": 17.4528277,
+      "Longitude": 78.3824439
+     }
+    }
+   ],
+   "PostedDate": "2026-10-08T04:46:44.63Z",
+   "BriefDescription": "We are seeking a highly motivated and detail-oriented intern to join our team as a Customer Intelligence Analyst with a secondary role of Software Engineer. This position is designed for individuals with a keen interest in analytics and data-driven insights as well as learning how to develop software according to given requirements, quality standards, and technical expectations set by team leadership within defined timeframes. As an intern, you will be responsible for supporting the Customer Intelligence team in various tasks related to customer data analysis and business decision-making.\u00a0 The secondary role will be working within one of our development workstreams to deliver custom software.\n\u00a0\nWhat you\u2019ll be doing:\nCustomer",
+   "MatchScore": 1.0,
+   "MatchedLocations": [],
+   "Distance": null,
+   "JobLocationType": 1,
+   "OpportunityType": 0
+  }
+ ],
+ "totalCount": 6,
+ "locations": []
+}

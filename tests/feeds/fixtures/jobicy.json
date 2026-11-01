@@ -1,0 +1,105 @@
+{
+ "apiVersion": "2.2.19",
+ "documentationUrl": "https://jobi.cy/apidocs",
+ "friendlyNotice": "Thanks for using Jobicy API! Please ensure Jobicy is clearly credited with a direct link to the source, and all application buttons redirect to the original job URL provided in this feed. That’s all! You might be building something amazing, we wish you the best of luck!",
+ "jobCount": 4,
+ "lastUpdate": "2026-10-30T18:07:40+00:00",
+ "nextCursor": null,
+ "hasMore": false,
+ "appliedFilters": {
+  "count": 100,
+  "geo": "usa",
+  "industry": "engineering"
+ },
+ "jobs": [
+  {
+   "id": 158129,
+   "url": "https://jobicy.com/jobs/158129-senior-fullstack-engineer-be-leaning",
+   "jobSlug": "158129-senior-fullstack-engineer-be-leaning",
+   "jobTitle": "Senior Fullstack Engineer (BE-leaning)",
+   "companyName": "TeamSnap",
+   "companyLogo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2021/01/WRILS-210112010303-582315.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Full-Time"
+   ],
+   "jobGeo": "USA",
+   "jobLevel": "Senior",
+   "jobExcerpt": "About Us At TeamSnap, we believe when the world connects through sports; the world becomes better. TeamSnap is a sports and communication platform dedicated to taking the work out of play in youth sports. We also believe our jobs should excite us, our teammates should support us and our bosses should inspire us. We&hellip;",
+   "jobDescription": "<p><strong> About Us</strong></p>\n<p>At <a href=\"https://jobicy.com/company/teamsnap\" target=\"_blank\" rel=\"noopener\">TeamSnap</a>, we believe when the world connects through sports; the world becomes better. TeamSnap is a sports and communication platform dedicated to taking the work out of play in youth sports. We also believe our jobs should excite us, our teammates should support us and our bosses should inspire us. We empower our people to bring big ideas and tiny egos, landing us on Outside Magazine’s list of “<strong>Best Places to Work\" </strong>and Built In’s “<strong>100 Best Remote-First Places to Work.\"</strong></p>\n\n<p>TeamSnap is seeking a Senior Fullstack Engineer (BE-leaning)<strong> </strong>interested in working across the stack to join our fully distributed engineering team to help us continue our impressive growth from 2+ million daily active users to beyond! Our stack primarily includes<strong> Node.js, TypeScript, React.js </strong>and <strong>SQL. </strong></p>\n<p>As an engineering team, we design and build scalable systems using a service-oriented and event-driven architecture that serve millions of daily users and some of the largest youth and amateur sports organizations in the world. Our team values collaboration in a remote culture, so we regularly participate in pair sessions and virtual team swarms to stay connected and improve the team and company.</p>\n<h3>What You'll Do:</h3>\n<ul>\n<li>\n<p>Develop engaging experiences for our millions of users ac",
+   "pubDate": "2026-10-30T18:07:40+00:00",
+   "salaryMin": 150000,
+   "salaryCurrency": "USD",
+   "salaryPeriod": "yearly"
+  },
+  {
+   "id": 158069,
+   "url": "https://jobicy.com/jobs/158069-senior-software-engineer-platform-4",
+   "jobSlug": "158069-senior-software-engineer-platform-4",
+   "jobTitle": "Senior Software Engineer, Platform",
+   "companyName": "Juniper Square",
+   "companyLogo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2022/01/90c359a8bed816e81ea39fa33a8314f3.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Full-Time"
+   ],
+   "jobGeo": "Canada,  USA",
+   "jobLevel": "Senior",
+   "jobExcerpt": "About Juniper Square Private markets are one of the largest, most complex, and most underserved corners of global finance. Our mission at Juniper Square is to unlock their full potential. We’re the Operations Partner trusted by 2,300+ GPs, unifying technology, data, and fund administration services into a single platform that helps GPs move faster, make&hellip;",
+   "jobDescription": "<h3><strong>About <a href=\"https://jobicy.com/company/juniper-square\" target=\"_blank\" rel=\"noopener\">Juniper Square</a></strong></h3>\n<p>Private markets are one of the largest, most complex, and most underserved corners of global finance. Our mission at Juniper Square is to unlock their full potential. We’re the Operations Partner trusted by 2,300+ GPs, unifying technology, data, and fund administration services into a single platform that helps GPs move faster, make better decisions, and scale with precision. With $300B+ under administration and 700,000+ LPs on platform, we’ve built the scale to match our ambition. And with JunieAI, our purpose-built AI platform, we’re reimagining how private markets operate, embedding intelligence across every workflow. Founder-led since 2014, backed by $350M+ in funding, and now 1,000+ employees strong, we’re building a company designed to shape the future of private markets for decades to come.</p>\n<p>Our culture is built for people who want to do ambitious, meaningful work alongside exceptionally talented teammates. We think like owners, move with urgency, and take pride in solving hard problems that truly matter to our customers and the future of private markets. We believe the best ideas come from open debate, deep collaboration, and diverse perspectives, which is why we believe transparency is the default and feedback makes us stronger. If you’re energized by high standards, rapid growth, and the opportunity to help define a category ",
+   "pubDate": "2026-10-30T17:37:02+00:00",
+   "salaryMin": 175000,
+   "salaryMax": 220000,
+   "salaryCurrency": "USD",
+   "salaryPeriod": "yearly"
+  },
+  {
+   "id": 158032,
+   "url": "https://jobicy.com/jobs/158032-kasten-engineering-intern-summer-2027",
+   "jobSlug": "158032-kasten-engineering-intern-summer-2027",
+   "jobTitle": "Kasten Engineering Intern - Summer 2027",
+   "companyName": "Veeam Software",
+   "companyLogo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/f7716b71-221.jpg",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Internship"
+   ],
+   "jobGeo": "USA",
+   "jobLevel": "Entry-Level, Junior",
+   "jobExcerpt": "Veeam is the Data and AI Trust Company, specializing in helping organizations ensure their data and AI are fully understood, secured, and resilient to enable the acceleration of safe AI at scale. As the market leader in both data resilience and data security posture management, Veeam is built for the convergence of identity, data, security,&hellip;",
+   "jobDescription": "<p>Veeam is the Data and AI Trust Company, specializing in helping organizations ensure their data and AI are fully understood, secured, and resilient to enable the acceleration of safe AI at scale. As the market leader in both data resilience and data security posture management, Veeam is built for the convergence of identity, data, security, and AI risk. Headquartered in Seattle with offices in more than 30 countries, Veeam protects over 550,000 customers worldwide, who trust Veeam to keep their businesses running. Join us as we go fearlessly forward together, growing, learning, and making a real impact for some of the world’s biggest brands.</p>\n\n<p><strong>About Out Summer Internship Program</strong></p>\n<p>Our Summer Internship Program is designed for students entering their final year of university who are eager to gain meaningful, real-world experience in a fast paced, collaborative, and professional environment.</p>\n<p>As a Summer Intern, you'll participate in a comprehensive onboarding experience led by our University Relations team to set you up for success from day one. Throughout the program, you'll also have the opportunity to participate in weekly professional development sessions, networking events, social activities, and other engaging experienced designed to support your personal and professional growth.</p>\n<p>The program takes place from June – August 2027 (10-week program).</p>\n\n<p><strong>Role Responsibilities</strong></p>\n<ul>\n<li>Design, develop and tes",
+   "pubDate": "2026-10-30T16:27:03+00:00",
+   "salaryMin": 40,
+   "salaryMax": 50,
+   "salaryCurrency": "USD",
+   "salaryPeriod": "hourly"
+  },
+  {
+   "id": 152060,
+   "url": "https://jobicy.com/jobs/152060-developer-relations-engineer-2",
+   "jobSlug": "152060-developer-relations-engineer-2",
+   "jobTitle": "Developer Relations Engineer",
+   "companyName": "Supabase",
+   "companyLogo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2026/06/611d3bfa-221.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Full-Time"
+   ],
+   "jobGeo": "USA",
+   "jobLevel": "Any",
+   "jobExcerpt": "About Supabase Supabase is the Postgres development platform, built by developers for developers. We provide a complete backend solution including Database, Auth, Storage, Edge Functions, Realtime, and Vector Search. All services are deeply integrated and designed for growth. About the Role We’re looking for a Developer Relations Engineer based in San Francisco to join our&hellip;",
+   "jobDescription": "<h3><strong>About <a href=\"https://jobicy.com/company/supabase\" target=\"_blank\" rel=\"noopener\">Supabase</a></strong></h3>\n<p>Supabase is the Postgres development platform, built by developers for developers. We provide a complete backend solution including Database, Auth, Storage, Edge Functions, Realtime, and Vector Search. All services are deeply integrated and designed for growth.</p>\n<h3><strong>About the Role</strong></h3>\n<p>We’re looking for a <strong>Developer Relations Engineer <u>based in San Francisco</u></strong> to join our team and to help more developers discover, learn, and build with Supabase. You’ll create high-impact content, build real-world projects, and represent Supabase across communities and events. If you’re equally energized by writing code and teaching others, this is the role for you.</p>\n\n<h3>Why this role matters</h3>\n<p>Supabase is growing fast with <strong>350,000+ developers</strong>, <strong>1,000+ OSS contributors</strong>, and a thriving open source ecosystem. Our users are builders, startup founders, weekend hackers, and engineers scaling to millions of users. DevRel is how we meet them where they are: through content, community, and code.</p>\n<p>We’re building a <strong>community of communities</strong> that brings together developers from many backgrounds, including first-time open source contributors. As a DevRel Engineer, you’ll be a bridge between Supabase and the broader developer ecosystem, helping people get started, go deep, and ",
+   "pubDate": "2026-10-30T03:20:13+00:00"
+  }
+ ],
+ "statusCode": 200,
+ "success": true
+}

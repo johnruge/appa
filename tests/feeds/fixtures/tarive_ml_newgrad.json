@@ -1,0 +1,501 @@
+[
+ {
+  "active": true,
+  "apply_url": "https://zoom.wd5.myworkdayjobs.com/zoom/job/Seattle-WA/AI-Engineer_R19823-1",
+  "category": "AI/ML/Data",
+  "company": "Zoom",
+  "company_url": "https://simplify.jobs/c/Zoom",
+  "date_posted": 1793318400,
+  "experience": null,
+  "family": "ml",
+  "first_seen": 1793232000,
+  "id": "f6f13c7ed8a5",
+  "is_usa": true,
+  "last_seen": 1793318400,
+  "locations": [
+   "Seattle, WA"
+  ],
+  "salary": "Not listed",
+  "sources": [
+   "coconight",
+   "simplify"
+  ],
+  "tier": "other",
+  "title": "AI Engineer",
+  "url": "https://zoom.wd5.myworkdayjobs.com/zoom/job/Seattle-WA/AI-Engineer_R19823-1",
+  "urls": [
+   "https://zoom.wd5.myworkdayjobs.com/zoom/job/Seattle-WA/AI-Engineer_R19823-1"
+  ],
+  "verification": {
+   "checked": 1793376000,
+   "confirmed": 1793376000,
+   "evidence": "0\u20133 years of software engineering experience;",
+   "posted": 1793232000,
+   "reason": "",
+   "status": "live",
+   "strikes": 0,
+   "url": "https://zoom.wd5.myworkdayjobs.com/zoom/job/Seattle-WA/AI-Engineer_R19823-1",
+   "v": 1,
+   "via": "workday",
+   "years": "0-3 yrs"
+  }
+ },
+ {
+  "active": true,
+  "apply_url": "https://sambanova.ai/sambanova-available-positions/?gh_jid=6224936004",
+  "category": "AI/ML/Data",
+  "company": "SambaNova Systems",
+  "company_url": "https://simplify.jobs/c/SambaNova-Systems",
+  "date_posted": 1793232000,
+  "experience": null,
+  "family": "ml",
+  "first_seen": 1792454400,
+  "id": "20bd30fc41ec",
+  "is_usa": true,
+  "last_seen": 1793318400,
+  "locations": [
+   "Austin, TX",
+   "San Jose, CA",
+   "Austin, Texas, United States / San Jose, California, United States",
+   "Austin, Texas, United States",
+   "San Jose, California, United States"
+  ],
+  "salary": "Not listed",
+  "sources": [
+   "applyguy",
+   "coconight",
+   "dreamworkhq",
+   "ricsign",
+   "simplify"
+  ],
+  "tier": "other",
+  "title": "AI Performance Engineer New Grad",
+  "url": "https://sambanova.ai/sambanova-available-positions/?gh_jid=6224936004",
+  "urls": [
+   "https://sambanova.ai/sambanova-available-positions/?gh_jid=6224936004",
+   "https://sambanova.ai/sambanova-available-positions/?gh_jid=6224938004",
+   "https://sambanova.ai/sambanova-available-positions?gh_jid=6224938004",
+   "https://www.dreamworkhq.com/job/d3a815d0-f70f-4317-96e7-3087799b037e"
+  ],
+  "verification": {
+   "checked": 1793376000,
+   "confirmed": 1793376000,
+   "evidence": "None",
+   "posted": 1792530516,
+   "reason": "",
+   "status": "live",
+   "strikes": 0,
+   "url": "https://sambanova.ai/sambanova-available-positions/?gh_jid=6224936004",
+   "v": 1,
+   "via": "greenhouse",
+   "years": null
+  }
+ },
+ {
+  "active": true,
+  "category": null,
+  "company": "Amazon.com Services LLC",
+  "company_url": null,
+  "date_posted": null,
+  "experience": null,
+  "family": "ds",
+  "first_seen": 1792022400,
+  "id": "9b25d4d58b44",
+  "is_usa": true,
+  "last_seen": 1793145600,
+  "locations": [
+   "Arlington, VA"
+  ],
+  "salary": null,
+  "sources": [
+   "zapply"
+  ],
+  "tier": "other",
+  "title": "Data Scientist I, PXT Central Science",
+  "url": "https://zapply.jobs/l/d/amazon-4bf837ae-65f2-4bb0-9839-1fe6fbca3399?s=gh-new-grad-data-science-jobs-2027",
+  "urls": [
+   "https://zapply.jobs/l/d/amazon-4bf837ae-65f2-4bb0-9839-1fe6fbca3399?s=gh-new-grad-data-science-jobs-2027"
+  ],
+  "verification": {
+   "checked": 1793376000,
+   "evidence": "None",
+   "posted": null,
+   "reason": "target cannot be recovered",
+   "status": "unresolvable",
+   "strikes": 0,
+   "url": "https://zapply.jobs/l/d/amazon-4bf837ae-65f2-4bb0-9839-1fe6fbca3399?s=gh-new-grad-data-science-jobs-2027",
+   "v": 1,
+   "via": "redirector",
+   "years": null
+  }
+ },
+ {
+  "active": true,
+  "apply_url": "https://job-boards.greenhouse.io/addepar1/jobs/8906234002",
+  "category": "AI / Machine Learning",
+  "company": "Addepar",
+  "company_url": null,
+  "date_posted": 1793145600,
+  "experience": null,
+  "family": "ml",
+  "first_seen": 1793145600,
+  "id": "f5b5bc67ed23",
+  "is_usa": true,
+  "last_seen": 1793318400,
+  "locations": [
+   "Remote - New York City, NY"
+  ],
+  "salary": "$163,000 - $203,500",
+  "sources": [
+   "coconight"
+  ],
+  "tier": "other",
+  "title": "AI Engineer - AI Platform",
+  "url": "https://job-boards.greenhouse.io/addepar1/jobs/8906234002",
+  "urls": [
+   "https://job-boards.greenhouse.io/addepar1/jobs/8906234002"
+  ],
+  "verification": {
+   "checked": 1793376000,
+   "confirmed": 1793376000,
+   "evidence": "1-3+ years of professional experience in backend software engineering, with expertise in programming languages/technologies like Python, Golang, gRPC, AWS, and Kubernetes.",
+   "posted": 1793097832,
+   "reason": "",
+   "status": "live",
+   "strikes": 0,
+   "url": "https://job-boards.greenhouse.io/addepar1/jobs/8906234002",
+   "v": 1,
+   "via": "greenhouse",
+   "years": "1-3 yrs"
+  }
+ },
+ {
+  "active": true,
+  "apply_url": "https://bah.wd1.myworkdayjobs.com/BAH_Jobs/job/Washington-DC/Data-Scientist--Junior_R0252270",
+  "category": "ai_first",
+  "company": "Booz Allen Hamilton",
+  "company_url": null,
+  "date_posted": 1793318400,
+  "experience": null,
+  "family": "ds",
+  "first_seen": 1792972800,
+  "id": "dd9a41c05764",
+  "is_usa": true,
+  "last_seen": 1793318400,
+  "locations": [
+   "Washington, DC"
+  ],
+  "salary": null,
+  "sources": [
+   "dreamworkhq",
+   "zapply"
+  ],
+  "tier": "other",
+  "title": "Data Scientist, Junior",
+  "url": "https://www.dreamworkhq.com/job/60c9aea8-1cbe-4583-8f8e-0fc19d29f4f1",
+  "urls": [
+   "https://www.dreamworkhq.com/job/60c9aea8-1cbe-4583-8f8e-0fc19d29f4f1",
+   "https://zapply.jobs/l/d/workday-bah-bah-jobs-R0252702?s=gh-new-grad-data-science-jobs-2027"
+  ],
+  "verification": {
+   "checked": 1793358000,
+   "confirmed": 1793358000,
+   "evidence": "None",
+   "posted": 1792972800,
+   "reason": "",
+   "status": "live",
+   "strikes": 0,
+   "url": "https://www.dreamworkhq.com/job/60c9aea8-1cbe-4583-8f8e-0fc19d29f4f1",
+   "v": 1,
+   "via": "workday",
+   "years": null
+  }
+ },
+ {
+  "active": true,
+  "apply_url": "https://icf.wd5.myworkdayjobs.com/en-US/icfexternal_career_site/job/Reston-VA/Seasonal-Associate--Data-Scientist_R2603639",
+  "category": null,
+  "company": "ICF",
+  "company_url": "https://www.icf.com",
+  "date_posted": 1793232000,
+  "experience": null,
+  "family": "ds",
+  "first_seen": 1793145600,
+  "id": "4ba31fa60138",
+  "is_usa": true,
+  "last_seen": 1793318400,
+  "locations": [
+   "Reston, VA"
+  ],
+  "salary": null,
+  "sources": [
+   "speedyapply"
+  ],
+  "tier": "other",
+  "title": "Seasonal Associate - Data Scientist",
+  "url": "https://icf.wd5.myworkdayjobs.com/en-US/icfexternal_career_site/job/Reston-VA/Seasonal-Associate--Data-Scientist_R2603639",
+  "urls": [
+   "https://icf.wd5.myworkdayjobs.com/en-US/icfexternal_career_site/job/Reston-VA/Seasonal-Associate--Data-Scientist_R2603639"
+  ],
+  "verification": {
+   "checked": 1793376000,
+   "evidence": "None",
+   "posted": null,
+   "reason": "HTTP 404",
+   "status": "closed",
+   "strikes": 0,
+   "url": "https://icf.wd5.myworkdayjobs.com/en-US/icfexternal_career_site/job/Reston-VA/Seasonal-Associate--Data-Scientist_R2603639",
+   "v": 1,
+   "via": "workday",
+   "years": null
+  }
+ },
+ {
+  "active": false,
+  "apply_url": "https://cat.wd5.myworkdayjobs.com/caterpillarcareers/job/Peoria-Illinois/Data-Scientist-I--Lens-Customer-Analytics_R0000400640",
+  "category": null,
+  "company": "Caterpillar",
+  "company_url": null,
+  "date_posted": 1792713600,
+  "experience": null,
+  "family": "ds",
+  "first_seen": 1792713600,
+  "id": "2409ba83354a",
+  "is_usa": false,
+  "last_seen": 1792800000,
+  "locations": [
+   "Peoria, Illinois"
+  ],
+  "salary": null,
+  "sources": [
+   "zapply"
+  ],
+  "tier": "other",
+  "title": "Data Scientist I, Lens Customer Analytics",
+  "url": "https://zapply.jobs/l/d/workday-cat-caterpillarcareers-R0000400640?s=gh-new-grad-data-science-jobs-2027",
+  "urls": [
+   "https://zapply.jobs/l/d/workday-cat-caterpillarcareers-R0000400640?s=gh-new-grad-data-science-jobs-2027"
+  ],
+  "verification": {
+   "checked": 1793311200,
+   "confirmed": 1793311200,
+   "evidence": "Typically, Masters, or PhD degree in Applied Statistics, Data Science, Business Analytics, Predictive Analytics, Business Intelligence & Analytics, Mathematics, Computer Science, Engineering (Aerospac",
+   "posted": 1792713600,
+   "reason": "",
+   "status": "live",
+   "strikes": 0,
+   "url": "https://zapply.jobs/l/d/workday-cat-caterpillarcareers-R0000400640?s=gh-new-grad-data-science-jobs-2027",
+   "v": 1,
+   "via": "workday",
+   "years": "0 yrs"
+  }
+ },
+ {
+  "active": true,
+  "apply_url": "https://account.amazon.jobs/jobs/10584405/apply",
+  "category": null,
+  "company": "Amazon",
+  "company_url": null,
+  "date_posted": 1793318400,
+  "experience": null,
+  "family": "ml",
+  "first_seen": 1793318400,
+  "id": "940761d38848",
+  "is_usa": false,
+  "last_seen": 1793318400,
+  "locations": [
+   "Hyderabad, Telangana, IND"
+  ],
+  "salary": null,
+  "sources": [
+   "ats"
+  ],
+  "tier": "bigtech",
+  "title": "ML Data Associate-II, Artificial General Intelligence",
+  "url": "https://account.amazon.jobs/jobs/10584405/apply",
+  "urls": [
+   "https://account.amazon.jobs/jobs/10584405/apply"
+  ],
+  "verification": {
+   "checked": 1793358000,
+   "confirmed": 1793358000,
+   "evidence": "None",
+   "posted": 1793318400,
+   "reason": "",
+   "status": "live",
+   "strikes": 0,
+   "url": "https://account.amazon.jobs/jobs/10584405/apply",
+   "v": 1,
+   "via": "amazon",
+   "years": null
+  }
+ },
+ {
+  "active": true,
+  "apply_url": "https://amazon.jobs/en/jobs/10522632/applied-scientist-amazon-cryptographic-libraries",
+  "category": "Software",
+  "company": "Amazon",
+  "company_url": "https://simplify.jobs/c/Amazon",
+  "date_posted": 1792713600,
+  "experience": null,
+  "family": "ml",
+  "first_seen": 1789862400,
+  "id": "41f9e1b9f1f9",
+  "is_usa": true,
+  "last_seen": 1793318400,
+  "locations": [
+   "Seattle, WA"
+  ],
+  "salary": "Not listed",
+  "sources": [
+   "coconight",
+   "simplify"
+  ],
+  "tier": "bigtech",
+  "title": "Applied Scientist - Amazon Cryptographic Libraries",
+  "url": "https://amazon.jobs/en/jobs/10522632/applied-scientist-amazon-cryptographic-libraries",
+  "urls": [
+   "https://amazon.jobs/en/jobs/10522632/applied-scientist-amazon-cryptographic-libraries"
+  ],
+  "verification": {
+   "checked": 1793358000,
+   "confirmed": 1793358000,
+   "evidence": null,
+   "posted": 1788134400,
+   "reason": "",
+   "status": "live",
+   "strikes": 0,
+   "url": "https://amazon.jobs/en/jobs/10522632/applied-scientist-amazon-cryptographic-libraries",
+   "v": 1,
+   "via": "amazon",
+   "years": null
+  }
+ },
+ {
+  "active": true,
+  "apply_url": "https://account.amazon.jobs/jobs/10522632/apply",
+  "category": "Other",
+  "company": "Amazon",
+  "company_url": null,
+  "date_posted": 1792713600,
+  "experience": null,
+  "family": "ml",
+  "first_seen": 1788220800,
+  "id": "3dcdf555a80f",
+  "is_usa": true,
+  "last_seen": 1793318400,
+  "locations": [
+   "Seattle, Washington, USA"
+  ],
+  "salary": "Not listed",
+  "sources": [
+   "ats",
+   "coconight"
+  ],
+  "tier": "bigtech",
+  "title": "Applied Scientist, Amazon Cryptographic Libraries",
+  "url": "https://account.amazon.jobs/jobs/10522632/apply",
+  "urls": [
+   "https://account.amazon.jobs/jobs/10522632/apply",
+   "https://account.amazon.jobs/jobs/10524924/apply",
+   "https://account.amazon.jobs/jobs/10476858/apply"
+  ],
+  "verification": {
+   "checked": 1793376000,
+   "confirmed": 1793376000,
+   "evidence": null,
+   "posted": 1788134400,
+   "reason": "",
+   "status": "live",
+   "strikes": 0,
+   "url": "https://account.amazon.jobs/jobs/10522632/apply",
+   "v": 1,
+   "via": "amazon",
+   "years": null
+  }
+ },
+ {
+  "active": true,
+  "apply_url": "https://jobs.ashbyhq.com/fab2/d9edb922-6cae-4e65-9b20-ba452f3e2edf/application?embed=true",
+  "category": "AI/ML/Data",
+  "company": "Fab2",
+  "company_url": "https://simplify.jobs/c/Fab2",
+  "date_posted": 1793145600,
+  "experience": null,
+  "family": "swe_ml",
+  "first_seen": 1793059200,
+  "id": "8028b084af2f",
+  "is_usa": true,
+  "last_seen": 1793318400,
+  "locations": [
+   "Austin, TX"
+  ],
+  "salary": "Not listed",
+  "sources": [
+   "coconight",
+   "simplify"
+  ],
+  "tier": "other",
+  "title": "Computer Vision Software Engineer",
+  "url": "https://jobs.ashbyhq.com/fab2/d9edb922-6cae-4e65-9b20-ba452f3e2edf/application?embed=true",
+  "urls": [
+   "https://jobs.ashbyhq.com/fab2/d9edb922-6cae-4e65-9b20-ba452f3e2edf/application?embed=true"
+  ],
+  "verification": {
+   "checked": 1793376000,
+   "confirmed": 1793376000,
+   "evidence": null,
+   "posted": 1793127849,
+   "reason": "",
+   "status": "live",
+   "strikes": 0,
+   "url": "https://jobs.ashbyhq.com/fab2/d9edb922-6cae-4e65-9b20-ba452f3e2edf/application?embed=true",
+   "v": 1,
+   "via": "ashby",
+   "years": null
+  }
+ },
+ {
+  "active": true,
+  "apply_url": "https://apply.workable.com/raydar/j/A876C6B170/apply",
+  "category": "AI/ML/Data",
+  "company": "Raydar",
+  "company_url": "https://simplify.jobs/c/Raydar",
+  "date_posted": 1793318400,
+  "experience": null,
+  "family": "ml",
+  "first_seen": 1793232000,
+  "id": "bdbc8298b3d2",
+  "is_usa": true,
+  "last_seen": 1793318400,
+  "locations": [
+   "SF",
+   "Remote in USA",
+   "SF / Remote in USA"
+  ],
+  "salary": "Not listed",
+  "sources": [
+   "coconight",
+   "simplify"
+  ],
+  "tier": "other",
+  "title": "Applied AI Engineer",
+  "url": "https://apply.workable.com/raydar/j/A876C6B170/apply",
+  "urls": [
+   "https://apply.workable.com/raydar/j/A876C6B170/apply"
+  ],
+  "verification": {
+   "checked": 1793376000,
+   "confirmed": 1793376000,
+   "evidence": "- Roughly 2 to 6 years of relevant experience, with openness to exceptional new graduates.",
+   "posted": 1790812800,
+   "reason": "",
+   "status": "live",
+   "strikes": 0,
+   "url": "https://apply.workable.com/raydar/j/A876C6B170/apply",
+   "v": 1,
+   "via": "workable",
+   "years": "2-6 yrs"
+  }
+ }
+]

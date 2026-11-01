@@ -1,0 +1,107 @@
+{
+ "meta": {
+  "totalCount": 5
+ },
+ "result": [
+  {
+   "id": "341",
+   "jobOpeningName": "Community Manager",
+   "departmentId": "18896",
+   "departmentLabel": "Community Team (Manhattan Beach)",
+   "employmentStatusLabel": "Full-Time",
+   "employmentType": null,
+   "location": {
+    "city": "Manhattan Beach",
+    "state": "California"
+   },
+   "atsLocation": {
+    "country": null,
+    "state": null,
+    "province": null,
+    "city": null
+   },
+   "isRemote": null,
+   "locationType": "0"
+  },
+  {
+   "id": "344",
+   "jobOpeningName": "After-Hours Experience Associate",
+   "departmentId": "18840",
+   "departmentLabel": "Community Team (Bend)",
+   "employmentStatusLabel": "Part-Time",
+   "employmentType": null,
+   "location": {
+    "city": "Bend",
+    "state": "Oregon"
+   },
+   "atsLocation": {
+    "country": null,
+    "state": null,
+    "province": null,
+    "city": null
+   },
+   "isRemote": null,
+   "locationType": "0"
+  },
+  {
+   "id": "351",
+   "jobOpeningName": "Director of Property & Asset Management",
+   "departmentId": "18595",
+   "departmentLabel": "Growth",
+   "employmentStatusLabel": "Full-Time",
+   "employmentType": null,
+   "location": {
+    "city": "Lehi",
+    "state": "Utah"
+   },
+   "atsLocation": {
+    "country": null,
+    "state": null,
+    "province": null,
+    "city": null
+   },
+   "isRemote": null,
+   "locationType": "0"
+  },
+  {
+   "id": "370",
+   "jobOpeningName": "Real Estate & Growth Strategy Intern",
+   "departmentId": "18595",
+   "departmentLabel": "Growth",
+   "employmentStatusLabel": "Intern",
+   "employmentType": null,
+   "location": {
+    "city": "Lehi",
+    "state": "Utah"
+   },
+   "atsLocation": {
+    "country": null,
+    "state": null,
+    "province": null,
+    "city": null
+   },
+   "isRemote": null,
+   "locationType": "0"
+  },
+  {
+   "id": "378",
+   "jobOpeningName": "Social Media Intern",
+   "departmentId": "18603",
+   "departmentLabel": "Marketing",
+   "employmentStatusLabel": "Intern",
+   "employmentType": null,
+   "location": {
+    "city": "Lehi",
+    "state": "Utah"
+   },
+   "atsLocation": {
+    "country": null,
+    "state": null,
+    "province": null,
+    "city": null
+   },
+   "isRemote": null,
+   "locationType": "0"
+  }
+ ]
+}

@@ -1,0 +1,357 @@
+{
+ "status": "OK",
+ "request_id": "4f24fa29-a883-49f9-8dca-d0fede07203c",
+ "parameters": {
+  "query": "developer jobs in chicago",
+  "page": 1,
+  "num_pages": 1,
+  "date_posted": "all",
+  "country": "us",
+  "language": "en"
+ },
+ "data": [
+  {
+   "job_id": "woj2gE2S_6LqvmLAAAAAAA==",
+   "job_title": "Senior Developer",
+   "employer_name": "United Airlines",
+   "employer_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6DMswunk7F25_BeXSf2w8JVHG65s4lc7v5wfG&s=0",
+   "employer_website": "https://www.united.com",
+   "job_publisher": "United Airlines Jobs",
+   "job_employment_type": "Full-time",
+   "job_employment_types": [
+    "FULLTIME"
+   ],
+   "job_apply_link": "https://careers.united.com/us/en/job/WHQ00024243/Senior-Developer?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "job_apply_is_direct": false,
+   "apply_options": [
+    {
+     "publisher": "United Airlines Jobs",
+     "apply_link": "https://careers.united.com/us/en/job/WHQ00024243/Senior-Developer?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": false
+    },
+    {
+     "publisher": "Salesforce Careers",
+     "apply_link": "https://careers.salesforce.com/it/lavori/jr287763/senior-certification-developer/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": false
+    },
+    {
+     "publisher": "Lever",
+     "apply_link": "https://jobs.lever.co/mhnchicago/80e52262-843c-49b0-9105-6cf852144d9c?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": false
+    },
+    {
+     "publisher": "Indeed",
+     "apply_link": "https://www.indeed.com/viewjob?jk=ce82d408b0d72e99&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": true
+    }
+   ],
+   "job_description": "Description\n\nFind your future at United! We’re reinventing what our industry looks like, and what an airline can be – from the planes we fly to the people who fly them. When you join us, you’re joining a global team of 100,000+ connected by a shared passion with a wide spectrum of experience and skills to lead the way forward.\n\nAchieving our ambitions starts with supporting yours. Evolve your career and find your next opportunity. Get the care you need with industry-leading health plans and best-in-class programs to support your emotional, physical, and financial wellness. Expand your horizons with travel across the world’s biggest route network. Connect outside your team through employee-led Business Resource Groups.\n\nCreate what’s next with us. Let’s define tomorrow together.\n\nUnited's Digital Technology team is comprised of many talented individuals all working together with cutting-edge technology to build the best airline in the history of aviation. Our team designs, develops and maintains massively scaling technology solutions brought to life with innovative architectures, data analytics, and digital solutions.\n\nJob description and responsibilities\n\nThe Senior Software Developer will be responsible for the development of critical applications, while working with a team of developers. This role will design, develop, document, test and debug new and existing applications. Additionally, this role will build these applications with a focus on delivering cloud-based solution",
+   "job_is_remote": false,
+   "job_posted_at": "2 days ago",
+   "job_posted_at_timestamp": 1743206400,
+   "job_posted_at_datetime_utc": "2025-03-29T00:00:00.000Z",
+   "job_location": "Chicago, IL",
+   "job_city": "Chicago",
+   "job_state": "Illinois",
+   "job_country": "US",
+   "job_latitude": 41.8781136,
+   "job_longitude": -87.6297982,
+   "job_benefits": [
+    "dental_coverage",
+    "paid_time_off",
+    "health_insurance"
+   ],
+   "job_google_link": "https://www.google.com/search?q=jobs&gl=us&hl=en&udm=8#vhid=vt%3D20/docid%3Dwoj2gE2S_6LqvmLAAAAAAA%3D%3D&vssid=jobs-detail-viewer",
+   "job_salary": null,
+   "job_min_salary": null,
+   "job_max_salary": null,
+   "job_salary_period": null,
+   "job_highlights": {
+    "Qualifications": [
+     "Bachelor's degree",
+     "Computer Science, Computer Engineering, Electrical Engineering, Management Information Systems or related field"
+    ],
+    "Benefits": [
+     "Get the care you need with industry-leading health plans and best-in-class programs to support your emotional, physical, and financial wellness",
+     "The base pay range for this role is $109,820.00 to $149,600.00"
+    ],
+    "Responsibilities": [
+     "Expand your horizons with travel across the world’s biggest route network",
+     "The Senior Software Developer will be responsible for the development of critical applications, while working with a team of developers"
+    ]
+   },
+   "job_onet_soc": "15113200",
+   "job_onet_job_zone": "4"
+  },
+  {
+   "job_id": "07tNOHvsJ4GTPbf5AAAAAA==",
+   "job_title": "R&D Software Engineer (C++)",
+   "employer_name": "Engtal",
+   "employer_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoVvdOY3EM5JlY9Fok4PiiwUaFiod2-C-pZFUV&s=0",
+   "employer_website": "https://engtal.com",
+   "job_publisher": "LinkedIn",
+   "job_employment_type": "Full-time",
+   "job_employment_types": [
+    "FULLTIME"
+   ],
+   "job_apply_link": "https://www.linkedin.com/jobs/view/r-d-software-engineer-c%2B%2B-at-engtal-4192955158?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "job_apply_is_direct": false,
+   "apply_options": [
+    {
+     "publisher": "LinkedIn",
+     "apply_link": "https://www.linkedin.com/jobs/view/r-d-software-engineer-c%2B%2B-at-engtal-4192955158?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": false
+    },
+    {
+     "publisher": "Trabajo.org",
+     "apply_link": "https://us.trabajo.org/job-1898-260931e97ac00d33589e4605e4389c63?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": false
+    }
+   ],
+   "job_description": "We’re seeking a highly skilled R&D Software Engineer with deep expertise in modern C++ and a strong focus on low-latency system design. You’ll be part of a small, collaborative team developing performance-critical software for our ultra-low-latency trading infrastructure.\n\nKey Responsibilities:\n• Design and implement high-performance C++ applications used in our trading systems\n• Optimize for latency, throughput, and reliability at every layer of the stack\n• Collaborate closely with traders, researchers, and infrastructure engineers to iterate quickly on new strategies and ideas\n• Analyze performance bottlenecks and tune systems for nanosecond-level efficiency\n• Stay on top of the latest developments in hardware and software that could impact trading performance\n\nRequirements:\n• 3+ years experience coding in modern C++, with experience building ultra low-latency systems\n• A Bachelors degree in Computer Science (or similar) from a top rated engineering school\n• Experience with software development for hardware platforms\n• Solid understanding of systems programming: memory management, multi-threading, CPU architecture\n• Experience in a real-time or high-performance environment (preferably HFT, finance, or telecoms)\n• Familiarity with Linux, networking, and profiling tools\n• A passion for optimization and innovation at the lowest levels of software\n\nNice to Have:\n• Experience with FPGA, kernel bypass networking (e.g., DPDK), or custom hardware integration\n• Background in financi",
+   "job_is_remote": false,
+   "job_posted_at": "11 hours ago",
+   "job_posted_at_timestamp": 1743368400,
+   "job_posted_at_datetime_utc": "2025-03-30T21:00:00.000Z",
+   "job_location": "Chicago, IL",
+   "job_city": "Chicago",
+   "job_state": "Illinois",
+   "job_country": "US",
+   "job_latitude": 41.8781136,
+   "job_longitude": -87.6297982,
+   "job_benefits": null,
+   "job_google_link": "https://www.google.com/search?q=jobs&gl=us&hl=en&udm=8#vhid=vt%3D20/docid%3D07tNOHvsJ4GTPbf5AAAAAA%3D%3D&vssid=jobs-detail-viewer",
+   "job_min_salary": 300000,
+   "job_max_salary": 450000,
+   "job_salary_period": "YEAR",
+   "job_highlights": {
+    "Qualifications": [
+     "3+ years experience coding in modern C++, with experience building ultra low-latency systems",
+     "A Bachelors degree in Computer Science (or similar) from a top rated engineering school"
+    ],
+    "Responsibilities": [
+     "Design and implement high-performance C++ applications used in our trading systems",
+     "Optimize for latency, throughput, and reliability at every layer of the stack"
+    ]
+   },
+   "job_onet_soc": "15113200",
+   "job_onet_job_zone": "4"
+  },
+  {
+   "job_id": "ZHPVIkejDKFdC1JyAAAAAA==",
+   "job_title": "Software Developer - Java/J2EE",
+   "employer_name": "Diversified Services Network",
+   "employer_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZq7ljfXUlUegaJGcg66KO2nIF67u1r8sHvKBd&s=0",
+   "employer_website": null,
+   "job_publisher": "Indeed",
+   "job_employment_type": "Full-time and Contractor",
+   "job_employment_types": [
+    "FULLTIME",
+    "CONTRACTOR",
+    "CONTRACTOR"
+   ],
+   "job_apply_link": "https://www.indeed.com/viewjob?jk=eb0258c782ce9224&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "job_apply_is_direct": true,
+   "apply_options": [
+    {
+     "publisher": "Indeed",
+     "apply_link": "https://www.indeed.com/viewjob?jk=eb0258c782ce9224&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": true
+    },
+    {
+     "publisher": "Glassdoor",
+     "apply_link": "https://www.glassdoor.com/job-listing/software-developer-java-j2ee-diversified-services-network-JV_IC1128808_KO0,28_KE29,57.htm?jl=1009687826272&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": true
+    },
+    {
+     "publisher": "LinkedIn",
+     "apply_link": "https://www.linkedin.com/jobs/view/software-developer-buildings-at-siemens-4193446231?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": false
+    },
+    {
+     "publisher": "Oracle",
+     "apply_link": "https://jpmc-dev6.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/210484806/?utm_medium=search+engine&utm_source=google&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": false
+    }
+   ],
+   "job_description": "DSN is seeking a highly skilled Senior Java Developer to join our team in Chicago, IL on a hybrid basis (3 days onsite per week). The ideal candidate will bring extensive experience in Java development, enterprise-level web applications, and high-volume transactional systems. This role requires expertise in night batch processing, designing and implementing complex, scalable, and secure web-based Java applications, and applying best practices in software design, architecture, and database management.\n\nKey Responsibilities:\n• Develop, implement, and maintain high-volume, transactional web-based applications using Java EE.\n• Must handle night batch processing, ensuring smooth execution of scheduled jobs and resolving failures as needed.\n• Design and develop business logic, Java Server Pages (JSP), and Data Access Objects (DAO) using SQL.\n• Utilize design and architectural patterns to create scalable and maintainable solutions.\n• Develop and execute unit tests using JUnit, ensuring high-quality code.\n• Create technical documentation, including diagrams, system flowcharts, test plans, and conversion plans.\n• Analyze and implement benefit system change requests within the Struts or Spring Framework.\n• Conduct investigative studies to improve system efficiency and resolve complex technical challenges.\n• Support law change impact analysis and enhance enterprise IT systems accordingly.\n• Participate in release implementations and provide off-hours, on-call support, including night ba",
+   "job_is_remote": false,
+   "job_posted_at": "4 days ago",
+   "job_posted_at_timestamp": 1743033600,
+   "job_posted_at_datetime_utc": "2025-03-27T00:00:00.000Z",
+   "job_location": "Chicago, IL",
+   "job_city": "Chicago",
+   "job_state": "Illinois",
+   "job_country": "US",
+   "job_latitude": 41.8781136,
+   "job_longitude": -87.6297982,
+   "job_benefits": [
+    "health_insurance",
+    "dental_coverage"
+   ],
+   "job_google_link": "https://www.google.com/search?q=jobs&gl=us&hl=en&udm=8#vhid=vt%3D20/docid%3DZHPVIkejDKFdC1JyAAAAAA%3D%3D&vssid=jobs-detail-viewer",
+   "job_min_salary": 103622,
+   "job_max_salary": 112513,
+   "job_salary_period": "YEAR",
+   "job_highlights": {
+    "Qualifications": [
+     "The ideal candidate will bring extensive experience in Java development, enterprise-level web applications, and high-volume transactional systems",
+     "This role requires expertise in night batch processing, designing and implementing complex, scalable, and secure web-based Java applications, and applying best practices in software design, architecture, and database management"
+    ],
+    "Benefits": [
+     "Pay: $103,622.00 - $112,513.00 per year",
+     "Dental insurance"
+    ],
+    "Responsibilities": [
+     "Develop, implement, and maintain high-volume, transactional web-based applications using Java EE",
+     "Must handle night batch processing, ensuring smooth execution of scheduled jobs and resolving failures as needed"
+    ]
+   },
+   "job_onet_soc": "15113200",
+   "job_onet_job_zone": "4"
+  },
+  {
+   "job_id": "A4uSsm5PP34vuA1oAAAAAA==",
+   "job_title": "Analytics Developer",
+   "employer_name": "Adtalem",
+   "employer_logo": null,
+   "employer_website": "https://www.adtalem.com",
+   "job_publisher": "Adtalem Careers - Adtalem Global Education",
+   "job_employment_type": "Full-time",
+   "job_employment_types": [
+    "FULLTIME"
+   ],
+   "job_apply_link": "https://careers.adtalem.com/job/analytics-developer-in-chicago-il-jid-5498?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "job_apply_is_direct": false,
+   "apply_options": [
+    {
+     "publisher": "Adtalem Careers - Adtalem Global Education",
+     "apply_link": "https://careers.adtalem.com/job/analytics-developer-in-chicago-il-jid-5498?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": false
+    },
+    {
+     "publisher": "Indeed",
+     "apply_link": "https://www.indeed.com/viewjob?jk=d899c1520a5b377d&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": true
+    },
+    {
+     "publisher": "Edtech.com",
+     "apply_link": "https://www.edtech.com/jobs/analytics-developer-7100?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": false
+    },
+    {
+     "publisher": "ZipRecruiter",
+     "apply_link": "https://www.ziprecruiter.com/c/Adtalem-Global-Education/Job/Analytics-Developer/-in-Chicago,IL?jid=d95f955c0750f55d&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": true
+    }
+   ],
+   "job_description": "Company Description\n\nAdtalem Global Education is a national leader in post-secondary education and leading provider of professional talent to the healthcare industry. Adtalem educates and empowers students with the knowledge and skills to become leaders in their communities and make a lasting impact on public health, well-being and beyond. Through equitable access to education, environments that nurture student success, and a focus on expanding and diversifying the talent pipeline in healthcare, Adtalem is building a brighter future for communities and the world.\n\nAdtalem is the parent organization of American University of the Caribbean School of Medicine, Chamberlain University, Ross University School of Medicine, Ross University School of Veterinary Medicine and Walden University.\n\nIn our U.S. locations, we operate on a hybrid work model with three in-office days and two remote days per week. Starting Q1 2025, we will transition to a four-day in-office schedule, Monday–Thursday. This in-office time fosters creativity, innovation, communication, and stronger team relationships, supporting both individual and organizational success.\n\nVisit Adtalem.com for more information, and follow on Twitter and LinkedIn.\n\nJob Description\n\nThe Analytics Developer is responsible for coding and designing analytical solutions that turn data into knowledge. This position will work closely with business and system/technology subject matter experts to understand the enterprise objectives and bu",
+   "job_is_remote": false,
+   "job_posted_at": "7 days ago",
+   "job_posted_at_timestamp": 1742774400,
+   "job_posted_at_datetime_utc": "2025-03-24T00:00:00.000Z",
+   "job_location": "Chicago, IL",
+   "job_city": "Chicago",
+   "job_state": "Illinois",
+   "job_country": "US",
+   "job_latitude": 41.8781136,
+   "job_longitude": -87.6297982,
+   "job_benefits": [
+    "dental_coverage",
+    "health_insurance"
+   ],
+   "job_google_link": "https://www.google.com/search?q=jobs&gl=us&hl=en&udm=8#vhid=vt%3D20/docid%3DA4uSsm5PP34vuA1oAAAAAA%3D%3D&vssid=jobs-detail-viewer",
+   "job_salary": null,
+   "job_min_salary": null,
+   "job_max_salary": null,
+   "job_salary_period": null,
+   "job_highlights": {
+    "Qualifications": [
+     "Bachelor's Degree in Computer Science, Engineering or Information Systems",
+     "2 years Proficient BI developer with developing BI reports and Dashboards in Power BI"
+    ],
+    "Benefits": [
+     "In support of the pay transparency laws enacted across the country, the expected salary range for this position is between $61,720.78 and $108,334.92",
+     "Actual pay will be adjusted based on job-related factors permitted by law, such as experience and training; geographic location; licensure and certifications; market factors; departmental budgets; and responsibility"
+    ],
+    "Responsibilities": [
+     "The Analytics Developer is responsible for coding and designing analytical solutions that turn data into knowledge",
+     "This position will work closely with business and system/technology subject matter experts to understand the enterprise objectives and build our capabilities in BI, Reporting & Analytical applications to support various areas of the organization"
+    ]
+   },
+   "job_onet_soc": "15113200",
+   "job_onet_job_zone": "4"
+  },
+  {
+   "job_id": "U9FeCBlyUUb-I5tZAAAAAA==",
+   "job_title": "FULLY REMOTE Fullstack Sr Software Engineer",
+   "employer_name": "CyberCoders",
+   "employer_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7EfkXlgVv-zgqK75MkcGNvtZ5rIOcjLC1AH-2&s=0",
+   "employer_website": null,
+   "job_publisher": "LinkedIn",
+   "job_employment_type": "Full-time",
+   "job_employment_types": [
+    "FULLTIME"
+   ],
+   "job_apply_link": "https://www.linkedin.com/jobs/view/fully-remote-fullstack-sr-software-engineer-at-cybercoders-4196156902?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "job_apply_is_direct": false,
+   "apply_options": [
+    {
+     "publisher": "LinkedIn",
+     "apply_link": "https://www.linkedin.com/jobs/view/fully-remote-fullstack-sr-software-engineer-at-cybercoders-4196156902?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": false
+    },
+    {
+     "publisher": "CPS, Inc.",
+     "apply_link": "https://jobs.cps4jobs.com/Sr-Fullstack-Software-Engineer-React-Python-Jobs-in-Chicago-IL/12190201?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": true
+    },
+    {
+     "publisher": "Expoint",
+     "apply_link": "https://expoint.co/job/986297144?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": false
+    },
+    {
+     "publisher": "Truemote",
+     "apply_link": "https://truemote.com/remote-job/fully-remote-fullstack-sr-software-engineer-39362e9d?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+     "is_direct": false
+    }
+   ],
+   "job_description": "Fullstack Senior Software Engineer\n\nMust Have\n• Fullstack experience with React on Frontend and Ruby, Python, or Java on the Backend\n• Computer Science Degree is a must\n\nLocation: FULLY REMOTE\n\nPay: 135k-165k\n\nPosition Overview\n\nWe are a large tech company (~700 employees) seeking 2 Full stack Senior Software Engineers to join our dynamic team. In this role, you will be responsible for developing and maintaining web applications, working on both the front-end and back-end systems. You will collaborate with cross-functional teams to deliver high-quality software solutions that meet our business objectives.\n\nKey Responsibilities\n• Design, develop, and maintain scalable web applications using Ruby on Rails and React.\n• Collaborate with product managers and designers to define user requirements and translate them into technical specifications.\n• Implement and maintain relational databases to support application functionality.\n• Develop and integrate APIs for seamless data exchange between front-end and back-end systems.\n• Participate in code reviews, ensuring best practices and high code quality are maintained.\n• Troubleshoot and debug applications to optimize performance and user experience.\n• Stay current with emerging technologies and industry trends to enhance our product offerings.\n\nQualifications\n• Bachelor's degree in Computer Science or a related field.\n• Proven experience as a Fullstack Software Engineer or similar role.\n• Strong proficiency in Ruby on Rails and React fr",
+   "job_is_remote": true,
+   "job_posted_at": "2 days ago",
+   "job_posted_at_timestamp": 1743206400,
+   "job_posted_at_datetime_utc": "2025-03-29T00:00:00.000Z",
+   "job_location": "Chicago, IL",
+   "job_city": "Chicago",
+   "job_state": "Illinois",
+   "job_country": "US",
+   "job_latitude": 41.8781136,
+   "job_longitude": -87.6297982,
+   "job_benefits": [
+    "paid_time_off",
+    "dental_coverage"
+   ],
+   "job_google_link": "https://www.google.com/search?q=jobs&gl=us&hl=en&udm=8#vhid=vt%3D20/docid%3DU9FeCBlyUUb-I5tZAAAAAA%3D%3D&vssid=jobs-detail-viewer",
+   "job_min_salary": 135000,
+   "job_max_salary": 165000,
+   "job_salary_period": "YEAR",
+   "job_highlights": {
+    "Qualifications": [
+     "Fullstack experience with React on Frontend and Ruby, Python, or Java on the Backend",
+     "Computer Science Degree is a must"
+    ],
+    "Benefits": [
+     "Pay: 135k-165k",
+     "Vision"
+    ],
+    "Responsibilities": [
+     "In this role, you will be responsible for developing and maintaining web applications, working on both the front-end and back-end systems",
+     "You will collaborate with cross-functional teams to deliver high-quality software solutions that meet our business objectives"
+    ]
+   },
+   "job_onet_soc": "15113300",
+   "job_onet_job_zone": "4"
+  }
+ ]
+}

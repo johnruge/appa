@@ -1,0 +1,113 @@
+{
+ "domain": "netflix.com",
+ "branding": {
+  "companyName": "Netflix"
+ },
+ "count": 101,
+ "positions": [
+  {
+   "id": 790316811164,
+   "name": "Staff/ Principal Software Engineer (L6/L7): AI Platform Model Serving",
+   "posting_name": "Staff/ Principal Software Engineer (L6/L7): AI Platform Model Serving",
+   "location": "Remote, United States",
+   "locations": [
+    "Remote, United States"
+   ],
+   "hot": 0,
+   "department": "Data & Insights",
+   "business_unit": "Streaming",
+   "t_update": 1793059200,
+   "t_create": 1793059200,
+   "ats_job_id": "JR41408",
+   "display_job_id": "JR41408",
+   "type": "ATS",
+   "id_locale": "JR41408-en-US",
+   "job_description": "",
+   "locale": "en-US",
+   "stars": 0,
+   "medallionProgram": null,
+   "location_flexibility": null,
+   "work_location_option": "onsite",
+   "canonicalPositionUrl": "https://explore.jobs.netflix.net/careers/job/790316811164",
+   "isPrivate": false
+  },
+  {
+   "id": 790319146642,
+   "name": "Software Engineer 5 - Device Certification Infrastructure",
+   "posting_name": "Software Engineer 5 - Device Certification Infrastructure",
+   "location": "Los Gatos,California,United States of America",
+   "locations": [
+    "Los Gatos,California,United States of America"
+   ],
+   "hot": 0,
+   "department": "Engineering",
+   "business_unit": "Streaming",
+   "t_update": 1792972800,
+   "t_create": 1792972800,
+   "ats_job_id": "JR43214",
+   "display_job_id": "JR43214",
+   "type": "ATS",
+   "id_locale": "JR43214-en-US",
+   "job_description": "",
+   "locale": "en-US",
+   "stars": 0,
+   "medallionProgram": null,
+   "location_flexibility": null,
+   "work_location_option": "onsite",
+   "canonicalPositionUrl": "https://explore.jobs.netflix.net/careers/job/790319146642",
+   "isPrivate": false
+  },
+  {
+   "id": 790319088862,
+   "name": "Software Engineer 4 - TV Product UI",
+   "posting_name": "Software Engineer 4 - TV Product UI",
+   "location": "Remote, United States",
+   "locations": [
+    "Remote, United States"
+   ],
+   "hot": 0,
+   "department": "Engineering",
+   "business_unit": "Streaming",
+   "t_update": 1792713600,
+   "t_create": 1792713600,
+   "ats_job_id": "JR43177",
+   "display_job_id": "JR43177",
+   "type": "ATS",
+   "id_locale": "JR43177-en-US",
+   "job_description": "",
+   "locale": "en-US",
+   "stars": 0,
+   "medallionProgram": null,
+   "location_flexibility": null,
+   "work_location_option": "remote_local",
+   "canonicalPositionUrl": "https://explore.jobs.netflix.net/careers/job/790319088862",
+   "isPrivate": false
+  },
+  {
+   "id": 790318904468,
+   "name": "Software Engineer Intern - Summer 2027",
+   "posting_name": "Software Engineer Intern - Summer 2027",
+   "location": "Los Gatos,California,United States of America",
+   "locations": [
+    "Los Gatos,California,United States of America"
+   ],
+   "hot": 0,
+   "department": "Engineering",
+   "business_unit": "Streaming",
+   "t_update": 1792368000,
+   "t_create": 1791849600,
+   "ats_job_id": "JR42989",
+   "display_job_id": "JR42989",
+   "type": "ATS",
+   "id_locale": "JR42989-en-US",
+   "job_description": "",
+   "locale": "en-US",
+   "stars": 0,
+   "medallionProgram": null,
+   "location_flexibility": null,
+   "work_location_option": "onsite",
+   "canonicalPositionUrl": "https://explore.jobs.netflix.net/careers/job/790318904468",
+   "isPrivate": false
+  }
+ ]
+}

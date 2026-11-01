@@ -1,0 +1,220 @@
+{
+ "data": [
+  {
+   "id": 2895642,
+   "name": "Director of Healthcare Partnerships",
+   "created_at": "2026-10-05T20:49:37.688Z",
+   "status": "Open",
+   "employment_status": "Full Time - salary",
+   "job_description": "<p style=\"margin: 12pt 0in 4pt; text-align: center; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\"><strong><span style=\"font-size: 26.0pt; color: #1A5276;\">Director of Healthcare Partnerships</span></strong></p>\n<p style=\"margin: 0in 0in 16pt; text-align: center; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\"><span style=\"color: #666666;\">Hireology&nbsp; &bull;&nbsp; Chicago, IL or Remote&nbsp; &bull;&nbsp; Full-Time</span></p>\n<div style=\"border: none; border-bottom: solid #D6EAF8 1.0pt; padding: 0in 0in 4.0pt 0in;\">\n<h2 style=\"margin: 12pt 0in 6pt; padding: 0in; font-size: 13pt; font-family: Arial, sans-serif; color: #1a5276; border: medium none currentcolor;\">About Hireology</h2>\n</div>\n<p style=\"margin: 4pt 0in 16pt; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\">Hireology&rsquo;s technology helps businesses build great teams. Over the last 16 years, we&rsquo;ve grown from a startup to a market-leading organization with 140 team members and built an award-winning culture that makes this company an amazing place to work.</p>",
+   "locations": [],
+   "remote": true,
+   "blind_posted": false,
+   "job_family": {
+    "id": 9,
+    "name": "General",
+    "shorten": true,
+    "arrange": 15,
+    "global_id": "da25d3da-3c22-410b-8a0f-964e6bcbe3a4"
+   },
+   "careersite_order": null,
+   "career_site_url": "https://careers.hireology.com/hireology2/2895642/description",
+   "application_path": "/careers/2895642/application",
+   "career_site_path": "/hireology2/2895642/description",
+   "organization": {
+    "id": 313,
+    "name": "Hireology",
+    "type": "Company"
+   },
+   "seo_page_title": "Director of Healthcare Partnerships | Remote | Hireology",
+   "application_basic": false,
+   "compensation": {
+    "is_comp_range": false,
+    "comp_single_amount": "145000.0",
+    "comp_range_min": "0.0",
+    "comp_range_max": "0.0",
+    "comp_period": "year",
+    "comp_frequency": "semimonthly"
+   }
+  },
+  {
+   "id": 2897445,
+   "name": "Customer Care Specialist",
+   "created_at": "2026-10-07T13:45:11.622Z",
+   "status": "Open",
+   "employment_status": "Full Time - salary",
+   "job_description": "<p style=\"margin: 12pt 0in 4pt; text-align: center; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\"><strong><span style=\"font-size: 26.0pt; color: #1A5276;\">Customer Care Specialist</span></strong></p>\n<p style=\"margin: 0in 0in 16pt; text-align: center; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\"><span style=\"color: #666666;\">Customer Care&nbsp; &bull;&nbsp; Hireology&nbsp; &bull;&nbsp; Chicago, IL&nbsp; &bull;&nbsp; Hybrid&nbsp; &bull;&nbsp; Full-Time</span></p>\n<div style=\"border: none; border-bottom: solid #D6EAF8 1.0pt; padding: 0in 0in 4.0pt 0in;\">\n<h2 style=\"margin: 12pt 0in 6pt; padding: 0in; font-size: 13pt; font-family: Arial, sans-serif; color: #1a5276; border: medium none currentcolor;\">About Hireology</h2>\n</div>\n<p style=\"margin: 4pt 0in 16pt; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\">Hireology&rsquo;s technology helps businesses build great teams. Since 2010, we&rsquo;ve grown from a startup into a market-leading organization serving businesses across the country. Along the way, we&rsquo;ve built an award-winning culture rooted in collaboration, innovation, and creating an exceptional experience for both our customers and our people.</p>",
+   "locations": [
+    {
+     "city": "Chicago",
+     "state": "IL",
+     "zip_code": "60602",
+     "address": "24 E. Washington Street Suite 800"
+    }
+   ],
+   "remote": false,
+   "blind_posted": false,
+   "job_family": {
+    "id": 9,
+    "name": "General",
+    "shorten": true,
+    "arrange": 15,
+    "global_id": "da25d3da-3c22-410b-8a0f-964e6bcbe3a4"
+   },
+   "careersite_order": null,
+   "career_site_url": "https://careers.hireology.com/hireology2/2897445/description",
+   "application_path": "/careers/2897445/application",
+   "career_site_path": "/hireology2/2897445/description",
+   "organization": {
+    "id": 313,
+    "name": "Hireology",
+    "type": "Company"
+   },
+   "seo_page_title": "Customer Care Specialist | Chicago, IL | Hireology",
+   "application_basic": false,
+   "compensation": {
+    "is_comp_range": false,
+    "comp_single_amount": "55000.0",
+    "comp_range_min": "0.0",
+    "comp_range_max": "0.0",
+    "comp_period": "year",
+    "comp_frequency": ""
+   }
+  },
+  {
+   "id": 2898800,
+   "name": "Director of Growth Marketing",
+   "created_at": "2026-10-08T14:47:26.374Z",
+   "status": "Open",
+   "employment_status": "Full Time - salary",
+   "job_description": "<p style=\"margin: 12pt 0in 4pt; text-align: center; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\"><strong><span style=\"font-size: 26.0pt; color: #1A5276;\">Director of Growth Marketing</span></strong></p>\n<p style=\"margin: 0in 0in 16pt; text-align: center; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\"><span style=\"color: #666666;\">Marketing&nbsp; &bull;&nbsp; Hireology&nbsp; &bull;&nbsp; Chicago, IL&nbsp; &bull;&nbsp; Hybrid&nbsp; &bull;&nbsp; Full-Time</span></p>\n<div style=\"border: none; border-bottom: solid #D6EAF8 1.0pt; padding: 0in 0in 4.0pt 0in;\">\n<h2 style=\"margin: 12pt 0in 6pt; padding: 0in; font-size: 13pt; font-family: Arial, sans-serif; color: #1a5276; border: medium none currentcolor;\">About Hireology</h2>\n</div>\n<p style=\"margin: 4pt 0in 16pt; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\">Hireology is a 15-year market leader in HR technology, trusted by thousands of businesses to help them hire and build outstanding teams. Recognized by Built In Chicago as a Best Place to Work multiple years running, we&rsquo;re a hybrid team of committed and optimistic talent looking for the next person to help us build the future of hiring for frontline, high-volume businesses.</p>",
+   "locations": [
+    {
+     "city": "Chicago",
+     "state": "IL",
+     "zip_code": "60602",
+     "address": "24 E. Washington Street Suite 800"
+    }
+   ],
+   "remote": false,
+   "blind_posted": false,
+   "job_family": {
+    "id": 9,
+    "name": "General",
+    "shorten": true,
+    "arrange": 15,
+    "global_id": "da25d3da-3c22-410b-8a0f-964e6bcbe3a4"
+   },
+   "careersite_order": null,
+   "career_site_url": "https://careers.hireology.com/hireology2/2898800/description",
+   "application_path": "/careers/2898800/application",
+   "career_site_path": "/hireology2/2898800/description",
+   "organization": {
+    "id": 313,
+    "name": "Hireology",
+    "type": "Company"
+   },
+   "seo_page_title": "Director of Growth Marketing | Chicago, IL | Hireology",
+   "application_basic": false,
+   "compensation": {
+    "is_comp_range": true,
+    "comp_single_amount": "150000.0",
+    "comp_range_min": "130000.0",
+    "comp_range_max": "150000.0",
+    "comp_period": "year",
+    "comp_frequency": ""
+   }
+  },
+  {
+   "id": 2908935,
+   "name": "Senior Manager Partner & Field Marketing",
+   "created_at": "2026-10-19T21:33:01.902Z",
+   "status": "Open",
+   "employment_status": "Full Time - salary",
+   "job_description": "<p style=\"margin: 12pt 0in 4pt; text-align: center; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\"><strong><span style=\"font-size: 26.0pt; color: #1A5276;\">Senior Manager, Partner &amp; Field Marketing</span></strong></p>\n<p style=\"margin: 0in 0in 16pt; text-align: center; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\"><span style=\"color: #666666;\">Marketing&nbsp; &bull;&nbsp; Hireology&nbsp; &bull;&nbsp; Chicago, IL&nbsp; &bull;&nbsp; Hybrid&nbsp; &bull;&nbsp; Full-Time</span></p>\n<div style=\"border: none; border-bottom: solid #D6EAF8 1.0pt; padding: 0in 0in 4.0pt 0in;\">\n<h2 style=\"margin: 12pt 0in 6pt; padding: 0in; font-size: 13pt; font-family: Arial, sans-serif; color: #1a5276; border: medium none currentcolor;\">About Hireology</h2>\n</div>\n<p style=\"margin: 4pt 0in 16pt; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\">Hireology is a 15-year market leader in HR technology, trusted by thousands of businesses to help them hire and build outstanding teams. Recognized by Built In Chicago as a Best Place to Work multiple years running, we&rsquo;re a hybrid team of committed and optimistic talent looking for the next person to help us build the future of hiring for frontline, high-volume businesses.</p>",
+   "locations": [
+    {
+     "city": "Chicago",
+     "state": "IL",
+     "zip_code": "60602",
+     "address": "24 E. Washington Street Suite 800"
+    }
+   ],
+   "remote": false,
+   "blind_posted": false,
+   "job_family": {
+    "id": 9,
+    "name": "General",
+    "shorten": true,
+    "arrange": 15,
+    "global_id": "da25d3da-3c22-410b-8a0f-964e6bcbe3a4"
+   },
+   "careersite_order": null,
+   "career_site_url": "https://careers.hireology.com/hireology2/2908935/description",
+   "application_path": "/careers/2908935/application",
+   "career_site_path": "/hireology2/2908935/description",
+   "organization": {
+    "id": 313,
+    "name": "Hireology",
+    "type": "Company"
+   },
+   "seo_page_title": "Senior Manager Partner & Field Marketing | Chicago, IL | Hireology",
+   "application_basic": false,
+   "compensation": {
+    "is_comp_range": true,
+    "comp_single_amount": "110000.0",
+    "comp_range_min": "110000.0",
+    "comp_range_max": "120000.0",
+    "comp_period": "year",
+    "comp_frequency": ""
+   }
+  },
+  {
+   "id": 2910044,
+   "name": "Major Account Executive",
+   "created_at": "2026-10-20T20:33:34.641Z",
+   "status": "Open",
+   "employment_status": "Full Time - base plus commission",
+   "job_description": "<p style=\"margin: 12pt 0in 4pt; text-align: center; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\"><strong><span style=\"font-size: 26.0pt; color: #1A5276;\">Major Account Executive</span></strong></p>\n<p style=\"margin: 0in 0in 16pt; text-align: center; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\"><span style=\"color: #666666;\">Sales&nbsp; &bull;&nbsp; Hireology&nbsp; &bull;&nbsp; Chicago, IL&nbsp; &bull;&nbsp; Hybrid&nbsp; &bull;&nbsp; Full-Time</span></p>\n<div style=\"border: none; border-bottom: solid #D6EAF8 1.0pt; padding: 0in 0in 4.0pt 0in;\">\n<h2 style=\"margin: 12pt 0in 6pt; padding: 0in; font-size: 13pt; font-family: Arial, sans-serif; color: #1a5276; border: medium none currentcolor;\">About Hireology</h2>\n</div>\n<p style=\"margin: 4pt 0in 16pt; font-size: 11pt; font-family: Arial, sans-serif; color: #2c3e50;\">Hireology&rsquo;s technology empowers businesses to build great teams. Over the last 15 years, we&rsquo;ve grown from a startup to a market-leading organization with over 140 team members, and we&rsquo;ve created an award-winning culture that makes this company an amazing place to work.</p>",
+   "locations": [
+    {
+     "city": "Chicago",
+     "state": "IL",
+     "zip_code": "60602",
+     "address": "24 E. Washington Street Suite 800"
+    }
+   ],
+   "remote": false,
+   "blind_posted": false,
+   "job_family": {
+    "id": 9,
+    "name": "General",
+    "shorten": true,
+    "arrange": 15,
+    "global_id": "da25d3da-3c22-410b-8a0f-964e6bcbe3a4"
+   },
+   "careersite_order": null,
+   "career_site_url": "https://careers.hireology.com/hireology2/2910044/description",
+   "application_path": "/careers/2910044/application",
+   "career_site_path": "/hireology2/2910044/description",
+   "organization": {
+    "id": 313,
+    "name": "Hireology",
+    "type": "Company"
+   },
+   "seo_page_title": "Major Account Executive | Chicago, IL | Hireology",
+   "application_basic": false,
+   "compensation": {
+    "is_comp_range": false,
+    "comp_single_amount": "100000.0",
+    "comp_range_min": "0.0",
+    "comp_range_max": "0.0",
+    "comp_period": "year",
+    "comp_frequency": "semimonthly"
+   }
+  }
+ ],
+ "count": 5,
+ "page": 1,
+ "page_size": 100
+}

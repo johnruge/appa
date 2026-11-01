@@ -1,0 +1,219 @@
+{
+ "meta": {
+  "schema_version": "1.1",
+  "generated_at": "2026-10-30T18:53:08.579087+00:00",
+  "total_jobs": 6,
+  "categories": [
+   {
+    "id": "security",
+    "name": "Security Engineering",
+    "emoji": "🔒",
+    "count": 225
+   },
+   {
+    "id": "mobile",
+    "name": "Mobile Engineering",
+    "emoji": "📲",
+    "count": 20
+   },
+   {
+    "id": "frontend",
+    "name": "Frontend Engineering",
+    "emoji": "🧩",
+    "count": 30
+   },
+   {
+    "id": "backend",
+    "name": "Backend Engineering",
+    "emoji": "⚙️",
+    "count": 41
+   },
+   {
+    "id": "software_engineering",
+    "name": "Software Engineering",
+    "emoji": "💻",
+    "count": 1988
+   }
+  ]
+ },
+ "jobs": [
+  {
+   "job_id": "job_d50dc0e8287c627d7b97",
+   "id": "job_d50dc0e8287c627d7b97",
+   "company": "Alarm.com",
+   "title": "Software Engineer II",
+   "location": "Needham, Massachusetts",
+   "url": "https://job-boards.greenhouse.io/alarmcom/jobs/8924095002",
+   "posted_at": "2026-10-30T16:12:56Z",
+   "first_seen": "2026-10-30T18:53:08.579Z",
+   "source": "Greenhouse",
+   "category": {
+    "id": "software_engineering",
+    "name": "Software Engineering",
+    "emoji": "💻"
+   },
+   "company_tier": {
+    "tier": "other",
+    "emoji": "",
+    "label": "",
+    "sectors": []
+   },
+   "flags": {
+    "no_sponsorship": false,
+    "us_citizenship_required": false
+   },
+   "is_closed": false,
+   "comp": {
+    "min": 100000,
+    "max": 120000,
+    "currency": "USD",
+    "source": "posting"
+   }
+  },
+  {
+   "job_id": "job_bad3f5bf0c00f92847ea",
+   "id": "job_bad3f5bf0c00f92847ea",
+   "company": "Esri",
+   "title": "Customer Success Associate  ",
+   "location": "Redlands, CA",
+   "url": "https://www.esri.com/careers/5279538007?gh_jid=5279538007",
+   "posted_at": "2026-10-29T18:51:49Z",
+   "first_seen": "2026-10-29T19:47:53.921Z",
+   "source": "Greenhouse",
+   "category": {
+    "id": "customer_support",
+    "name": "Customer Service and Support",
+    "emoji": "☎️"
+   },
+   "company_tier": {
+    "tier": "other",
+    "emoji": "",
+    "label": "",
+    "sectors": []
+   },
+   "flags": {
+    "no_sponsorship": true,
+    "us_citizenship_required": false
+   },
+   "is_closed": false,
+   "comp": null
+  },
+  {
+   "job_id": "job_07eddc1f18dec7bed431",
+   "id": "job_07eddc1f18dec7bed431",
+   "company": "ULTRA STONE IMPEX PVT LTD",
+   "title": "Full Stack Developer - QA Tester / Junior Developer – ERP Implementation",
+   "location": "KA, IN",
+   "url": "https://in.indeed.com/viewjob?jk=9892642b56ca48ec",
+   "posted_at": "2026-10-30T00:00:00Z",
+   "first_seen": "2026-10-30T13:10:53.225Z",
+   "source": "JobSpy (Indeed)",
+   "category": {
+    "id": "software_engineering",
+    "name": "Software Engineering",
+    "emoji": "💻"
+   },
+   "company_tier": {
+    "tier": "other",
+    "emoji": "",
+    "label": "",
+    "sectors": []
+   },
+   "flags": {
+    "no_sponsorship": false,
+    "us_citizenship_required": false
+   },
+   "is_closed": false,
+   "comp": null
+  },
+  {
+   "job_id": "job_78c09afe4c802f24d7f5",
+   "id": "job_78c09afe4c802f24d7f5",
+   "company": "Viridien",
+   "title": "Data Scientist",
+   "location": "Airoli, India",
+   "url": "https://cgg.wd103.myworkdayjobs.com/viridiencareers/job/Airoli-India/Data-Scientist-1_JR101327-2",
+   "posted_at": "2026-10-30T00:00:00Z",
+   "first_seen": "2026-10-17T05:00:44.195Z",
+   "source": "Workday",
+   "category": {
+    "id": "data_ml",
+    "name": "Data Science & ML",
+    "emoji": "🤖"
+   },
+   "company_tier": {
+    "tier": "other",
+    "emoji": "",
+    "label": "",
+    "sectors": []
+   },
+   "flags": {
+    "no_sponsorship": false,
+    "us_citizenship_required": false
+   },
+   "is_closed": false,
+   "comp": null
+  },
+  {
+   "job_id": "job_3fbbd35f6e7ac5a289c2",
+   "id": "job_3fbbd35f6e7ac5a289c2",
+   "company": "Swarm Aero",
+   "title": "DevOps Engineer",
+   "location": "Remote",
+   "url": "https://jobs.ashbyhq.com/swarmaero/1a5fe194-42ea-48df-ae66-1e3dd4237390",
+   "posted_at": "2026-10-29T16:33:24.459Z",
+   "first_seen": "2026-10-23T23:30:51.737Z",
+   "source": "Ashby",
+   "category": {
+    "id": "infrastructure_sre",
+    "name": "Infrastructure & SRE",
+    "emoji": "🏗️"
+   },
+   "company_tier": {
+    "tier": "other",
+    "emoji": "",
+    "label": "",
+    "sectors": []
+   },
+   "flags": {
+    "no_sponsorship": false,
+    "us_citizenship_required": true
+   },
+   "is_closed": false,
+   "comp": null
+  },
+  {
+   "job_id": "job_00000000000000000000",
+   "id": "job_00000000000000000000",
+   "company": "Alarm.com",
+   "title": "Software Engineer II",
+   "location": "Needham, Massachusetts",
+   "url": "https://job-boards.greenhouse.io/alarmcom/jobs/18924095002",
+   "posted_at": "2026-10-30T16:12:56Z",
+   "first_seen": "2026-10-30T18:53:08.579Z",
+   "source": "Greenhouse",
+   "category": {
+    "id": "software_engineering",
+    "name": "Software Engineering",
+    "emoji": "💻"
+   },
+   "company_tier": {
+    "tier": "other",
+    "emoji": "",
+    "label": "",
+    "sectors": []
+   },
+   "flags": {
+    "no_sponsorship": false,
+    "us_citizenship_required": false
+   },
+   "is_closed": true,
+   "comp": {
+    "min": 100000,
+    "max": 120000,
+    "currency": "USD",
+    "source": "posting"
+   }
+  }
+ ]
+}

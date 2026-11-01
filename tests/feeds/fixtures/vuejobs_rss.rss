@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <atom:link href="https://vuejobs.com/feed/posts" rel="self" type="application/rss+xml"/>
+        <title><![CDATA[VueJobs posts feed]]></title>
+        <link>
+        <![CDATA[https://vuejobs.com/feed/posts]]></link>
+                <description><![CDATA[List of active posts on VueJobs]]></description>
+        <language>en-US</language>
+        <pubDate>Fri, 30 Oct 2026 20:39:48 +0000</pubDate>
+
+                    
+
+                    <item>
+                <title><![CDATA[Senior Software Engineer ]]></title>
+                <link>https://vuejobs.com/jobs/h2-analytics-senior-software-engineer?utm_source=rssfeed</link>
+                <description><![CDATA[<p><strong>Employer:</strong> H2 Analytics</p>
+                          <p><strong>Location:</strong> Remote</p>
+                          <p>H2 Analytics is redefining how professionals train for high-stakes environments through advanced simulation and data-driven tools. We build EASE (Exercise Architect Suite), a tool...</p>]]></description>
+                <guid>https://vuejobs.com/jobs/h2-analytics-senior-software-engineer</guid>
+                <pubDate>Fri, 30 Oct 2026 20:39:48 +0000</pubDate>
+                            </item>
+                    <item>
+                <title><![CDATA[Mid Software Engineer ]]></title>
+                <link>https://vuejobs.com/jobs/frontier-agriculture-mid-software-engineer-2?utm_source=rssfeed</link>
+                <description><![CDATA[<p><strong>Employer:</strong> Frontier Agriculture</p>
+                          <p><strong>Location:</strong> Cambridge, GB</p>
+                          <p>Job Description
+YAGRO Ltd (www.yagro.com) are seeking a Mid Software Engineer with strong Python and TypeScript skills and practical experience integrating AI into production appli...</p>]]></description>
+                <guid>https://vuejobs.com/jobs/frontier-agriculture-mid-software-engineer-2</guid>
+                <pubDate>Fri, 30 Oct 2026 16:14:37 +0000</pubDate>
+                            </item>
+                    <item>
+                <title><![CDATA[Data Scientist (Master&#039;s) - Montreal (2027 Start Date) | Scientifique des données (diplôme de maîtrise) - Montréal (Date de début 2027)]]></title>
+                <link>https://vuejobs.com/jobs/analysis-group-inc-data-scientist-master-s-montreal-2027-start-date-scientifique-des-donnees-diplome-de-maitrise-montreal-date-de-debut-2027?utm_source=rssfeed</link>
+                <description><![CDATA[<p><strong>Employer:</strong> Analysis Group, Inc.</p>
+                          <p><strong>Location:</strong> Montreal, QC, CA</p>
+                          <p>Overview
+About Groupe d’analyse (Analysis Group)
+Make an impact at Groupe d'analyse (Analysis Group), where we provide our clients with thoughtful, pragmatic solutions to their mos...</p>]]></description>
+                <guid>https://vuejobs.com/jobs/analysis-group-inc-data-scientist-master-s-montreal-2027-start-date-scientifique-des-donnees-diplome-de-maitrise-montreal-date-de-debut-2027</guid>
+                <pubDate>Fri, 30 Oct 2026 04:00:00 +0000</pubDate>
+                            </item>
+                    <item>
+                <title><![CDATA[Full Stack Developer (Internal Tools &amp; Platform)]]></title>
+                <link>https://vuejobs.com/jobs/bold-penguin-inc-full-stack-developer-internal-tools-platform?utm_source=rssfeed</link>
+                <description><![CDATA[<p><strong>Employer:</strong> Bold Penguin Inc</p>
+                          <p><strong>Location:</strong> Dublin, OH, US</p>
+                          <p>YOUR ROLE
+As a Full Stack Developer on our team, you will design, build, and maintain internal applications, developer portals, automated workflows, and APIs that empower our engin...</p>]]></description>
+                <guid>https://vuejobs.com/jobs/bold-penguin-inc-full-stack-developer-internal-tools-platform</guid>
+                <pubDate>Mon, 26 Oct 2026 12:20:00 +0000</pubDate>
+                            </item>
+                    <item>
+                <title><![CDATA[Junior Software Developer]]></title>
+                <link>https://vuejobs.com/jobs/reflexive-concepts-junior-software-developer?utm_source=rssfeed</link>
+                <description><![CDATA[<p><strong>Employer:</strong> Reflexive Concepts</p>
+                          <p><strong>Location:</strong> Annapolis Junction, MD, US</p>
+                          <p>Reflexive Concepts is seeking a skilled Junior Software Developer to join our team!
+Duties and Responsibilities:
+
+Collaborate on a team of three developers working to enhance the T...</p>]]></description>
+                <guid>https://vuejobs.com/jobs/reflexive-concepts-junior-software-developer</guid>
+                <pubDate>Thu, 22 Oct 2026 09:18:36 +0000</pubDate>
+                            </item>
+                    <item>
+                <title><![CDATA[Junior Software Developer 795]]></title>
+                <link>https://vuejobs.com/jobs/freedom-technology-solutions-group-junior-software-developer-795?utm_source=rssfeed</link>
+                <description><![CDATA[<p><strong>Employer:</strong> Freedom Technology Solutions Group</p>
+                          <p><strong>Location:</strong> Columbia, MD, US | Annapolis Junction, MD, US</p>
+                          <p>Join a team that powers the business enterprise behind the mission. Freedom supports the sustainment, modernization, and transformation of more than 100 enterprise business systems...</p>]]></description>
+                <guid>https://vuejobs.com/jobs/freedom-technology-solutions-group-junior-software-developer-795</guid>
+                <pubDate>Wed, 21 Oct 2026 16:01:37 +0000</pubDate>
+                            </item>
+    </channel>
+</rss>

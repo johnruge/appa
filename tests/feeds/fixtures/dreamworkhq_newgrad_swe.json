@@ -1,0 +1,83 @@
+{
+ "generatedAt": "2026-10-30T17:14:15.036Z",
+ "source": "https://www.dreamworkhq.com",
+ "list": "New-Grad-Software-Engineer-Jobs",
+ "count": 5,
+ "listings": [
+  {
+   "id": "cad148eb-5398-4fa5-8b9d-9037316d4e71",
+   "title": "Geographic Information System Software Developer",
+   "company": "LLNL",
+   "companyDomain": "llnl.gov",
+   "location": "Livermore, CA, United States",
+   "remoteType": "hybrid",
+   "salaryMin": 121830,
+   "salaryMax": 154500,
+   "salaryPeriod": "annual",
+   "aiRoleKind": "non_ai",
+   "postedAt": "2026-10-29T23:15:05.517Z",
+   "firstIndexedAt": "2026-10-30T16:45:41.676Z",
+   "url": "https://www.dreamworkhq.com/job/cad148eb-5398-4fa5-8b9d-9037316d4e71?utm_source=github&utm_campaign=gh-new-grad-swe"
+  },
+  {
+   "id": "0f2a57cb-d502-4b1c-82e6-79a19329a488",
+   "title": "Data Engineer I , WW Ops Finance S&A",
+   "company": "Amazon",
+   "companyDomain": "amazon.com",
+   "location": "US, WA, Bellevue",
+   "remoteType": null,
+   "salaryMin": 101300,
+   "salaryMax": 160000,
+   "salaryPeriod": "annual",
+   "aiRoleKind": "non_ai",
+   "postedAt": "2026-10-30T00:00:00.000Z",
+   "firstIndexedAt": "2026-10-30T16:19:01.299Z",
+   "url": "https://www.dreamworkhq.com/job/0f2a57cb-d502-4b1c-82e6-79a19329a488?utm_source=github&utm_campaign=gh-new-grad-swe"
+  },
+  {
+   "id": "828220e9-7ec3-4543-8b6b-12d434c07524",
+   "title": "Associate Partner Solutions Engineer, gTech Ads Sellside",
+   "company": "Google",
+   "companyDomain": "google.com",
+   "location": "New York, NY, USA, San Francisco, CA, USA, Sunnyvale, CA, USA",
+   "remoteType": "onsite",
+   "salaryMin": 102000,
+   "salaryMax": 144000,
+   "salaryPeriod": "annual",
+   "aiRoleKind": "non_ai",
+   "postedAt": null,
+   "firstIndexedAt": "2026-10-27T21:03:28.947Z",
+   "url": "https://www.dreamworkhq.com/job/828220e9-7ec3-4543-8b6b-12d434c07524?utm_source=github&utm_campaign=gh-new-grad-swe"
+  },
+  {
+   "id": "afe74b3d-5f59-4bc5-b282-6177551f06c6",
+   "title": "Software Engineer",
+   "company": "CSC",
+   "companyDomain": "pages.cscglobal.com",
+   "location": "Buffalo Grove, IL, United States",
+   "remoteType": "remote",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryPeriod": null,
+   "aiRoleKind": "non_ai",
+   "postedAt": "2026-10-27T20:57:17.000Z",
+   "firstIndexedAt": "2026-10-29T01:00:53.736Z",
+   "url": "https://www.dreamworkhq.com/job/afe74b3d-5f59-4bc5-b282-6177551f06c6?utm_source=github&utm_campaign=gh-new-grad-swe"
+  },
+  {
+   "id": "4307dce2-8bf7-46d7-94be-4f307082b2da",
+   "title": "Software Engineer 1",
+   "company": "Wyetechllc",
+   "companyDomain": "wyetech.com",
+   "location": "Columbia, Maryland",
+   "remoteType": "onsite",
+   "salaryMin": 52,
+   "salaryMax": 107,
+   "salaryPeriod": "hourly",
+   "aiRoleKind": "non_ai",
+   "postedAt": "2026-02-18T15:27:54.685Z",
+   "firstIndexedAt": "2026-05-28T13:45:27.962Z",
+   "url": "https://www.dreamworkhq.com/job/4307dce2-8bf7-46d7-94be-4f307082b2da?utm_source=github&utm_campaign=gh-new-grad-swe"
+  }
+ ]
+}

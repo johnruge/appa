@@ -1,0 +1,355 @@
+{
+ "count": 41412,
+ "next": "https://jobdataapi.com/api/jobs/?country_code=US&page=2&title=software+engineer",
+ "previous": null,
+ "results": [
+  {
+   "id": 61107857,
+   "ext_id": "92464502752",
+   "company": {
+    "id": 140124,
+    "source_id": 77,
+    "name": "Walgreens",
+    "logo": "https://jobdataapi.com/media/company/logo/26/07/logo_img_d4c2nR9.png",
+    "website_url": "https://www.walgreens.com",
+    "linkedin_url": "https://www.linkedin.com/company/walgreens/",
+    "youtube_url": null,
+    "twitter_handle": null,
+    "github_url": null,
+    "is_agency": false
+   },
+   "title": "Principal Software Engineer II",
+   "location": "DEERFIELD, IL",
+   "types": [
+    {
+     "id": 1,
+     "name": "Full Time"
+    }
+   ],
+   "cities": [
+    {
+     "geonameid": 4889668,
+     "asciiname": "Deerfield",
+     "name": "Deerfield",
+     "timezone": "America/Chicago",
+     "latitude": "42.17114",
+     "longitude": "-87.84451",
+     "population": 19019
+    }
+   ],
+   "states": [
+    {
+     "geonameid": 4896861,
+     "code": "IL",
+     "asciiname": "Illinois",
+     "name": "Illinois"
+    }
+   ],
+   "countries": [
+    {
+     "id": 238,
+     "code": "US",
+     "name": "United States",
+     "region": {
+      "id": 5,
+      "name": "North America"
+     }
+    }
+   ],
+   "regions": [
+    {
+     "id": 5,
+     "name": "North America"
+    }
+   ],
+   "has_remote": true,
+   "published": "2026-10-30T21:55:43Z",
+   "description": "<p><span><strong><span><span>Job Summary</span></span></strong></span><br/><br/> </p><p><span>Walgreens is seeking a <strong>Principal Software Engineer II</strong> to serve as a senior technical authority and hands-on engineering leader supporting highly strategic <strong>Digital and Store technology platforms</strong> within the Retail Consumer and Digital organization.</span></p><p><span>This role is responsible for architecting, designing, building, and troubleshooting complex distributed systems that power Walgreens\u2019 online, mobile, and store technology ecosystems. The position plays a key role in driving engineering excellence, modern architecture practices, and the adoption of AI-assisted development tools across the software development lifecycle.</span></p><p><span>The ideal candidate combines deep technical expertise with strong hands-on engineering capability, including writing code, reviewing designs, debugging production issues, analyzing thread or memory dumps, and helping engineering teams resolve complex technical challenges.</span></p><p><span>This role will work closely with engineering leadership, architects, and product teams to design scalable, resilient systems and unblock teams working on mission-critical platforms.</span></p><p><span>This position is <strong>based in Deerfield, Illinois and follows a hybrid work model requiring four days per week in the office.</strong></span></p><p> </p><span><strong><span><span>Job Responsibilities</span></span></str",
+   "experience_level": "SE",
+   "application_url": "https://jobs.walgreens.com/en/job/deerfield/principal-software-engineer-ii/1242/92464502752",
+   "language": "en",
+   "salary_min": "150000",
+   "salary_max": null,
+   "salary_currency": "USD"
+  },
+  {
+   "id": 61106884,
+   "ext_id": "5001217174000",
+   "company": {
+    "id": 120117,
+    "source_id": 68,
+    "name": "Toyota Material Handling",
+    "logo": "https://jobdataapi.com/media/company/logo/25/12/logo_img_TVb9iZj.png",
+    "website_url": "https://www.toyotaforklift.com/",
+    "linkedin_url": "https://www.linkedin.com/company/toyota-material-handling/",
+    "youtube_url": "https://www.youtube.com/user/ToyotaMaterialHdlg",
+    "twitter_handle": "ToyotaForklift",
+    "github_url": null,
+    "is_agency": false
+   },
+   "title": "Telematics Software Engineer",
+   "location": "Greene, NY, United States",
+   "types": [
+    {
+     "id": 1,
+     "name": "Full Time"
+    }
+   ],
+   "cities": [],
+   "states": [
+    {
+     "geonameid": 5128638,
+     "code": "NY",
+     "asciiname": "New York",
+     "name": "New York"
+    }
+   ],
+   "countries": [
+    {
+     "id": 238,
+     "code": "US",
+     "name": "United States",
+     "region": {
+      "id": 5,
+      "name": "North America"
+     }
+    }
+   ],
+   "regions": [
+    {
+     "id": 5,
+     "name": "North America"
+    }
+   ],
+   "has_remote": false,
+   "published": "2026-10-30T21:45:21Z",
+   "description": "<p><span></span></p>\n<p>\u00a0</p>\n<p><span>Join our Team as <strong>Telematics Software Engineer</strong>! </span></p>\n<p><span>\u00a0</span></p>\n<p><span><strong><span>The Role:</span></strong></span></p>\n<p><span>We are seeking a Telematics Software Engineer to develop and support software for connected vehicle and IoT systems. In this role, you will design, implement, and maintain C++ software for embedded Linux-based telematics devices. You will work closely with cross-functional engineering, testing, and deployment teams.</span></p>\n<p><span>\u00a0</span></p>\n<p><span>This role is ideal for engineers who enjoy working close to the hardware, solving real-world connectivity challenges, and seeing their software deployed in production systems. You\u2019ll contribute to system architecture, improve existing platforms, and help deliver reliable, scalable telematics solutions used in the field.</span></p>\n<p><span><strong><span>\u00a0</span></strong><strong><span>\u00a0</span></strong></span></p>\n<p><span><strong><span>What You\u2019ll Be Doing:</span></strong></span></p>\n<ul>\n<li><span>Develop, test, and maintain C++ applications running on embedded Linux systems, including architecture design, implementation, debugging, and documentation.</span></li>\n<li><span>Participate in the full software development lifecycle for telematics and IoT devices, from requirements and design through deployment and field support.</span></li>\n<li><span>Perform peer code reviews, contribute to coding standards, and support conti",
+   "experience_level": null,
+   "application_url": "https://myjobs.adp.com/tmhcareers/cx/job-details?reqId=5001217174000",
+   "language": "en",
+   "salary_min": "73800",
+   "salary_max": "106000",
+   "salary_currency": "USD"
+  },
+  {
+   "id": 61095585,
+   "ext_id": "JR-002101",
+   "company": {
+    "id": 27899,
+    "source_id": 14,
+    "name": "Amerisure Insurance",
+    "logo": "https://jobdataapi.com/media/company/logo/25/07/logo_img_1Wtq0UF.png",
+    "website_url": "https://www.amerisure.com/",
+    "linkedin_url": "https://www.linkedin.com/company/amerisure-insurance/",
+    "youtube_url": "https://www.youtube.com/@amerisureins",
+    "twitter_handle": "amerisuresocial",
+    "github_url": null,
+    "is_agency": false
+   },
+   "title": "Software Engineer II",
+   "location": "Farmington Hills, MI, United States",
+   "types": [
+    {
+     "id": 1,
+     "name": "Full Time"
+    }
+   ],
+   "cities": [
+    {
+     "geonameid": 4992523,
+     "asciiname": "Farmington Hills",
+     "name": "Farmington Hills",
+     "timezone": "America/Detroit",
+     "latitude": "42.48531",
+     "longitude": "-83.37716",
+     "population": 81330
+    }
+   ],
+   "states": [
+    {
+     "geonameid": 5001836,
+     "code": "MI",
+     "asciiname": "Michigan",
+     "name": "Michigan"
+    }
+   ],
+   "countries": [
+    {
+     "id": 238,
+     "code": "US",
+     "name": "United States",
+     "region": {
+      "id": 5,
+      "name": "North America"
+     }
+    }
+   ],
+   "regions": [
+    {
+     "id": 5,
+     "name": "North America"
+    }
+   ],
+   "has_remote": true,
+   "published": "2026-10-30T18:53:25Z",
+   "description": "<p><b>Amerisure creates exceptional value for its partners, policyholders, and employees.</b> As a property and casualty insurance company, Amerisure\u2019s promise to our partner agencies and policyholders begins with a comprehensive line of insurance products designed to protect businesses, as well as the health and safety of every employee. With an A.M. Best \u201cA\u201d (Excellent) rating, Amerisure serves mid-sized commercial enterprises focused in construction, manufacturing and healthcare. Ranked as one of the top 100 Property &amp; Casualty companies in the United States, we proudly manage nearly $1 Billion of Direct Written Premium and maintain $1.21 billion in surplus.</p><p></p><p></p><p><b>Amerisure </b>is currently recruiting for a <b>Software Engineering II</b> that can do a 3-day hybrid approach onsite in our Farmington Hills office. The ideal candidate will also possess the following skill set.\u00a0</p><p></p><p><b>Summary Statement</b></p><p>Design, develop, and enhance software solutions using diverse programming languages, frameworks, and cloud platforms. Contribute to system architecture design, implement cloud-native technologies, and support DevOps processes. Work on complex, large-scale projects, optimize test automation strategies, and drive continuous improvement efforts. Strong analytical skills, effective communication, and the ability to collaborate in an agile environment are key to delivering scalable and efficient solutions.</p><p></p><p><b>Essential Tasks/Major ",
+   "experience_level": "MI",
+   "application_url": "https://osv_amerisure.wd5.myworkdayjobs.com/en-US/Amerisure/job/Farmington-Hills-MI/Software-Engineer-II_JR-002101",
+   "language": "en",
+   "salary_min": null,
+   "salary_max": null,
+   "salary_currency": "USD"
+  },
+  {
+   "id": 61071952,
+   "ext_id": "2641821",
+   "company": {
+    "id": 30760,
+    "source_id": 14,
+    "name": "KLA",
+    "logo": "https://jobdataapi.com/media/company/logo/25/07/logo_img_rCxGQFt.png",
+    "website_url": "https://www.kla.com/",
+    "linkedin_url": "https://www.linkedin.com/company/klacorp/",
+    "youtube_url": null,
+    "twitter_handle": "KLAcorp",
+    "github_url": null,
+    "is_agency": false
+   },
+   "title": "Software Engineering Intern",
+   "location": "USA-MI-Ann Arbor-KLA, United States",
+   "types": [
+    {
+     "id": 1,
+     "name": "Full Time"
+    },
+    {
+     "id": 4,
+     "name": "Internship"
+    }
+   ],
+   "cities": [
+    {
+     "geonameid": 4984247,
+     "asciiname": "Ann Arbor",
+     "name": "Ann Arbor",
+     "timezone": "America/Detroit",
+     "latitude": "42.27756",
+     "longitude": "-83.74088",
+     "population": 117070
+    }
+   ],
+   "states": [
+    {
+     "geonameid": 5001836,
+     "code": "MI",
+     "asciiname": "Michigan",
+     "name": "Michigan"
+    }
+   ],
+   "countries": [
+    {
+     "id": 238,
+     "code": "US",
+     "name": "United States",
+     "region": {
+      "id": 5,
+      "name": "North America"
+     }
+    }
+   ],
+   "regions": [
+    {
+     "id": 5,
+     "name": "North America"
+    }
+   ],
+   "has_remote": false,
+   "published": "2026-10-30T13:33:04Z",
+   "description": "<p>To make electronics, you need chips, wafers, transistors, reticles, and... To make these, you must see, test and manufacture them at scale\u2014faster and better than ever before. That's where KLA comes in. Whether you're early in your career or an experienced professional, you'll solve complex challenges, work alongside brilliant minds and help shape the future of technology.</p><br/><br/><p><b><span>Group/Division</span></b></p>KLA's IT group supports business growth and productivity by connecting people, process and technology around the world. We work to improve the technology that drives our business to thrive and focus on empowering employee use of technology. This integrated approach to customer service, creativity and technological excellence enhances employee productivity, business analytics and process excellence.<p></p><p></p><p><span><b>What You'll Do</b></span></p><p>In this role, you will play a key part in advancing business priorities by delivering high-impact work across your area of expertise.</p><br/><p>We are looking for an exceptional Graduate AI Engineer Intern to help build the next generation of AI-enabled enterprise systems. This role is focused on designing, training, evaluating, deploying, and operationalizing Artificial Intelligence solutions that solve real business challenges.</p><br/><p>The ideal candidate will combine strong software engineering fundamentals with expertise in machine learning, generative AI, large language models, and AI applicat",
+   "experience_level": "EN",
+   "application_url": "https://kla.wd1.myworkdayjobs.com/en-US/Search/job/Ann-Arbor-MI/Software-Engineering-Intern_2641821",
+   "language": "en",
+   "salary_min": "48000",
+   "salary_max": "80000",
+   "salary_currency": "USD"
+  },
+  {
+   "id": 61059737,
+   "ext_id": "109692820817617606",
+   "company": {
+    "id": 25600,
+    "source_id": 27,
+    "name": "Google",
+    "logo": "https://jobdataapi.com/media/company/logo/25/07/logo_img_pXIWxUi.png",
+    "website_url": "https://www.google.com/",
+    "linkedin_url": "https://www.linkedin.com/company/google/",
+    "youtube_url": null,
+    "twitter_handle": "Google",
+    "github_url": "https://github.com/google",
+    "is_agency": false
+   },
+   "title": "Senior Software Engineer, Mobile, Android",
+   "location": "Mountain View, CA, USA; San Bruno, CA, USA",
+   "types": [
+    {
+     "id": 1,
+     "name": "Full Time"
+    }
+   ],
+   "cities": [
+    {
+     "geonameid": 5375480,
+     "asciiname": "Mountain View",
+     "name": "Mountain View",
+     "timezone": "America/Los_Angeles",
+     "latitude": "37.38605",
+     "longitude": "-122.08385",
+     "population": 80435
+    },
+    {
+     "geonameid": 5391749,
+     "asciiname": "San Bruno",
+     "name": "San Bruno",
+     "timezone": "America/Los_Angeles",
+     "latitude": "37.63049",
+     "longitude": "-122.41108",
+     "population": 43185
+    }
+   ],
+   "states": [
+    {
+     "geonameid": 5332921,
+     "code": "CA",
+     "asciiname": "California",
+     "name": "California"
+    }
+   ],
+   "countries": [
+    {
+     "id": 238,
+     "code": "US",
+     "name": "United States",
+     "region": {
+      "id": 5,
+      "name": "North America"
+     }
+    }
+   ],
+   "regions": [
+    {
+     "id": 5,
+     "name": "North America"
+    }
+   ],
+   "has_remote": false,
+   "published": "2026-10-30T11:12:32Z",
+   "description": "<div><br/><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor\u2019s degree or equivalent practical experience.<br/></li>\n<li>5 years of experience programming in Java, Kotlin, or C++.</li>\n<li>3 years of experience testing, maintaining, or launching software products, and 1 year of experience with large scale application design and architecture. <br/></li>\n<li>3 years of experience with Android application development.<br/></li>\n</ul><br/><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree or PhD in Computer Science or a related technical field.<br/></li>\n<li>5 years of experience with data structures and algorithms.</li>\n<li>1 year of experience in a technical leadership role.<br/></li>\n<li>Experience developing accessible technologies.<br/></li>\n</ul></div><div><h3>About the job</h3><p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google\u2019s needs with opportunities to switch teams and projec",
+   "experience_level": "SE",
+   "application_url": "https://www.google.com/about/careers/applications/jobs/results/109692820817617606-senior-software-engineer-mobile-android",
+   "language": "en",
+   "salary_min": null,
+   "salary_max": null,
+   "salary_currency": "USD"
+  }
+ ]
+}

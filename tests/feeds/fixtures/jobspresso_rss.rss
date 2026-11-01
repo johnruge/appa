@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:job_listing="https://jobspresso.co"
+>
+
+<channel>
+	<title>Jobs Archive | Jobspresso</title>
+	<atom:link href="https://jobspresso.co/?feed=job_feed" rel="self" type="application/rss+xml" />
+	<link>https://jobspresso.co</link>
+	<description>Jobspresso is the easiest way to find remote jobs and careers at interesting and innovative companies.</description>
+	<lastBuildDate>Fri, 30 Oct 2026 20:03:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.4</generator>
+
+<image>
+	<url>https://jobspresso.co/wp-content/uploads/cropped-social-square-1080-32x32.png</url>
+	<title>Jobs Archive | Jobspresso</title>
+	<link>https://jobspresso.co</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">88453655</site>	<item>
+		<title>Principal Software Engineer &#8211; Azure Storage</title>
+		<link>https://jobspresso.co/job/principal-software-engineer-azure-storage/</link>
+		
+		<dc:creator><![CDATA[Microsoft<br>⚲&nbsp;United States]]></dc:creator>
+		<pubDate>Fri, 30 Oct 2026 11:21:44 +0000</pubDate>
+				<guid isPermaLink="false">https://jobspresso.co/?post_type=job_listing&#038;p=164692</guid>
+
+					<description><![CDATA[Overview Microsoft is seeking a Principal Software Engineer for Azure Storage Geo Replication, working remotely from the United States. The role helps define and build the next generation of geo-resiliency, replication, data protection, and business continuity for Azure Storage, which stores and protects exabytes of customer data across regions worldwide. The work supports AI-driven applications,]]></description>
+										<content:encoded><![CDATA[<p style="font-size: 1.125em;"><strong>Overview</strong></p>
+<p>Microsoft is seeking a Principal Software Engineer for Azure Storage Geo Replication, working remotely from the United States. The role helps define and build the next generation of geo-resiliency, replication, data protection, and business continuity for Azure Storage, which stores and protects exabytes of customer data across regions worldwide.</p>
+<p>The work supports AI-driven applications, intelligent agents, analytics platforms, and mission-critical enterprise workloads, with a focus on keeping data available and trusted across regions at large scale.</p>
+<p style="font-size: 1.125em;"><strong>Responsibilities</strong></p>]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">164692</post-id><media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" type="image/jpeg" url="https://jobspresso.co/wp-content/uploads/microsoft-400-2-150x150.jpg" width="70" height="70" /><job_listing:location><![CDATA[United States]]></job_listing:location>
+<job_listing:job_type><![CDATA[Engineer]]></job_listing:job_type>
+<job_listing:job_category><![CDATA[Full Time]]></job_listing:job_category>
+<job_listing:company><![CDATA[Microsoft]]></job_listing:company>
+<job_listing:salary><![CDATA[US$143k - US$275k]]></job_listing:salary>
+	</item>
+	<item>
+		<title>AML Transaction Monitoring, Analyst</title>
+		<link>https://jobspresso.co/job/aml-transaction-monitoring-analyst/</link>
+		
+		<dc:creator><![CDATA[Shopify<br>⚲&nbsp;United States, Canada]]></dc:creator>
+		<pubDate>Fri, 30 Oct 2026 10:52:21 +0000</pubDate>
+				<guid isPermaLink="false">https://jobspresso.co/?post_type=job_listing&#038;p=164686</guid>
+
+					<description><![CDATA[We are hiring an anti-money laundering (AML) Transaction Monitoring Analyst to own alerts and cases end to end—from triage and investigation through disposition and the record supporting it. You will prepare SAR referrals and narratives for review, contribute evidence that improves detection, and see defined operational projects through to completion. Within Shopify’s Payment Operations organization,]]></description>
+										<content:encoded><![CDATA[<p>We are hiring an anti-money laundering (AML) Transaction Monitoring Analyst to own alerts and cases end to end—from triage and investigation through disposition and the record supporting it. You will prepare SAR referrals and narratives for review, contribute evidence that improves detection, and see defined operational projects through to completion.</p>
+<p>Within Shopify’s Payment Operations organization, the Financial Crimes and Complaints (FCC) team protects Shopify, our merchants, and our partners from money laundering, sanctions evasion, terrorist financing, and other financial-crime risk. As Shopify’s payments and money-movement footprint grows across the US, EU, UK, and beyond, we are building the AML program that scales with it. Our mission is to build detection, investigation, and reporting capabilities that hold up under regulator, bank-partner, and card-brand scrutiny while keeping pace with the business.</p>
+<p>Our ideal candidate is a hands-on investigator who follows the evidence, reaches defensible conclusions, and knows when to escalate. You question assumptions, identify unnecessary friction, and propose creative, practical solutions. You use data and AI to accelerate your work while checking the results.</p>
+<p style="font-size: 1.125em;"><strong>Key areas of ownership</strong></p>]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">164686</post-id><media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" type="image/jpeg" url="https://jobspresso.co/wp-content/uploads/shopify-400-1-150x150.jpg" width="70" height="70" /><job_listing:location><![CDATA[United States, Canada]]></job_listing:location>
+<job_listing:job_type><![CDATA[Others]]></job_listing:job_type>
+<job_listing:company><![CDATA[Shopify]]></job_listing:company>
+	</item>
+	<item>
+		<title>Graduate Leadership Programme</title>
+		<link>https://jobspresso.co/job/graduate-leadership-programme/</link>
+		
+		<dc:creator><![CDATA[Trust Wallet<br>⚲&nbsp;Worldwide]]></dc:creator>
+		<pubDate>Fri, 30 Oct 2026 10:17:07 +0000</pubDate>
+				<guid isPermaLink="false">https://jobspresso.co/?post_type=job_listing&#038;p=164682</guid>
+
+					<description><![CDATA[About the company Trust Wallet is the secure, self-custody Web3 wallet that empowers people to own and control their digital assets. Whether you&#8217;re new to crypto or an experienced user, Trust Wallet makes it easier, safer, and more convenient to explore Web3, securely access dApps, manage your crypto, and buy and sell digital assets, all]]></description>
+										<content:encoded><![CDATA[<p style="font-size: 1.125em;"><strong>About the company</strong></p>
+<p>Trust Wallet is the secure, self-custody Web3 wallet that empowers people to own and control their digital assets. Whether you&#8217;re new to crypto or an experienced user, Trust Wallet makes it easier, safer, and more convenient to explore Web3, securely access dApps, manage your crypto, and buy and sell digital assets, all in one place.</p>
+<p><strong>Build what&#8217;s next in Web3. Grow into a leader.</strong></p>
+<p style="font-size: 1.125em;"><strong>About the programme</strong></p>
+<p>The Trust Wallet Graduate Leadership Programme is a selective, 12-month fast track for ambitious early-career talent who want to shape the future of Web3 and grow into its next generation of leaders.</p>
+<p>At Trust Wallet, you won&#8217;t spend your first year watching from the sidelines. You&#8217;ll take ownership of meaningful projects from day one, work on products used by millions globally, and collaborate with exceptional talent across a fast-moving, global Web3 business.</p>
+<p>Starting in one of our core functional teams, you&#8217;ll build deep expertise, gain cross-functional experience, and turn bold ideas into solutions that create real value for users and the business. With mentorship from senior leaders and opportunities to take on increasing responsibility, you&#8217;ll develop the judgement, commercial mindset and execution skills to make an impact.</p>]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">164682</post-id><media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" type="image/jpeg" url="https://jobspresso.co/wp-content/uploads/trustwallet-400-2-150x150.jpg" width="70" height="70" /><job_listing:location><![CDATA[Worldwide]]></job_listing:location>
+<job_listing:job_type><![CDATA[AI &amp; Data, Engineer]]></job_listing:job_type>
+<job_listing:job_category><![CDATA[Full Time]]></job_listing:job_category>
+<job_listing:company><![CDATA[Trust Wallet]]></job_listing:company>
+	</item>
+	<item>
+		<title>Senior Technical Recruiter</title>
+		<link>https://jobspresso.co/job/senior-technical-recruiter/</link>
+		
+		<dc:creator><![CDATA[Coder<br>⚲&nbsp;United Kingdom]]></dc:creator>
+		<pubDate>Fri, 30 Oct 2026 09:59:40 +0000</pubDate>
+				<guid isPermaLink="false">https://jobspresso.co/?post_type=job_listing&#038;p=164674</guid>
+
+					<description><![CDATA[Joining Coder as a Sr. Technical Recruiter is an opportunity to be a part of a high-impact, progressive, and collaborative team. We are trusted to represent Coder externally and guide all levels of the business in hiring decisions. You partner closely with hiring teams and candidates from the first conversation through handoff to the onboarding]]></description>
+										<content:encoded><![CDATA[<p>Joining Coder as a Sr. Technical Recruiter is an opportunity to be a part of a high-impact, progressive, and collaborative team. We are trusted to represent Coder externally and guide all levels of the business in hiring decisions.</p>
+<p>You partner closely with hiring teams and candidates from the first conversation through handoff to the onboarding team. You balance speed and empathy, providing a tailored and consistent experience for both candidates and internal team members.</p>
+<p>Compensation: £75K – £102K • Offers Equity • Offers Bonus. Coder determines compensation based on the level, role, and location you live in. For more information, please see our Compensation Philosophy.</p>
+<p>This position is leveled as a P4. Please feel free to ask any questions about compensation and levels during your initial interview.</p>
+<p style="font-size: 1.125em;"><strong>What you&#8217;ll do here</strong></p>]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">164674</post-id><media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" type="image/jpeg" url="https://jobspresso.co/wp-content/uploads/coder-400-1-150x150.jpg" width="70" height="70" /><job_listing:location><![CDATA[United Kingdom]]></job_listing:location>
+<job_listing:job_type><![CDATA[Others]]></job_listing:job_type>
+<job_listing:job_category><![CDATA[Full Time]]></job_listing:job_category>
+<job_listing:company><![CDATA[Coder]]></job_listing:company>
+<job_listing:salary><![CDATA[£75k - £102k]]></job_listing:salary>
+	</item>
+</channel>
+</rss>

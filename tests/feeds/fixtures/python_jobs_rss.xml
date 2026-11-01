@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python.org Jobs Feed</title><link>https://www.python.org/jobs/</link><description>Python jobs from Python.org</description><atom:link href="https://www.python.org/jobs/feed/rss/" rel="self"/><language>en-us</language><lastBuildDate>Fri, 30 Oct 2026 22:22:29 +0000</lastBuildDate><item><title>Senior Python Engineer, webbyfox consultancy</title><link>https://www.python.org/jobs/8183/</link><description>London, UK
+&lt;p&gt;We're looking for a Senior Python Engineer to design, build, and scale the backend systems that power our products. You'll own services end to end — from architecture and API design through to deployment and monitoring — and work closely with product, data, and DevOps teams.&lt;/p&gt;
+&lt;p&gt;Key responsibilities:
+- Design, develop, and maintain scalable, high-performance backend services and APIs in Python
+- Lead technical design discussions and make sound architectural decisions
+- Write clean, well-tested, maintainable code and champion engineering best practices
+- Review code and mentor junior and mid-level engineers
+- Optimise application performance, reliability, and security
+- Collaborate with cross-functional teams to translate requirements into technical solutions
+- Contribute to CI/CD pipelines, observability, and production support
+- Stay current with the Python ecosystem and help evolve our tech stack&lt;/p&gt;
+
+&lt;ul class="simple"&gt;
+&lt;li&gt;5+ years of professional software development experience, with strong expertise in Python&lt;/li&gt;
+&lt;li&gt;Solid experience with at least one major web framework (Django, FastAPI, or Flask)&lt;/li&gt;
+&lt;li&gt;Strong understanding of RESTful API design; GraphQL experience is a plus&lt;/li&gt;
+&lt;li&gt;Proficiency with relational databases (PostgreSQL/MySQL) and ORMs; NoSQL experience (Redis, MongoDB) is a plus&lt;/li&gt;
+&lt;li&gt;Experience with asynchronous programming (asyncio) and task queues (Celery, RQ, or similar)&lt;/li&gt;
+&lt;li&gt;Hands-on experience with cloud platforms (AWS, G</description><guid>https://www.python.org/jobs/8183/</guid></item><item><title>Senior Software Engineer — Python, React &amp; AI, Camden Kelly Staffing</title><link>https://www.python.org/jobs/8181/</link><description>Rowlett, TX, United States
+&lt;p&gt;About the Role
+We are seeking a Senior Software Engineer with strong Python development skills, React experience, and practical experience integrating AI capabilities into software applications.
+You will contribute across the application stack, building backend services with Django and Flask, developing React interfaces, and designing reliable PostgreSQL databases. You should also have hands-on experience with AI integrations or AI agents that interact with tools, APIs, or application data.&lt;/p&gt;
+&lt;p&gt;What You’ll Do&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Design, build, and maintain Python applications and backend services using Django and Flask.&lt;/li&gt;
+&lt;li&gt;Develop responsive React interfaces and connect them to backend APIs.&lt;/li&gt;
+&lt;li&gt;Design PostgreSQL schemas, manage migrations, and improve query performance.&lt;/li&gt;
+&lt;li&gt;Integrate AI models and services into application features and business workflows.&lt;/li&gt;
+&lt;li&gt;Build or extend AI agents that use tools, external APIs, and application data.&lt;/li&gt;
+&lt;li&gt;Improve application reliability, security, performance, and error handling.&lt;/li&gt;
+&lt;li&gt;Write automated tests, review code, and maintain clear technical documentation.&lt;/li&gt;
+&lt;li&gt;Participate in architecture decisions, mentor other engineers, and collaborate with product and engineering stakeholders.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Required Qualifications&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;8–15 years of professional software engineering experience.&lt;/li&gt;
+&lt;li&gt;Strong Python programming skills and hands-on</description><guid>https://www.python.org/jobs/8181/</guid></item><item><title>Software Engineer, AI Coding Tasks, Askable</title><link>https://www.python.org/jobs/8178/</link><description>Remote, None, Global
+&lt;p&gt;We're looking for experienced software engineers to build AI coding tasks from a codebase they know well. US$1,000 per task, and you can do as many tasks as you want.&lt;/p&gt;
+&lt;p&gt;You turn a real change from a repository you know into a task that today's best AI coding models struggle with: hard for the models, but fair for a skilled engineer. Your tasks are used to measure and train AI coding models.&lt;/p&gt;
+&lt;p&gt;Remote, any location. US$1,000 per task that passes review. Minimum of one task a week, about 10 hours a week.&lt;/p&gt;
+&lt;p&gt;How it works
+Apply. Complete a short screener interview and upload your resume.
+Propose. Once you're selected, pick a change from a repository you know and submit a short proposal. We approve it or suggest a better candidate.
+Build. In our platform, set up the repository as it was before the change, then write the brief, the correct solution and the grading checks.
+Stress-test. Try lazy, incorrect and shortcut solutions and make sure your checks catch them.
+Model testing. Run your task against leading AI models until strong models often fail but a skilled engineer can clearly solve it.
+Review. A reviewer checks your task and you revise it. Most tasks take more than one round.
+Next task. Once your task is accepted, start another.&lt;/p&gt;
+
+&lt;p&gt;Requirements
+2+ years of professional software engineering
+Code merged into a public open-source repository, ideally one you know well. A private codebase you own may also qualify (not employer or client c</description><guid>https://www.python.org/jobs/8178/</guid></item><item><title>Junior Machine Learning Engineer, HFT Architecture</title><link>https://www.python.org/jobs/8176/</link><description>Remote, Worldwide
+&lt;p&gt;HFT Architecture builds short-horizon price prediction and the trading system around it. This role works on the pipeline that turns order-book records into validated models, next to more experienced engineers: data preparation, experiments end to end, and the checks that keep the future out of a training set.&lt;/p&gt;
+&lt;p&gt;Fully remote, from anywhere in the world. Junior.&lt;/p&gt;
+&lt;p&gt;Base salary: USD 125,000–155,000 a year.&lt;/p&gt;
+&lt;p&gt;To apply: a link to your résumé, LinkedIn or GitHub, and one sentence on any of our articles. No file, no cover letter.&lt;/p&gt;
+&lt;p&gt;Apply: &lt;a class="reference external" href="https://hftarchitecture.com/careers/junior-machine-learning-engineer?utm_source=pythonorg&amp;amp;utm_medium=jobboard&amp;amp;utm_campaign=careers-2026-10" rel="noopener noreferrer"&gt;https://hftarchitecture.com/careers/junior-machine-learning-engineer?utm_source=pythonorg&amp;amp;utm_medium=jobboard&amp;amp;utm_campaign=careers-2026-10&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You write Python every day, with tests; can explain the machine learning basics, including why ordinary cross-validation breaks on time series; and have one project of your own you can show and talk through.&lt;/p&gt;
+</description><guid>https://www.python.org/jobs/8176/</guid></item><item><title>SENIOR Back-End Python Engineer - FULLY REMOTE-WORLDWIDE, ActivePrime, Inc.</title><link>https://www.python.org/jobs/8134/</link><description>REMOTE, REMOTE
+&lt;p&gt;As a senior software engineer, you'll join a team tackling genuinely hard problems: distributed data processing at enterprise scale, complex deduplication algorithms, and systems that need to handle billions of records without breaking. The kind of challenges that require actual engineering thinking, not just tutorial-level code.&lt;/p&gt;
+&lt;p&gt;Ready to tackle complex engineering challenges that impact how the world's largest companies manage their data?&lt;/p&gt;
+
+&lt;ul class="simple"&gt;
+&lt;li&gt;Very proficient with Linux at the terminal level&lt;/li&gt;
+&lt;li&gt;Test-driven development (TDD) and pytest proficiency&lt;/li&gt;
+&lt;li&gt;7+ years Python experience&lt;/li&gt;
+&lt;li&gt;Polars experience&lt;/li&gt;
+&lt;li&gt;PostgreSQL expertise: schema design, optimization, advanced queries&lt;/li&gt;
+&lt;li&gt;Familiarity with, and adherence to, PEP guidelines and Python coding standards&lt;/li&gt;
+&lt;li&gt;RESTful API development and design best practices&lt;/li&gt;
+&lt;li&gt;Scalable architecture design for high-volume data environments&lt;/li&gt;
+&lt;li&gt;Security practices and vulnerability prevention&lt;/li&gt;
+&lt;li&gt;Bug identification and resolution with local testing&lt;/li&gt;
+&lt;li&gt;Thoughtful development centered around performance, deeply optimized code, and proper code organization&lt;/li&gt;
+&lt;li&gt;Git version control with branching strategies&lt;/li&gt;
+&lt;li&gt;English fluency (written/verbal)&lt;/li&gt;
+&lt;li&gt;Cover letter requirement with specific opening line&lt;/li&gt;
+&lt;li&gt;Previous experience working for a US-based company.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nice to have&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Experience with AWS (devop</description><guid>https://www.python.org/jobs/8134/</guid></item><item><title>Software Engineer (Remote), Softech Associate</title><link>https://www.python.org/jobs/8126/</link><description>Panama City Beach, Florida, United States
+&lt;p&gt;Join Softech Associate to build and ship real software for our clients. We are looking for engineers with strong fundamentals and excellent communication who want to grow on a remote-first team.&lt;/p&gt;
+&lt;p&gt;What we're looking for&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Strong foundational knowledge of computer science and software engineering&lt;/li&gt;
+&lt;li&gt;Comfort with data structures, algorithms, system design, and clean coding principles&lt;/li&gt;
+&lt;li&gt;Ability to explain technical concepts clearly and logically&lt;/li&gt;
+&lt;li&gt;Advanced-level English communication skills&lt;/li&gt;
+&lt;li&gt;Confidence and clarity when reasoning through technical problems&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Responsibilities&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Build and maintain real client projects across the stack&lt;/li&gt;
+&lt;li&gt;Participate in system design discussions and coding tasks&lt;/li&gt;
+&lt;li&gt;Collaborate in mock interviews and technical discussions to grow as a team&lt;/li&gt;
+&lt;li&gt;Communicate progress and trade-offs clearly with the team and clients&lt;/li&gt;
+&lt;li&gt;Write clean, tested, maintainable code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Preferred technical background&lt;/p&gt;
+&lt;p&gt;Frontend
+React · Next.js · TypeScript · JavaScript&lt;/p&gt;
+&lt;p&gt;Backend
+Node.js · Python · FastAPI · Flask · Express&lt;/p&gt;
+&lt;p&gt;Databases
+PostgreSQL · MongoDB · MySQL&lt;/p&gt;
+&lt;p&gt;Cloud
+AWS · Azure · GCP&lt;/p&gt;
+&lt;p&gt;Experience with AI tools, LLMs, or modern developer platforms is a plus.&lt;/p&gt;
+</description><guid>https://www.python.org/jobs/8126/</guid></item></channel></rss>

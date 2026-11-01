@@ -1,0 +1,180 @@
+{
+ "meta": {
+  "repo": "US-New-Grad-Internship-Jobs",
+  "title": "US New Grad, Entry-Level & Internship Jobs 2026",
+  "country_iso": "US",
+  "country_name": "United States",
+  "adjective": "US",
+  "segment": "us",
+  "site_slug": "united-states",
+  "lang": "en",
+  "site_live": true,
+  "as_of": "2026-10-30",
+  "window_days": 60,
+  "total_site_jobs_str": "8.0M+",
+  "country_live_total": 402573,
+  "generated_at": "2026-10-30T00:57:12.365Z"
+ },
+ "categories": [
+  {
+   "key": "grad",
+   "name": "New Grad Programs",
+   "icon": "🎓",
+   "mode": "tiered",
+   "l4slug": "graduate-program"
+  },
+  {
+   "key": "tech",
+   "name": "Tech",
+   "icon": "💻",
+   "mode": "tiered",
+   "l4slug": "graduate-engineer"
+  },
+  {
+   "key": "data",
+   "name": "Data, AI & ML",
+   "icon": "📊",
+   "mode": "tiered",
+   "l4slug": "data-analyst"
+  },
+  {
+   "key": "finance",
+   "name": "Finance, Consulting & Accounting",
+   "icon": "💷",
+   "mode": "tiered",
+   "l4slug": "graduate-analyst"
+  },
+  {
+   "key": "healthcare",
+   "name": "Healthcare",
+   "icon": "🏥",
+   "mode": "entry",
+   "l4slug": "registered-nurse"
+  },
+  {
+   "key": "trades",
+   "name": "Trades & Apprenticeships",
+   "icon": "🔧",
+   "mode": "entry",
+   "l4slug": "maintenance-technician"
+  },
+  {
+   "key": "sales",
+   "name": "Sales & Retail",
+   "icon": "🛍️",
+   "mode": "entry",
+   "l4slug": "sales-associate"
+  },
+  {
+   "key": "admin",
+   "name": "Business & Admin",
+   "icon": "🗂️",
+   "mode": "entry",
+   "l4slug": "administrative-assistant"
+  }
+ ],
+ "listings": [
+  {
+   "salary_display": "$67,000–124,400",
+   "id": "fd7204fedb1334f93f8be30cd9a95da3",
+   "source": "Workopia",
+   "company_name": "Lockheed Martin",
+   "company_hi_slug": "lockheedmartin",
+   "title": "Software Engineer Asc - Early Career",
+   "location": "Dallas",
+   "skills": "C++ programming, Python scripting",
+   "sponsorship": false,
+   "hot": false,
+   "date_posted": "2026-10-29T03:51:18.614Z",
+   "active": true,
+   "url": "https://workopia.io/jobs/fd7204fedb1334f93f8be30cd9a95da3",
+   "category": "tech",
+   "tier": "Graduate"
+  },
+  {
+   "salary_display": "$71k–120k*",
+   "id": "555a48709474b979a90793e425a6e144",
+   "source": "Workopia",
+   "company_name": "Ao Ds",
+   "company_hi_slug": "ao-ds",
+   "title": "Client Support Specialist - Work From Home",
+   "location": "Ely",
+   "skills": "Work from home, CRM hygiene",
+   "sponsorship": false,
+   "hot": false,
+   "date_posted": "2026-10-28T13:22:32.323Z",
+   "active": true,
+   "url": "https://workopia.io/jobs/555a48709474b979a90793e425a6e144",
+   "category": "tech",
+   "tier": "Entry-level"
+  },
+  {
+   "salary_display": null,
+   "id": "d5ac4ed37c8cd731a81ac3f7afeb6f7d",
+   "source": "Workopia",
+   "company_name": "Western Power",
+   "company_hi_slug": "western-power",
+   "title": "Asset Data And Performance Analyst",
+   "location": "New York",
+   "skills": "SQL, Python",
+   "sponsorship": false,
+   "hot": false,
+   "date_posted": "2026-10-29T21:33:59.743Z",
+   "active": true,
+   "url": "https://workopia.io/jobs/d5ac4ed37c8cd731a81ac3f7afeb6f7d",
+   "category": "data",
+   "tier": "Entry-level"
+  },
+  {
+   "salary_display": "$20/hr",
+   "id": "32141372367638dc746e4392be8f1b18",
+   "source": "Workopia",
+   "company_name": "M.C. Dean Inc",
+   "company_hi_slug": "m-c-dean-inc",
+   "title": "Electrical Apprentice",
+   "location": "Boydton",
+   "skills": "Electrical wiring inst, Conduit and cable inst",
+   "sponsorship": false,
+   "hot": false,
+   "date_posted": "2026-10-29T20:10:00.000Z",
+   "active": true,
+   "url": "https://workopia.io/jobs/32141372367638dc746e4392be8f1b18",
+   "category": "grad",
+   "tier": "Graduate"
+  },
+  {
+   "salary_display": null,
+   "id": "c5513602b8190fe74548ca27abf75e9f",
+   "source": "Workopia",
+   "company_name": "Sonos, Inc.",
+   "company_hi_slug": "sonos-inc",
+   "title": "Brand Design Intern (new York)",
+   "location": "New York",
+   "skills": "Figma proficiency, Adobe Creative Suite",
+   "sponsorship": false,
+   "hot": false,
+   "date_posted": "2026-10-29T04:18:13.977Z",
+   "active": true,
+   "url": "https://workopia.io/jobs/c5513602b8190fe74548ca27abf75e9f",
+   "category": "tech",
+   "tier": "Intern"
+  },
+  {
+   "salary_display": "$48/hr",
+   "id": "bcd4ed6ba4b6d914de9206986c9589a9",
+   "source": "Workopia",
+   "company_name": "SunTrust Bank",
+   "company_hi_slug": "suntrust-bank",
+   "title": "2028 Truist Securities - Energy, Oil & Gas Investment Banking - Summer Analyst Program - Houston, Tx",
+   "location": "Houston",
+   "skills": "financial analysis, corporate finance",
+   "sponsorship": false,
+   "hot": false,
+   "date_posted": "2026-10-29T17:33:28.121Z",
+   "active": true,
+   "url": "https://workopia.io/jobs/bcd4ed6ba4b6d914de9206986c9589a9",
+   "category": "finance",
+   "tier": "Intern"
+  }
+ ]
+}

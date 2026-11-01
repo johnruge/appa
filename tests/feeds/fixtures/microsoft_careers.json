@@ -1,0 +1,130 @@
+{
+ "status": 200,
+ "error": {
+  "message": "",
+  "body": ""
+ },
+ "data": {
+  "positions": [
+   {
+    "id": 1970393557043756,
+    "displayJobId": "200062677",
+    "name": "Senior Software Engineer",
+    "locations": [
+     "United States, Washington, Redmond"
+    ],
+    "standardizedLocations": [
+     "Redmond, WA, US"
+    ],
+    "postedTs": 1793391974,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Software Engineering",
+    "creationTs": 1792445772,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200062677",
+    "positionUrl": "/careers/job/1970393557043756"
+   },
+   {
+    "id": 1970393557047225,
+    "displayJobId": "200063836",
+    "name": "Principal Software Engineer",
+    "locations": [
+     "United States, Washington, Redmond"
+    ],
+    "standardizedLocations": [
+     "Redmond, WA, US"
+    ],
+    "postedTs": 1793389674,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Software Engineering",
+    "creationTs": 1793019524,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200063836",
+    "positionUrl": "/careers/job/1970393557047225"
+   },
+   {
+    "id": 1970393557050018,
+    "displayJobId": "200064377",
+    "name": "Principal Software Engineer - CTJ - Poly",
+    "locations": [
+     "United States, Virginia, Reston"
+    ],
+    "standardizedLocations": [
+     "Reston, VA, US"
+    ],
+    "postedTs": 1793387855,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Software Engineering",
+    "creationTs": 1793206148,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200064377",
+    "positionUrl": "/careers/job/1970393557050018"
+   },
+   {
+    "id": 1970393557021812,
+    "displayJobId": "200059215",
+    "name": "Cloud Solution Architecture Cybersecurity-CTJ-Top Secret/SCI",
+    "locations": [
+     "United States, Multiple Locations, Multiple Locations"
+    ],
+    "standardizedLocations": [
+     "US"
+    ],
+    "postedTs": 1793379854,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Cloud Solution Architecture",
+    "creationTs": 1790812159,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200059215",
+    "positionUrl": "/careers/job/1970393557021812"
+   },
+   {
+    "id": 1970393556950907,
+    "displayJobId": "200046146",
+    "name": "Senior and/or Principal Software Engineer - AI Frameworks Networking, Systems and Tools",
+    "locations": [
+     "United States, Multiple Locations, Multiple Locations"
+    ],
+    "standardizedLocations": [
+     "US"
+    ],
+    "postedTs": 1793374030,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Software Engineering",
+    "creationTs": 1785357618,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200046146",
+    "positionUrl": "/careers/job/1970393556950907"
+   }
+  ],
+  "count": 480,
+  "sortBy": "timestamp",
+  "appliedFilters": {
+   "includeRemote": [
+    "1"
+   ],
+   "includeRelocation": [
+    "0"
+   ]
+  },
+  "resultsMetaData": {
+   "usedFuzzSearch": false
+  }
+ },
+ "metadata": null
+}

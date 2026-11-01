@@ -1,0 +1,100 @@
+[
+ {
+  "source": "Simplify",
+  "category": "AI/ML/Data",
+  "company_name": "Invisible Technologies",
+  "id": "9a42c456-bb62-4b76-95c4-7afaa00ebb2d",
+  "title": "English Language Specialist - Freelance AI Trainer Project",
+  "active": true,
+  "date_updated": 1772677518,
+  "date_posted": 1772677518,
+  "url": "https://job-boards.eu.greenhouse.io/agency/jobs/4738026101",
+  "locations": [
+   "Remote in USA"
+  ],
+  "company_url": "https://simplify.jobs/c/Invisible-Technologies",
+  "is_visible": true,
+  "sponsorship": "Other",
+  "degrees": []
+ },
+ {
+  "source": "Simplify",
+  "category": "Software",
+  "company_name": "Verse Medical",
+  "id": "99de05ac-50e2-401f-a62d-db4d99b5221e",
+  "title": "Software Engineer - Full Stack - Emerging Talent",
+  "active": true,
+  "date_updated": 1772752715,
+  "date_posted": 1772752715,
+  "url": "https://jobs.ashbyhq.com/versemedical/af511a89-f716-4e51-9ad1-bf4e68dbdcaa/application",
+  "locations": [
+   "SF",
+   "NYC"
+  ],
+  "company_url": "https://simplify.jobs/c/VerseMedical",
+  "is_visible": true,
+  "sponsorship": "Other",
+  "degrees": []
+ },
+ {
+  "source": "Simplify",
+  "category": "Hardware",
+  "company_name": "ASM International",
+  "id": "7cd745e0-7a8a-4e77-acc6-f47d55c6c0d0",
+  "title": "Engineer - Field Service-Military Experience",
+  "active": true,
+  "date_updated": 1773181843,
+  "date_posted": 1773181843,
+  "url": "https://www.asm.com/open-vacancies/?gh_jid=4804690101",
+  "locations": [
+   "Chandler, AZ"
+  ],
+  "company_url": "https://simplify.jobs/c/ASM-International",
+  "is_visible": true,
+  "sponsorship": "Other",
+  "degrees": [
+   "Bachelor's",
+   "Master's"
+  ]
+ },
+ {
+  "date_updated": 1774934795,
+  "sponsorship": "U.S. Citizenship is Required",
+  "active": true,
+  "degrees": [],
+  "url": "https://job-boards.greenhouse.io/scoutai/jobs/4643333008",
+  "company_name": "Scout AI",
+  "title": "Junior Firmware Engineer",
+  "locations": [
+   "Sunnyvale, CA"
+  ],
+  "category": "Software Engineering",
+  "source": "AlmondCroffle",
+  "id": "723295b5-251b-44de-8933-5939d249aae2",
+  "date_posted": 1774934795,
+  "company_url": "",
+  "is_visible": true
+ },
+ {
+  "source": "Simplify",
+  "category": "AI/ML/Data",
+  "company_name": "Devon Energy",
+  "id": "c08f39a1-dff7-4471-84ab-c7ec93021da7",
+  "title": "Master Data Maintainer",
+  "active": false,
+  "date_updated": 1772665988,
+  "date_posted": 1772665988,
+  "url": "https://wd5.myworkdaysite.com/en-US/recruiting/devonenergy/Careers/job/Carlsbad-NM/Master-Data-Maintainer_R2653",
+  "locations": [
+   "Hobbs, NM",
+   "Carlsbad, NM",
+   "Kermit, TX"
+  ],
+  "company_url": "https://simplify.jobs/c/Devon-Energy",
+  "is_visible": true,
+  "sponsorship": "Other",
+  "degrees": [
+   "Bachelor's"
+  ]
+ }
+]

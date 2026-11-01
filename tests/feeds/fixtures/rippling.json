@@ -1,0 +1,128 @@
+{
+ "items": [
+  {
+   "id": "84d388b6-7656-434c-8862-0312eb6b97ac",
+   "name": "Business Operations Manager",
+   "url": "https://ats.rippling.com/rippling/jobs/84d388b6-7656-434c-8862-0312eb6b97ac",
+   "department": {
+    "name": "Bizops"
+   },
+   "locations": [
+    {
+     "name": "San Francisco, CA",
+     "country": "United States",
+     "countryCode": "US",
+     "state": "California",
+     "stateCode": "CA",
+     "city": "San Francisco",
+     "workplaceType": "ON_SITE"
+    }
+   ],
+   "language": "en-US"
+  },
+  {
+   "id": "84d388b6-7656-434c-8862-0312eb6b97ac",
+   "name": "Business Operations Manager",
+   "url": "https://ats.rippling.com/rippling/jobs/84d388b6-7656-434c-8862-0312eb6b97ac",
+   "department": {
+    "name": "Bizops"
+   },
+   "locations": [
+    {
+     "name": "New York, NY",
+     "country": "United States",
+     "countryCode": "US",
+     "state": "New York",
+     "stateCode": "NY",
+     "city": "New York",
+     "workplaceType": "ON_SITE"
+    }
+   ],
+   "language": "en-US"
+  },
+  {
+   "id": "13bf8b65-fb2d-4740-b0a4-34046e5529cc",
+   "name": "Director, Business Operations ",
+   "url": "https://ats.rippling.com/rippling/jobs/13bf8b65-fb2d-4740-b0a4-34046e5529cc",
+   "department": {
+    "name": "Bizops"
+   },
+   "locations": [
+    {
+     "name": "San Francisco, CA",
+     "country": "United States",
+     "countryCode": "US",
+     "state": "California",
+     "stateCode": "CA",
+     "city": "San Francisco",
+     "workplaceType": "ON_SITE"
+    }
+   ],
+   "language": "en-US"
+  },
+  {
+   "id": "eb23a6c5-2260-4fb7-b1a5-7e4d23c4417d",
+   "name": "HR Associate (PST/EST Hours)",
+   "url": "https://ats.rippling.com/rippling/jobs/eb23a6c5-2260-4fb7-b1a5-7e4d23c4417d",
+   "department": {
+    "name": "Bizops"
+   },
+   "locations": [
+    {
+     "name": "Philippines",
+     "country": "Philippines",
+     "countryCode": "PH",
+     "state": null,
+     "stateCode": null,
+     "city": null,
+     "workplaceType": "REMOTE"
+    }
+   ],
+   "language": "en-US"
+  },
+  {
+   "id": "dce595ba-1aea-41ce-af86-377d1c36888e",
+   "name": "HR Consultant, UK and Ireland (3 months Independent Contractor)",
+   "url": "https://ats.rippling.com/rippling/jobs/dce595ba-1aea-41ce-af86-377d1c36888e",
+   "department": {
+    "name": "Bizops"
+   },
+   "locations": [
+    {
+     "name": "London, United Kingdom",
+     "country": "United Kingdom",
+     "countryCode": "GB",
+     "state": "England",
+     "stateCode": "ENG",
+     "city": "London",
+     "workplaceType": "ON_SITE"
+    }
+   ],
+   "language": "en-US"
+  },
+  {
+   "id": "dce595ba-1aea-41ce-af86-377d1c36888e",
+   "name": "HR Consultant, UK and Ireland (3 months Independent Contractor)",
+   "url": "https://ats.rippling.com/rippling/jobs/dce595ba-1aea-41ce-af86-377d1c36888e",
+   "department": {
+    "name": "Bizops"
+   },
+   "locations": [
+    {
+     "name": "Dublin, Ireland",
+     "country": "Ireland",
+     "countryCode": "IE",
+     "state": "Dublin",
+     "stateCode": "D",
+     "city": "Dublin 2",
+     "workplaceType": "ON_SITE"
+    }
+   ],
+   "language": "en-US"
+  }
+ ],
+ "page": 0,
+ "pageSize": 100,
+ "totalItems": 6,
+ "totalPages": 1
+}

@@ -1,0 +1,87 @@
+{
+ "id": "744000157534902",
+ "name": "Senior Agentic Software Engineer",
+ "uuid": "20606c2a-9286-417b-96ef-cd36a3a42570",
+ "jobId": "9fbb2ad8-9cad-4098-9d48-e35ccc9b2468",
+ "jobAdId": "4ceb4a05-cd45-400e-b49d-03cf9468622a",
+ "defaultJobAd": true,
+ "refNumber": "REF288719U",
+ "company": {
+  "name": "Bosch Group",
+  "identifier": "BoschGroup"
+ },
+ "location": {
+  "city": "Plymouth",
+  "region": "MI",
+  "country": "us",
+  "address": "15800 North Haggerty Road",
+  "postalCode": "48170",
+  "remote": false,
+  "hybrid": true,
+  "hybridDescription": "3 days per week on-site",
+  "latitude": "42.4012018",
+  "longitude": "-83.43399889999999",
+  "fullLocation": "Plymouth, MI, United States"
+ },
+ "customField": [
+  {
+   "fieldId": "5abe2a4ab60a5e486a2d9b1d",
+   "fieldLabel": "Contract type",
+   "valueId": "1e46492b-d24f-460c-b095-38cf08a778d8",
+   "valueLabel": "Unlimited"
+  },
+  {
+   "fieldId": "5abe28e96d8bc56863dd9746",
+   "fieldLabel": "Tariff Area",
+   "valueId": "82f1dd4b-de9d-4134-9f1a-8d315be380ae",
+   "valueLabel": "United States Local Grades"
+  }
+ ],
+ "releasedDate": "2026-10-23T17:20:00.625Z",
+ "postingUrl": "https://jobs.smartrecruiters.com/BoschGroup/744000157534902-senior-agentic-software-engineer",
+ "applyUrl": "https://jobs.smartrecruiters.com/BoschGroup/744000157534902-senior-agentic-software-engineer?oga=true",
+ "referralUrl": "https://jobs.smartrecruiters.com/external-referrals/company/BoschGroup/publication/20606c2a-9286-417b-96ef-cd36a3a42570?dcr_ci=BoschGroup",
+ "jobAd": {
+  "sections": {
+   "companyDescription": {
+    "title": "Company Description",
+    "text": "<p>Mobility is experiencing a fundamental change, with software taking center stage. We enable our customers to master the complexity of the entire software lifecycle, thus contributing to the vision of the fully programmable vehicle of the future.</p><p>ETAS’ products and solutions include vehicle basic software, middleware, development tools, cloud-based operations services, cybersecurity solutions as well as end-to-end engineering and consulting.</p><p>Founded in 1994, ETAS is a subsidiary of Robert Bosch. With headquarters in Germany, we operate globally, serving customers and partners around the world.</p><p><em>At ETAS, we look for motivated individuals with initiative and drive. We offer superb benefits that extend beyond our excellent compensation package and bonus plan. ETAS values the balance between personal and professional growth and company interests.&#xa0;If you are interested in working in a highly technical, fast-paced and fun environment, we'd like to hear from you! Welcome to ETAS!</em></p>"
+   },
+   "jobDescription": {
+    "title": "Job Description",
+    "text": "<p>In VIS (Vehicle Information Solutions), an ETAS organization, we are seeking an experienced and innovative <strong>Senior Agentic Software Engineer</strong> to develop and deploy our next-generation, production-grade AI systems. In this role, you will be responsible for orchestrating robust Python-based back-end architecture, integrating state-of-the-art Large Language Models (LLMs), optimizing high-performance vector databases, and deploying scalable, secure APIs natively on Microsoft Azure. You will work closely with our Original Equipment Manufacturers (OEM) customers to agree on new requirements, develop plans to deliver solutions using Agile processes, and ensure strict adherence to software quality standards throughout the development lifecycle.</p><p>VIS is a global ETAS organization supporting leading automotive OEMs and dealer networks with service information, wiring diagrams, technical knowledge, and digital aftersales solutions. VIS is transforming from a traditional technical-content provider into a Vehicle Intelligence partner, leveraging AI, automation, and automotive expertise to support software-defined vehicles and future workshop experience.</p><p><strong>Key Responsibilities</strong></p><ul><li>Own problems end-to-end: from understanding the user’s needs through architecture, implementation, verification, and operation.</li><li>Deliver implementation primarily through AI coding agents: translate intent into precise specs, constraints, and acceptance cri"
+   },
+   "qualifications": {
+    "title": "Qualifications",
+    "text": "<ul><li>Thorough understanding of software engineering fundamentals - architecture, system design, testing strategy, debugging.</li><li>Infrastructure and DevOps competence: cloud platforms, CI/CD pipelines, containerization, infrastructure as code, and operating what is built.</li><li>Excellent communication skills: expressing intent, requirements, and constraints clearly and unambiguously, in writing and in discussion.&#xa0; Proven ability to build relationships with customers, preferably in the automotive industry.</li><li>Strong abstraction skills: decomposing complex problems, choosing the right level of abstraction, and recognizing patterns that generalize across domains.</li><li>Hands-on production experience with agentic coding tools (e.g. Claude Code, GitHub Copilot agents), including running several agents in parallel and running agents unattended in automated pipelines.</li><li>Product thinking: able to translate user and business intent into specifications precise enough for autonomous execution.</li><li>Prompt and context engineering: writing instructions, specs, and repo conventions that agents follow reliably.</li><li>Strong verification mindset - treats generated code as untrusted until independently checked.</li><li>Adaptability: productive in unfamiliar languages, frameworks, and domains, with security awareness for AI-assisted development (secret handling, prompt injection, supply-chain risks).</li><li>Bachelor’s Degree in Software Engineering, Computer Sci"
+   },
+   "additionalInformation": {
+    "title": "Additional Information",
+    "text": "<p><strong>Equal Opportunity Employer, including disability / veterans.&#xa0;</strong></p><p><strong>Indefinite U.S. work authorized individuals only.&#xa0; Future sponsorship for work authorization unavailable.</strong></p><p>*ETAS adheres to Federal, State, and Local laws regarding drug-testing. Employment is contingent upon the successful completion of a drug screen and background check. Candidates who have been offered the position must pass both screenings before their start date.</p><p>Your well-being matters at ETAS. We offer a competitive compensation and a benefits package designed to empower you in every area of your life. This includes premium health coverage, a 401(k) with generous matching, resources for financial planning and goal setting, ample paid time off, parental leave, and comprehensive life and disability protection. We're investing in your success!</p>"
+   }
+  }
+ },
+ "active": true,
+ "visibility": "PUBLIC",
+ "industry": {
+  "id": "automotive",
+  "label": "Automotive"
+ },
+ "function": {
+  "id": "engineering",
+  "label": "Engineering"
+ },
+ "experienceLevel": {
+  "id": "mid_senior_level",
+  "label": "Mid-Senior Level"
+ },
+ "typeOfEmployment": {
+  "id": "permanent",
+  "label": "Full-time"
+ },
+ "language": {
+  "code": "en",
+  "label": "English",
+  "labelNative": "English (US)"
+ }
+}

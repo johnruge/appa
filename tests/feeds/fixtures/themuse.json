@@ -1,0 +1,150 @@
+{
+ "page": 0,
+ "page_count": 2,
+ "items_per_page": 20,
+ "took": 8,
+ "timed_out": false,
+ "total": 30438,
+ "results": [
+  {
+   "contents": "<div><p>SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologies to make this possible, with the ultimate goal of&nbsp;enabling human life on Mars.</p></div>\n\n<p><strong>NEW GRADUATE ENGINEER, SECURITY SOFTWARE - '26/'27 (STARSHIELD)</strong></p>\n\n<p>Starshield leverages SpaceX’s Starlink technology and launch capability to support national security efforts. While Starlink is designed for consumer and commercial use, Starshield is designed for government use, with an initial focus on earth observation, communications, and hosted payloads. The Starshield team is building highly reliable in-space mesh networks, designing secure systems to guarantee access to space, designing next-gen communication and sensing software, and more.</p>\n\n<p>As a Security Software Engineer you will influence the security of software across our product lines. We are looking for people with a track record of shipping reliable software and who have a broad understanding of the security design of today’s Internet, including the cryptographic primitives involved. You see the big picture, prioritize accordingly, and are comfortable with working at different levels of abstraction. Ideally, you have notable skills in one or more of the following:</p>\n\n<ul>\n<li>Software engineering</li>\n<li>Applied cryptography</li>\n<li>Network security</li>\n<li>Operating system se",
+   "name": "New Graduate Engineer, Security Software (Starshield) ",
+   "type": "external",
+   "publication_date": "2026-09-12T18:34:50Z",
+   "short_name": "new-graduate-engineer-security-software-starshield",
+   "model_type": "jobs",
+   "id": 22152018,
+   "locations": [
+    {
+     "name": "El Segundo, CA"
+    },
+    {
+     "name": "Washington, DC"
+    }
+   ],
+   "categories": [
+    {
+     "name": "Software Engineering"
+    }
+   ],
+   "levels": [
+    {
+     "name": "Entry Level",
+     "short_name": "entry"
+    }
+   ],
+   "tags": [],
+   "refs": {
+    "landing_page": "https://www.themuse.com/jobs/spacex/new-graduate-engineer-security-software-starshield"
+   },
+   "company": {
+    "id": 15000190,
+    "short_name": "spacex",
+    "name": "SpaceX"
+   }
+  },
+  {
+   "contents": "<div><p>SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologies to make this possible, with the ultimate goal of&nbsp;enabling human life on Mars.</p></div>\n\n<p><strong>NEW GRADUATE ENGINEER, SOFTWARE (APPLICATION SOFTWARE)</strong></p>\n\n<p>The application software team is the central nervous system of SpaceX – we create mission critical applications that are used throughout SpaceX to accelerate launch vehicle production and flight as well as systems that allow Starlink to grow into a worldwide fast, reliable Internet service. We are looking for engineers who treat fellow teammates with fairness, respect, and support.</p>\n\n<p>Our team is currently creating and evolving systems to enable rapid build and reuse of Starship as well as designing the next generation manufacturing software that will be used in high throughput factories for Starlink. Other applications range from platforms that support concurrent streams of data from many always-on assets to manage the world’s largest satellite constellation to public facing systems where customers can join our Starlink network globally. We work closely with engineers throughout the company to create and update our systems with respect to crewed launches, Starship flights, changes to the Starlink network and much more.</p>\n\n<p>Aerospace experience is not required to be successful here - ra",
+   "name": "New Graduate Engineer, Software (Application Software)",
+   "type": "external",
+   "publication_date": "2026-08-19T23:55:17Z",
+   "short_name": "new-graduate-engineer-software-application-software",
+   "model_type": "jobs",
+   "id": 22080334,
+   "locations": [
+    {
+     "name": "El Segundo, CA"
+    }
+   ],
+   "categories": [
+    {
+     "name": "Software Engineering"
+    }
+   ],
+   "levels": [
+    {
+     "name": "Entry Level",
+     "short_name": "entry"
+    }
+   ],
+   "tags": [],
+   "refs": {
+    "landing_page": "https://www.themuse.com/jobs/spacex/new-graduate-engineer-software-application-software"
+   },
+   "company": {
+    "id": 15000190,
+    "short_name": "spacex",
+    "name": "SpaceX"
+   }
+  },
+  {
+   "contents": "<div><h2><strong>About Flexport:&nbsp;</strong></h2>\n<p>At Flexport, we believe global trade can move the human race forward. That’s why it’s our mission to make global commerce so easy there will be more of it. We’re shaping the future of a $10T industry with solutions powered by innovative technology and exceptional people. Today, companies of all sizes—from emerging brands to Fortune 500s—use Flexport technology to move more than $19B of merchandise across 112 countries a year.&nbsp;</p>\n<p>The recent global supply chain crisis has put Flexport center stage as we continue to play a pivotal role in how goods move around the world. We are proud to have the support of the best investors in the game who believe in our mission, solutions and people. Ready to tackle global challenges that impact business, society, and the environment? Come join us.</p></div>\n\n<h2><strong>Global Operations Specialist&nbsp;</strong></h2>\n\n<p><strong>Help our customers improve their global supply chains</strong></p>\n\n<h2><strong>The Opportunity:</strong></h2>\n\n<p>At Flexport, we know global trade can move the human race forward. That’s why it’s our mission to make global trade easier for everyone. Flexport today connects more than 10,000 clients, both consignees and shippers, across 112 countries. Our role is to help businesses of all sizes find the global trade solutions that will empower their success.</p>\n\n<p>Now more than ever, customers need our support to survive and win in 2025. Their succes",
+   "name": "Global Operations Specialist",
+   "type": "external",
+   "publication_date": "2026-10-14T18:56:09Z",
+   "short_name": "global-operations-specialist-920f86",
+   "model_type": "jobs",
+   "id": 22152001,
+   "locations": [
+    {
+     "name": "Dallas, TX"
+    }
+   ],
+   "categories": [
+    {
+     "name": "Data and Analytics"
+    }
+   ],
+   "levels": [
+    {
+     "name": "Entry Level",
+     "short_name": "entry"
+    }
+   ],
+   "tags": [],
+   "refs": {
+    "landing_page": "https://www.themuse.com/jobs/flexport/global-operations-specialist-920f86"
+   },
+   "company": {
+    "id": 15000188,
+    "short_name": "flexport",
+    "name": "Flexport"
+   }
+  },
+  {
+   "contents": "<p><b>Position Summary...</b><br><br>Why do people love eating in our café at Sam's Club? Our members tell us one of the biggest reasons is our hard-working and happy-to-help café associates. Do you have a passion for preparing food? Our cafe associates listen to our member's needs, prepare their food orders and provide fast and friendly service. We take pride in every aspect of our work and perform it with energy and enthusiasm. We need strong team players, with a commitment to serving our members and creating the warm and friendly environment they deserve - serving up a meal just like at home! Be a part of a team that offers customers more of what they love, for less. <br><br>You will sweep us off our feet if:<br>•  You have a passion for and experience with fresh food <br>•  You keep member satisfaction as your top priority<br>•  You're a solution seeker and innovator who tackles obstacles head-on<br>•  You're comfortable with change and quickly adapt to different work scenarios<br>•  You're a curious and creative thinker, driving change through out-of-box thinking <br><br>You will make an impact by:<br>•  Ensuring high-quality products are fresh, ready, and available in the café<br>•  Ensuring shelves are clean, maintaining temperature control, verifying expiration dates, and disposing of lesser-quality food products<br>•  Packing ready-to-sell products in proper containers and stock displays<br>•  Preparing and serving ready-to-eat food<br>•  Maintaining a clean, sanitiz",
+   "name": "Retail Associate",
+   "type": "external",
+   "publication_date": "2025-08-13T02:59:56Z",
+   "short_name": "retail-associate-008172",
+   "model_type": "jobs",
+   "id": 18840035,
+   "locations": [
+    {
+     "name": "Silver Lake, WI"
+    }
+   ],
+   "categories": [
+    {
+     "name": "Software Engineering"
+    }
+   ],
+   "levels": [
+    {
+     "name": "Entry Level",
+     "short_name": "entry"
+    }
+   ],
+   "tags": [],
+   "refs": {
+    "landing_page": "https://www.themuse.com/jobs/walmart/retail-associate-008172"
+   },
+   "company": {
+    "id": 12010,
+    "short_name": "walmart",
+    "name": "Walmart"
+   }
+  }
+ ],
+ "aggregations": {}
+}

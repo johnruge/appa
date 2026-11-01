@@ -1,0 +1,34 @@
+{
+ "meta": {},
+ "result": {
+  "jobOpening": {
+   "jobOpeningShareUrl": "https://kiln.bamboohr.com/careers/370",
+   "jobOpeningName": "Real Estate & Growth Strategy Intern",
+   "jobOpeningStatus": "Open",
+   "jobCategoryId": null,
+   "departmentId": "18595",
+   "departmentLabel": "Growth",
+   "employmentStatusLabel": "Intern",
+   "employmentType": null,
+   "location": {
+    "city": "Lehi",
+    "state": "Utah",
+    "postalCode": "84048-6331",
+    "addressCountry": "United States"
+   },
+   "atsLocation": {
+    "country": null,
+    "countryId": null,
+    "state": null,
+    "city": null
+   },
+   "description": "<p><span style=\"font-size: 12pt; font-weight: bold\">About Kiln:</span></p>\n<p><span style=\"font-size: 12pt\">Kiln is a flex \u00adoffice and lifestyle brand. We deliver an exceptional experience that elevates the performance and lifestyle of our members through an ecosystem of people, products, places, and spaces.\u00a0</span></p>\n<p><span style=\"font-size: 12pt\">Kiln launched in 2018 with locations in Salt Lake City and Lehi, Utah. Today, we\u2019ve grown to 21 hubs across the Mountain West, and we\u2019re just getting started. As a leader in the flex-office movement, Kiln is shaping the future of hybrid work in the evolving landscape of commercial real estate.</span></p>\n<p><br></p>\n<p><span style=\"font-size: 12pt\"><u>Our Core Values</u></span></p>\n<p><span style=\"font-size: 12pt\">1: Human at the core\u00a0</span></p>\n<p><span style=\"font-size: 12pt\">2: Achieve &amp; Celebrate Together</span></p>\n<p><span style=\"font-size: 12pt\">3: Thoughtful and with Purpose\u00a0</span></p>\n<p><span style=\"font-size: 12pt\">4: Always Evolving</span></p>\n<p><span style=\"font-size: 12pt\">5: Nothing short of Extraordinary</span></p>\n<p><span style=\"font-size: 12pt\">6: Scrappy &amp; Ingenious</span></p>\n<p><br></p>\n<p><span style=\"font-size: 12pt\"><u>Our Mission</u></span></p>\n<p><span style=\"font-size: 12pt\">Our mission is to change the world within the workplace, elevating the quality of life for our members and enabling teams to build in new and creative ways.\u00a0Our community lifts individuals, facilitates learning, and is",
+   "compensation": "$20/hr",
+   "datePosted": "2026-09-22",
+   "minimumExperience": "Entry-level",
+   "locationType": "0",
+   "seekPromoted": false,
+   "aiProcessingDisclosureEnabled": false
+  }
+ }
+}

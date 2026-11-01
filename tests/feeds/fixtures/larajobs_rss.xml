@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:job="https://larajobs.com"
+>
+
+    <channel>
+        <title>LaraJobs</title>
+        <atom:link href="https://larajobs.com" rel="self" type="application/rss+xml" />
+        <link>https://larajobs.com</link>
+        <description>Your Laravel Jobs source.</description>
+        <lastBuildDate>Sun, 25 Oct 2026 18:21:28 +0000</lastBuildDate>
+        <language>en-US</language>
+        <sy:updatePeriod>hourly</sy:updatePeriod>
+        <sy:updateFrequency>1</sy:updateFrequency>
+        <generator>https://larajobs.com</generator>
+                    <item>
+                <title>Senior Full Stack Software Engineer (PHP/Laravel) - US Only</title>
+                <link>https://larajobs.com/job/3949</link>
+                <pubDate>Sun, 25 Oct 2026 18:21:28 +0000</pubDate>
+                <dc:creator><![CDATA[Evolution Collect, LLC]]></dc:creator>
+                <category><![CDATA[Job]]></category>
+                <job:location><![CDATA[Remote/USA]]></job:location>
+                <job:job_type><![CDATA[FULL_TIME]]></job:job_type>
+                <job:salary><![CDATA[$160,000.00 - $180,000.00]]></job:salary>
+                <job:company><![CDATA[Evolution Collect, LLC]]></job:company>
+                <job:company_logo>https://larajobs.com/logos/BT6P2qNdLPHrE2vJT5Kh7aPRrOBC1avkjxFEJ3cc.png</job:company_logo>
+                <job:tags><![CDATA[Full Time,Fullstack,Laravel,MySQL,VueJS]]></job:tags>
+                <guid isPermaLink="false">https://larajobs.com/job/3949</guid>
+                <description><![CDATA[
+
+                    ]]></description>
+                <content:encoded><![CDATA[
+
+                    ]]></content:encoded>
+            </item>
+                    <item>
+                <title>Staff Web Developer – Product and UX Focus</title>
+                <link>https://larajobs.com/job/3948</link>
+                <pubDate>Fri, 23 Oct 2026 12:52:36 +0000</pubDate>
+                <dc:creator><![CDATA[OCALI]]></dc:creator>
+                <category><![CDATA[Job]]></category>
+                <job:location><![CDATA[Hybrid - Central Ohio]]></job:location>
+                <job:job_type><![CDATA[FULL_TIME]]></job:job_type>
+                <job:salary><![CDATA[$80,000 - $90,000]]></job:salary>
+                <job:company><![CDATA[OCALI]]></job:company>
+                <job:company_logo>https://larajobs.com/logos/</job:company_logo>
+                <job:tags><![CDATA[]]></job:tags>
+                <guid isPermaLink="false">https://larajobs.com/job/3948</guid>
+                <description><![CDATA[
+
+                    ]]></description>
+                <content:encoded><![CDATA[
+
+                    ]]></content:encoded>
+            </item>
+                    <item>
+                <title>Senior Laravel Developer</title>
+                <link>https://larajobs.com/job/3946</link>
+                <pubDate>Mon, 19 Oct 2026 08:47:02 +0000</pubDate>
+                <dc:creator><![CDATA[Trybe]]></dc:creator>
+                <category><![CDATA[Job]]></category>
+                <job:location><![CDATA[London, UK (Hybrid)]]></job:location>
+                <job:job_type><![CDATA[FULL_TIME]]></job:job_type>
+                <job:salary><![CDATA[£70,000 - £90,000]]></job:salary>
+                <job:company><![CDATA[Trybe]]></job:company>
+                <job:company_logo>https://larajobs.com/logos/Js7nJRVAKTRLTHQAmweFWAvn6SyYimDf1APsT1d5.png</job:company_logo>
+                <job:tags><![CDATA[Backend,Laravel,SaaS,Senior]]></job:tags>
+                <guid isPermaLink="false">https://larajobs.com/job/3946</guid>
+                <description><![CDATA[
+
+                    ]]></description>
+                <content:encoded><![CDATA[
+
+                    ]]></content:encoded>
+            </item>
+                    <item>
+                <title>Senior Fullstack PHP/Laravel Developer – Remote (Europe/Berlin Time Zone)</title>
+                <link>https://larajobs.com/job/3945</link>
+                <pubDate>Tue, 13 Oct 2026 16:05:13 +0000</pubDate>
+                <dc:creator><![CDATA[Eventhub GmbH]]></dc:creator>
+                <category><![CDATA[Job]]></category>
+                <job:location><![CDATA[Remote (Europe/Berlin Time Zone)]]></job:location>
+                <job:job_type><![CDATA[FULL_TIME]]></job:job_type>
+                <job:salary><![CDATA[]]></job:salary>
+                <job:company><![CDATA[Eventhub GmbH]]></job:company>
+                <job:company_logo>https://larajobs.com/logos/</job:company_logo>
+                <job:tags><![CDATA[]]></job:tags>
+                <guid isPermaLink="false">https://larajobs.com/job/3945</guid>
+                <description><![CDATA[
+
+                    ]]></description>
+                <content:encoded><![CDATA[
+
+                    ]]></content:encoded>
+            </item>
+                    <item>
+                <title>Senior Software Engineer</title>
+                <link>https://larajobs.com/job/3940</link>
+                <pubDate>Tue, 06 Oct 2026 19:24:09 +0000</pubDate>
+                <dc:creator><![CDATA[Resource Innovations]]></dc:creator>
+                <category><![CDATA[Job]]></category>
+                <job:location><![CDATA[Remote/USA]]></job:location>
+                <job:job_type><![CDATA[FULL_TIME]]></job:job_type>
+                <job:salary><![CDATA[$120,000 - $144,000]]></job:salary>
+                <job:company><![CDATA[Resource Innovations]]></job:company>
+                <job:company_logo>https://larajobs.com/logos/uytPsXPcJ6kaF89udMvvrU71P4Lcl8OZPchOa4ly.jpg</job:company_logo>
+                <job:tags><![CDATA[]]></job:tags>
+                <guid isPermaLink="false">https://larajobs.com/job/3940</guid>
+                <description><![CDATA[
+
+                    ]]></description>
+                <content:encoded><![CDATA[
+
+                    ]]></content:encoded>
+            </item>
+            </channel>
+</rss>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workzag-jobs>
+
+<position>
+    <id>2869700</id>
+    <subcompany>1KOMMA5° Commercial Solutions GmbH</subcompany>
+    <office>Remote</office>
+    <additionalOffices>
+        <office>Hamburg</office>
+        <office>Berlin</office>
+        <office>München</office>
+    </additionalOffices>
+    <department>Tech</department>
+    <recruitingCategory>1K5° Holding Tech</recruitingCategory>
+    <name>Software Engineer - Edge &amp; Cloud (m/w/d)</name>
+    <jobDescriptions>
+        <jobDescription>
+            <name>1KOMMA5°</name>
+            <value>
+                <![CDATA[<span>Bei </span><strong>1KOMMA5°</strong><span> verfolgen wir eine Vision: </span><strong>Living on wind and sunlight forever for free</strong><span>. Dafür bauen wir mit Heartbeat AI das Energiesystem der Zukunft. Bist du dabei? </span><br><br><span>]]>
+            </value>
+        </jobDescription>
+        <jobDescription>
+            <name>Deine Position</name>
+            <value>
+                <![CDATA[<ul><li><p><span>Full-Stack-Entwicklung (Edge to Cloud):</span><span> Du entwickelst die Kernkomponenten für unser Energiemanagementsystem </span><span>Heartbeat AI Enterprise</span><span> – sowohl lokal auf unseren IoT-Gateways (Edge) als auch skalierbar in unserer cloudnativen Backend-Architektur</span></p></li><li><p><span>Gateway-Programmierung (Go &amp; Lua):</span><span>]]>
+            </value>
+        </jobDescription>
+        <jobDescription>
+            <name>Dein Profil</name>
+            <value>
+                <![CDATA[<ul><li><p><span>Abgeschlossenes Studium der Informatik, Software Engineering oder eine vergleichbare Qualifikation bzw. fundierte Berufserfahrung in der professionellen Softwareentwicklung</span></p></li><li><p><span>Sehr gute Programmierkenntnisse in </span><span>Golang (Go)</span><span> (idealerweise im Cloud- und Microservice-Kontext) sowie praktische Erfahrung in der Skriptsprache </span><span>Lua</span><span>]]>
+            </value>
+        </jobDescription>
+        <jobDescription>
+            <name>Benefits</name>
+            <value>
+                <![CDATA[<ul><li>Du hast die Möglichkeit in unseren <strong>brandneuen</strong> Büros in der <strong>Hamburger Innenstadt, </strong><strong>Berlin</strong> &amp;<strong> </strong><strong>München</strong> zu arbeiten und/oder <strong>remote</strong></li><li>Nutze dein <strong>technisches Equipment </strong>auch abseits der Arbeit in deiner <strong>Freizeit</strong> </li><li>Du bist Teil eines <strong>schnell wachsenden Unternehmens</strong>]]>
+            </value>
+        </jobDescription>
+    </jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-time</schedule>
+    <keywords>join,Golang (Go),Lua Scripting,Edge Computing,Cloud Architecture,Heartbeat AI Enterprise,Virtuelles Kraftwerk VPP,IoT Gateway,Microservices,Energiemanagement EMS</keywords>
+    <occupation>software_and_web_development</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2026-10-30T15:26:21+00:00</createdAt>
+</position>
+
+<position>
+    <id>2712319</id>
+    <subcompany>1KOMMA5° Münster GmbH</subcompany>
+    <office>Münster</office>
+    <department>Management</department>
+    <recruitingCategory>1K5° Münster (Voltark)</recruitingCategory>
+    <name>Assistenz der Geschäftsführung / Chief of Staff (m/w/d) - Fokus Recht, Fuhrpark &amp; Finanzen</name>
+    <jobDescriptions>
+        <jobDescription>
+            <name>1KOMMA5°</name>
+            <value>
+                <![CDATA[Bei <strong>1KOMMA5° </strong>bauen wir Europas führende Energie-Software-Plattform <strong>“Heartbeat”</strong> und schaffen so ein <strong>virtuelles Kraftwerk</strong>, das Photovoltaik, Stromspeicher, Wärmepumpen und Ladesäulen der Kunden verknüpft und so die Rentabilität vernetzter Kundenanlagen deutlich erhöht. Wir bieten Kunden zudem einen "<strong>One-Stop-Shop"</strong>]]>
+            </value>
+        </jobDescription>
+        <jobDescription>
+            <name>Deine Position</name>
+            <value>
+                <![CDATA[<ul><li><strong>Du begleitest die Geschäftsführung im Tagesgeschäft</strong> und unterstützt verlässlich bei allen operativen sowie strategischen Fragestellungen.</li><li>In enger Abstimmung mit unseren externen Rechtsanwälten <strong>koordinierst und strukturierst du laufende Rechtsfälle</strong> wie Gewährleistungen sowie Kunden- und Lieferantenverträge, während du stets alle Fristen im Blick behältst.</li><li>Du übernimmst das <strong>]]>
+            </value>
+        </jobDescription>
+        <jobDescription>
+            <name>Dein Profil</name>
+            <value>
+                <![CDATA[<ul><li>Du hast ein erfolgreich <strong>abgeschlossenes Studium</strong>, beispielsweise in BWL oder Wirtschaftsrecht, oder eine vergleichbare <strong>kaufmännische Ausbildung</strong> und bringst im besten Fall bereits erste Erfahrungen in einem oder mehreren der benannten Tätigkeitsbereiche mit</li><li>Dank deines <strong>ausgeprägten Zahlen- und Organisationsverständnisses</strong>]]>
+            </value>
+        </jobDescription>
+        <jobDescription>
+            <name>Benefits</name>
+            <value>
+                <![CDATA[<ul><li>Du erhältst von uns einen <strong>unbefristeten Arbeitsvertrag</strong> und <strong>30 Tage Urlaub</strong> für deine Erholung. </li><li>Wir denken an deine Zukunft und unterstützen dich verlässlich mit einer <strong>betrieblichen Altersvorsorge (bAV)</strong> sowie <strong>vermögenswirksamen Leistungen.</strong></li><li>Tu dir und deiner Gesundheit etwas Gutes und nutze über <strong>Hansefit</strong>]]>
+            </value>
+        </jobDescription>
+    </jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>entry-level</seniority>
+    <schedule>full-time</schedule>
+    <yearsOfExperience>1-2</yearsOfExperience>
+    <keywords>1KOMMA5°,Chief of Staff,Assistenz,Geschäftsführung,Recht,Legal,Fuhrpark,Controlling,Finanzen,Compliance</keywords>
+    <occupation>general_and_other_business_and_strategic_management</occupation>
+    <occupationCategory>business_and_strategic_development</occupationCategory>
+    <createdAt>2026-07-14T17:08:03+00:00</createdAt>
+    <salaryInformation>
+        <min>36000.00</min>
+        <max>50000.00</max>
+        <currencySymbol>€</currencySymbol>
+        <currencyCode>EUR</currencyCode>
+        <type>yearly</type>
+    </salaryInformation>
+</position>
+
+<position>
+    <id>2800938</id>
+    <subcompany>1KOMMA5° GmbH</subcompany>
+    <office>Berlin</office>
+    <additionalOffices>
+        <office>Berlin (Remote)</office>
+    </additionalOffices>
+    <department>Marketing</department>
+    <recruitingCategory>1K5° Holding Marketing</recruitingCategory>
+    <name>(Junior) SEO &amp; AI Marketing Manager (m/w/d)</name>
+    <jobDescriptions>
+        <jobDescription>
+            <name>1KOMMA5°</name>
+            <value>
+                <![CDATA[<span>Bei </span><strong>1KOMMA5°</strong><span> verfolgen wir eine Vision: </span><strong>Living on wind and sunlight forever for free</strong><span>. Dafür bauen wir mit Heartbeat AI das Energiesystem der Zukunft. Bist du dabei? </span><br><span>]]>
+            </value>
+        </jobDescription>
+        <jobDescription>
+            <name>Deine Position</name>
+            <value>
+                <![CDATA[<p><span>Wir suchen einen </span><span>(Junior) SEO &amp; AI Marketing Manager</span><span>]]>
+            </value>
+        </jobDescription>
+        <jobDescription>
+            <name>Dein Profil</name>
+            <value>
+                <![CDATA[<ul><li><span>Berufserfahrung:</span><span> Mindestens </span><span>2-5 Jahre relevante Erfahrung</span><span> im Bereich SEO (Agentur oder Inhouse).</span></li><li><p><span>Ausbildung:</span><span> Abgeschlossenes Studium (BWL, Medienwissenschaften, Wirtschaftsinformatik, Marketing) oder vergleichbare Qualifikation.</span></p></li><li><p><span>Tech-Stack &amp; AI-Affinität:</span><span>]]>
+            </value>
+        </jobDescription>
+        <jobDescription>
+            <name>Benefits</name>
+            <value>
+                <![CDATA[<ul><li>Du hast die Möglichkeit in unserem <strong>brandneuen</strong> Büro in <strong>Berlin</strong> zu arbeiten und <strong>hybrid</strong></li><li>Nutze dein <strong>technisches Equipment </strong>auch abseits der Arbeit in deiner <strong>Freizeit</strong> </li><li>Du bist Teil eines <strong>schnell wachsenden Unternehmens</strong> mit viel <strong>Entwicklungspotenzi</strong><strong>al</strong>, wo du <strong>eigenständig</strong>]]>
+            </value>
+        </jobDescription>
+    </jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>entry-level</seniority>
+    <schedule>full-time</schedule>
+    <yearsOfExperience>1-2</yearsOfExperience>
+    <keywords>join ,organic growth manager,SEO,Organic Growth,Marketing,Einstieg,Junior,Berlin</keywords>
+    <occupation>brand_and_product_marketing</occupation>
+    <occupationCategory>marketing_and_product</occupationCategory>
+    <createdAt>2026-09-17T07:57:12+00:00</createdAt>
+</position>
+
+<position>
+    <id>2795601</id>
+    <subcompany>1KOMMA5° Frankfurt GmbH</subcompany>
+    <office>Remote</office>
+    <additionalOffices>
+        <office>Berlin</office>
+    </additionalOffices>
+    <department>Tech</department>
+    <recruitingCategory>1K5° Holding Tech</recruitingCategory>
+    <name>Go-to-Market Working Student (m/f/d)</name>
+    <jobDescriptions>
+        <jobDescription>
+            <name>1KOMMA5°</name>
+            <value>
+                <![CDATA[<p><span>At 1KOMMA5°, we pursue a clear vision: Living on wind and sunlight forever for free. To make this a reality, we are building the energy system of the future with Heartbeat AI. Want to be part of it?</span><span><br></span><span><br></span><span>]]>
+            </value>
+        </jobDescription>
+        <jobDescription>
+            <name>Deine Position</name>
+            <value>
+                <![CDATA[<p><span>Heartbeat AI is our energy optimisation platform that always provides our customers with the cleanest and cheapest energy. As a </span><span>Working Student on the Go-to-Market team</span><span>]]>
+            </value>
+        </jobDescription>
+        <jobDescription>
+            <name>Dein Profil</name>
+            <value>
+                <![CDATA[<ul><li><p><span>You are currently enrolled in a Bachelor's or Master's programme, ideally in Business, Energy Economics or a related field, and can work around 15 to 20 hours per week alongside your studies.</span></p></li><li><p><span>You are curious about GTM, pricing, or product strategy and want to learn how monetisation decisions get made differently across markets in a scaling tech company.</span></p></li><li><p><span>]]>
+            </value>
+        </jobDescription>
+        <jobDescription>
+            <name>Benefits</name>
+            <value>
+                <![CDATA[<ul><li><p><span>You are part of an international, dynamic, and highly motivated team of people who have proven to make things happen</span></p></li><li><p><span>With your work, you accelerate the "energy transition" and hence have a direct impact on our climate</span></p></li><li><p><span>Work with and learn from other super-smart colleagues</span></p></li><li><p><span>You will enjoy direct contact with core decision-makers</span></p></li><li>]]>
+            </value>
+        </jobDescription>
+    </jobDescriptions>
+    <employmentType>intern</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>part-time</schedule>
+    <yearsOfExperience>1-2</yearsOfExperience>
+    <keywords>Join</keywords>
+    <occupation>general_and_other_it_software</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2026-09-14T12:05:46+00:00</createdAt>
+</position>
+
+</workzag-jobs>

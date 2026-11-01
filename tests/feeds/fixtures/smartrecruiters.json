@@ -1,0 +1,321 @@
+{
+ "offset": 0,
+ "limit": 100,
+ "totalFound": 5,
+ "content": [
+  {
+   "id": "744000158820454",
+   "name": "Warehouse Associate II (1st Shift)",
+   "uuid": "fc91c86a-42de-4db7-91aa-2ddcbaa93594",
+   "jobAdId": "7f5ce8cd-48b7-4d5a-9ce7-0caddac316f3",
+   "defaultJobAd": true,
+   "refNumber": "REF299854C",
+   "company": {
+    "identifier": "BoschGroup",
+    "name": "Bosch Group"
+   },
+   "releasedDate": "2026-10-30T18:28:54.801Z",
+   "location": {
+    "city": "West Memphis",
+    "region": "AR",
+    "country": "us",
+    "address": "2700 College Boulevard",
+    "postalCode": "72301",
+    "remote": false,
+    "hybrid": false,
+    "latitude": "35.1748368",
+    "longitude": "-90.2263164",
+    "fullLocation": "West Memphis, AR, United States"
+   },
+   "industry": {
+    "id": "warehousing",
+    "label": "Warehousing"
+   },
+   "department": {},
+   "function": {
+    "id": "production",
+    "label": "Production"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "entry_level",
+    "label": "Entry Level"
+   },
+   "customField": [
+    {
+     "fieldId": "5abe2a4ab60a5e486a2d9b1d",
+     "fieldLabel": "Contract type",
+     "valueId": "1e46492b-d24f-460c-b095-38cf08a778d8",
+     "valueLabel": "Unlimited"
+    },
+    {
+     "fieldId": "5abe28e96d8bc56863dd9746",
+     "fieldLabel": "Tariff Area",
+     "valueId": "82f1dd4b-de9d-4134-9f1a-8d315be380ae",
+     "valueLabel": "United States Local Grades"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/BoschGroup/postings/744000158820454",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000158108729",
+   "name": "Roadside Assistance Territory Manager, Southwest region",
+   "uuid": "e992ef56-d16e-47bb-a0d0-0cf05b843f58",
+   "jobAdId": "7a125fe7-b723-403b-8e8d-6258500e03ad",
+   "defaultJobAd": true,
+   "refNumber": "REF299550L",
+   "company": {
+    "identifier": "BoschGroup",
+    "name": "Bosch Group"
+   },
+   "releasedDate": "2026-10-27T17:07:18.526Z",
+   "location": {
+    "city": "Itasca",
+    "region": "IL",
+    "country": "us",
+    "address": "1000 W. Iriving Park Road",
+    "postalCode": "60143",
+    "remote": true,
+    "hybrid": false,
+    "fullLocation": "Itasca, IL, United States"
+   },
+   "industry": {
+    "id": "automotive",
+    "label": "Automotive"
+   },
+   "department": {},
+   "function": {
+    "id": "general_business",
+    "label": "General Business"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "mid_senior_level",
+    "label": "Mid-Senior Level"
+   },
+   "customField": [
+    {
+     "fieldId": "5abe2a4ab60a5e486a2d9b1d",
+     "fieldLabel": "Contract type",
+     "valueId": "1e46492b-d24f-460c-b095-38cf08a778d8",
+     "valueLabel": "Unlimited"
+    },
+    {
+     "fieldId": "5abe28e96d8bc56863dd9746",
+     "fieldLabel": "Tariff Area",
+     "valueId": "82f1dd4b-de9d-4134-9f1a-8d315be380ae",
+     "valueLabel": "United States Local Grades"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/BoschGroup/postings/744000158108729",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000157534902",
+   "name": "Senior Agentic Software Engineer",
+   "uuid": "20606c2a-9286-417b-96ef-cd36a3a42570",
+   "jobAdId": "4ceb4a05-cd45-400e-b49d-03cf9468622a",
+   "defaultJobAd": true,
+   "refNumber": "REF288719U",
+   "company": {
+    "identifier": "BoschGroup",
+    "name": "Bosch Group"
+   },
+   "releasedDate": "2026-10-23T17:20:00.625Z",
+   "location": {
+    "city": "Plymouth",
+    "region": "MI",
+    "country": "us",
+    "address": "15800 North Haggerty Road",
+    "postalCode": "48170",
+    "remote": false,
+    "hybrid": true,
+    "hybridDescription": "3 days per week on-site",
+    "latitude": "42.4012018",
+    "longitude": "-83.43399889999999",
+    "fullLocation": "Plymouth, MI, United States"
+   },
+   "industry": {
+    "id": "automotive",
+    "label": "Automotive"
+   },
+   "department": {},
+   "function": {
+    "id": "engineering",
+    "label": "Engineering"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "mid_senior_level",
+    "label": "Mid-Senior Level"
+   },
+   "customField": [
+    {
+     "fieldId": "5abe2a4ab60a5e486a2d9b1d",
+     "fieldLabel": "Contract type",
+     "valueId": "1e46492b-d24f-460c-b095-38cf08a778d8",
+     "valueLabel": "Unlimited"
+    },
+    {
+     "fieldId": "5abe28e96d8bc56863dd9746",
+     "fieldLabel": "Tariff Area",
+     "valueId": "82f1dd4b-de9d-4134-9f1a-8d315be380ae",
+     "valueLabel": "United States Local Grades"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/BoschGroup/postings/744000157534902",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000157483412",
+   "name": "Agentic AI R&D Intern",
+   "uuid": "c35b8b46-2fc2-4866-8e21-cb7780c8c38e",
+   "jobAdId": "38c4e8aa-746b-4c00-8678-94409257316e",
+   "defaultJobAd": true,
+   "refNumber": "REF298112P",
+   "company": {
+    "identifier": "BoschGroup",
+    "name": "Bosch Group"
+   },
+   "releasedDate": "2026-10-23T14:02:35.070Z",
+   "location": {
+    "city": "Sunnyvale",
+    "region": "CA",
+    "country": "us",
+    "address": "384 Santa Trinita Avenue",
+    "postalCode": "94085",
+    "remote": false,
+    "hybrid": false,
+    "latitude": "37.3820466",
+    "longitude": "-121.9996484",
+    "fullLocation": "Sunnyvale, CA, United States"
+   },
+   "industry": {
+    "id": "research",
+    "label": "Research"
+   },
+   "department": {},
+   "function": {
+    "id": "engineering",
+    "label": "Engineering"
+   },
+   "typeOfEmployment": {
+    "id": "intern",
+    "label": "Intern"
+   },
+   "experienceLevel": {
+    "id": "internship",
+    "label": "Internship"
+   },
+   "customField": [
+    {
+     "fieldId": "5abe2a4ab60a5e486a2d9b1d",
+     "fieldLabel": "Contract type",
+     "valueId": "1e46492b-d24f-460c-b095-38cf08a778d8",
+     "valueLabel": "Unlimited"
+    },
+    {
+     "fieldId": "5abe28e96d8bc56863dd9746",
+     "fieldLabel": "Tariff Area",
+     "valueId": "82f1dd4b-de9d-4134-9f1a-8d315be380ae",
+     "valueLabel": "United States Local Grades"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/BoschGroup/postings/744000157483412",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000156594009",
+   "name": "Acquisition & Project Manager- Power Electronics",
+   "uuid": "4907ee32-32b1-4060-bcd7-ba2c542212ab",
+   "jobAdId": "968ea3b7-6ba0-40a0-8d4b-7a40ef3acf8b",
+   "defaultJobAd": true,
+   "refNumber": "REF298621D",
+   "company": {
+    "identifier": "BoschGroup",
+    "name": "Bosch Group"
+   },
+   "releasedDate": "2026-10-20T15:17:20.336Z",
+   "location": {
+    "city": "Farmington Hills",
+    "region": "MI",
+    "country": "us",
+    "address": "38000 Hills Tech Drive",
+    "postalCode": "48331",
+    "remote": false,
+    "hybrid": true,
+    "latitude": "42.4922209",
+    "longitude": "-83.4230436",
+    "fullLocation": "Farmington Hills, MI, United States"
+   },
+   "industry": {
+    "id": "automotive",
+    "label": "Automotive"
+   },
+   "department": {},
+   "function": {
+    "id": "sales",
+    "label": "Sales"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "associate",
+    "label": "Associate"
+   },
+   "customField": [
+    {
+     "fieldId": "5abe2a4ab60a5e486a2d9b1d",
+     "fieldLabel": "Contract type",
+     "valueId": "1e46492b-d24f-460c-b095-38cf08a778d8",
+     "valueLabel": "Unlimited"
+    },
+    {
+     "fieldId": "5abe28e96d8bc56863dd9746",
+     "fieldLabel": "Tariff Area",
+     "valueId": "82f1dd4b-de9d-4134-9f1a-8d315be380ae",
+     "valueLabel": "United States Local Grades"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/BoschGroup/postings/744000156594009",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  }
+ ]
+}
