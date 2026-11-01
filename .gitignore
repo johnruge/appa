@@ -14,3 +14,6 @@ config/answers.yaml
 
 # Local tooling
 .claude/
+
+# Notes for you only (threat model, plans): never published
+private/

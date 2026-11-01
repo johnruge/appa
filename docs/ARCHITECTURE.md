@@ -5,7 +5,7 @@ New here? Start with the guided [TOUR.md](TOUR.md); this page is the reference.
 appa is a single-user job-search pipeline with an application database and an
 authenticated API. It finds, screens and surfaces matches for you to review; you apply. It can
 prefill a form in your browser, but it never submits one. This document describes **what exists
-today**. Plans are in [ROADMAP.md](ROADMAP.md); threats and controls are in [SECURITY.md](SECURITY.md).
+today**. Plans are in [ROADMAP.md](ROADMAP.md).
 
 About 1,900 lines of Python, in one package, run from one machine.
 

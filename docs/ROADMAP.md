@@ -20,7 +20,7 @@ Goal: someone can clone it, run it for themselves, and trust it.
 
 - [ ] Run extraction on about 30 real postings you've already judged, and record precision and recall per rule (this doubles as the first eval set)
 - [x] License: AGPL-3.0-or-later (`LICENSE`)
-- [ ] `SECURITY.md` contact and `CONTRIBUTING.md`, including the contribution terms decision below
+- [ ] A vulnerability-reporting contact and `CONTRIBUTING.md`, including the contribution terms decision below
 - [ ] Lockfile (`uv lock`), CI (tests, lint, `pip-audit`, secret scan)
 - [x] PostgreSQL + Alembic migrations, least-privilege roles (M1)
 - [ ] Clean-up: the `Job.ats_job_id` / `job_key` overlap; `resolve.py` reuses `normalize.title`
@@ -53,7 +53,7 @@ because automated applications can feel bad to the recruiters reading them.
 | Prefill runner | run it yourself | ✅ managed, sandboxed |
 | Support, multi-device | — | ✅ |
 
-What the hosted tier requires is in [SECURITY.md](SECURITY.md#hosted-tier-requirements).
+
 The architecture change: tenants, a job queue with workers (fetch / extract / prefill),
 Postgres with row-level security, and a web app talking to the same API.
 

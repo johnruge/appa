@@ -1,8 +1,8 @@
 # A guided tour of the appa codebase
 
 Read this with the code open. It explains what every group of files is for, how they connect,
-and how a job moves through the system. [ARCHITECTURE.md](ARCHITECTURE.md) is the reference,
-[SECURITY.md](SECURITY.md) the threat model, and [DESIGN-v1.md](DESIGN-v1.md) the plan.
+and how a job moves through the system. [ARCHITECTURE.md](ARCHITECTURE.md) is the reference and
+[DESIGN-v1.md](DESIGN-v1.md) the original plan.
 
 Size, for orientation: about 4,700 lines of Python in `appa/`, 1,900 of TypeScript in `web/`,
 and 1,800 of tests. No single file is over about 600 lines.

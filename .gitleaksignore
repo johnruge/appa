@@ -1,0 +1,3 @@
+# Reviewed false positives (fingerprints from `gitleaks git`), each with the reason on the line above.
+# A made-up SerpApi page cursor in a test fixture, not a credential:
+df5e0c5abb895e43ada34672d2a42be188cf86f9:tests/feeds/fixtures/serpapi_google_jobs.json:generic-api-key:142

@@ -26,7 +26,7 @@ boards (42 ATSs)     your own preferences          and what to double-check
 Posting text is treated as untrusted: hidden text aimed at AI tools is pulled out, labeled, and sends
 the job to review. The database (PostgreSQL) is the source of truth for everything you've applied to.
 
-**Docs:** [Job sources](docs/JOB-SOURCES.md) · [Tour of the code](docs/TOUR.md) · [Architecture](docs/ARCHITECTURE.md) · [Security](docs/SECURITY.md) · [Roadmap](docs/ROADMAP.md)
+**Docs:** [Job sources](docs/JOB-SOURCES.md) · [Tour of the code](docs/TOUR.md) · [Architecture](docs/ARCHITECTURE.md) · [Roadmap](docs/ROADMAP.md)
 
 ## Quick start
 
