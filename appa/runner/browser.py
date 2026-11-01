@@ -82,6 +82,7 @@ class Browser:
         self.allowed: set[str] = set(ATS_HOSTS)
         self.allowed_sites: set[str] = set()
         self.blocked: list[str] = []
+        self.handed_over: list[Page] = []  # filled tabs left open for you
         self.check_ips = True  # tests serving fake local sites turn this off
 
     def __enter__(self) -> Browser:
@@ -132,10 +133,18 @@ class Browser:
         route.continue_()
 
     def _no_popups(self, page: Page) -> None:
-        """Close any page opened by another page (window.open, target=_blank)."""
+        """Close any page opened by another page (window.open, target=_blank), except from tabs handed to you."""
         # Pages opened *by* a page (window.open, target=_blank) are closed; our own new_page() has no opener.
-        if page.opener() is not None:
+        opener = page.opener()
+        if opener is not None and opener not in self.handed_over:
             page.close()
+
+    def hand_over(self, page: Page) -> None:
+        """The filled tab is yours: lift appa's navigation guard and pop-up blocking for it, and never close it, so
+        you can review, submit and follow any redirect yourself."""
+        self.handed_over.append(page)
+        page.route("**/*", lambda route: route.continue_())  # page routes win over the context-wide guard
+        page.bring_to_front()
 
     def open(self, url: str) -> Page:
         """Open a public URL in a new page, allowing only its site and hosted ATSs, and wait for it to settle."""

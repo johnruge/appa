@@ -1,4 +1,4 @@
-"""Applier: fills and (after your approval) submits an application in your browser.
+"""Applier: prefills an application in your browser and leaves it open for you to submit.
 
 Its steps run on the runner (appa/runner/), not on a worker; appa/apply/service.py moves
 each attempt along and records everything on this run.
@@ -22,7 +22,7 @@ def run(ctx, params: ApplierInput) -> dict:
 
 ROLE = RoleSpec(
     name="applier",
-    description="Fill an application in your browser; submits only after you approve.",
+    description="Prefill an application in your browser; you check it and submit it yourself.",
     Input=ApplierInput,
     run=run,
     startable=False,

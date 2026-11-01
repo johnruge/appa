@@ -52,7 +52,6 @@ feeds:
   keyword_screen_without_key: true   # no model key yet: screen by keywords (flags for review, never rejects)
 
 apply:
-  daily_submit_cap: 10      # submissions per rolling 24h
-  auto_prepare: false       # true: fill every new To Apply job in your browser (still waits for your approval)
+  auto_prepare: false       # true: prefill each new match in your browser (you always submit yourself)
 
 # Models are chosen in config/models.yaml (defaults per job) or per run with --model.

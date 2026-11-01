@@ -125,7 +125,7 @@ def screen(ctx: RunContext, pipe: Pipeline, job: Job, force: bool = False) -> Re
 
 
 def _auto_prepare(ctx: RunContext, job: Job) -> None:
-    """Fill it in your browser now; it still waits for your approval before submitting."""
+    """Prefill it in your browser now; you check it and submit it yourself."""
     from sqlalchemy import select
 
     from appa import db

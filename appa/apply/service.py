@@ -1,19 +1,20 @@
-"""Apply attempts, end to end. The runner (your browser) and the API both go through here.
+"""Prefilling applications, end to end. The runner (your browser) and the API both go through here.
 
     start ──► [runner: open form, report questions] ──► plan
                  │ missing answers → questions for you → (you answer) → prepare again
-                 └ ready → [runner: fill, screenshot] → awaiting_approval → (you approve)
-                                                         → [runner: fill, check, submit] → confirmed
+                 └ all answered → [runner: fill, screenshot, leave the tab open] → ready
+                                    → (you check it and press submit yourself) → you mark it applied
 
-Nothing is ever submitted without an approval recorded here (approved_by/approved_at).
+appa never submits an application. It fills the form in your browser and hands it to you; the
+only way an application becomes Applied is you saying so.
 """
 
 from __future__ import annotations
 
 import re
-from datetime import UTC, date, datetime, timedelta
+from datetime import UTC, date, datetime
 
-from sqlalchemy import func, select
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from appa import db, observe
@@ -22,7 +23,7 @@ from appa.core.apply_fields import FormQuestion, saved_key, standard_key
 from appa.core.ats_urls import parse_url
 from appa.runtime import queue
 
-ACTIVE = ("preparing", "needs_you", "awaiting_approval", "submitting")
+ACTIVE = ("preparing", "needs_you", "ready")  # an attempt in one of these blocks starting another
 RUNNER_EVENT_KINDS = {"log", "tool_call"}
 
 
@@ -172,7 +173,7 @@ def _last_job(s: Session, run_id: int) -> db.QueueJob:
 
 
 def _enqueue(s: Session, attempt: db.ApplyAttempt, phase: str) -> None:
-    """Queue the attempt's next step (prepare or submit) for the runner."""
+    """Queue the attempt's prepare step for the runner."""
     queue.enqueue(s, "apply", attempt.run_id, max_attempts=2)
     _last_job(s, attempt.run_id).payload = {"attempt_id": attempt.id, "phase": phase}
 
@@ -184,26 +185,19 @@ def claim(s: Session, runner: str) -> dict | None:
         return None
     attempt = s.get(db.ApplyAttempt, job.payload.get("attempt_id"), with_for_update=True)
     phase = job.payload.get("phase")
-    if (
-        not attempt
-        or attempt.status not in ("preparing", "submitting")
-        or (phase == "submit") != (attempt.status == "submitting")
-    ):
-        queue.done(s, job)  # stale (cancelled or already moved on)
+    if not attempt or attempt.status != "preparing" or phase != "prepare":
+        queue.done(s, job)  # stale (cancelled, already moved on, or an old submit job: appa never submits)
         return claim(s, runner)
     _set_run(s, attempt, "running")
     _event(s, attempt, "log", message=f"runner {runner} picked up the {phase} step")
     s.commit()
-    out = {
+    return {
         "job_id": job.id,
         "attempt_id": attempt.id,
         "phase": phase,
         "ats": attempt.ats,
         "apply_url": attempt.apply_url,
     }
-    if phase == "submit":
-        out["plan"] = attempt.plan
-    return out
 
 
 def record_events(s: Session, attempt_id: int, events: list[dict]) -> None:
@@ -300,7 +294,8 @@ def _observe_form(s: Session, attempt: db.ApplyAttempt, questions: list[FormQues
 
 
 def receive_preview(s: Session, attempt_id: int, report: list[dict], screenshot_upload_id: int | None) -> None:
-    """Store the fill report and preview, log failed fields, and ask you to approve submission; commits."""
+    """Store the fill report and preview, log failed fields, and tell you the filled form is waiting in your
+    browser for you to check and submit; commits."""
     attempt = s.get(db.ApplyAttempt, attempt_id)
     if attempt.status != "preparing":
         raise ApplyError(f"attempt is {attempt.status}, not preparing")
@@ -321,14 +316,19 @@ def receive_preview(s: Session, attempt_id: int, report: list[dict], screenshot_
             application_id=app.id,
             detail={"kind": kinds.get(r.get("ref")), "error": r.get("error"), "ref": r.get("ref")},
         )
-    attempt.status = "awaiting_approval"
-    note = f"; {len(failed)} field(s) didn't fill" + (" (incl. required)" if failed_required else "") if failed else ""
+    attempt.status = "ready"
+    note = ""
+    if failed:
+        note = f" {len(failed)} field(s) didn't fill" + (", including required ones" if failed_required else "") + "."
     s.add(
         db.Question(
             run_id=attempt.run_id,
             application_id=attempt.application_id,
-            kind="apply_approval",
-            prompt=f"Submit application to {app.company} / {app.role}? Review the filled form{note}."[:4000],
+            kind="apply_ready",
+            prompt=(
+                f"{app.company} / {app.role} is filled in your browser. Check it, submit it there yourself, "
+                f"then mark it applied.{note}"
+            )[:4000],
             context={
                 "attempt_id": attempt.id,
                 "preview_upload_id": screenshot_upload_id,
@@ -336,7 +336,7 @@ def receive_preview(s: Session, attempt_id: int, report: list[dict], screenshot_
                 "failed": [{"ref": r.get("ref"), "label": r.get("label"), "error": r.get("error")} for r in failed][
                     :50
                 ],
-                "blocked": bool(failed_required),
+                "required_unfilled": bool(failed_required),
                 "plan": [
                     {"label": i["label"][:200], "value": i["value"], "source": i["source"]}
                     for i in attempt.plan or []
@@ -345,100 +345,34 @@ def receive_preview(s: Session, attempt_id: int, report: list[dict], screenshot_
             },
         )
     )
-    _event(s, attempt, "log", message="form filled; waiting for your approval before submitting" + note)
+    _event(s, attempt, "log", message="form filled and left open in your browser for you to submit." + note)
     _set_run(s, attempt, "waiting_for_you")
     s.commit()
 
 
-def daily_cap(s: Session) -> int:
-    """The policy's maximum submissions per 24 hours."""
-    from appa import profile_store
-
-    return profile_store.get_policy(s).apply.daily_submit_cap
-
-
-def approve(s: Session, attempt_id: int, by: str) -> db.ApplyAttempt:
-    """Approve a filled attempt for submission unless a required field failed or the daily cap is hit; commits."""
-    attempt = s.get(db.ApplyAttempt, attempt_id, with_for_update=True)  # serializes with takeover()
-    if not attempt or attempt.status != "awaiting_approval":
-        raise ApplyError("nothing to approve: this application isn't waiting for approval")
-    if attempt.fill_report and any(
-        not r.get("ok") and r.get("ref") in {q["ref"] for q in attempt.form or [] if q.get("required")}
-        for r in attempt.fill_report
+def mark_applied(s: Session, application_id: int, by: str) -> db.Application:
+    """You submitted it: mark the application Applied (today) and close its prefill attempt and questions. The only
+    way anything becomes Applied. Commits."""
+    app = s.get(db.Application, application_id)
+    if not app:
+        raise ApplyError(f"no application #{application_id}")
+    for attempt in s.scalars(
+        select(db.ApplyAttempt).where(db.ApplyAttempt.application_id == app.id, db.ApplyAttempt.status.in_(ACTIVE))
     ):
-        raise ApplyError("a required field didn't fill; apply to this one yourself or skip it")
-    since = _now() - timedelta(hours=24)
-    sent = s.scalar(select(func.count()).select_from(db.ApplyAttempt).where(db.ApplyAttempt.submitted_at >= since))
-    cap = daily_cap(s)
-    if sent >= cap:
-        raise ApplyError(f"daily submission cap reached ({sent}/{cap}); raise apply.daily_submit_cap or wait")
-    attempt.status, attempt.approved_by, attempt.approved_at = "submitting", by, _now()
-    _event(s, attempt, "log", message=f"approved by {by}; queued for submission")
-    _enqueue(s, attempt, "submit")
-    _close_questions(s, attempt.id, "apply_approval", "approve")
-    s.commit()
-    return attempt
-
-
-def receive_result(
-    s: Session,
-    attempt_id: int,
-    *,
-    submitted: bool,
-    confirmed: bool,
-    final_url: str | None,
-    screenshot_upload_id: int | None,
-    error: str | None,
-) -> db.ApplyAttempt:
-    """Record the submission result; only a confirmation page marks the job Applied, else you're asked to check."""
-    attempt = s.get(db.ApplyAttempt, attempt_id)
-    if attempt.status != "submitting" or not attempt.approved_at:
-        raise ApplyError("result for an attempt that wasn't approved for submission")
-    attempt.final_url = (final_url or "")[:2000] or None
-    attempt.confirmation_upload_id = screenshot_upload_id
-    app = s.get(db.Application, attempt.application_id)
-    if submitted:
-        attempt.status = "confirmed" if confirmed else "submitted"
-        attempt.submitted_at = _now()
-        if confirmed:
-            app.status = "Applied"
-            app.date_applied = date.today()
-            app.applied_with_email = answers(s).get("email") or app.applied_with_email
-            _event(s, attempt, "log", message="submitted and confirmed")
-        else:
-            # Never mark Applied without proof: a wrong "Applied" would hide a job you never got.
-            app.status = "Needs Review"
-            note = "submit clicked but no confirmation page; check your email"
-            app.notes = f"{app.notes}; {note}" if app.notes else note
-            s.add(
-                db.Question(
-                    run_id=attempt.run_id,
-                    application_id=app.id,
-                    kind="review",
-                    prompt=f"Did your application to {app.company} / {app.role} go through? "
-                    "No confirmation page was seen; check your email, then approve (Applied) or skip.",
-                    context={"link": attempt.apply_url, "attempt_id": attempt.id, "unconfirmed": True},
-                )
-            )
-            observe.record(
-                s,
-                "no_confirmation",
-                observe.path_shape(final_url),
-                url=final_url or attempt.apply_url,
-                attempt_id=attempt.id,
-                application_id=app.id,
-                detail={"final_url": final_url},
-            )
-            _event(s, attempt, "log", message="submitted, but no confirmation page seen: asked you to check")
+        if attempt.status == "preparing":
+            for job in s.scalars(
+                select(db.QueueJob).where(db.QueueJob.run_id == attempt.run_id, db.QueueJob.status == "queued")
+            ):
+                job.status = "done"
+        attempt.status, attempt.submitted_at = "applied", _now()
+        _close_questions(s, attempt.id, None, "applied")
+        _event(s, attempt, "log", message=f"{by} submitted it and marked it applied")
         _set_run(s, attempt, "succeeded")
-    else:
-        attempt.status, attempt.error = "failed", (error or "not submitted")[:2000]
-        observe.record(
-            s, "submit_failed", attempt.error[:200], url=attempt.apply_url, attempt_id=attempt.id, application_id=app.id
-        )
-        _set_run(s, attempt, "failed", attempt.error)
+    app.status = "Applied"
+    app.date_applied = app.date_applied or date.today()
+    app.applied_with_email = app.applied_with_email or answers(s).get("email")
     s.commit()
-    return attempt
+    return app
 
 
 def fail(s: Session, job_id: int, error: str, *, retry: bool) -> None:
@@ -466,7 +400,7 @@ def fail(s: Session, job_id: int, error: str, *, retry: bool) -> None:
 def blocked(s: Session, attempt_id: int, reason: str) -> db.ApplyAttempt:
     """The runner can't fill this one (login, multi-page form, no form found): it's yours."""
     attempt = s.get(db.ApplyAttempt, attempt_id)
-    if attempt.status not in ("preparing", "submitting"):
+    if attempt.status != "preparing":
         raise ApplyError(f"attempt is {attempt.status}")
     app = s.get(db.Application, attempt.application_id)
     attempt.status, attempt.error = "failed", f"apply yourself: {reason}"[:2000]
@@ -491,10 +425,10 @@ def blocked(s: Session, attempt_id: int, reason: str) -> db.ApplyAttempt:
 
 def redo(s: Session, attempt_id: int, by: str) -> db.ApplyAttempt:
     """Fill the form again from your current answers bank (e.g. after you added answers).
-    Only before approval; replaces the pending approval card. Never submits."""
+    Replaces the pending card. Never submits."""
     attempt = s.get(db.ApplyAttempt, attempt_id)
-    if not attempt or attempt.status not in ("awaiting_approval", "needs_you", "failed"):
-        raise ApplyError("redo works on attempts waiting for you, waiting for approval, or failed")
+    if not attempt or attempt.status not in ("ready", "needs_you", "failed"):
+        raise ApplyError("redo works on attempts that are ready, waiting for your answers, or failed")
     _close_questions(s, attempt.id, None, "dismissed")
     attempt.status, attempt.error, attempt.fill_report, attempt.preview_upload_id = "preparing", None, None, None
     _event(s, attempt, "log", message=f"{by} asked to fill it again with the current answers")
@@ -563,30 +497,20 @@ def answer_field(s: Session, question: db.Question, value: str, by: str) -> list
 
 
 def takeover(s: Session, application_id: int, by: str) -> tuple[db.Application, str | None]:
-    """You'll apply to this one yourself: stop any attempt in progress (before submit), close its questions
-    and mark it Apply Myself. Returns the application and the link to open. Commits."""
+    """You'll apply to this one yourself, from scratch: stop any prefill in progress, close its questions and
+    mark it Apply Myself. Returns the application and the link to open. Commits."""
     app = s.get(db.Application, application_id)
     if not app:
         raise ApplyError(f"no application #{application_id}")
     if app.status in db.APPLIED_STATUSES:
         raise ApplyError(f"#{application_id} is already {app.status}")
     link = app.link
-    if s.scalars(
-        select(db.ApplyAttempt.id).where(
-            db.ApplyAttempt.application_id == app.id, db.ApplyAttempt.status.in_(("submitted", "confirmed"))
-        )
-    ).first():
-        raise ApplyError("appa already submitted this one; check your email and answer its review question")
     attempt = s.scalars(
         select(db.ApplyAttempt)
         .where(db.ApplyAttempt.application_id == app.id, db.ApplyAttempt.status.in_(ACTIVE))
         .with_for_update()
-    ).first()  # serializes with approve()
+    ).first()
     if attempt:
-        if attempt.status == "submitting":
-            raise ApplyError(
-                "already approved and being submitted; wait for the result, or cancel it in the runner window"
-            )
         link = attempt.apply_url
         for job in s.scalars(
             select(db.QueueJob).where(db.QueueJob.run_id == attempt.run_id, db.QueueJob.status == "queued")

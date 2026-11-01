@@ -333,7 +333,7 @@ class ProfileVersion(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
 
 
-# ---- applying: your answers, and each attempt to fill/submit an application ----------
+# ---- prefilling: your answers, and each attempt to fill an application for you ----------
 
 
 class Answer(Base):
@@ -349,20 +349,20 @@ class Answer(Base):
 
 
 APPLY_STATUSES = (
-    "preparing",
-    "needs_you",
-    "awaiting_approval",
-    "submitting",
-    "submitted",
-    "confirmed",
+    "preparing",  # the runner is reading or filling the form
+    "needs_you",  # questions only you can answer
+    "ready",  # filled and left open in your browser: you check it and press submit
+    "applied",  # you submitted it and said so
     "failed",
     "cancelled",
+    "submitted",  # history only: from before appa stopped submitting
+    "confirmed",  # history only
 )
 
 
 class ApplyAttempt(Base):
-    """One application, filled in your browser by the runner. Nothing is submitted until
-    you approve the filled form (status awaiting_approval -> submitting)."""
+    """One application prefilled in your browser by the runner. appa never submits: the filled form is
+    left open for you, and it becomes Applied only when you say you submitted it."""
 
     __tablename__ = "apply_attempts"
 

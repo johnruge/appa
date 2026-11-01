@@ -69,7 +69,3 @@ class RunnerClient:
     def blocked(self, attempt_id: int, reason: str) -> None:
         """Hand the attempt back to you, with the reason."""
         self._post(f"/attempts/{attempt_id}/blocked", json={"reason": reason[:500]})
-
-    def result(self, attempt_id: int, **body) -> dict:
-        """Send the submission result."""
-        return self._post(f"/attempts/{attempt_id}/result", json=body)

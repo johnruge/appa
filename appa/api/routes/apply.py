@@ -1,4 +1,4 @@
-"""Start applications, review attempts, approve submissions, manage your answers bank."""
+"""Prefill applications in your browser, track attempts, mark what you applied to, manage your answers."""
 
 from __future__ import annotations
 
@@ -63,12 +63,9 @@ def attempt_dict(a: db.ApplyAttempt) -> dict:
         "plan": a.plan,
         "fill_report": a.fill_report,
         "preview_upload_id": a.preview_upload_id,
-        "confirmation_upload_id": a.confirmation_upload_id,
         "final_url": a.final_url,
         "error": a.error,
-        "approved_by": a.approved_by,
-        "approved_at": a.approved_at.isoformat() if a.approved_at else None,
-        "submitted_at": a.submitted_at.isoformat() if a.submitted_at else None,
+        "applied_at": a.submitted_at.isoformat() if a.submitted_at else None,
         "created_at": a.created_at.isoformat(),
     }
 
@@ -84,7 +81,7 @@ def start(app_id: int, s: SessionDep, p: UserDep):
 
 @router.post("/applications/{app_id}/takeover")
 def takeover(app_id: int, s: SessionDep, p: UserDep):
-    """You apply to this one yourself: stops any attempt before submit and marks it Apply Myself (humans only)."""
+    """You apply to this one yourself from scratch: stops any prefill and marks it Apply Myself (humans only)."""
     try:
         app, link = service.takeover(s, app_id, p.label)
     except service.ApplyError as e:
@@ -112,18 +109,19 @@ def get_one(attempt_id: int, s: SessionDep, _p: UserDep):
     return attempt_dict(a)
 
 
-@router.post("/apply/attempts/{attempt_id}/approve")
-def approve(attempt_id: int, s: SessionDep, p: UserDep):
-    """Approve a filled application so the runner submits it."""
+@router.post("/applications/{app_id}/applied")
+def applied(app_id: int, s: SessionDep, p: UserDep):
+    """You submitted it yourself: mark it Applied and close its prefill (humans only)."""
     try:
-        return attempt_dict(service.approve(s, attempt_id, p.label))
+        app = service.mark_applied(s, app_id, p.label)
     except service.ApplyError as e:
         raise HTTPException(422, str(e)) from e
+    return {"id": app.id, "status": app.status, "date_applied": app.date_applied}
 
 
 @router.post("/apply/attempts/{attempt_id}/redo")
 def redo(attempt_id: int, s: SessionDep, p: UserDep):
-    """Fill the form again from the current answer bank (before approval only; never submits)."""
+    """Fill the form again from the current answer bank (never submits)."""
     try:
         return attempt_dict(service.redo(s, attempt_id, p.label))
     except service.ApplyError as e:

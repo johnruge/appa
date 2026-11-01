@@ -48,8 +48,7 @@ class Rules(BaseModel):
 
 
 class ApplyPolicy(BaseModel):
-    daily_submit_cap: int = 10  # submissions per rolling 24h, all ATSs combined
-    auto_prepare: bool = False  # fill "To Apply" jobs automatically (still waits for your approval)
+    auto_prepare: bool = False  # prefill new matches in your browser automatically (you still submit)
 
 
 class FeedsPolicy(BaseModel):

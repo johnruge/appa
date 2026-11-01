@@ -1,7 +1,7 @@
 """Read application forms and fill them, in the page. Greenhouse, Lever and Ashby.
 
 Questions get a stable `ref` from the control's own id or name, so a plan made on one
-page load finds the same fields on the next (prepare, then submit after your approval).
+page load finds the same fields on the next (e.g. when you ask appa to fill it again).
 """
 
 from __future__ import annotations
@@ -121,50 +121,6 @@ EXTRACT_JS = r"""
 }
 """
 
-CAPTCHA_JS = r"""
-() => [...document.querySelectorAll('iframe')].some((f) => {
-  const src = f.src || '';
-  if (!/recaptcha\/(api2|enterprise)\/bframe|hcaptcha\.com.*(challenge|hcaptcha-challenge)|challenges\.cloudflare\.com/.test(src)) return false;
-  const r = f.getBoundingClientRect();
-  const st = getComputedStyle(f);
-  return r.width > 100 && r.height > 100 && st.visibility !== 'hidden' && st.display !== 'none' && st.opacity !== '0';
-})
-"""
-
-CONFIRM = re.compile(
-    r"thank(s| you) for (applying|your (application|interest))|application (was |has been )?(submitted|received)|"
-    r"we('|’)ve received your application|successfully submitted|your application is (in|complete)",
-    re.I,
-)
-# A step some ATSs add after submit (e.g. Greenhouse): a code emailed to you "to confirm you're a human".
-# It's a human check: appa never reads your email or types the code; it waits for you.
-VERIFY = re.compile(
-    r"verification code (was|has been) sent|enter the \d+.character code|confirm you.re a human|"
-    r"security code|check your email for a code",
-    re.I,
-)
-
-
-def verification_requested(page: Page) -> bool:
-    """True if the page text says the site sent a verification code; False on any error."""
-    try:
-        return bool(VERIFY.search(page.inner_text("body", timeout=3000)))
-    except Exception:
-        return False
-
-
-ERROR_JS = r"""
-() => {
-  const shown = [...document.querySelectorAll('[aria-invalid="true"], .error, [class*="error"], [role="alert"]')]
-    .filter((e) => e.offsetWidth || e.offsetHeight).map((e) => e.textContent.replace(/\s+/g, ' ').trim())
-    .filter((t) => t && t.length < 200);
-  // Native browser validation blocks submit with a popup that isn't in the DOM: report those fields too.
-  const invalid = [...document.querySelectorAll('input:invalid, select:invalid, textarea:invalid')]
-    .map((e) => `required/invalid field: ${e.name || e.id || e.type}`);
-  return [...shown, ...invalid].slice(0, 10);
-}
-"""
-
 
 @dataclass
 class Files:
@@ -244,14 +200,6 @@ def _listbox(page: Page, combo: Locator) -> Locator:
     return page.locator("[role=option]").filter(visible=True)
 
 
-def captcha_visible(page: Page) -> bool:
-    """True if a CAPTCHA is visible on the page; False on any error."""
-    try:
-        return bool(page.evaluate(CAPTCHA_JS))
-    except Exception:
-        return False
-
-
 # ---- finding the form on any site ---------------------------------------------------------
 
 
@@ -314,6 +262,7 @@ APPLY_TEXT = re.compile(
     re.I,
 )
 NEXT_TEXT = re.compile(r"^\s*(next|continue|save (and|&) continue|next step)\b", re.I)
+# Only read, never clicked: a form with Next but no Submit is a multi-page wizard (handed back to you).
 SUBMIT_TEXT = re.compile(r"submit|send application|apply", re.I)
 MIN_FIELDS = 2
 
@@ -514,35 +463,3 @@ def _fill_combobox(page: Page, el: Locator, value: str, *, exact: bool) -> None:
         page.keyboard.press("Escape")
         raise ValueError(f"no option matching {value!r}")
     options.nth(idx).click(timeout=5000)
-
-
-# ---- submitting -------------------------------------------------------------------------
-
-
-def submit(page: Page) -> None:
-    """Click the form's submit button."""
-    btn = page.locator("button[type=submit], input[type=submit]").filter(visible=True)
-    if not btn.count():
-        btn = page.get_by_role("button", name=re.compile(r"submit", re.I))
-    btn.first.scroll_into_view_if_needed(timeout=5000)
-    btn.first.click(timeout=10000)
-
-
-def confirmation(page: Page, before_url: str, timeout_s: float = 30) -> tuple[bool, list[str]]:
-    """(confirmed, visible validation errors). Confirmed = thank-you text or a /thanks-style URL."""
-    deadline = time.monotonic() + timeout_s
-    while time.monotonic() < deadline:
-        try:
-            body = page.inner_text("body", timeout=3000)
-        except Exception:
-            body = ""
-        if CONFIRM.search(body) or (
-            page.url != before_url and re.search(r"thank|confirm|success|submitted", page.url, re.I)
-        ):
-            return True, []
-        page.wait_for_timeout(1000)
-    try:
-        errors = page.evaluate(ERROR_JS)
-    except Exception:
-        errors = []
-    return False, errors

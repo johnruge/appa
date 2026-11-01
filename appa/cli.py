@@ -258,7 +258,7 @@ def cmd_boards(args) -> None:
 
 
 def cmd_takeover(args) -> None:
-    """`appa takeover`: you apply to these yourself; stops appa's attempt (before submit) and gives you the link."""
+    """`appa takeover`: you apply to these yourself from scratch; stops any prefill and gives you the link."""
     from appa.apply import service
 
     with db.sessions()() as s:
@@ -651,16 +651,18 @@ def cmd_insights(args) -> None:
             print(f"\nlatest example: {json.dumps(ex.detail)[:600]}")
 
 
-def cmd_approve(args) -> None:
-    """`appa approve`: approve a filled attempt so the runner submits it."""
+def cmd_applied(args) -> None:
+    """`appa applied`: you submitted these yourself; mark them Applied (closes any prefill)."""
     from appa.apply import service
 
     with db.sessions()() as s:
-        try:
-            service.approve(s, args.attempt_id, "user:cli")
-        except service.ApplyError as e:
-            raise SystemExit(str(e)) from e
-    print(f"attempt #{args.attempt_id} approved: your runner will submit it")
+        for app_id in args.ids:
+            try:
+                app = service.mark_applied(s, app_id, "user:cli")
+            except service.ApplyError as e:
+                print(f"#{app_id}: {e}")
+                continue
+            print(f"#{app.id} {app.company} / {app.role}: Applied ({app.date_applied})")
 
 
 def cmd_answers(args) -> None:
@@ -888,7 +890,7 @@ def main(argv: list[str] | None = None) -> None:
     tr = sub.add_parser("track", help="add postings you picked as To Apply (no screening)")
     tr.add_argument("urls", nargs="+")
     tr.add_argument("--job-id", help="the posting's ID, when the link doesn't carry one")
-    ap = sub.add_parser("apply", help="fill applications in your browser (each waits for your approval)")
+    ap = sub.add_parser("apply", help="prefill applications in your browser; you check and submit them yourself")
     ap.add_argument("ids", nargs="*", type=int, help="application ids")
     ap.add_argument("--all-to-apply", action="store_true", help="every application with status To Apply")
     ap.add_argument(
@@ -903,8 +905,8 @@ def main(argv: list[str] | None = None) -> None:
     ins.add_argument("--json", action="store_true", help="machine-readable, for an agent to work through")
     ins.add_argument("--backfill", action="store_true", help="once: seed from postings and attempts so far")
     ins.add_argument("--prune", type=int, metavar="DAYS", help="delete observations older than DAYS")
-    apr = sub.add_parser("approve", help="approve a filled application for submission")
-    apr.add_argument("attempt_id", type=int)
+    apl = sub.add_parser("applied", help="you submitted these yourself: mark them Applied")
+    apl.add_argument("ids", nargs="+", type=int, help="application ids")
     an = sub.add_parser("answers", help="your answers bank for application forms")
     ans = an.add_subparsers(dest="action", required=True)
     ans.add_parser("list")
@@ -976,7 +978,7 @@ def main(argv: list[str] | None = None) -> None:
         "listings": cmd_listings,
         "boards": cmd_boards,
         "takeover": cmd_takeover,
-        "approve": cmd_approve,
+        "applied": cmd_applied,
         "answers": cmd_answers,
         "runner": cmd_runner,
     }

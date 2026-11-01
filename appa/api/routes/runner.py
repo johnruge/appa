@@ -1,7 +1,7 @@
 """Endpoints for your browser runner (key with the `runner` scope only).
 
 The runner is the hands: it reports what it sees and does what the plan says. Every
-decision (what to type, whether to submit) is made here, on the server.
+decision (what to type) is made here, on the server. Nothing here can submit an application.
 """
 
 from __future__ import annotations
@@ -37,15 +37,6 @@ class PreviewIn(BaseModel):
     model_config = ConfigDict(extra="forbid")
     report: list[FieldResult] = Field(max_length=400)
     screenshot_upload_id: int | None = None
-
-
-class ResultIn(BaseModel):
-    model_config = ConfigDict(extra="forbid")
-    submitted: bool
-    confirmed: bool = False
-    final_url: str | None = Field(None, max_length=2000)
-    screenshot_upload_id: int | None = None
-    error: str | None = Field(None, max_length=2000)
 
 
 class FailIn(BaseModel):
@@ -163,25 +154,6 @@ def blocked(attempt_id: int, body: BlockedIn, s: SessionDep, _p: RunnerDep):
     _attempt(s, attempt_id)
     try:
         a = service.blocked(s, attempt_id, body.reason)
-    except service.ApplyError as e:
-        raise HTTPException(409, str(e)) from e
-    return {"status": a.status}
-
-
-@router.post("/attempts/{attempt_id}/result")
-def result(attempt_id: int, body: ResultIn, s: SessionDep, _p: RunnerDep):
-    """Receive the submission result from the runner; returns the attempt's new status."""
-    _attempt(s, attempt_id)
-    try:
-        a = service.receive_result(
-            s,
-            attempt_id,
-            submitted=body.submitted,
-            confirmed=body.confirmed,
-            final_url=body.final_url,
-            screenshot_upload_id=body.screenshot_upload_id,
-            error=body.error,
-        )
     except service.ApplyError as e:
         raise HTTPException(409, str(e)) from e
     return {"status": a.status}

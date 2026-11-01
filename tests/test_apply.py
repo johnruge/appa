@@ -304,7 +304,7 @@ def env(factory, tmp_path, monkeypatch):
     return c, user, {"Authorization": f"Bearer {runner_key}"}, {"Authorization": f"Bearer {other_key}"}, app_id
 
 
-def test_full_flow_answer_approve_submit(env, factory):
+def test_full_flow_prefill_then_you_submit(env, factory):
     c, user, runner, _, app_id = env
     r = c.post(f"/api/v1/applications/{app_id}/apply", headers=user)
     assert r.status_code == 201 and r.json()["apply_url"] == "https://job-boards.greenhouse.io/hooli/jobs/4242"
@@ -319,8 +319,7 @@ def test_full_flow_answer_approve_submit(env, factory):
     ).json()
     assert reply["action"] == "stop"
     c.post(f"/api/v1/runner/jobs/{job['job_id']}/done", headers=runner)
-    qs = c.get("/api/v1/questions").json()["questions"]
-    essay = next(q for q in qs if q["kind"] == "apply_field")
+    essay = next(q for q in c.get("/api/v1/questions").json()["questions"] if q["kind"] == "apply_field")
     assert essay["context"]["label"] == "Why Hooli?"
 
     # 2. You answer; it's saved and the attempt goes back to the runner
@@ -336,7 +335,7 @@ def test_full_flow_answer_approve_submit(env, factory):
     values = {i["ref"]: i["value"] for i in reply["plan"]}
     assert values == {"id:first_name": "Pat", "id:email": "pat@example.com", "id:q1": "Yes", "id:q2": "I like search."}
 
-    # 3. Filled + screenshot -> waits for your approval. Nothing submits on its own.
+    # 3. Filled + screenshot -> ready: the tab is yours. appa never submits.
     up = c.post(
         f"/api/v1/runner/attempts/{aid}/screenshot", headers=runner, files={"file": ("p.png", png(), "image/png")}
     ).json()
@@ -347,38 +346,26 @@ def test_full_flow_answer_approve_submit(env, factory):
         json={"report": report, "screenshot_upload_id": up["upload_id"]},
     )
     c.post(f"/api/v1/runner/jobs/{job['job_id']}/done", headers=runner)
-    assert c.get("/api/v1/runner/next", headers=runner).status_code == 204  # no submit job without approval
-    r = c.post(f"/api/v1/runner/attempts/{aid}/result", headers=runner, json={"submitted": True, "confirmed": True})
-    assert r.status_code == 409  # can't report a submit you weren't allowed
-    approval = next(q for q in c.get("/api/v1/questions").json()["questions"] if q["kind"] == "apply_approval")
-    assert approval["context"]["preview_upload_id"] == up["upload_id"] and not approval["context"]["blocked"]
+    assert c.get("/api/v1/runner/next", headers=runner).status_code == 204  # nothing more for the runner, ever
+    assert c.post(f"/api/v1/runner/attempts/{aid}/result", headers=runner, json={}).status_code in (404, 405)
+    card = next(q for q in c.get("/api/v1/questions").json()["questions"] if q["kind"] == "apply_ready")
+    assert card["context"]["preview_upload_id"] == up["upload_id"] and not card["context"]["required_unfilled"]
+    assert "submit it there yourself" in card["prompt"]
     assert c.get(f"/api/v1/uploads/{up['upload_id']}").headers["content-type"] == "image/png"
+    with factory() as s:
+        assert s.get(db.Application, app_id).status == "To Apply"  # not Applied until you say so
 
-    # 4. You approve -> submit job with the exact plan you saw
-    assert (
-        c.post(f"/api/v1/questions/{approval['id']}/answer", headers=user, json={"action": "approve"}).status_code
-        == 200
-    )
-    job = c.get("/api/v1/runner/next", headers=runner).json()
-    assert job["phase"] == "submit" and {i["ref"]: i["value"] for i in job["plan"]} == values
-    r = c.post(
-        f"/api/v1/runner/attempts/{aid}/result",
-        headers=runner,
-        json={
-            "submitted": True,
-            "confirmed": True,
-            "final_url": "https://job-boards.greenhouse.io/hooli/jobs/4242/thanks",
-        },
-    )
-    assert r.json()["status"] == "confirmed"
+    # 4. You submitted it in the browser and say so -> Applied
+    r = c.post(f"/api/v1/questions/{card['id']}/answer", headers=user, json={"action": "applied"})
+    assert r.status_code == 200
     with factory() as s:
         app = s.get(db.Application, app_id)
         assert app.status == "Applied" and app.applied_with_email == "pat@example.com" and app.date_applied
         attempt = s.get(db.ApplyAttempt, aid)
-        assert attempt.approved_by == "user:me" and s.get(db.Run, attempt.run_id).status == "succeeded"
+        assert attempt.status == "applied" and s.get(db.Run, attempt.run_id).status == "succeeded"
 
 
-def _to_approval(c, user, runner, app_id, report_ok=True):
+def _to_ready(c, user, runner, app_id, report_ok=True):
     aid = c.post(f"/api/v1/applications/{app_id}/apply", headers=user).json()["id"]
     job = c.get("/api/v1/runner/next", headers=runner).json()
     form = FORM[:3]
@@ -397,33 +384,29 @@ def _to_approval(c, user, runner, app_id, report_ok=True):
     return aid
 
 
-def test_required_field_failure_blocks_approval(env):
+def test_required_fields_that_didnt_fill_are_flagged_on_the_card(env):
     c, user, runner, _, app_id = env
-    aid = _to_approval(c, user, runner, app_id, report_ok=False)
-    r = c.post(f"/api/v1/apply/attempts/{aid}/approve", headers=user)
-    assert r.status_code == 422 and "required field" in r.json()["error"]
+    _to_ready(c, user, runner, app_id, report_ok=False)
+    card = next(q for q in c.get("/api/v1/questions").json()["questions"] if q["kind"] == "apply_ready")
+    assert card["context"]["required_unfilled"] and "including required ones" in card["prompt"]
 
 
-def test_unconfirmed_submit_asks_instead_of_marking_applied(env, factory):
+def test_mark_applied_works_without_a_prefill_and_is_humans_only(env, factory):
+    c, user, runner, bot, app_id = env
+    assert c.post(f"/api/v1/applications/{app_id}/applied", headers=bot).status_code == 403
+    assert c.post(f"/api/v1/applications/{app_id}/applied", headers=runner).status_code == 403
+    r = c.post(f"/api/v1/applications/{app_id}/applied", headers=user)
+    assert r.status_code == 200 and r.json()["status"] == "Applied"
+
+
+def test_skipping_a_ready_card_cancels_the_prefill(env, factory):
     c, user, runner, _, app_id = env
-    aid = _to_approval(c, user, runner, app_id)
-    c.post(f"/api/v1/apply/attempts/{aid}/approve", headers=user)
-    c.get("/api/v1/runner/next", headers=runner)
-    c.post(f"/api/v1/runner/attempts/{aid}/result", headers=runner, json={"submitted": True, "confirmed": False})
+    aid = _to_ready(c, user, runner, app_id)
+    card = next(q for q in c.get("/api/v1/questions").json()["questions"] if q["kind"] == "apply_ready")
+    c.post(f"/api/v1/questions/{card['id']}/answer", headers=user, json={"action": "skip"})
     with factory() as s:
-        assert s.get(db.Application, app_id).status == "Needs Review"
-    q = next(q for q in c.get("/api/v1/questions").json()["questions"] if q["context"].get("unconfirmed"))
-    c.post(f"/api/v1/questions/{q['id']}/answer", headers=user, json={"action": "approve"})
-    with factory() as s:
-        assert s.get(db.Application, app_id).status == "Applied"
-
-
-def test_daily_cap(env, factory, monkeypatch):
-    c, user, runner, _, app_id = env
-    monkeypatch.setattr("appa.apply.service.daily_cap", lambda s: 0)
-    aid = _to_approval(c, user, runner, app_id)
-    r = c.post(f"/api/v1/apply/attempts/{aid}/approve", headers=user)
-    assert r.status_code == 422 and "daily submission cap" in r.json()["error"]
+        assert s.get(db.ApplyAttempt, aid).status == "cancelled"
+        assert s.get(db.Application, app_id).status == "To Apply"
 
 
 def test_runner_endpoints_are_runner_only(env):
@@ -482,39 +465,41 @@ def test_answering_a_standard_question_fills_the_standard_key(env, factory):
     assert answers["work_authorized"] == "Yes"  # so "Are you legally authorized…" elsewhere won't ask again
 
 
-def test_redo_refills_before_approval_only(env, factory):
+def test_redo_refills_until_applied(env, factory):
     c, user, runner, _, app_id = env
-    aid = _to_approval(c, user, runner, app_id)
+    aid = _to_ready(c, user, runner, app_id)
     assert c.post(f"/api/v1/apply/attempts/{aid}/redo", headers=user).json()["status"] == "preparing"
-    assert not [q for q in c.get("/api/v1/questions").json()["questions"] if q["kind"] == "apply_approval"]
+    assert not [q for q in c.get("/api/v1/questions").json()["questions"] if q["kind"] == "apply_ready"]
     assert c.get("/api/v1/runner/next", headers=runner).json()["phase"] == "prepare"
     with factory() as s:
         a = s.get(db.ApplyAttempt, aid)
-        a.status = "submitting"
+        a.status = "applied"
         s.commit()
-    assert c.post(f"/api/v1/apply/attempts/{aid}/redo", headers=user).status_code == 422  # not once approved
+    assert c.post(f"/api/v1/apply/attempts/{aid}/redo", headers=user).status_code == 422
 
 
-def test_a_perfect_form_still_waits_for_your_final_approval(env, factory):
-    """Even when every field is answered and filled, nothing is submitted until you approve.
-    The only code that creates a submit job is service.approve()."""
-    c, user, runner, _, app_id = env
-    aid = _to_approval(c, user, runner, app_id)  # every field filled ok
-    with factory() as s:
-        a = s.get(db.ApplyAttempt, aid)
-        assert a.status == "awaiting_approval" and a.approved_at is None
-        assert not [j for j in s.query(db.QueueJob) if j.payload.get("phase") == "submit"]
-    assert c.get("/api/v1/runner/next", headers=runner).status_code == 204
+def test_appa_never_submits(env, factory):
+    """A perfectly filled form is handed to you, and nothing anywhere can submit it: no submit phase, no
+    submit endpoint, no code that clicks a submit button."""
     import inspect
 
+    from appa.api.routes import runner as runner_routes
     from appa.apply import service as svc
+    from appa.runner import client, dom
+    from appa.runner import main as runner_main
 
-    creators = [
-        name
-        for name, fn in inspect.getmembers(svc, inspect.isfunction)
-        if 'enqueue(s, attempt, "submit")' in inspect.getsource(fn)
-    ]
-    assert creators == ["approve"]
+    c, user, runner, _, app_id = env
+    aid = _to_ready(c, user, runner, app_id)  # every field filled ok
+    with factory() as s:
+        assert s.get(db.ApplyAttempt, aid).status == "ready"
+        assert {j.payload.get("phase") for j in s.query(db.QueueJob) if j.kind == "apply"} == {"prepare"}
+    assert c.get("/api/v1/runner/next", headers=runner).status_code == 204
+    assert not hasattr(svc, "approve") and not hasattr(svc, "receive_result")
+    assert not hasattr(dom, "submit") and not hasattr(dom, "confirmation")
+    assert not hasattr(client.RunnerClient, "result")
+    assert "result" not in {r.name for r in runner_routes.router.routes}
+    source = inspect.getsource(runner_main) + inspect.getsource(dom)
+    assert ".submit(" not in source and "dom.submit" not in source
 
 
 def test_cover_letters_only_when_required():
@@ -534,7 +519,7 @@ def test_failures_are_recorded_without_your_answers(env, factory):
     from appa import observe
 
     c, user, runner, _, app_id = env
-    aid = _to_approval(c, user, runner, app_id, report_ok=False)  # email didn't fill
+    aid = _to_ready(c, user, runner, app_id, report_ok=False)  # email didn't fill
     c.post(f"/api/v1/apply/attempts/{aid}/cancel", headers=user)
     aid2 = c.post(f"/api/v1/applications/{app_id}/apply", headers=user).json()["id"]
     c.get("/api/v1/runner/next", headers=runner)
@@ -583,7 +568,7 @@ def test_path_shape_groups_similar_links():
 
 def test_takeover_stops_the_attempt_and_hands_it_to_you(env, factory):
     c, user, runner, bot, app_id = env
-    aid = _to_approval(c, user, runner, app_id)  # waiting for approval
+    aid = _to_ready(c, user, runner, app_id)
     assert c.post(f"/api/v1/applications/{app_id}/takeover", headers=bot).status_code == 403  # humans only
     r = c.post(f"/api/v1/applications/{app_id}/takeover", headers=user)
     assert r.status_code == 200 and r.json() == {
@@ -595,15 +580,13 @@ def test_takeover_stops_the_attempt_and_hands_it_to_you(env, factory):
         assert s.get(db.ApplyAttempt, aid).status == "cancelled"
         assert "took over" in s.get(db.Application, app_id).notes
     assert not [q for q in c.get("/api/v1/questions").json()["questions"] if q["context"].get("attempt_id") == aid]
-    assert c.post(f"/api/v1/apply/attempts/{aid}/approve", headers=user).status_code == 422  # nothing to approve
 
 
-def test_no_takeover_once_approved_for_submit(env):
-    c, user, runner, _, app_id = env
-    aid = _to_approval(c, user, runner, app_id)
-    c.post(f"/api/v1/apply/attempts/{aid}/approve", headers=user)
+def test_no_takeover_once_applied(env):
+    c, user, _, _, app_id = env
+    c.post(f"/api/v1/applications/{app_id}/applied", headers=user)
     r = c.post(f"/api/v1/applications/{app_id}/takeover", headers=user)
-    assert r.status_code == 422 and "being submitted" in r.json()["error"]
+    assert r.status_code == 422 and "already Applied" in r.json()["error"]
 
 
 def test_listings_inbox_track_skip_restore(env, factory):
@@ -642,15 +625,3 @@ def test_listings_inbox_track_skip_restore(env, factory):
         assert app.status == "To Apply" and app.job_key == "greenhouse:5"
     feeds_info = c.get("/api/v1/feeds").json()
     assert "simplify_newgrad" in {f["name"] for f in feeds_info["lists"]} and feeds_info["inbox"]["screened"] == 1
-
-
-def test_no_takeover_after_a_submit(env, factory):
-    c, user, runner, _, app_id = env
-    aid = _to_approval(c, user, runner, app_id)
-    c.post(f"/api/v1/apply/attempts/{aid}/approve", headers=user)
-    c.get("/api/v1/runner/next", headers=runner)
-    c.post(f"/api/v1/runner/attempts/{aid}/result", headers=runner, json={"submitted": True, "confirmed": False})
-    r = c.post(f"/api/v1/applications/{app_id}/takeover", headers=user)
-    assert r.status_code == 422 and "already submitted" in r.json()["error"]
-    with factory() as s:
-        assert s.get(db.Application, app_id).status == "Needs Review"

@@ -1,4 +1,4 @@
-"""The runner's form reading, filling, submit and safety checks, in a real (headless) browser,
+"""The runner's form reading, filling, hand-over and safety checks, in a real (headless) browser,
 against local pages built from the real Greenhouse / Lever / Ashby markup. No network."""
 
 from __future__ import annotations
@@ -116,7 +116,7 @@ def by_ref(qs):
     return {q["ref"]: q for q in qs}
 
 
-def test_greenhouse_read_fill_submit(page, tmp_path):
+def test_greenhouse_read_and_fill(page, tmp_path):
     page.set_content(GREENHOUSE)
     qs = by_ref(dom.extract(page))
     assert set(qs) == {"id:first_name", "id:email", "id:q1", "id:resume", "id:q2"}  # no hidden/decoy inputs
@@ -139,18 +139,6 @@ def test_greenhouse_read_fill_submit(page, tmp_path):
     assert all(r["ok"] for r in report), report
     assert page.locator("#q1-value").inner_text() == "Yes"
     assert page.evaluate("document.getElementById('resume').files.length") == 1
-    assert not dom.captcha_visible(page)
-    before = page.url
-    dom.submit(page)
-    assert dom.confirmation(page, before, timeout_s=5) == (True, [])
-
-
-def test_validation_errors_are_reported_not_confirmed(page):
-    page.set_content(GREENHOUSE)
-    before = page.url
-    dom.submit(page)
-    confirmed, errors = dom.confirmation(page, before, timeout_s=2)
-    assert not confirmed and any("required" in e.lower() for e in errors)  # native validation, not in the DOM
 
 
 def test_lever_groups_and_select(page):
@@ -217,17 +205,6 @@ def test_fill_reports_problems_instead_of_guessing(page):
     assert "no option matching" in report[0]["error"] and "no file configured" in report[1]["error"]
 
 
-def test_visible_captcha_challenge_is_detected(page):
-    page.set_content(
-        '<iframe src="https://www.google.com/recaptcha/api2/bframe?k=x" style="width:400px;height:500px"></iframe>'
-    )
-    assert dom.captcha_visible(page)
-    page.set_content(
-        '<iframe src="https://www.google.com/recaptcha/api2/bframe?k=x" style="width:400px;height:500px;visibility:hidden"></iframe>'
-    )
-    assert not dom.captcha_visible(page)
-
-
 def test_browser_refuses_private_addresses_and_pins_navigation(browser):
     from appa.runner.browser import Browser, NotPublic, site_of
 
@@ -253,6 +230,32 @@ def test_browser_refuses_private_addresses_and_pins_navigation(browser):
     b.ctx.close()
 
 
+def test_a_handed_over_tab_is_yours(browser):
+    """After filling, the tab is handed to you: the guard and pop-up blocking no longer apply to it, so your own
+    submit, redirects and links work; other tabs stay guarded."""
+    from appa.runner.browser import Browser
+
+    b = Browser(headless=True)
+    b.ctx = browser.new_context()
+    b.ctx.route("**/*", b._guard)
+    b.ctx.on("page", b._no_popups)
+    b.check_ips = False
+    b.allowed, b.allowed_sites = {"careers.acme.example"}, {"acme.example"}
+    guarded, yours = b.ctx.new_page(), b.ctx.new_page()
+    b.hand_over(yours)
+    yours.route("**/*", lambda r: r.fulfill(body="<p>thanks</p>", content_type="text/html"))
+    yours.goto("https://thanks.elsewhere.example/done", timeout=5000)  # off-site redirect after your submit
+    assert "thanks" in yours.content()
+    with pytest.raises(PlaywrightError):
+        guarded.goto("https://thanks.elsewhere.example/done", timeout=5000)
+    yours.set_content("<a href='about:blank' target='_blank' id='x'>open</a>")
+    with b.ctx.expect_page() as popup:
+        yours.click("#x")
+    yours.wait_for_timeout(300)
+    assert not popup.value.is_closed()  # links you open from your tab stay open
+    b.ctx.close()
+
+
 def test_popups_are_closed_but_our_own_pages_are_not(browser):
     from appa.runner.browser import Browser
 
@@ -267,18 +270,6 @@ def test_popups_are_closed_but_our_own_pages_are_not(browser):
     assert not page.is_closed()
     assert [p for p in b.ctx.pages if not p.is_closed()] == [page]
     b.ctx.close()
-
-
-def test_email_verification_step_is_detected(page):
-    page.set_content(
-        "<p>A verification code was sent to pat@example.com. To submit your application, "
-        "enter the 8-character code to confirm you're a human.</p><input aria-label='Security code'>"
-    )
-    assert dom.verification_requested(page)
-    confirmed, _ = dom.confirmation(page, page.url, timeout_s=1)
-    assert not confirmed  # waiting for a code is not a submitted application
-    page.set_content("<h1>Thank you for applying!</h1>")
-    assert not dom.verification_requested(page)
 
 
 # ---- any site: fake company sites served locally ---------------------------------------------
@@ -381,9 +372,6 @@ def test_any_site_follows_apply_and_fills_a_generic_form(site, tmp_path):
     items = [i.model_dump() for i in plan.items]
     report = dom.fill(page, items, dom.Files(resume=str(resume)))
     assert all(r["ok"] for r in report), report
-    before = page.url
-    dom.submit(page)
-    assert dom.confirmation(page, before, timeout_s=5)[0]
 
 
 def test_any_site_opens_an_embedded_form(site):

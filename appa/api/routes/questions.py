@@ -21,7 +21,7 @@ UNCONFIRMED_STATUS = {"approve": "Applied", "skip": "To Apply"}  # "did it go th
 
 class AnswerIn(BaseModel):
     model_config = ConfigDict(extra="forbid")
-    action: Literal["approve", "apply_myself", "skip", "dismiss", "choose", "answer"]
+    action: Literal["approve", "apply_myself", "skip", "dismiss", "choose", "answer", "applied"]
     choice: str | None = Field(None, max_length=5000)  # "choose": an offered URL; "answer": your answer
     note: str | None = Field(None, max_length=2000)
 
@@ -66,8 +66,10 @@ def answer(qid: int, body: AnswerIn, s: SessionDep, p: UserDep):
     out: dict = {}
     if q.kind == "apply_field":
         return _answer_apply_field(s, q, body, p)
-    if q.kind == "apply_approval":
-        return _answer_apply_approval(s, q, body, p)
+    if q.kind == "apply_ready":
+        return _answer_apply_ready(s, q, body, p)
+    if body.action == "applied":
+        raise HTTPException(422, "applied is for prefilled applications")
     if body.action == "answer":
         raise HTTPException(422, "answer is for form questions")
     if body.action in ACTION_STATUS:
@@ -117,19 +119,19 @@ def _answer_apply_field(s, q: db.Question, body: AnswerIn, p) -> dict:
     return {**q_dict(q), "resumed_attempts": resumed}
 
 
-def _answer_apply_approval(s, q: db.Question, body: AnswerIn, p) -> dict:
-    """Approve (submit) or skip the filled application this question is about."""
+def _answer_apply_ready(s, q: db.Question, body: AnswerIn, p) -> dict:
+    """The form is filled in your browser: you submitted it ("applied"), or you're not going ahead ("skip")."""
     from appa.apply import service
 
     attempt_id = q.context.get("attempt_id")
-    if body.action == "approve":
+    if body.action == "applied":
         try:
-            service.approve(s, attempt_id, p.label)
+            service.mark_applied(s, q.application_id, p.label)
         except service.ApplyError as e:
             raise HTTPException(422, str(e)) from e
     elif body.action in ("skip", "dismiss"):
         service.cancel(s, attempt_id)
     else:
-        raise HTTPException(422, "approve or skip this submission")
+        raise HTTPException(422, "say whether you submitted it (applied) or skip it")
     s.refresh(q)
     return q_dict(q)
