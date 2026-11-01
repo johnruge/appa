@@ -1,0 +1,58 @@
+# Copy to config/profile.yaml (gitignored) and fill in.
+
+candidate:
+  name: "Your Name"
+  # Email used on applications. The backfill stamps it on imported rows.
+  application_email: "you@university.edu"
+  graduation: "2027-06"
+  # F-1 / OPT / STEM OPT holders need sponsorship in the future, even if they
+  # can work today. Postings that refuse future sponsorship get rejected.
+  needs_sponsorship_now: false
+  needs_sponsorship_future: true
+
+rules:
+  # Reject postings asking for more than this many years of professional
+  # experience, unless they are explicitly new-grad / entry-level.
+  max_years_experience: 2       # TODO: confirm your cutoff
+  reject_citizenship_required: true
+  reject_clearance_required: true
+  # Who applies is decided by config/profile.md (plain language). These lists override it.
+  manual_companies: []   # always queue for you
+  always_auto: []        # never queue for you
+  never_apply: []        # reject outright
+  # Whole-word, case-insensitive matches against the job title.
+  title_excludes: ["senior", "sr.", "staff", "principal", "lead", "manager", "director", "intern"]
+  # If non-empty, the title must contain one of these ("engineer" also matches
+  # "engineers"/"engineering"). Keeps `appa poll` from evaluating every sales job.
+  title_includes: ["engineer", "developer", "software", "data", "machine learning", "ml", "ai"]
+  # New posting (different job ID) at a company you've applied to: allow | flag (send to review) | skip.
+  # Applications with no link or job ID never block anything: a duplicate beats a missed job.
+  same_company: allow
+
+# Company job boards polled by `appa poll`. Use the slug from the board URL:
+#   boards.greenhouse.io/<slug>   jobs.lever.co/<slug>   jobs.ashbyhq.com/<slug>
+companies:
+  greenhouse: []
+  lever: []
+  ashby: []
+
+# Where postings come from (`appa feeds` lists every source; `appa sweep` runs them all).
+# Free filters run first (titles above, age, location, the source's own citizenship/intern labels),
+# so only plausible postings are fetched and screened.
+feeds:
+  lists: ["all"]            # or names, e.g. ["simplify_newgrad", "themuse", "hn_whoishiring"]
+  discover_boards: true     # every link found adds its company's job board to the poll rotation
+  boards_per_run: 150       # company boards polled per sweep (least recently polled first)
+  queries: ["software engineer new grad", "entry level software engineer", "junior software engineer",
+            "software engineer 2027", "data engineer new grad", "machine learning engineer new grad",
+            "associate software engineer"]
+  max_age_days: 45          # skip postings older than this, when the source dates them
+  us_only: true             # skip postings clearly outside the US (remote and mixed locations stay)
+  screen_per_run: 150       # new postings screened per sweep
+  keyword_screen_without_key: true   # no model key yet: screen by keywords (flags for review, never rejects)
+
+apply:
+  daily_submit_cap: 10      # submissions per rolling 24h
+  auto_prepare: false       # true: fill every new To Apply job in your browser (still waits for your approval)
+
+# Models are chosen in config/models.yaml (defaults per job) or per run with --model.

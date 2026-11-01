@@ -1,0 +1,35 @@
+# Which models appa may use, and the default for each job. Operator settings, no secrets.
+# The API key comes from OPENROUTER_API_KEY in the environment (or .env), never this file.
+#
+# Only models listed under `allowed` can be selected (CLI --model, UI, schedules), so a typo
+# can never pick an unexpectedly expensive model. Prices are USD per million tokens
+# (input / output) as listed on OpenRouter when added; real cost comes back on every call.
+
+defaults:
+  screener: anthropic/claude-haiku-5.5      # reads postings, extracts facts
+  screenshot: anthropic/claude-haiku-5.5    # reads job cards from screenshots (needs vision)
+
+allowed:
+  # Closed models
+  anthropic/claude-haiku-5.5:               {vision: true,  price: [0.10, 0.50]}
+  anthropic/claude-sonnet-5.5:              {vision: true,  price: [2.00, 10.00]}
+  openai/gpt-6-luna:                        {vision: true,  price: [0.10, 0.50]}
+  google/gemini-3.5-flash-lite:             {vision: true,  price: [0.30, 2.50]}
+  # Open-weight models
+  deepseek/deepseek-v4.1-flash:             {vision: true,  price: [0.045, 0.50]}
+  meta-llama/llama-3.3-70b-instruct:        {vision: false, price: [0.10, 0.32]}
+  qwen/qwen3.6-35b-a3b:                     {vision: true,  price: [0.10, 0.90]}
+  openai/gpt-oss-120b:                      {vision: false, price: [0.15, 0.60]}
+  mistralai/mistral-small-3.2-24b-instruct: {vision: true,  price: [0.075, 0.20]}
+
+# OpenRouter routing preferences sent with every request.
+provider:
+  data_collection: deny      # skip providers that store or train on prompts
+  require_parameters: true   # only providers that honor structured output (response_format)
+  zdr: false                 # true = zero-data-retention endpoints only (fewer providers)
+
+limits:
+  max_output_tokens: 4000
+  timeout_seconds: 60
+  max_retries: 2             # transport retries on 429/5xx (SDK); schema retries are separate
+  daily_usd_cap: 5.00        # all runs combined, rolling 24h; runs stop when it's reached

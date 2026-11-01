@@ -1,0 +1,37 @@
+# Your answers bank, for application forms. Copy to config/answers.yaml (gitignored),
+# fill it in, then: appa answers import config/answers.yaml
+#
+# Only what's here (plus answers you give when asked) ever goes into a form. Anything a
+# form asks that isn't covered becomes a question for you, and your answer is saved.
+# Leave a line out rather than guess. Essays and "are you human/AI" checks always come to you.
+
+first_name: ""
+last_name: ""
+preferred_name: ""
+email: ""                    # the address you apply with
+phone: ""
+location: ""                 # e.g. "Chicago, IL"
+country: "United States"
+work_location: "United States"
+linkedin_url: ""
+github_url: ""
+website_url: ""
+current_company: ""
+school: ""                   # as it appears in school dropdowns
+degree: ""
+graduation_date: ""          # e.g. "June 2027"
+work_authorized: "Yes"       # authorized to work in the US now?
+requires_sponsorship: "Yes"  # now or in the future?
+previously_employed: "No"    # worked for the company before (answer per company if it's ever Yes)
+how_heard: "LinkedIn"
+start_date: ""
+pronouns: ""
+# Voluntary self-identification. "Decline" picks the decline-to-answer option.
+gender: "Decline"
+race: "Decline"
+hispanic_latino: "Decline"
+veteran_status: "Decline"
+disability_status: "Decline"
+sms_consent: "No"
+whatsapp_consent: "No"
+cover_letter_on_file: "no"   # "yes" if you pass --cover-letter to the runner
